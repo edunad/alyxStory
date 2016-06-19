@@ -1,0 +1,33 @@
+@include "base.fgd"
+@include "halflife2.fgd"
+
+@PointClass base(Angles) studio("models/editor/playerstart.mdl") = alyx_player_start :
+	"This entity indicates the area at which the player Will Spawn with custom size"
+[
+	playerSizeX(float) : "Player Size X" : "0" : "Scales the player's X (Default : 0)"
+	playerSizeY(float) : "Player Size Y" : "0" : "Scales the player's Y (Default : 0)"
+	playerSizeZ(float) : "Player Size Z" : "0" : "Scales the player's Z (Default : 0)"
+]
+
+@PointClass base(Targetname) = logic_playmovie : "Plays a movie"
+[
+	MovieFilename(string) : "Movie Path" : "" : "Filename of the movie to play"
+	allowskip(choices) : "Allow User to Skip" : 0 : "Whether or not the user may skip the video with common keys" =
+	[
+		0 : "False"
+		1 : "True"
+	]
+	loopvideo(choices) : "Loop Video" : 0 : "If set to true, the movie will loop forever" =
+	[
+		0 : "False"
+		1 : "True"
+	]
+	fadeintime(float) : "Fade In Time" : 0 : "Time it takes for the video to fade in"
+	
+	input PlayMovie(void) : "Play the movie."
+	input PlayLevelTransitionMovie(string) : "Plays a movie with specific settings used for level transitions.  Pass the name of the movie in the parameters.  To be fired at the end of a level."
+	input FadeAllMovies(void) : "Fade movies out for all players connected."
+
+	// Outputs
+	output OnPlaybackFinished(void) : "Fired when the movie has completed playing back or was skipped by the user."
+]
