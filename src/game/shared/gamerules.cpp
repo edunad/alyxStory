@@ -195,7 +195,10 @@ CBaseEntity *CGameRules::GetPlayerSpawnSpot( CBasePlayer *pPlayer )
 	pPlayer->m_Local.m_vecPunchAngle = vec3_angle;
 	pPlayer->m_Local.m_vecPunchAngleVel = vec3_angle;
 	pPlayer->SnapEyeAngles( pSpawnSpot->GetLocalAngles() );
-	pSpawnSpot->GetKeyValue
+
+
+	// TODO: Get the info_player_spawn keyvalues for the player size
+	//pSpawnSpot->GetKeyValue
 
 	/*
 	g_DefaultViewVectors(
