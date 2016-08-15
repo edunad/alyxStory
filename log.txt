@@ -1,0 +1,1236 @@
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\barn01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\boardwalks01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\boathouse_dock_side.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\boathouse_shingles01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\cabinets01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\cabinets11.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\cabinets12-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\cabinets12.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\counter01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\door_shutter01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\fence02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\fence02top.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\fence04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\floor02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\floor03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\floor03_light.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\housebeams01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\housebeams03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\housebeams04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\houseceiling01-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\houseceiling01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\houseceiling02-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\houseceiling02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\houseceiling03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\housedeck01-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\housedeck01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\housesiding01-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\housesiding01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\housesiding02-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\housesiding02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\housesiding02_white.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\infceilinga.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\infdoorc.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\infdoord.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\inffence01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\infflra.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\infgate01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\lattice01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milbeams001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milbeams002.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milbeams003.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milbeams003_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milcab001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\mildoor001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\mildoor001sd.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\mildoor002.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\mildoor002sd.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milflr002.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milflr002lit.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milflr003.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milflr004.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milhole001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milhole002.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milroof001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milroof002.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milroof003.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milroof004.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milroof005.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milroof006.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milsteps001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall007.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall008.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall010.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall011.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall012.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall013.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall015.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall016.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall017.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall018.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall019.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\milwall021.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\offdesktop.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\offdesktopsd.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\offdesktopsd_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\offdesktop_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\plywood01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\plywood02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\plywood_ext_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\plywood_ext_02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\ranchhouse_woodsiding05.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\ranchhouse_woodsiding05_height-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\shingles001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\shinglesiding01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\shinglesiding01b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\siding04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\target_bullseye_wood_1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\urban_woodcabinets02b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\urban_woodfloor01_ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\vertigo_ceilingb.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\vertigo_ceilingb_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\vertigo_door1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\vertigo_door1_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\vertigo_plywood.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\vertigo_plywoodb.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\vostok_wood.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\vostok_wood_ceiling.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodbeam001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodbeam001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wooddoor015a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wooddoor019a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wooddoor026a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wooddoor039a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodfloor005a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodfloor007a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodfloor007a_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodfloor008a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodfloor008a_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodfloor_ext_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodfloor_int_02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodshelf002a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodshelf008a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodsiding_ext_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodsiding_ext_03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodsiding_ext_05.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodsiding_ext_06.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodsiding_ext_a01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodsteps001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodtrim_ext_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodtrim_ext_02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodwall005a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodwall009a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodwall009a_spec.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodwall011a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodwall018a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodwall024a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodwall028a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodwall028a_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodwall037a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\woodwall_int01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_dock_pylon_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_ext_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_ext_02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_ext_04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_ext_05.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_int_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_int_02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_int_04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_int_07.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_int_08.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_int_09.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\wood_int_10.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\hr_wood_beams_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\hr_wood_beams_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\hr_wood_floors_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\hr_wood_floors_normals_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\hr_wood_paneling_001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\wood_plank_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\wood_plank_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\1970_tile_floor_02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\bathroomFloor-base.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\bathroomFloor-base_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\fifties_bathroom_wall.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\fifties_bathroom_wall_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\grey01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\grey01_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\grey04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\main_tile_floor.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\main_tile_floor_bump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\observation_tilefloor001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\observation_tilefloor003a-height-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\observation_tilefloor003a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\tilefloor010a_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\tile_ceiling_001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\tile_ceiling_001a_height-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\tile_mall_incline00.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\tile_mall_incline00_height-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\tile\white_ceiling_tile001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\apart_wall_full01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\apart_wall_full02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\apart_wall_full03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\apart_wall_full04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\apart_wall_full05.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\apart_wall_full06.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\apart_woodfloor01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\apart_woodfloor_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\elevator_floor01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\elevator_floor02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\elevator_floor_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\ruin_wallpaper3.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\suna_carpet01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\sunabouzu\suna_carpet02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\vostok_wall01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\vostok_wall01b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\vostok_wall01_ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\wall_blue02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\wall_green01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\wall_red04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\wall_red05.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\wall_white01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\wall_white03-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\wall_white04-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\wall_white04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\plaster\wall_yellow01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\blendrocksgrass006a_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\blendsandweed005a_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\blend_aztec.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\blend_grass2.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\blend_texture_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\cobweb00.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\coop_sea_foam01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\coop_sea_foam02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\coop_sea_foam03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\coop_sea_foam04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirt01_overlay.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirt02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirtfloor004a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirtfloor006a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirtfloor009c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirtfloor009c_decal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirtfloor011a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirtfloor011a_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirtfloor012a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirtleaves01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirt_ext_02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirt_ext_02b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\dirt_ext_05.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\docks_gravel.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\docks_gravel_height-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\giant_tree_card_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\grasswithered00.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\grass_blend.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\gravelfloor002a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\ground_grass01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\ground_grass02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\ground_grass03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\ground_moss_aztec.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\ground_moss_aztec_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\inftreelinea.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\leaves03_blendtexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground002.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground003.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground004.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground004_2_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground004_rock2_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground005.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground005_19_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground005_2_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground007.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground007_4_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground008.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground008b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground008b_2_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground008_2_plants_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground008_2_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground008_4_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground011.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground011_2_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground011_rock2b_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground012.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground012_conflr18a_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground016.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground016_8_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground019.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milground019_rock002_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milrock001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milrock001_2_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milrock002.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milrock002b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milrock002b_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\milrock002_2b_tooltexture.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\miltree003.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\miltree005.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\mudfloor001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\mud_ext_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\oldleaves01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\proddirta.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\prodgrassa.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\rockwall006a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\rockwall006a_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\rockwall007.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\rockwall011d.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\rockwall011d_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\sandfloor010a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\sandfloor010a_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\seaweed002a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\seaweed002a_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\swamp_mudfloor01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\swamp_roots01_green.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\tibet_blendmod_snow_rock.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\trash01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\urban_puddle01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\urban_puddle01a_ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\vostok_snow.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\water_frame01_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\hr_c\hr_dirt_001_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\hr_c\hr_grass_001_blend.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\hr_c\hr_grass_001_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\hr_c\hr_grass_001_detail.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\hr_c\hr_mulch_001_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\nature\hr_c\hr_terrain_001_detail.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_unique\mop01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_unique\mopbucket01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\buttress_diffuse.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\buttress_leaves.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\buttress_stump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\cattails.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\chainsaw.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\fern_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\fern_01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\fern_01b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\lilypad.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\rootstump01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\rootstump02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\shroom_diffuse.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\shrub_03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\skycards_swamp256.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\tallgrass_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\tallgrass_01b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\tallgrass_01c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\tree_swamp.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\tree_swamp_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\tree_swamp_02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\tree_swamp_03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\tree_swamp_bump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_swamp\tree_swamp_skybox.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\ac_wallunit.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\alarm_clock_off.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\alarm_clock_on.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\alarm_clock_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\bathroom_set.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\bathtub01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\bathtub01_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\bbq_grill.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\bbq_grill_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\bed.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\bench_subway.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\books.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\breakwall_interior.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\bucket_tools.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\bucket_tools_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\cashregister01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\cashregister01_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\chairlobby01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\chair_cafeteria.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\chair_office2.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\clipboard01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\clipboard01_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\clipboardholder01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\clipboardholder01_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\closet_clothes.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\clothing_pile1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\clothing_pile2.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\clothing_pile3.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\coffee_maker.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\coffee_maker_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\controlroom_filecabinets001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\copymachine01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\corkboardverticle01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\couch.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\desk_metal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\desk_metal_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\dish_soap.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\dresser.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\drinking_fountain.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\florescentlight01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\furniture_chair03a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\furniture_couch01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\furniture_couch02a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\furniture_desk01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\furniture_desk01a_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\furniture_lamp_stool01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\furniture_lamp_stool01a_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\furniture_shelf01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\furniture_wood01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\furniture_wood02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\kitchen_props_industrial01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\lamps.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\lamps_on.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\lamps_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\lightbulb01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\lightbulb01a_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\luggagescale.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\luggagescale_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\medicinecabinet01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\medicinecabinet01_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_a_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_d.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_e.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_f.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_g.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_h.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_i.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_j.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_k.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_landscape_l.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_a_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_d.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_e.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_f.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_g.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_h.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_i.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_j.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_k.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\painting_portrait_l.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\paper_towel_dispenser.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\paper_tray.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\phone_motel_new_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\phone_motel_new_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\poster_backing.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\power_outlet_campground.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\power_outlet_campground_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\printer.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\prison_heater001a_new_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\prison_heater001a_new_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\radiator01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\radiator01b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\radiator01c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\refrigerator01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\refrigerator02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\refrigerator02_new.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\refrigerator02_new_on.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\refrigerator02_new_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\refrigerator02_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\refrigeratordoor01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\refrigeratordoor02a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\sconce02a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\sconce02a_on.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\shelvingstore_grocery01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\sinkkitchen01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\sink_industrial01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\sink_kitchen.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\soap_dispenser.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\soap_dispenser_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\sofa01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\sofa_chair.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\stove02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\stove02_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\styrofoam_cups.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\styrofoam_cups_break.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\table_cafeteria.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\table_cafeteria_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\table_console.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\table_console_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\table_folding.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\table_folding_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\table_kitchen.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\table_picnic.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\toaster.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\toaster_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\toilet.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\toiletpaperdispenser_residential.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\toiletpaperdispenser_residential_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\toilet_c_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\towel_rack.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\towel_rack_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\trashcan01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\trashcankitchen01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\trashcankitchen01_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\tv.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\tvanimstatic.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\tvebstest.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\tvstatic.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\tvstatic_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\vcr_new_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\vcr_new_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\waterheater.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\water_cooler.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\water_cooler_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_interiors\woodfurniture01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_gameplay\target_bullseye_metal_1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_gameplay\target_bullseye_prop.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_gameplay\target_bullseye_wood_1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_furniture\cafe_barstool1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_furniture\furniturecupboard001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_furniture\furnituredresser001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_furniture\hotel_chair.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_furniture\kitchen_countertop1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_furniture\kitchen_shelf1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_furniture\pictures.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\branchesfarm01_mip0.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\branch_city.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\cane_field01_mip0.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\cattails.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\flower_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\flower_b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\flower_c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\flower_d.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\mall_large_pots01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\mall_large_pots01_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\mall_large_pots02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\mall_trees_barks01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\mall_trees_branches01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\mall_trees_branches02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\mall_trees_branches03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\swamp_trees_branches01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\trees_city.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\trees_farm01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\tree_deciduous_01a_branches.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\tree_deciduous_01a_leaves.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\tree_deciduous_01a_leaves2.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\tree_deciduous_01a_trunk.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\tree_deciduous_cards_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_palm_branchesdust.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_palm_trunkdust.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_palm_trunkdust_animated.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_tree03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_tree03_branches.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_tree04_branches.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_trees_barks01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_trees_barks01_medium_animated.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_trees_branches02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_trees_branches02_mip0.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_trees_branches03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_trees_branches03_animated.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_trees_branches03_medium_animated.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\urban_trees_branches03_mip0.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\hr_f\hr_medium_tree02_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\hr_f\hr_medium_tree02_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\hr_f\hr_medium_tree_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\hr_f\hr_medium_tree_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\hr_f\potted_plant_yucca_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_foliage\hr_f\potted_plant_yucca_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_fairgrounds\bumper_car01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_fairgrounds\fairgrounds_flagpole01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_fairgrounds\fairgrounds_flagpole02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_fairgrounds\fairgrounds_flagpole03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_fairgrounds\gallery_button.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_fairgrounds\stuffed_animals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_fairgrounds\trafficbarrel.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props_fairgrounds\trailer_message_board.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\gg_tibet\cs_tibet_stone_06.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\gg_tibet\cs_tibet_stone_07a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\gg_tibet\snow.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\gg_tibet\stone_wall.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\stains\nuke_oil_puddle.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\nuke_vending_machine\nuke_snacks_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\nuke_vending_machine\nuke_snack_machine_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\nuke_vending_machine\nuke_snack_machine_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\nuke_vending_machine\nuke_vending_machine_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\nuke_vending_machine\nuke_vending_machine_illum.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\nuke_vending_machine\nuke_vending_machine_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\barberry_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\beech_bark_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\beech_branch_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\cedar_bark_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\cedar_branch_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\cedar_tree_card_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\joe_pye_weed_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\tall_grass_card.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\treeline_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\tree_beech_card_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\viburnum_davidii_01_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\weeds_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\weeds_clover_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\weeds_flowers_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_depot\flatbed_rocket.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\boulder01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\boulderring.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\boulderringb.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\boulderringbase.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rocks01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rock_riverbed01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rockwall_sect_col\rockwall_sect_col_diffuse.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rockwall_sect_col\rockwall_sect_col_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rockwall_sect_col\rockwall_sect_col_spec.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rockwall\rockwall_diffuse.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rockwall\rockwall_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rockb\rock_b_diffuse.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rockb\rock_b_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rocka\rock_a_diffuse.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\cs_militia\rocka\rock_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\music_box\music_box.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\effects\puddle.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\effects\puddle_ref.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\effects\urban_puddle01a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\effects\urban_puddle01a_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\effects\urban_puddle01a_ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\grass\hr_grass\grass_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\grass\hr_grass\grass_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\grass\hr_grass\grass_b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\grass\hr_grass\grass_c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\grass\hr_grass\grass_d.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\grass\hr_grass\grass_d_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_brick_02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_brick_03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_plaster_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_plaster_02.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_plaster_03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_red_stone_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_stone_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_stone_06.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_stone_08.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_stone_09.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_stone_10.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_stone_transition_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\gg_tibet\cs_tibet_stone_transition_03.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\elevator\detective_plaster.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\elevator\detective_plaster_wood.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\elevator\detective_plaster_woodwall.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_brick01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_carpet1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_conc.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_fabric2.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_metal1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_metal2.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_metalgalv.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_plaster01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_smooth1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_ssteel1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_stone1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_stone2.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_stone3.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_tape.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_texture01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_tile01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_walltexture01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_wood.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_wood1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\detail\dt_wood2.vtf

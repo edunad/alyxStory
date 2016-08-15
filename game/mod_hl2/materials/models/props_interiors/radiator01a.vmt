@@ -1,7 +1,0 @@
-VertexLitGeneric
-{
-	$baseTexture "models\props_interiors/Radiator01a"
-	$surfaceprop "metal"
-}
-
-
