@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "nature/faf_dirtground3"
+	"$surfaceprop" "dirt"
+	"$envmap" 		"env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+	"$envmaptint" "[1 0.85 0.88]"
+	"$bumpmap" "nature/faf_dirtground3_normal"
+}

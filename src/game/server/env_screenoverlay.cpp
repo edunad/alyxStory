@@ -208,10 +208,11 @@ public:
 
 private:
 
-	void InputStartEffect( inputdata_t &inputdata );
-	void InputStopEffect( inputdata_t &inputdata );
+	void InputStartEffect(inputdata_t &data);
+	void InputStopEffect(inputdata_t &data);
 
 	CNetworkVar( float, m_flDuration );
+	CNetworkVar( int, m_flFade);
 	CNetworkVar( int, m_nType );
 };
 
@@ -219,15 +220,16 @@ LINK_ENTITY_TO_CLASS( env_screeneffect, CEnvScreenEffect );
 
 // CEnvScreenEffect
 BEGIN_DATADESC( CEnvScreenEffect )
-	DEFINE_FIELD( m_flDuration, FIELD_FLOAT ),
 	DEFINE_KEYFIELD( m_nType, FIELD_INTEGER, "type" ),
-	DEFINE_FIELD( m_flDuration, FIELD_FLOAT ),
-	DEFINE_INPUTFUNC( FIELD_FLOAT, "StartEffect", InputStartEffect ),
-	DEFINE_INPUTFUNC( FIELD_FLOAT, "StopEffect", InputStopEffect ),
+	DEFINE_KEYFIELD(m_flDuration, FIELD_FLOAT, "duration"),
+	DEFINE_KEYFIELD(m_flFade, FIELD_INTEGER, "fade"),
+	DEFINE_INPUTFUNC(FIELD_VOID, "StartEffect", InputStartEffect),
+	DEFINE_INPUTFUNC(FIELD_VOID, "StopEffect", InputStopEffect),
 END_DATADESC()
 
 IMPLEMENT_SERVERCLASS_ST( CEnvScreenEffect, DT_EnvScreenEffect )
 	SendPropFloat( SENDINFO( m_flDuration ), 0, SPROP_NOSCALE ),
+	SendPropInt(SENDINFO(m_flFade), 32, SPROP_UNSIGNED),
 	SendPropInt( SENDINFO( m_nType ), 32, SPROP_UNSIGNED ),
 END_SEND_TABLE()
 
@@ -245,11 +247,8 @@ void CEnvScreenEffect::Precache( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CEnvScreenEffect::InputStartEffect( inputdata_t &inputdata )
+void CEnvScreenEffect::InputStartEffect(inputdata_t &data)
 {
-	// Take the duration as our value
-	m_flDuration = inputdata.value.Float();
-
 	EntityMessageBegin( this );
 		WRITE_BYTE( 0 );
 	MessageEnd();
@@ -258,10 +257,8 @@ void CEnvScreenEffect::InputStartEffect( inputdata_t &inputdata )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CEnvScreenEffect::InputStopEffect( inputdata_t &inputdata )
+void CEnvScreenEffect::InputStopEffect(inputdata_t &data)
 {
-	m_flDuration = inputdata.value.Float();
-
 	// Send the stop notification
 	EntityMessageBegin( this );
 		WRITE_BYTE( 1 );

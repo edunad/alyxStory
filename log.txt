@@ -299,6 +299,28 @@ File: D:\alyxStory\content\materials\wood\hr_w\wood_plank_a.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\wood\hr_w\wood_plank_a_normals.vtf
 Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\inferno\hr_infdoor_a_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\inferno\hr_infdoor_a_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\inferno\hr_wood_b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\inferno\hr_wood_c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\inferno\hr_wood_d.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\inferno\hr_wood_e.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\inferno\hr_wood_planks_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\inferno\hr_wood_planks_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\wood\hr_w\inferno\inferno_woodsteps001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\windows\hr_w\inferno\stained_glass_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\windows\hr_w\inferno\stained_glass_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\tile\1970_tile_floor_02.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\tile\bathroomFloor-base.vtf
@@ -1107,6 +1129,164 @@ File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\weeds_
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\models\props\de_nuke\hr_nuke\foliage\weeds_flowers_01.vtf
 Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\wood_pole_a\wood_pole_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\wood_pile_a\wood_inner_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\wood_pile_a\wood_shell_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\wood_beam_a\wood_beam_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\wood_beam_a\wood_beam_a_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\wood_beam_a\wood_beam_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\window_frame_a\window_frame_a_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\window_collection\window_c\window_c_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\window_b\window_b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\window_b\window_b_env_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\sliding_door\sliding_door_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\rug_set\rug_set.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\rug_set\rug_set1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\roll_up_door\metal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\roll_up_door\roll_up_door.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\roll_up_door\roll_up_door_02_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\roll_up_door\roll_up_door_02_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\roll_up_door\roll_up_door_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\lily_pad\lily_flower.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\lily_pad\lily_pad.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\lily_pad\lily_pad_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\ivy_a\ivy_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\ivy_a\ivy_a_detail.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\ivy_a\ivy_bark_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\ivy_a\ivy_bark_a_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\ivy_a\ivy_env_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_window_overhang\inferno_window_overhang_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_window_guard\inferno_window_guard_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_vintage_radio\inferno_vintage_radio_broken_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_vintage_radio\inferno_vintage_radio_broken_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_vintage_radio\inferno_vintage_radio_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_vintage_radio\inferno_vintage_radio_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_single_door\inferno_single_door_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_single_door\inferno_single_door_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_paintings\inferno_painting_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_paintings\inferno_painting_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_light_switch\inferno_light_switch_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_door_bell\inferno_door_bell_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_door_bell\inferno_door_bell_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_curtain_closed\inferno_curtain_closed_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_curtain_closed\inferno_curtain_closed_illum.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_curtain_closed\inferno_curtain_closed_on_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_concrete_trim\inferno_concrete_trim_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_clock\inferno_clock_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_clock\inferno_clock_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_circular_window\inferno_circular_window_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_circular_window\inferno_circular_window_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_ceiling_fan\inferno_ceiling_fan_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_ceiling_fan\inferno_ceiling_fan_mask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\inferno_broom\inferno_broom_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\gutters\gutters.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\gutters\gutters_b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\gutters\gutters_b_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\fire_place\fire_place.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\fire_place\fire_place_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\drop_cloth\drop_cloth.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\drop_cloth\drop_cloth_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\drop_cloth\drop_cloth_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\drop_cloth\drop_cloth_warp.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_frame\door_frame_a_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_frame\door_frame_b\door_frame_b_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_collection\door_a_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_collection\door_b_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_collection\door_c_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_collection\door_d_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_collection\door_trim_a_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_collection\door_trim_b_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_collection\door_collection_trim_b\door_trim_b_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_collection\door_collection_trim_a\door_trim_a_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_c\door_c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_a\door_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\door_a\door_a_env.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\curtains_pulled\curtains_pulled.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\clothes_a\clothes_b_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\book_shelf_a\book_shelf_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\book_shelf_a\book_shelf_a_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\book_shelf_a\book_shelf_a\book_shelf_a_ao.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\book_set\book_set_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\models\props\de_inferno\hr_i\apartment_trims\apartment_trims_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\models\props\de_depot\flatbed_rocket.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\models\props\cs_militia\boulder01.vtf
@@ -1151,6 +1331,174 @@ File: D:\alyxStory\content\materials\models\effects\urban_puddle01a_normal.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\models\effects\urban_puddle01a_ssbump.vtf
 Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_ibeam_01_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_ibeam_01_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_ibeam_02_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_ibeam_02_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_corrugated_001b_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_corrugated_001b_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_corrugated_001_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_corrugated_001_detail.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_corrugated_001_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_corrugated_002_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_corrugated_002_specmask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_corrugated_004_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_corrugated_005_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_detail_001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_detail_002.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_duct_001b_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_duct_001_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_duct_001_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_floor_001_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_floor_001_dark_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_floor_001_detail.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_floor_001_grey_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_floor_002_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_floor_003_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_grating_001_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_grating_001_specmask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_grating_001_stair_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_grating_002_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_grating_002_specmask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_grating_003_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_panel_001.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_panel_002.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_roof_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_roof_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_shutters_01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_shutters_01_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_trim_001_detail.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_trim_002_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_trim_002_specmask.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_trim_003_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_trim_004_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_wall_001_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_wall_002_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_wall_002_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_wall_003_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_wall_003_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_metal_wall_006_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_rollup_door_001_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_rollup_door_001_detail.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_rollup_door_001_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_security_barrier_color.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\hr_security_barrier_normal.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_floor_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_floor_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_grated_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_grated_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_grated_c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_grated_c3.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_grated_c4.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_grated_c_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_grated_d.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_grated_d_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_grated_e.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_trim_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_trim_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_vent_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_vent_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_a1.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_a1_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_a2.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_b_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_c_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_d.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wall_d_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wood_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\metal_wood_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\inferno\metal_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\inferno\metal_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\inferno\metal_ground_trim_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\metal\hr_metal\inferno\metal_ground_trim_a_normals.vtf
+Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\grass\hr_grass\grass_a.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\grass\hr_grass\grass_a_normals.vtf
@@ -1194,6 +1542,10 @@ Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\elevator\detective_plaster_wood.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\elevator\detective_plaster_woodwall.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\de_cbble\grass_alt\grass_a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\content\materials\de_cbble\grass_alt\grass_a_normal.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\content\materials\detail\dt_brick01.vtf
 Error: Cannot fix (file is 7.4 or lower)

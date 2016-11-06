@@ -180,6 +180,7 @@ protected:
 	// @MULTICORE (toml 8/11/2006): need to have per-view frustum. Change when move view stack to client
 	VPlane			*m_Frustum;
 	CViewRender *m_pMainView;
+
 };
 
 //-----------------------------------------------------------------------------
@@ -241,6 +242,7 @@ protected:
 
 	// Purpose: Computes the actual world list info based on the render flags
 	void			PruneWorldListInfo();
+
 
 #ifdef PORTAL
 	virtual bool	ShouldDrawPortals() { return true; }
@@ -364,7 +366,6 @@ public:
 	virtual void	RenderPlayerSprites();
 	virtual void	Render2DEffectsPreHUD( const CViewSetup &view );
 	virtual void	Render2DEffectsPostHUD( const CViewSetup &view );
-
 
 	void			DisableFog( void );
 

@@ -43,10 +43,10 @@ ConVar log_verbose_interval( "log_verbose_interval", "3.0", FCVAR_GAMEDLL, "Dete
 #endif // CLIENT_DLL
 
 static CViewVectors g_DefaultViewVectors(
-	Vector(0, 0, 44),			//VEC_VIEW (m_vView) - 64, child alix is half
+	Vector(0, 0, 64),			//VEC_VIEW (m_vView) - 64, child alix is half (44)
 
 	Vector(-16, -16, 0),		//VEC_HULL_MIN (m_vHullMin)
-	Vector(16, 16, 53),		//VEC_HULL_MAX (m_vHullMax) - 72
+	Vector(16, 16, 72),		//VEC_HULL_MAX (m_vHullMax) - 72
 
 	Vector(-16, -16, 0),		//VEC_DUCK_HULL_MIN (m_vDuckHullMin)
 	Vector(16, 16, 36),		//VEC_DUCK_HULL_MAX	(m_vDuckHullMax)
@@ -174,6 +174,7 @@ bool CGameRules::CanHaveAmmo( CBaseCombatCharacter *pPlayer, int iAmmoIndex )
 	return false;
 }
 
+
 //-----------------------------------------------------------------------------
 // Purpose: Return true if the specified player can carry any more of the ammo type
 //-----------------------------------------------------------------------------
@@ -181,6 +182,38 @@ bool CGameRules::CanHaveAmmo( CBaseCombatCharacter *pPlayer, const char *szName 
 {
 	return CanHaveAmmo( pPlayer, GetAmmoDef()->Index(szName) );
 }
+
+bool CGameRules::SetPlayerHeight(float h)
+{
+	if (h <= 0) return false;
+
+	CViewVectors newViewVectors(
+		Vector(0, 0, h),			//VEC_VIEW (m_vView) - 64, child alix is half
+
+		Vector(-16, -16, 0),		//VEC_HULL_MIN (m_vHullMin)
+		Vector(16, 16, h + 8),		//VEC_HULL_MAX (m_vHullMax) - 72
+
+		Vector(-16, -16, 0),		//VEC_DUCK_HULL_MIN (m_vDuckHullMin)
+		Vector(16, 16, 36),		//VEC_DUCK_HULL_MAX	(m_vDuckHullMax)
+		Vector(0, 0, 28),			//VEC_DUCK_VIEW		(m_vDuckView)
+
+		Vector(-10, -10, -10),		//VEC_OBS_HULL_MIN	(m_vObsHullMin)
+		Vector(10, 10, 10),		//VEC_OBS_HULL_MAX	(m_vObsHullMax)
+
+		Vector(0, 0, 14)			//VEC_DEAD_VIEWHEIGHT (m_vDeadViewHeight)
+	);
+
+	// Replace
+	g_DefaultViewVectors = newViewVectors;
+	
+	// Reset duck
+	/* Player class required (CBasePlayer *pPlayer)
+	CHL2GameMovement* move = Movement();
+	CGameMovement->SetDuckedEyeOffset(0.0f)
+	*/
+	return true;
+}
+
 
 //=========================================================
 //=========================================================
@@ -195,28 +228,7 @@ CBaseEntity *CGameRules::GetPlayerSpawnSpot( CBasePlayer *pPlayer )
 	pPlayer->m_Local.m_vecPunchAngle = vec3_angle;
 	pPlayer->m_Local.m_vecPunchAngleVel = vec3_angle;
 	pPlayer->SnapEyeAngles( pSpawnSpot->GetLocalAngles() );
-
-
-	// TODO: Get the info_player_spawn keyvalues for the player size
-	//pSpawnSpot->GetKeyValue
-
-	/*
-	g_DefaultViewVectors(
-		Vector(0, 0, 44),			//VEC_VIEW (m_vView) - 64, child alix is half
-
-		Vector(-16, -16, 0),		//VEC_HULL_MIN (m_vHullMin)
-		Vector(16, 16, 53),		//VEC_HULL_MAX (m_vHullMax) - 72
-
-		Vector(-16, -16, 0),		//VEC_DUCK_HULL_MIN (m_vDuckHullMin)
-		Vector(16, 16, 36),		//VEC_DUCK_HULL_MAX	(m_vDuckHullMax)
-		Vector(0, 0, 28),			//VEC_DUCK_VIEW		(m_vDuckView)
-
-		Vector(-10, -10, -10),		//VEC_OBS_HULL_MIN	(m_vObsHullMin)
-		Vector(10, 10, 10),		//VEC_OBS_HULL_MAX	(m_vObsHullMax)
-
-		Vector(0, 0, 14)			//VEC_DEAD_VIEWHEIGHT (m_vDeadViewHeight)
-		);
-		*/
+	
 	return pSpawnSpot;
 }
 

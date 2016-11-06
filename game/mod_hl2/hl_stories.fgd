@@ -31,3 +31,32 @@
 	// Outputs
 	output OnPlaybackFinished(void) : "Fired when the movie has completed playing back or was skipped by the user."
 ]
+
+@PointClass base(Targetname) = env_screeneffect :
+	"Allows screenspace effects to be played on the player's view."
+[
+	type(choices) : "Effect Type" : 0 : "Which effect to use." =
+	[
+		0 : "Intro Blur"
+		1 : "Groggy Vision"
+	]
+	
+	fade(choices) : "Fadeout on stop" : 0 : "If set to true, the effect will fadeout when stopped" =
+	[
+		0 : "False"
+		1 : "True"
+	]
+	
+	duration(float) : "Duration" : 0 : "Duration of the effect"
+	
+	// Inputs
+	input	StartEffect(void) : "Start the effect."
+	input   StopEffect(void) : "Stop the effect."
+]
+
+@PointClass base(Targetname) = env_resize_ply : 
+	"Set the player height"
+[
+	height(float) : "Player Height" : "64.0" : "Time in seconds to blend between time scales."
+	input ApplyResize(void) : "Apply the resize"
+]
