@@ -22,7 +22,7 @@ public:
 	inline	void	SetHeight(float h) { m_height = h; }
 
 	// Input handlers
-	void InputResizePlayer(inputdata_t &inputdata);
+	void InputResizePlayer(inputdata_t &data);
 };
 
 LINK_ENTITY_TO_CLASS(env_resize_ply, CEnvResizePly);
@@ -33,6 +33,7 @@ DEFINE_INPUTFUNC(FIELD_VOID, "ApplyResize", InputResizePlayer),
 END_DATADESC()
 
 CEnvResizePly::~CEnvResizePly(void){}
+
 void CEnvResizePly::Spawn(void)
 {
 	SetSolid(SOLID_NONE);
@@ -40,10 +41,21 @@ void CEnvResizePly::Spawn(void)
 }
 
 
-void CEnvResizePly::InputResizePlayer(inputdata_t &inputdata)
+void CEnvResizePly::InputResizePlayer(inputdata_t &data)
 {
-	//Msg("Start slomo dur = %f\n", m_Duration);
 	CGameRules* game = GameRules();
-	if (game)
-		game->SetPlayerHeight(m_height);
+	if (game){
+
+		CBasePlayer *pPlayer = NULL;
+		if (data.pActivator && data.pActivator->IsPlayer())
+		{
+			pPlayer = (CBasePlayer *)data.pActivator;
+		}
+		else if (!g_pGameRules->IsDeathmatch())
+		{
+			pPlayer = UTIL_GetLocalPlayer();
+		}
+
+		game->SetPlayerHeight(m_height, pPlayer);
+	}
 }

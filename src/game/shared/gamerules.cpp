@@ -183,7 +183,7 @@ bool CGameRules::CanHaveAmmo( CBaseCombatCharacter *pPlayer, const char *szName 
 	return CanHaveAmmo( pPlayer, GetAmmoDef()->Index(szName) );
 }
 
-bool CGameRules::SetPlayerHeight(float h)
+bool CGameRules::SetPlayerHeight(float h, CBasePlayer *pPlayer)
 {
 	if (h <= 0) return false;
 
@@ -205,8 +205,8 @@ bool CGameRules::SetPlayerHeight(float h)
 
 	// Replace
 	g_DefaultViewVectors = newViewVectors;
-	
-	// Reset duck
+	pPlayer->ResetDuck(); // Source fixes it (gamemovement.cpp) ! TODO : Fix it myself
+
 	/* Player class required (CBasePlayer *pPlayer)
 	CHL2GameMovement* move = Movement();
 	CGameMovement->SetDuckedEyeOffset(0.0f)

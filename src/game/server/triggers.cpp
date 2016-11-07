@@ -2763,7 +2763,9 @@ void CAI_ChangeHintGroup::InputActivate( inputdata_t &inputdata )
 #define SF_CAMERA_PLAYER_SNAP_TO		16
 #define SF_CAMERA_PLAYER_NOT_SOLID		32
 #define SF_CAMERA_PLAYER_INTERRUPT		64
+#define SF_CAMERA_PLAYER_TELEPORT		128
 
+#define SF_PATHCORNER_TELEPORT			2
 
 //-----------------------------------------------------------------------------
 // Purpose: 
@@ -2794,6 +2796,9 @@ private:
 	EHANDLE m_hPlayer;
 	EHANDLE m_hTarget;
 
+	// Store previous camera
+	CBaseEntity* m_pPrevViewEntity;
+
 	// used for moving the camera along a path (rail rides)
 	CBaseEntity *m_pPath;
 	string_t m_sPath;
@@ -2807,7 +2812,7 @@ private:
 	float m_deceleration;
 	int	  m_state;
 	Vector m_vecMoveDir;
-
+	Vector m_vecLastPos;
 
 	string_t m_iszTargetAttachment;
 	int	  m_iAttachmentIndex;
@@ -2837,7 +2842,7 @@ const float CTriggerCamera::kflPosInterpTime = 2.0f;
 LINK_ENTITY_TO_CLASS( point_viewcontrol, CTriggerCamera );
 
 BEGIN_DATADESC( CTriggerCamera )
-
+	DEFINE_FIELD(m_pPrevViewEntity, FIELD_CLASSPTR),
 	DEFINE_FIELD( m_hPlayer, FIELD_EHANDLE ),
 	DEFINE_FIELD( m_hTarget, FIELD_EHANDLE ),
 	DEFINE_FIELD( m_pPath, FIELD_CLASSPTR ),
@@ -2855,6 +2860,7 @@ BEGIN_DATADESC( CTriggerCamera )
 	DEFINE_KEYFIELD( m_iszTargetAttachment, FIELD_STRING, "targetattachment" ),
 	DEFINE_FIELD( m_iAttachmentIndex, FIELD_INTEGER ),
 	DEFINE_FIELD( m_bSnapToGoal, FIELD_BOOLEAN ),
+	DEFINE_FIELD( m_vecLastPos, FIELD_VECTOR),
 #if HL2_EPISODIC
 	DEFINE_KEYFIELD( m_bInterpolatePosition, FIELD_BOOLEAN, "interpolatepositiontoplayer" ),
 	DEFINE_FIELD( m_vStartPos, FIELD_VECTOR ),
@@ -2867,7 +2873,6 @@ BEGIN_DATADESC( CTriggerCamera )
 	// Inputs
 	DEFINE_INPUTFUNC( FIELD_VOID, "Enable", InputEnable ),
 	DEFINE_INPUTFUNC( FIELD_VOID, "Disable", InputDisable ),
-
 	// Function Pointers
 	DEFINE_FUNCTION( FollowTarget ),
 	DEFINE_OUTPUT( m_OnEndFollow, "OnEndFollow" ),
@@ -2949,7 +2954,6 @@ void CTriggerCamera::InputEnable( inputdata_t &inputdata )
 	Enable();
 }
 
-
 //------------------------------------------------------------------------------
 // Purpose: Input handler to turn off this trigger.
 //------------------------------------------------------------------------------
@@ -2992,6 +2996,7 @@ void CTriggerCamera::Enable( void )
 	// if the player was already under control of a similar trigger, disable the previous trigger.
 	{
 		CBaseEntity *pPrevViewControl = pPlayer->GetViewEntity();
+
 		if (pPrevViewControl && pPrevViewControl != pPlayer)
 		{
 			CTriggerCamera *pOtherCamera = dynamic_cast<CTriggerCamera *>(pPrevViewControl);
@@ -3079,12 +3084,20 @@ void CTriggerCamera::Enable( void )
 	}
 
 	m_flStopTime = gpGlobals->curtime;
-	if ( m_pPath )
+
+	if (m_pPath)
 	{
-		if ( m_pPath->m_flSpeed != 0 )
+		if (m_pPath->m_flSpeed != 0)
 			m_targetSpeed = m_pPath->m_flSpeed;
-		
+
 		m_flStopTime += m_pPath->GetDelay();
+		m_vecMoveDir = m_pPath->GetLocalOrigin() - GetLocalOrigin();
+		m_moveDistance = VectorNormalize(m_vecMoveDir);
+		m_flStopTime = gpGlobals->curtime + m_pPath->GetDelay();
+	}
+	else
+	{
+		m_moveDistance = 0;
 	}
 
 
@@ -3117,6 +3130,7 @@ void CTriggerCamera::Enable( void )
 
 
 	pPlayer->SetViewEntity( this );
+	m_pPrevViewEntity = ((CBasePlayer*)m_hPlayer.Get())->GetViewEntity(); // Store the current view entity
 
 	// Hide the player's viewmodel
 	if ( pPlayer->GetActiveWeapon() )
@@ -3132,9 +3146,9 @@ void CTriggerCamera::Enable( void )
 		SetNextThink( gpGlobals->curtime );
 	}
 
-	m_moveDistance = 0;
-	Move();
+	m_vecLastPos = GetAbsOrigin();
 
+	Move();
 	DispatchUpdateTransmitState();
 }
 
@@ -3146,18 +3160,26 @@ void CTriggerCamera::Disable( void )
 	if ( m_hPlayer && m_hPlayer->IsAlive() )
 	{
 		if ( HasSpawnFlags( SF_CAMERA_PLAYER_NOT_SOLID ) )
-		{
 			m_hPlayer->RemoveSolidFlags( FSOLID_NOT_SOLID );
-		}
 
-		((CBasePlayer*)m_hPlayer.Get())->SetViewEntity( m_hPlayer );
+		((CBasePlayer*)m_hPlayer.Get())->SetViewEntity(m_hPlayer);
 		((CBasePlayer*)m_hPlayer.Get())->EnableControl(TRUE);
 
-		// Restore the player's viewmodel
-		if ( ((CBasePlayer*)m_hPlayer.Get())->GetActiveWeapon() )
-		{
-			((CBasePlayer*)m_hPlayer.Get())->GetActiveWeapon()->RemoveEffects( EF_NODRAW );
+
+		/* TODO : Fix this */
+		if (m_pPrevViewEntity != NULL && HasSpawnFlags(SF_CAMERA_PLAYER_TELEPORT)){
+			((CBasePlayer*)m_hPlayer.Get())->SnapEyeAngles(m_pPrevViewEntity->GetLocalAngles());
+			((CBasePlayer*)m_hPlayer.Get())->m_Local.m_vecPunchAngle = vec3_angle;
+			((CBasePlayer*)m_hPlayer.Get())->m_Local.m_vecPunchAngleVel = vec3_angle;
 		}
+			//((CBasePlayer*)m_hPlayer.Get())->Teleport(&m_pPrevViewEntity->GetLocalOrigin(), &m_pPrevViewEntity->GetLocalAngles(), NULL);
+		
+		
+		// Restore the player's viewmodel
+		if (((CBasePlayer*)m_hPlayer.Get())->GetActiveWeapon())
+			((CBasePlayer*)m_hPlayer.Get())->GetActiveWeapon()->RemoveEffects(EF_NODRAW);
+		
+
 		//return the player to previous takedamage state
 		m_hPlayer->m_takedamage = m_nOldTakeDamage;
 	}
@@ -3316,8 +3338,16 @@ void CTriggerCamera::Move()
 		return;
 #endif
 	{
-		// Subtract movement from the previous frame
-		m_moveDistance -= m_flSpeed * gpGlobals->frametime;
+		if (m_pPath->GetSpawnFlags() & SF_PATHCORNER_TELEPORT)
+		{
+			SetAbsOrigin(m_pPath->GetAbsOrigin());
+			m_moveDistance = -1;  //Make sure we enter the conditional below and advance to the next corner.
+		}
+		else
+		{
+			// Subtract movement from the previous frame
+			m_moveDistance -= VectorNormalize(GetAbsOrigin() - m_vecLastPos);
+		}
 
 		// Have we moved enough to reach the target?
 		if ( m_moveDistance <= 0 )
@@ -3375,6 +3405,8 @@ void CTriggerCamera::Move()
 		}
 	}
 #endif
+
+	m_vecLastPos = GetAbsOrigin();
 }
 
 

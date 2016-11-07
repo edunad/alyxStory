@@ -35,6 +35,13 @@ $Sequence "idle" {
 	loop
 }
 
+$Sequence "exit1Nightmare" {
+	"blackout_anims\exit1_nightmare.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 20
+}
+
 $Sequence "dizzyOutside" {
 	"blackout_anims\anim_outsidedizzy.smd"
 	fadein 0.2

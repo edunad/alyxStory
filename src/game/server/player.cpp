@@ -2873,6 +2873,12 @@ void CBasePlayer::Jump()
 {
 }
 
+void CBasePlayer::ResetDuck()
+{
+	/*CHL2GameMovement* move = Movement();
+	CGameMovement->SetDuckedEyeOffset(0.0f)*/
+}
+
 void CBasePlayer::Duck( )
 {
 	if (m_nButtons & IN_DUCK) 
@@ -8540,7 +8546,7 @@ void CBasePlayer::SetPunchAngle( const QAngle &punchAngle )
 		{
 			CBasePlayer *pPlayer = UTIL_PlayerByIndex( i );
 
-			if ( pPlayer && i != index && pPlayer->GetObserverTarget() == this && pPlayer->GetObserverMode() == OBS_MODE_IN_EYE )
+			if ( pPlayer && i != index && pPlayer->GetObserverTarget() == this && pPlayer->GetObserverMode() == (OBS_MODE_IN_EYE | OBS_MODE_FIXED) )
 			{
 				pPlayer->SetPunchAngle( punchAngle );
 			}

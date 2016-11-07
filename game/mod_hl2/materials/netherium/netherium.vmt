@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+     "$basetexture" "netherium\netherium"
+     "$envmap" "env_cubemap"
+     "$normalmapalphaenvmapmask" 1
+     "$envmapcontrast" 1
+     "$model" 1
+     "$selfillum" 1
+}

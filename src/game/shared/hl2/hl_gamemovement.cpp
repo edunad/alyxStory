@@ -1143,10 +1143,11 @@ bool CHL2GameMovement::CanAccelerate()
 }
 
 
-#ifndef PORTAL	// Portal inherits from this but needs to declare it's own global interface
-	// Expose our interface.
-	static CHL2GameMovement g_GameMovement;
-	IGameMovement *g_pGameMovement = ( IGameMovement * )&g_GameMovement;
+//#ifndef PORTAL	// Portal inherits from this but needs to declare it's own global interface
 
-	EXPOSE_SINGLE_INTERFACE_GLOBALVAR(CGameMovement, IGameMovement,INTERFACENAME_GAMEMOVEMENT, g_GameMovement );
-#endif
+// Expose our interface.
+static CHL2GameMovement g_GameMovement;
+IGameMovement *g_pGameMovement = ( IGameMovement * )&g_GameMovement;
+EXPOSE_SINGLE_INTERFACE_GLOBALVAR(CGameMovement, IGameMovement,INTERFACENAME_GAMEMOVEMENT, g_GameMovement );
+
+//#endif
