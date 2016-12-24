@@ -319,11 +319,16 @@ void VideoPanel::Paint(void)
 	if (m_VideoMaterial == NULL)
 		return;
 
-	if (m_VideoMaterial->Update() == false)
-	{
-		// Issue a close command
-		OnVideoOver();
-	}
+	#if !defined( _X360 ) || defined( BINK_ENABLED_FOR_X360 )
+		// Update our frame
+		if (m_VideoMaterial->Update() == false)
+		{
+			// Issue a close command
+			OnVideoOver();
+		}
+	#else
+		return;
+	#endif
 
 	// Sit in the "center"
 	int xpos, ypos;
@@ -465,9 +470,23 @@ void CreateVideoPanel(const char *lpszFilename, const char *lpszExitCommand, int
 
 	// Create the panel and go!
 	if (VideoPanel_Create(0, 0, nScreenWidth, nScreenHeight, strFullpath, lpszExitCommand, bAllowInterruption, bShouldloop) == false)
-	{
 		Warning("Unable to play video: %s\n", strFullpath);
-	}
+	
+}
+
+//-----------------------------------------------------------------------------
+// Purpose: Used to launch a video playback
+//-----------------------------------------------------------------------------
+
+CON_COMMAND(playvideo, "Plays a video: <filename> [width height]")
+{
+	if (args.ArgC() < 2)
+		return;
+
+	unsigned int nScreenWidth = Q_atoi(args[2]);
+	unsigned int nScreenHeight = Q_atoi(args[3]);
+
+	CreateVideoPanel(args[1], NULL, nScreenWidth, nScreenHeight, false, true);
 }
 
 //-----------------------------------------------------------------------------
@@ -486,20 +505,6 @@ CON_COMMAND(playvideo_nointerrupt, "Plays a video without ability to skip: <file
 }
 
 
-//-----------------------------------------------------------------------------
-// Purpose: Used to launch a video playback
-//-----------------------------------------------------------------------------
-
-CON_COMMAND(playvideo, "Plays a video: <filename> [width height]")
-{
-	if (args.ArgC() < 2)
-		return;
-
-	unsigned int nScreenWidth = Q_atoi(args[2]);
-	unsigned int nScreenHeight = Q_atoi(args[3]);
-
-	CreateVideoPanel(args[1], NULL, nScreenWidth, nScreenHeight,false , true);
-}
 
 //-----------------------------------------------------------------------------
 // Purpose: Used to launch a video playback and fire a command on completion

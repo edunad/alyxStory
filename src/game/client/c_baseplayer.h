@@ -486,6 +486,8 @@ protected:
 	float			m_flDeathTime;		// last time player died
 
 	float			m_flStepSoundTime;
+	bool			m_foostepAllowed;
+
 	bool			m_IsFootprintOnLeft;
 
 private:

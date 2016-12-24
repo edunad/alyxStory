@@ -1,6 +1,6 @@
 @include "base.fgd"
 @include "halflife2.fgd"
-
+	
 @PointClass base(Targetname) = logic_playmovie : "Plays a movie"
 [
 	MovieFilename(string) : "Movie Path" : "" : "Filename of the movie to play"
@@ -74,7 +74,7 @@
 		16:"Snap to goal angles" : 0
 		32:"Make Player non-solid" : 0
 		64:"Interruptable by Player" : 0
-		128:"Teleport Player to Camera" : 0
+		128:"Allow player look to pan/tilt" : 0
 	]
 	speed(string) : "Initial Speed" : "0" : "The starting speed that the camera moves at, if it's on a path track."
 	acceleration(string) : "Acceleration units/sec^2" : "500" : "The speed at which the camera accelerates to path corner's desired speeds."
@@ -86,4 +86,46 @@
 
 	// Outputs
 	output OnEndFollow(void) : "Fired when the point_viewcontrol deactivates, due to the Disable input being received, the Entity to Look At being destroyed, or the Hold Time expiring."
+]
+
+@PointClass base(Targetname) = env_slomo : 
+	"Slow motion effect (Not Efficient Yet!)"
+[
+	duration(float) : "Duration" : "2.0" : "Duration of the effect in seconds"
+	amount(float) : "Ammount" : "0.35" : "Ammount to be applied"
+	decay(float) : "Decay" : "1.5" : "The decaying time"
+	
+	input StartSlomo(void) : "Start the slowmotion"
+	input StopSlomo(void) : "End the slowmotion"
+]
+
+@NPCClass base(TalkNPC) studio() = npc_kleiner : "Kleiner"
+[
+	model(choices) : "Model" : "models/Kleiner.mdl" =
+	[
+		"models/Kleiner.mdl" : "Normal"
+		"models/KleinerBM.mdl" : "Blackmesa"
+	]
+]
+
+@PointClass base(prop_dynamic) studioprop() = prop_dynamic_glow :
+	"A prop that can be placed in hierarchy and can play animations. It can also be configured to break when it takes enough damage.\n"+
+	"Works exactly like a prop_dynamic, but it can optionally have a custom glow around it."
+[
+	input StartGlowing(void) : "Starts the glow."
+	input StopGlowing(void) : "Stops the glow."
+	input ToggleGlow(void) : "Toggles the glow."
+	
+	input SetGlowColor(color255) : "Change the glow's color. Format: <Red 0-255> <Green 0-255> <Blue 0-255>"
+	input SetGlowRed(float) : "Sets the glow red color channel's value (0 - 255)."
+	input SetGlowGreen(float) : "Sets the glow green color channel's value (0 - 255)."
+	input SetGlowBlue(float) : "Sets the glow blue color channel's value (0 - 255)."
+	input SetGlowAlpha(float) : "Sets the glow alpha color channel's value (0 - 255)."
+]
+
+@PointClass base(Targetname) = env_footsteps : 
+	"Controls the player foosteps sound"
+[
+	input EnableFootsteps(void) : "Enable player footsteps"
+	input DisableFootsteps(void) : "Disable player footsteps"
 ]

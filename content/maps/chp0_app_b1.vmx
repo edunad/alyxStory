@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "1967"
+	"mapversion" "1971"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1967"
+	"mapversion" "1971"
 	"classname" "worldspawn"
 	"coldworld" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -19794,7 +19794,6 @@ entity
 		"OnTrigger" "snd.firebell,PlaySound,,3,-1"
 		"OnTrigger" "decal.burncelling,Enable,,0,-1"
 		"OnTrigger" "door.gman.event,Kill,,0,-1"
-		"OnTrigger" "server,Command,host_timescale 1,0,-1"
 	}
 	solid
 	{
@@ -20870,7 +20869,6 @@ entity
 	{
 		"OnMapSpawn" "server,Command,sv_maxspeed 50,0,-1"
 		"OnMapSpawn" "snd.musicbox,PlaySound,,0.5,-1"
-		"OnMapSpawn" "server,Command,host_timescale 1,0,-1"
 		"OnMapSpawn" "cc.explosionevent,Disable,,0,-1"
 		"OnMapSpawn" "tonemap,SetBloomScale,2,0,-1"
 		"OnMapSpawn" "tonemap,SetAutoExposureMax,1,0,-1"
@@ -26077,7 +26075,7 @@ entity
 		"OnTrigger" "push.alyx.bumphead,Enable,,0.4,-1"
 		"OnTrigger" "push.alyx.bumphead,Disable,,0.5,-1"
 		"OnTrigger" "trigger.headbump,Enable,,0.4,-1"
-		"OnTrigger" "server,Command,host_timescale 0.3,0.1,-1"
+		"OnTrigger" "slowmotion.explosion,StartSlomo,,0.1,-1"
 		"OnTrigger" "radiator.explosion,Explode,,0.4,-1"
 		"OnTrigger" "effect.fire,Enable,,0,-1"
 		"OnTrigger" "effect.fire.radiator,StartFire,,0.05,-1"
@@ -28420,6 +28418,7 @@ entity
 		"OnTrigger" "fade.final,Fade,,4,-1"
 		"OnTrigger" "teleport.tosafezone,Enable,,4.1,-1"
 		"OnTrigger" "zoom.final.4,Zoom,,2.3,-1"
+		"OnTrigger" "server,Command,changelevel chp1_facility_a1,17,-1"
 	}
 	"origin" "2613.87 -1460.58 8"
 	editor
@@ -28439,10 +28438,6 @@ entity
 	"loopvideo" "0"
 	"MovieFilename" "alyx_intro.bik"
 	"targetname" "playmovie.transition"
-	connections
-	{
-		"OnPlaybackFinished" "server,Command,changelevel chp1_facility_a1,0,-1"
-	}
 	"origin" "2597.77 -1483.67 33.6219"
 	editor
 	{
@@ -29235,6 +29230,23 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "69712"
+	"classname" "env_slomo"
+	"amount" "0.2"
+	"decay" "1"
+	"duration" "0.8"
+	"targetname" "slowmotion.explosion"
+	"origin" "304 -29.2616 102.455"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras

@@ -1,4 +1,7 @@
 src/everything.sln
+src/everything.sdf
+src/games.sdf
+src/games.sln
 src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/CL.read.1.tlog
 src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/CL.write.1.tlog
 src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/Client (Episodic).lastbuildstate

@@ -223,7 +223,6 @@ void CPerfVisualBenchmark::Start()
 //	engine->ClientCmd_Unrestricted("wait");				
 //	engine->ClientCmd_Unrestricted("setpause");					// pause the mofo
 	engine->ClientCmd_Unrestricted("host_timescale 0.0001");					// pause the mofo
-	
 }
 
 void CPerfVisualBenchmark::Stop()

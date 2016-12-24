@@ -166,6 +166,7 @@ BEGIN_DATADESC( CBaseAnimating )
 	DEFINE_INPUT( m_nBody, FIELD_INTEGER, "SetBodyGroup" ),
 	DEFINE_KEYFIELD( m_nHitboxSet, FIELD_INTEGER, "hitboxset" ),
 	DEFINE_KEYFIELD( m_nSequence, FIELD_INTEGER, "sequence" ),
+
 	DEFINE_ARRAY( m_flPoseParameter, FIELD_FLOAT, CBaseAnimating::NUM_POSEPAREMETERS ),
 	DEFINE_ARRAY( m_flEncodedController,	FIELD_FLOAT, CBaseAnimating::NUM_BONECTRLS ),
 	DEFINE_KEYFIELD( m_flPlaybackRate, FIELD_FLOAT, "playbackrate" ),

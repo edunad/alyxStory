@@ -161,7 +161,16 @@
 
 		"breakable_count"	"6"
 	}
-
+	
+	// CS:GO Door
+	"Door.Standard"
+	{
+		"base"			"Wooden.Base"
+		"health"		"100"
+		
+		"breakable_count"	"6"
+	}
+	
 	// Extra large wooden objects
 	//	i.e posts
 	"Wooden.ExtraLarge"
@@ -249,7 +258,14 @@
 		"health"	"5"
 		"damage_table"		"glass"
 	}
-
+	
+	"Glass.Picture"
+	{
+		"base"		"Glass.Base"
+		"health"	"5"
+		"damage_table"		"glass"
+	}
+	
 	"Glass.Window"
 	{
 		"base"			"Glass.Base"
@@ -332,8 +348,16 @@
 		"base"		"Plastic.Base"
 	}
 
-
-		
+	"Plastic.SmallClient"
+	{
+		"base"		"Plastic.Base"
+	}
+	
+	"Plastic.break"
+	{
+		"base"		"Plastic.Base"
+		"health"		"10"
+	}
 //=================================================================================
 //		ITEMS
 //=================================================================================

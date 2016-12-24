@@ -72,11 +72,6 @@ IScreenSpaceEffectManager *g_pScreenSpaceEffects = &g_ScreenSpaceEffectManager;
 //---------------------------------------------------------------------------------------
 void CScreenSpaceEffectManager::InitScreenSpaceEffects( )
 {
-	if (CommandLine()->FindParm("-colorcorrection") || CommandLine()->FindParm("-tools"))
-	{
-		GetScreenSpaceEffect("colorcorrection")->Enable(true);
-	}
-
 	if ( CommandLine()->FindParm( "-filmgrain" ) )
 	{
 		GetScreenSpaceEffect( "filmgrain" )->Enable( true );
@@ -222,10 +217,10 @@ void CScreenSpaceEffectManager::RenderEffects( int x, int y, int w, int h )
 //  EP1 Intro Blur (TODO : make my own)
 //
 
-class CEP1IntroEffect : public IScreenSpaceEffect
+class IntroEffect : public IScreenSpaceEffect
 {
 public:
-	CEP1IntroEffect(void) :
+	IntroEffect(void) :
 		m_flDuration(0.0f),
 		m_flFinishTime(0.0f),
 		m_bUpdateView(true),
@@ -253,7 +248,7 @@ private:
 	bool		m_bFadeOut;
 };
 
-ADD_SCREENSPACE_EFFECT(CEP1IntroEffect, episodic_intro);
+ADD_SCREENSPACE_EFFECT(IntroEffect, episodic_intro_alyx);
 
 // ================================================================================================================
 //
@@ -264,7 +259,7 @@ ADD_SCREENSPACE_EFFECT(CEP1IntroEffect, episodic_intro);
 //-----------------------------------------------------------------------------
 // Purpose:
 //-----------------------------------------------------------------------------
-void CEP1IntroEffect::Init(void)
+void IntroEffect::Init(void)
 {
 	m_flDuration = 0.0f;
 	m_flFinishTime = 0.0f;
@@ -277,7 +272,7 @@ void CEP1IntroEffect::Init(void)
 	m_StunTexture.Init(STUN_TEXTURE, TEXTURE_GROUP_CLIENT_EFFECTS);
 }
 
-void CEP1IntroEffect::Shutdown(void)
+void IntroEffect::Shutdown(void)
 {
 	m_EffectMaterial.Shutdown();
 	m_StunTexture.Shutdown();
@@ -287,7 +282,7 @@ void CEP1IntroEffect::Shutdown(void)
 //------------------------------------------------------------------------------
 // Purpose: Pick up changes in our parameters
 //------------------------------------------------------------------------------
-void CEP1IntroEffect::SetParameters(KeyValues *params)
+void IntroEffect::SetParameters(KeyValues *params)
 {
 	if (params->FindKey("duration"))
 	{
@@ -303,7 +298,7 @@ void CEP1IntroEffect::SetParameters(KeyValues *params)
 //-----------------------------------------------------------------------------
 // Purpose: Get the alpha value depending on various factors and time
 //-----------------------------------------------------------------------------
-inline unsigned char CEP1IntroEffect::GetFadeAlpha(void)
+inline unsigned char IntroEffect::GetFadeAlpha(void)
 {
 	// Find our percentage between fully "on" and "off" in the pulse range
 	float flEffectPerc = (m_flDuration == 0.0f) ? 0.0f : (m_flFinishTime - gpGlobals->curtime) / m_flDuration;
@@ -332,7 +327,7 @@ inline unsigned char CEP1IntroEffect::GetFadeAlpha(void)
 //-----------------------------------------------------------------------------
 // Purpose: Render the effect
 //-----------------------------------------------------------------------------
-void CEP1IntroEffect::Render(int x, int y, int w, int h)
+void IntroEffect::Render(int x, int y, int w, int h)
 {
 	if ((m_flFinishTime == 0) || (IsEnabled() == false))
 		return;
@@ -374,7 +369,7 @@ void CEP1IntroEffect::Render(int x, int y, int w, int h)
 	if (m_bFadeOut && overlaycolor[3] == 0)
 	{
 		// Takes effect next frame (we don't want to hose our matrix stacks here)
-		g_pScreenSpaceEffects->DisableScreenSpaceEffect("episodic_intro");
+		g_pScreenSpaceEffects->DisableScreenSpaceEffect("episodic_intro_alyx");
 		m_bUpdateView = true;
 	}
 
@@ -422,10 +417,10 @@ void CEP1IntroEffect::Render(int x, int y, int w, int h)
 //  EP2 Player Stunned Effect
 //
 
-class CEP2StunEffect : public IScreenSpaceEffect
+class StunEffect : public IScreenSpaceEffect
 {
 public:
-	CEP2StunEffect(void) :
+	StunEffect(void) :
 		m_flDuration(0.0f),
 		m_flFinishTime(0.0f),
 		m_bUpdateView(true),
@@ -453,7 +448,7 @@ private:
 	bool		m_bFadeOut;
 };
 
-ADD_SCREENSPACE_EFFECT(CEP2StunEffect, ep2_groggy);
+ADD_SCREENSPACE_EFFECT(StunEffect, ep2_groggy_alyx);
 
 // ================================================================================================================
 //
@@ -464,7 +459,7 @@ ADD_SCREENSPACE_EFFECT(CEP2StunEffect, ep2_groggy);
 //-----------------------------------------------------------------------------
 // Purpose:
 //-----------------------------------------------------------------------------
-void CEP2StunEffect::Init(void)
+void StunEffect::Init(void)
 {
 	m_flDuration = 0.0f;
 	m_flFinishTime = 0.0f;
@@ -477,7 +472,7 @@ void CEP2StunEffect::Init(void)
 	m_StunTexture.Init(STUN_TEXTURE, TEXTURE_GROUP_CLIENT_EFFECTS);
 }
 
-void CEP2StunEffect::Shutdown(void)
+void StunEffect::Shutdown(void)
 {
 	m_EffectMaterial.Shutdown();
 	m_StunTexture.Shutdown();
@@ -486,7 +481,7 @@ void CEP2StunEffect::Shutdown(void)
 //------------------------------------------------------------------------------
 // Purpose: Pick up changes in our parameters
 //------------------------------------------------------------------------------
-void CEP2StunEffect::SetParameters(KeyValues *params)
+void StunEffect::SetParameters(KeyValues *params)
 {
 	if (params->FindKey("duration"))
 	{
@@ -501,7 +496,7 @@ void CEP2StunEffect::SetParameters(KeyValues *params)
 //-----------------------------------------------------------------------------
 // Purpose: Get the alpha value depending on various factors and time
 //-----------------------------------------------------------------------------
-inline unsigned char CEP2StunEffect::GetFadeAlpha(void)
+inline unsigned char StunEffect::GetFadeAlpha(void)
 {
 	// Find our percentage between fully "on" and "off" in the pulse range
 	float flEffectPerc = (m_flDuration == 0.0f) ? 0.0f : (m_flFinishTime - gpGlobals->curtime) / m_flDuration;
@@ -530,7 +525,7 @@ inline unsigned char CEP2StunEffect::GetFadeAlpha(void)
 //-----------------------------------------------------------------------------
 // Purpose: Render the effect
 //-----------------------------------------------------------------------------
-void CEP2StunEffect::Render(int x, int y, int w, int h)
+void StunEffect::Render(int x, int y, int w, int h)
 {
 	if ((m_flFinishTime == 0) || (IsEnabled() == false))
 		return;
@@ -566,7 +561,7 @@ void CEP2StunEffect::Render(int x, int y, int w, int h)
 	if (m_bFadeOut && overlaycolor[3] == 0)
 	{
 		// Takes effect next frame (we don't want to hose our matrix stacks here)
-		g_pScreenSpaceEffects->DisableScreenSpaceEffect("ep2_groggy");
+		g_pScreenSpaceEffects->DisableScreenSpaceEffect("ep2_groggy_alyx");
 		m_bUpdateView = true;
 	}
 

@@ -1,7 +1,7 @@
 "Refract"
 {
 	"Refract_dx90"{
-		"$refractamount"	".5"
+		"$refractamount"	"1"
 		"$normalmap"		"effects/blureffect"
 		"$forcerefract"		"1"
 		"$bluramount"		"1"

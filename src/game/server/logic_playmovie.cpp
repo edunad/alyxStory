@@ -68,7 +68,6 @@ void CLogicPlayMovie::Spawn(void)
 void CLogicPlayMovie::InputPlayMovie(inputdata_t &data)
 {
 	const char *szVideoCommand = (m_bAllowUserSkip == 1) ? "playvideo_exitcommand" : "playvideo_exitcommand_nointerrupt";
-	//const char *hackhack = (m_bLoopVideo == 1) ? "1" : "0";
 	// Build the hacked string
 
 	char szClientCmd[256];
@@ -77,7 +76,7 @@ void CLogicPlayMovie::InputPlayMovie(inputdata_t &data)
 		szVideoCommand,
 		STRING(m_strMovieFilename),
 		m_bLoopVideo,
-		GetEntityNameAsCStr());
+		GetEntityName());
 
 	// Send it on
 	engine->ServerCommand(szClientCmd);

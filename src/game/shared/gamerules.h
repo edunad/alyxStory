@@ -362,7 +362,7 @@ public:
 
 // Sounds
 	virtual bool PlayTextureSounds( void ) { return TRUE; }
-	virtual bool PlayFootstepSounds( CBasePlayer *pl ) { return TRUE; }
+	virtual bool PlayFootstepSounds( CBasePlayer *pl ) { return TRUE;  }
 
 // NPCs
 	virtual bool FAllowNPCs( void ) = 0;//are NPCs allowed

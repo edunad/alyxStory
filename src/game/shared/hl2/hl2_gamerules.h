@@ -67,6 +67,11 @@ private:
 	virtual bool			ClientCommand( CBaseEntity *pEdict, const CCommand &args );
 	virtual void			PlayerSpawn( CBasePlayer *pPlayer );
 
+	// stim pack and time scaling
+	virtual void			StartSlowmotion( float duration, float ammount, float decay );
+	virtual void			StopSlowmotion();
+	void					ThinkUpdateTimescale() RESTRICT;
+
 	virtual void			InitDefaultAIRelationships( void );
 	virtual const char*		AIClassText(int classType);
 	virtual const char *GetGameDescription( void ) { return "Half-Life 2"; }
@@ -101,6 +106,16 @@ private:
 
 	int						DefaultFOV( void ) { return 75; }
 #endif
+	/* Slow motion related */
+	float	GetSlowmotionEndTime() { return m_flSlowMotionEndTime; }
+	float   GetSlowmotionStartTime() { return m_flSlowMotionStartTime; }
+	float   GetSlowmotionAmmount() { return m_flSlowMotionAmmount; }
+	float   GetSlowmotionDecay() { return m_flSlowMotionDecay; }
+	
+	CNetworkVar(float, m_flSlowMotionEndTime);	
+	CNetworkVar(float, m_flSlowMotionStartTime);
+	CNetworkVar(float, m_flSlowMotionAmmount);
+	CNetworkVar(float, m_flSlowMotionDecay);
 };
 
 

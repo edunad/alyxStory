@@ -17,8 +17,9 @@
 
 #ifdef GLOWS_ENABLE
 
-ConVar glow_outline_effect_enable( "glow_outline_effect_enable", "1", FCVAR_ARCHIVE, "Enable entity outline glow effects." );
-ConVar glow_outline_effect_width( "glow_outline_width", "10.0f", FCVAR_CHEAT, "Width of glow outline effect in screen space." );
+ConVar glow_outline_effect_enable("glow_outline_effect_enable", "1", FCVAR_ARCHIVE, "Enable entity outline glow effects.");
+ConVar glow_outline_effect_width("glow_outline_width", "20.0f", FCVAR_CHEAT, "Width of glow outline effect in screen space.");
+/* TODO: Is this ever used? It's passed to ApplyEntityGlowEffects(), but never referenced in its code. */
 
 extern bool g_bDumpRenderTargets; // in viewpostprocess.cpp
 
@@ -44,44 +45,44 @@ struct ShaderStencilState_t
 		m_nTestMask = m_nWriteMask = 0xFFFFFFFF;
 	}
 
-	void SetStencilState( CMatRenderContextPtr &pRenderContext  )
+	void SetStencilState(CMatRenderContextPtr &pRenderContext)
 	{
-		pRenderContext->SetStencilEnable( m_bEnable );
-		pRenderContext->SetStencilFailOperation( m_FailOp );
-		pRenderContext->SetStencilZFailOperation( m_ZFailOp );
-		pRenderContext->SetStencilPassOperation( m_PassOp );
-		pRenderContext->SetStencilCompareFunction( m_CompareFunc );
-		pRenderContext->SetStencilReferenceValue( m_nReferenceValue );
-		pRenderContext->SetStencilTestMask( m_nTestMask );
-		pRenderContext->SetStencilWriteMask( m_nWriteMask );
+		pRenderContext->SetStencilEnable(m_bEnable);
+		pRenderContext->SetStencilFailOperation(m_FailOp);
+		pRenderContext->SetStencilZFailOperation(m_ZFailOp);
+		pRenderContext->SetStencilPassOperation(m_PassOp);
+		pRenderContext->SetStencilCompareFunction(m_CompareFunc);
+		pRenderContext->SetStencilReferenceValue(m_nReferenceValue);
+		pRenderContext->SetStencilTestMask(m_nTestMask);
+		pRenderContext->SetStencilWriteMask(m_nWriteMask);
 	}
 };
 
-void CGlowObjectManager::RenderGlowEffects( const CViewSetup *pSetup, int nSplitScreenSlot )
+void CGlowObjectManager::RenderGlowEffects(const CViewSetup *pSetup, int nSplitScreenSlot)
 {
-	if ( g_pMaterialSystemHardwareConfig->SupportsPixelShaders_2_0() )
+	if (g_pMaterialSystemHardwareConfig->SupportsPixelShaders_2_0())
 	{
-		if ( glow_outline_effect_enable.GetBool() )
+		if (glow_outline_effect_enable.GetBool())
 		{
-			CMatRenderContextPtr pRenderContext( materials );
+			CMatRenderContextPtr pRenderContext(materials);
 
 			int nX, nY, nWidth, nHeight;
-			pRenderContext->GetViewport( nX, nY, nWidth, nHeight );
+			pRenderContext->GetViewport(nX, nY, nWidth, nHeight);
 
-			PIXEvent _pixEvent( pRenderContext, "EntityGlowEffects" );
-			ApplyEntityGlowEffects( pSetup, nSplitScreenSlot, pRenderContext, glow_outline_effect_width.GetFloat(), nX, nY, nWidth, nHeight );
+			PIXEvent _pixEvent(pRenderContext, "EntityGlowEffects");
+			ApplyEntityGlowEffects(pSetup, nSplitScreenSlot, pRenderContext, glow_outline_effect_width.GetFloat(), nX, nY, nWidth, nHeight);
 		}
 	}
 }
 
-static void SetRenderTargetAndViewPort( ITexture *rt, int w, int h )
+static void SetRenderTargetAndViewPort(ITexture *rt, int w, int h)
 {
-	CMatRenderContextPtr pRenderContext( materials );
+	CMatRenderContextPtr pRenderContext(materials);
 	pRenderContext->SetRenderTarget(rt);
-	pRenderContext->Viewport(0,0,w,h);
+	pRenderContext->Viewport(0, 0, w, h);
 }
 
-void CGlowObjectManager::RenderGlowModels( const CViewSetup *pSetup, int nSplitScreenSlot, CMatRenderContextPtr &pRenderContext )
+void CGlowObjectManager::RenderGlowModels(const CViewSetup *pSetup, int nSplitScreenSlot, CMatRenderContextPtr &pRenderContext)
 {
 	//==========================================================================================//
 	// This renders solid pixels with the correct coloring for each object that needs the glow.	//
@@ -92,23 +93,23 @@ void CGlowObjectManager::RenderGlowModels( const CViewSetup *pSetup, int nSplitS
 
 	// Save modulation color and blend
 	Vector vOrigColor;
-	render->GetColorModulation( vOrigColor.Base() );
+	render->GetColorModulation(vOrigColor.Base());
 	float flOrigBlend = render->GetBlend();
 
 	// Get pointer to FullFrameFB
 	ITexture *pRtFullFrame = NULL;
-	pRtFullFrame = materials->FindTexture( FULL_FRAME_TEXTURE, TEXTURE_GROUP_RENDER_TARGET );
+	pRtFullFrame = materials->FindTexture(FULL_FRAME_TEXTURE, TEXTURE_GROUP_RENDER_TARGET);
 
-	SetRenderTargetAndViewPort( pRtFullFrame, pSetup->width, pSetup->height );
+	SetRenderTargetAndViewPort(pRtFullFrame, pSetup->width, pSetup->height);
 
-	pRenderContext->ClearColor3ub( 0, 0, 0 );
-	pRenderContext->ClearBuffers( true, false, false );
+	pRenderContext->ClearColor3ub(0, 0, 0);
+	pRenderContext->ClearBuffers(true, false, false);
 
 	// Set override material for glow color
 	IMaterial *pMatGlowColor = NULL;
 
-	pMatGlowColor = materials->FindMaterial( "dev/glow_color", TEXTURE_GROUP_OTHER, true );
-	g_pStudioRender->ForcedMaterialOverride( pMatGlowColor );
+	pMatGlowColor = materials->FindMaterial(GLOW_COLOR_VMT, TEXTURE_GROUP_OTHER, true);
+	g_pStudioRender->ForcedMaterialOverride(pMatGlowColor);
 
 	ShaderStencilState_t stencilState;
 	stencilState.m_bEnable = false;
@@ -119,66 +120,66 @@ void CGlowObjectManager::RenderGlowModels( const CViewSetup *pSetup, int nSplitS
 	stencilState.m_FailOp = STENCILOPERATION_KEEP;
 	stencilState.m_ZFailOp = STENCILOPERATION_KEEP;
 
-	stencilState.SetStencilState( pRenderContext );
+	stencilState.SetStencilState(pRenderContext);
 
 	//==================//
 	// Draw the objects //
 	//==================//
-	for ( int i = 0; i < m_GlowObjectDefinitions.Count(); ++ i )
+	for (int i = 0; i < m_GlowObjectDefinitions.Count(); ++i)
 	{
-		if ( m_GlowObjectDefinitions[i].IsUnused() || !m_GlowObjectDefinitions[i].ShouldDraw( nSplitScreenSlot ) )
+		if (m_GlowObjectDefinitions[i].IsUnused() || !m_GlowObjectDefinitions[i].ShouldDraw(nSplitScreenSlot))
 			continue;
 
-		render->SetBlend( m_GlowObjectDefinitions[i].m_flGlowAlpha );
+		render->SetBlend(m_GlowObjectDefinitions[i].m_flGlowAlpha);
 		Vector vGlowColor = m_GlowObjectDefinitions[i].m_vGlowColor * m_GlowObjectDefinitions[i].m_flGlowAlpha;
-		render->SetColorModulation( &vGlowColor[0] ); // This only sets rgb, not alpha
+		render->SetColorModulation(&vGlowColor[0]); // This only sets rgb, not alpha
 
 		m_GlowObjectDefinitions[i].DrawModel();
-	}	
-
-	if ( g_bDumpRenderTargets )
-	{
-		DumpTGAofRenderTarget( pSetup->width, pSetup->height, "GlowModels" );
 	}
 
-	g_pStudioRender->ForcedMaterialOverride( NULL );
-	render->SetColorModulation( vOrigColor.Base() );
-	render->SetBlend( flOrigBlend );
-	
+	if (g_bDumpRenderTargets)
+	{
+		DumpTGAofRenderTarget(pSetup->width, pSetup->height, "GlowModels");
+	}
+
+	g_pStudioRender->ForcedMaterialOverride(NULL);
+	render->SetColorModulation(vOrigColor.Base());
+	render->SetBlend(flOrigBlend);
+
 	ShaderStencilState_t stencilStateDisable;
 	stencilStateDisable.m_bEnable = false;
-	stencilStateDisable.SetStencilState( pRenderContext );
+	stencilStateDisable.SetStencilState(pRenderContext);
 
 	pRenderContext->PopRenderTargetAndViewport();
 }
 
-void CGlowObjectManager::ApplyEntityGlowEffects( const CViewSetup *pSetup, int nSplitScreenSlot, CMatRenderContextPtr &pRenderContext, float flBloomScale, int x, int y, int w, int h )
+void CGlowObjectManager::ApplyEntityGlowEffects(const CViewSetup *pSetup, int nSplitScreenSlot, CMatRenderContextPtr &pRenderContext, float flBloomScale, int x, int y, int w, int h)
 {
 	//=======================================================//
 	// Render objects into stencil buffer					 //
 	//=======================================================//
 	// Set override shader to the same simple shader we use to render the glow models
-	IMaterial *pMatGlowColor = materials->FindMaterial( "dev/glow_color", TEXTURE_GROUP_OTHER, true );
-	g_pStudioRender->ForcedMaterialOverride( pMatGlowColor );
+	IMaterial *pMatGlowColor = materials->FindMaterial(GLOW_COLOR_VMT, TEXTURE_GROUP_OTHER, true);
+	g_pStudioRender->ForcedMaterialOverride(pMatGlowColor);
 
 	ShaderStencilState_t stencilStateDisable;
 	stencilStateDisable.m_bEnable = false;
 	float flSavedBlend = render->GetBlend();
 
 	// Set alpha to 0 so we don't touch any color pixels
-	render->SetBlend( 0.0f );
-	pRenderContext->OverrideDepthEnable( true, false );
+	render->SetBlend(0.0f);
+	pRenderContext->OverrideDepthEnable(true, false);
 
 	int iNumGlowObjects = 0;
 
-	for ( int i = 0; i < m_GlowObjectDefinitions.Count(); ++ i )
+	for (int i = 0; i < m_GlowObjectDefinitions.Count(); ++i)
 	{
-		if ( m_GlowObjectDefinitions[i].IsUnused() || !m_GlowObjectDefinitions[i].ShouldDraw( nSplitScreenSlot ) )
+		if (m_GlowObjectDefinitions[i].IsUnused() || !m_GlowObjectDefinitions[i].ShouldDraw(nSplitScreenSlot))
 			continue;
 
-		if ( m_GlowObjectDefinitions[i].m_bRenderWhenOccluded || m_GlowObjectDefinitions[i].m_bRenderWhenUnoccluded )
+		if (m_GlowObjectDefinitions[i].m_bRenderWhenOccluded || m_GlowObjectDefinitions[i].m_bRenderWhenUnoccluded)
 		{
-			if ( m_GlowObjectDefinitions[i].m_bRenderWhenOccluded && m_GlowObjectDefinitions[i].m_bRenderWhenUnoccluded )
+			if (m_GlowObjectDefinitions[i].m_bRenderWhenOccluded && m_GlowObjectDefinitions[i].m_bRenderWhenUnoccluded)
 			{
 				ShaderStencilState_t stencilState;
 				stencilState.m_bEnable = true;
@@ -188,11 +189,11 @@ void CGlowObjectManager::ApplyEntityGlowEffects( const CViewSetup *pSetup, int n
 				stencilState.m_FailOp = STENCILOPERATION_KEEP;
 				stencilState.m_ZFailOp = STENCILOPERATION_REPLACE;
 
-				stencilState.SetStencilState( pRenderContext );
+				stencilState.SetStencilState(pRenderContext);
 
 				m_GlowObjectDefinitions[i].DrawModel();
 			}
-			else if ( m_GlowObjectDefinitions[i].m_bRenderWhenOccluded )
+			else if (m_GlowObjectDefinitions[i].m_bRenderWhenOccluded)
 			{
 				ShaderStencilState_t stencilState;
 				stencilState.m_bEnable = true;
@@ -202,11 +203,11 @@ void CGlowObjectManager::ApplyEntityGlowEffects( const CViewSetup *pSetup, int n
 				stencilState.m_FailOp = STENCILOPERATION_KEEP;
 				stencilState.m_ZFailOp = STENCILOPERATION_REPLACE;
 
-				stencilState.SetStencilState( pRenderContext );
+				stencilState.SetStencilState(pRenderContext);
 
 				m_GlowObjectDefinitions[i].DrawModel();
 			}
-			else if ( m_GlowObjectDefinitions[i].m_bRenderWhenUnoccluded )
+			else if (m_GlowObjectDefinitions[i].m_bRenderWhenUnoccluded)
 			{
 				ShaderStencilState_t stencilState;
 				stencilState.m_bEnable = true;
@@ -218,7 +219,7 @@ void CGlowObjectManager::ApplyEntityGlowEffects( const CViewSetup *pSetup, int n
 				stencilState.m_FailOp = STENCILOPERATION_KEEP;
 				stencilState.m_ZFailOp = STENCILOPERATION_REPLACE;
 
-				stencilState.SetStencilState( pRenderContext );
+				stencilState.SetStencilState(pRenderContext);
 
 				m_GlowObjectDefinitions[i].DrawModel();
 			}
@@ -228,12 +229,12 @@ void CGlowObjectManager::ApplyEntityGlowEffects( const CViewSetup *pSetup, int n
 	}
 
 	// Need to do a 2nd pass to warm stencil for objects which are rendered only when occluded
-	for ( int i = 0; i < m_GlowObjectDefinitions.Count(); ++ i )
+	for (int i = 0; i < m_GlowObjectDefinitions.Count(); ++i)
 	{
-		if ( m_GlowObjectDefinitions[i].IsUnused() || !m_GlowObjectDefinitions[i].ShouldDraw( nSplitScreenSlot ) )
+		if (m_GlowObjectDefinitions[i].IsUnused() || !m_GlowObjectDefinitions[i].ShouldDraw(nSplitScreenSlot))
 			continue;
 
-		if ( m_GlowObjectDefinitions[i].m_bRenderWhenOccluded && !m_GlowObjectDefinitions[i].m_bRenderWhenUnoccluded )
+		if (m_GlowObjectDefinitions[i].m_bRenderWhenOccluded && !m_GlowObjectDefinitions[i].m_bRenderWhenUnoccluded)
 		{
 			ShaderStencilState_t stencilState;
 			stencilState.m_bEnable = true;
@@ -242,39 +243,39 @@ void CGlowObjectManager::ApplyEntityGlowEffects( const CViewSetup *pSetup, int n
 			stencilState.m_PassOp = STENCILOPERATION_REPLACE;
 			stencilState.m_FailOp = STENCILOPERATION_KEEP;
 			stencilState.m_ZFailOp = STENCILOPERATION_KEEP;
-			stencilState.SetStencilState( pRenderContext );
+			stencilState.SetStencilState(pRenderContext);
 
 			m_GlowObjectDefinitions[i].DrawModel();
 		}
 	}
 
-	pRenderContext->OverrideDepthEnable( false, false );
-	render->SetBlend( flSavedBlend );
-	stencilStateDisable.SetStencilState( pRenderContext );
-	g_pStudioRender->ForcedMaterialOverride( NULL );
+	pRenderContext->OverrideDepthEnable(false, false);
+	render->SetBlend(flSavedBlend);
+	stencilStateDisable.SetStencilState(pRenderContext);
+	g_pStudioRender->ForcedMaterialOverride(NULL);
 
 	// If there aren't any objects to glow, don't do all this other stuff
 	// this fixes a bug where if there are glow objects in the list, but none of them are glowing,
 	// the whole screen blooms.
-	if ( iNumGlowObjects <= 0 )
+	if (iNumGlowObjects <= 0)
 		return;
 
 	//=============================================
 	// Render the glow colors to _rt_FullFrameFB 
 	//=============================================
 	{
-		PIXEvent pixEvent( pRenderContext, "RenderGlowModels" );
-		RenderGlowModels( pSetup, nSplitScreenSlot, pRenderContext );
+		PIXEvent pixEvent(pRenderContext, "RenderGlowModels");
+		RenderGlowModels(pSetup, nSplitScreenSlot, pRenderContext);
 	}
-	
+
 	// Get viewport
 	int nSrcWidth = pSetup->width;
 	int nSrcHeight = pSetup->height;
 	int nViewportX, nViewportY, nViewportWidth, nViewportHeight;
-	pRenderContext->GetViewport( nViewportX, nViewportY, nViewportWidth, nViewportHeight );
+	pRenderContext->GetViewport(nViewportX, nViewportY, nViewportWidth, nViewportHeight);
 
 	// Get material and texture pointers
-	ITexture *pRtQuarterSize1 = materials->FindTexture( "_rt_SmallFB1", TEXTURE_GROUP_RENDER_TARGET );
+	ITexture *pRtQuarterSize1 = materials->FindTexture("_rt_SmallFB1", TEXTURE_GROUP_RENDER_TARGET);
 
 	{
 		//=======================================================================================================//
@@ -282,11 +283,11 @@ void CGlowObjectManager::ApplyEntityGlowEffects( const CViewSetup *pSetup, int n
 		// blobs. Now we need to stencil out the original objects by only writing pixels that have no            //
 		// stencil bits set in the range we care about.                                                          //
 		//=======================================================================================================//
-		IMaterial *pMatHaloAddToScreen = materials->FindMaterial( "dev/halo_add_to_screen", TEXTURE_GROUP_OTHER, true );
+		IMaterial *pMatHaloAddToScreen = materials->FindMaterial(GLOW_HALO_VMT, TEXTURE_GROUP_OTHER, true);
 
 		// Do not fade the glows out at all (weight = 1.0)
-		IMaterialVar *pDimVar = pMatHaloAddToScreen->FindVar( "$C0_X", NULL );
-		pDimVar->SetFloatValue( 1.0f );
+		IMaterialVar *pDimVar = pMatHaloAddToScreen->FindVar("$C0_X", NULL);
+		pDimVar->SetFloatValue(1.0f);
 
 		// Set stencil state
 		ShaderStencilState_t stencilState;
@@ -298,30 +299,30 @@ void CGlowObjectManager::ApplyEntityGlowEffects( const CViewSetup *pSetup, int n
 		stencilState.m_PassOp = STENCILOPERATION_KEEP;
 		stencilState.m_FailOp = STENCILOPERATION_KEEP;
 		stencilState.m_ZFailOp = STENCILOPERATION_KEEP;
-		stencilState.SetStencilState( pRenderContext );
+		stencilState.SetStencilState(pRenderContext);
 
 		// Draw quad
-		pRenderContext->DrawScreenSpaceRectangle( pMatHaloAddToScreen, 0, 0, nViewportWidth, nViewportHeight,
+		pRenderContext->DrawScreenSpaceRectangle(pMatHaloAddToScreen, 0, 0, nViewportWidth, nViewportHeight,
 			0.0f, -0.5f, nSrcWidth / 4 - 1, nSrcHeight / 4 - 1,
 			pRtQuarterSize1->GetActualWidth(),
-			pRtQuarterSize1->GetActualHeight() );
+			pRtQuarterSize1->GetActualHeight());
 
-		stencilStateDisable.SetStencilState( pRenderContext );
+		stencilStateDisable.SetStencilState(pRenderContext);
 	}
 }
 
 void CGlowObjectManager::GlowObjectDefinition_t::DrawModel()
 {
-	if ( m_hEntity.Get() )
+	if (m_hEntity.Get())
 	{
-		m_hEntity->DrawModel( STUDIO_RENDER );
+		m_hEntity->DrawModel(STUDIO_RENDER);
 		C_BaseEntity *pAttachment = m_hEntity->FirstMoveChild();
 
-		while ( pAttachment != NULL )
+		while (pAttachment != NULL)
 		{
-			if ( !g_GlowObjectManager.HasGlowEffect( pAttachment ) && pAttachment->ShouldDraw() )
+			if (!g_GlowObjectManager.HasGlowEffect(pAttachment) && pAttachment->ShouldDraw())
 			{
-				pAttachment->DrawModel( STUDIO_RENDER );
+				pAttachment->DrawModel(STUDIO_RENDER);
 			}
 			pAttachment = pAttachment->NextMovePeer();
 		}

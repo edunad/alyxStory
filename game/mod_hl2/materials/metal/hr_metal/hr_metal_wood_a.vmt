@@ -13,8 +13,5 @@
 
 	"$envmap" "env_cubemap"
 	"$envmaptint" 		"[1 1 1]"	
-	"$detail" 				"detail\detailconcrete001a"
-	"$detailscale" 			"[2 2 2]"
-	"$detailblendfactor" 	"1"
 
 }

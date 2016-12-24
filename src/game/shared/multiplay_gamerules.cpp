@@ -1096,7 +1096,7 @@ ConVarRef suitcharger( "sk_suitcharger" );
 
 	bool CMultiplayRules::PlayFootstepSounds( CBasePlayer *pl )
 	{
-		if ( footsteps.GetInt() == 0 )
+		if ( !pl->FootstepAllowed() )
 			return false;
 
 		if ( pl->IsOnLadder() || pl->GetAbsVelocity().Length2D() > 220 )

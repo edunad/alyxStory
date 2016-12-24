@@ -1,9 +1,6 @@
-"VertexLitGeneric"
+"UnlitGeneric"
 {
-     "$basetexture" "netherium\Cap 2_defMat"
-     "$envmap" "env_cubemap"
-     "$normalmapalphaenvmapmask" 1
-     "$envmapcontrast" 1
+     "$basetexture" "netherium/cap 2_defmat"
      "$model" 1
-     "$selfillum" 1
+     "$ignorez" 0
 }

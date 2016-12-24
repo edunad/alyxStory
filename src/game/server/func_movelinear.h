@@ -20,28 +20,31 @@ class IPhysicsFluidController;
 class CFuncMoveLinear : public CBaseToggle
 {
 public:
-	DECLARE_CLASS( CFuncMoveLinear, CBaseToggle );
+	DECLARE_CLASS(CFuncMoveLinear, CBaseToggle);
 
-	void		Spawn( void );
-	void		Precache( void );
-	bool		CreateVPhysics( void );
-	bool		ShouldSavePhysics( void );
+	void		Spawn(void);
+	void		Precache(void);
+	bool		CreateVPhysics(void);
+	bool		ShouldSavePhysics(void);
 
 	void		MoveTo(Vector vPosition, float flSpeed);
-	void		Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE useType, float value );
-	void		MoveDone( void );
-	void		StopMoveSound( void );
-	void		Blocked( CBaseEntity *pOther );
-	void		SetPosition( float flPosition );
+	void		Use(CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE useType, float value);
+	void		MoveDone(void);
+	void		StopMoveSound(void);
+	void		Blocked(CBaseEntity *pOther);
+	void		SetPosition(float flPosition);
 
 	int			DrawDebugTextOverlays(void);
 
+	//* BM: Overriding this to run a fix when it is called */
+	virtual void SetParent(CBaseEntity* pNewParent, int iAttachment = -1);
+
 	// Input handlers
-	void InputOpen( inputdata_t &inputdata );
-	void InputClose( inputdata_t &inputdata );
-	void InputSetPosition( inputdata_t &inputdata );
-	void InputSetSpeed( inputdata_t &inputdata );
-	
+	void InputOpen(inputdata_t &inputdata);
+	void InputClose(inputdata_t &inputdata);
+	void InputSetPosition(inputdata_t &inputdata);
+	void InputSetSpeed(inputdata_t &inputdata);
+
 	DECLARE_DATADESC();
 
 	Vector		m_vecMoveDir;			// Move direction.

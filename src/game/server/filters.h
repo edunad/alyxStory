@@ -33,19 +33,19 @@
 // ###################################################################
 class CBaseFilter : public CLogicalEntity
 {
-	DECLARE_CLASS( CBaseFilter, CLogicalEntity );
+	DECLARE_CLASS(CBaseFilter, CLogicalEntity);
 
 public:
 
 	DECLARE_DATADESC();
 
-	bool PassesFilter( CBaseEntity *pCaller, CBaseEntity *pEntity );
-	bool PassesDamageFilter( const CTakeDamageInfo &info );
+	bool PassesFilter(CBaseEntity *pCaller, CBaseEntity *pEntity);
+	bool PassesDamageFilter(const CTakeDamageInfo &info);
 
 	bool m_bNegated;
 
 	// Inputs
-	void InputTestActivator( inputdata_t &inputdata );
+	void InputTestActivator(inputdata_t &inputdata);
 
 	// Outputs
 	COutputEvent	m_OnPass;		// Fired when filter is passed
@@ -53,8 +53,33 @@ public:
 
 protected:
 
-	virtual bool PassesFilterImpl( CBaseEntity *pCaller, CBaseEntity *pEntity );
+	virtual bool PassesFilterImpl(CBaseEntity *pCaller, CBaseEntity *pEntity);
 	virtual bool PassesDamageFilterImpl(const CTakeDamageInfo &info);
+};
+
+// ###################################################################
+//	> FilterDamageType
+// ###################################################################
+class FilterDamageType : public CBaseFilter
+{
+	DECLARE_CLASS(FilterDamageType, CBaseFilter);
+	DECLARE_DATADESC();
+
+protected:
+
+	bool PassesFilterImpl(CBaseEntity *pCaller, CBaseEntity *pEntity)
+	{
+		ASSERT(false);
+		return true;
+	}
+
+	bool PassesDamageFilterImpl(const CTakeDamageInfo &info)
+	{
+		return info.GetDamageType() == m_iDamageType;
+	}
+
+public:
+	int m_iDamageType;
 };
 
 #endif // FILTERS_H

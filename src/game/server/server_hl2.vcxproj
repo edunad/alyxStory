@@ -266,6 +266,7 @@ exit 1
     <ClInclude Include="..\..\public\mathlib\amd3dx.h" />
     <ClInclude Include="..\..\game\shared\ammodef.h" />
     <ClInclude Include="..\..\game\shared\base_playeranimstate.h" />
+    <ClInclude Include="..\shared\game_timescale_shared.h" />
     <ClInclude Include="base_transmit_proxy.h" />
     <ClInclude Include="..\..\public\basehandle.h" />
     <ClInclude Include="basetempentity.h" />
@@ -307,6 +308,7 @@ exit 1
     <ClInclude Include="..\..\game\shared\entitydatainstantiator.h" />
     <ClInclude Include="..\..\game\shared\entitylist_base.h" />
     <ClInclude Include="..\..\game\shared\env_detail_controller.h" />
+    <ClInclude Include="env_screenoverlay.h" />
     <ClInclude Include="EventLog.h" />
     <ClInclude Include="..\..\game\shared\expressionsample.h" />
     <ClInclude Include="..\..\public\tier0\fasttimer.h" />
@@ -831,6 +833,10 @@ exit 1
     <ClInclude Include="toolframework_server.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\shared\game_timescale_shared.cpp" />
+    <ClCompile Include="env_footsteps.cpp" />
+    <ClCompile Include="env_slomo.cpp" />
+    <ClCompile Include="env_warpball.cpp" />
     <ClCompile Include="gamedll_replay.cpp" />
     <ClCompile Include="..\..\game\shared\achievement_saverestore.cpp" />
     <ClCompile Include="..\..\game\shared\achievementmgr.cpp" />

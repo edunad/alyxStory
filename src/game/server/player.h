@@ -665,7 +665,10 @@ public:
 	bool	IsSuitEquipped() const	{ return m_Local.m_bWearingSuit; }
 	int		ArmorValue() const		{ return m_ArmorValue; }
 	bool	HUDNeedsRestart() const { return m_fInitHUD; }
+
 	float	MaxSpeed() const		{ return m_flMaxspeed; }
+	bool	FootstepAllowed() const		{ return m_foostepAllowed; }
+
 	Activity GetActivity( ) const	{ return m_Activity; }
 	inline void SetActivity( Activity eActivity ) { m_Activity = eActivity; }
 	bool	IsPlayerLockedInPlace() const { return m_iPlayerLocked != 0; }
@@ -697,7 +700,9 @@ public:
 	void	SetConnected( PlayerConnectedState iConnected ) { m_iConnected = iConnected; }
 	virtual void EquipSuit( bool bPlayEffects = true );
 	virtual void RemoveSuit( void );
+
 	void	SetMaxSpeed( float flMaxSpeed ) { m_flMaxspeed = flMaxSpeed; }
+	void	SetFootstepAllowed(bool flFootstep) { m_foostepAllowed = flFootstep; }
 
 	void	NotifyNearbyRadiationSource( float flRange );
 
@@ -1058,6 +1063,7 @@ protected:
 	CUserCmd				*m_pCurrentCommand;
 
 	float					m_flStepSoundTime;	// time to check for next footstep sound
+	bool					m_foostepAllowed; // Is player allowed to footstep
 
 	bool					m_bAllowInstantSpawn;
 
@@ -1070,7 +1076,7 @@ private:
 
 // Replicated to all clients
 	CNetworkVar( float, m_flMaxspeed );
-	
+
 // Not transmitted
 	float					m_flWaterJumpTime;  // used to be called teleport_time
 	Vector					m_vecWaterJumpVel;
