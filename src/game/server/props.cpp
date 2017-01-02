@@ -1983,7 +1983,7 @@ void CDynamicProp::BoneFollowerHierarchyChanged()
 //-----------------------------------------------------------------------------
 bool CDynamicProp::OverridePropdata(void)
 {
-	return (FClassnameIs(this, "prop_dynamic_override"));
+	return (FClassnameIs(this, "prop_dynamic_override")) || (FClassnameIs(this, "prop_dynamic_glow"));
 }
 
 //------------------------------------------------------------------------------

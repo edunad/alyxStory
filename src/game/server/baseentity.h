@@ -995,7 +995,7 @@ public:
 	virtual CBaseEntity		*GetEnemy(void) const { return NULL; }
 
 
-	void	ViewPunch(const QAngle &angleOffset);
+	void	ViewPunch(const QAngle &angleOffset, float strength = 20);
 	void	VelocityPunch(const Vector &vecForce);
 
 	CBaseEntity *GetNextTarget(void);

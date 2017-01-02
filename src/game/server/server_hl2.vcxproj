@@ -1097,6 +1097,7 @@ exit 1
     <ClCompile Include="lightglow.cpp" />
     <ClCompile Include="lights.cpp" />
     <ClCompile Include="logic_achievement.cpp" />
+    <ClCompile Include="logic_changemap.cpp" />
     <ClCompile Include="logic_measure_movement.cpp" />
     <ClCompile Include="logic_navigation.cpp" />
     <ClCompile Include="logicauto.cpp" />

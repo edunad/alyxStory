@@ -2324,7 +2324,7 @@ public:
 	void InputViewPunch( inputdata_t &inputdata );
 
 private:
-
+	float m_flStrength;
 	float m_flRadius;
 	QAngle m_angViewPunch;
 
@@ -2339,7 +2339,7 @@ BEGIN_DATADESC( CEnvViewPunch )
 
 	DEFINE_KEYFIELD( m_angViewPunch, FIELD_VECTOR, "punchangle" ),
 	DEFINE_KEYFIELD( m_flRadius, FIELD_FLOAT, "radius" ),
-
+	DEFINE_KEYFIELD(m_flStrength, FIELD_FLOAT, "strength"),
 	DEFINE_INPUTFUNC( FIELD_VOID, "ViewPunch", InputViewPunch ),
 
 END_DATADESC()
@@ -2367,7 +2367,7 @@ void CEnvViewPunch::Spawn( void )
 void CEnvViewPunch::DoViewPunch()
 {
 	bool bAir = (GetSpawnFlags() & SF_PUNCH_IN_AIR) ? true : false;
-	UTIL_ViewPunch( GetAbsOrigin(), m_angViewPunch, m_flRadius, bAir );
+	UTIL_ViewPunch(GetAbsOrigin(), m_angViewPunch, m_flRadius, bAir, m_flStrength);
 }
 
 

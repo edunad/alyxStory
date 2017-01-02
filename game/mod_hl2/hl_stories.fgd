@@ -53,6 +53,13 @@
 	input ApplyResize(void) : "Apply the resize"
 ]
 
+@PointClass base(Targetname) = logic_changemap : 
+	"Forces a map change without transitions"
+[
+	map(string) : "Map" : "" : "The map to change to"
+	input ChangeMap(void) : "Change map"
+]
+
 @PointClass base(Targetname,Angles,Parentname) studioprop("models/editor/camera.mdl") = point_viewcontrol : 
 	"A camera entity that controls the player's view. While it's active, the player will see out of the camera." 
 [
@@ -89,7 +96,7 @@
 ]
 
 @PointClass base(Targetname) = env_slomo : 
-	"Slow motion effect (Not Efficient Yet!)"
+	"Slow motion effect (Not Efficient Yet! - Kinda buggy)"
 [
 	duration(float) : "Duration" : "2.0" : "Duration of the effect in seconds"
 	amount(float) : "Ammount" : "0.35" : "Ammount to be applied"
@@ -128,4 +135,21 @@
 [
 	input EnableFootsteps(void) : "Enable player footsteps"
 	input DisableFootsteps(void) : "Disable player footsteps"
+]
+
+@PointClass sphere() size(-4 -4 -4, 4 4 4) base(Targetname, Parentname) = env_viewpunch :
+	"Causes a view punch on players." 
+[
+	spawnflags(flags) =
+	[
+		1: "Punch all players (ignore radius)" : 0
+		2: "Punch players in the air" : 0
+	]
+
+	punchangle(angle) : "Punch angles" : "0 0 90" : "The punch angles to apply."
+	radius(float) : "Effect Radius" : "500" : "The radius around this entity in which to affect players."
+	strength(float) : "Strength Multiplier" : "20" : "The strength multiplier"
+	
+	// Inputs
+	input ViewPunch(void) : "Performs the view punch."
 ]

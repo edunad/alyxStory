@@ -3457,6 +3457,9 @@
     <ClCompile Include="env_footsteps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="logic_changemap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

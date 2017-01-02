@@ -272,7 +272,7 @@ public:
 
 	float						GetFOVDistanceAdjustFactor();
 
-	virtual void				ViewPunch( const QAngle &angleOffset );
+	virtual void				ViewPunch(const QAngle &angleOffset, float strength = 20);
 	void						ViewPunchReset( float tolerance = 0 );
 
 	void						UpdateButtonState( int nUserCmdButtonMask );

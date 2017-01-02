@@ -425,9 +425,9 @@ CBaseEntity::CBaseEntity(bool bServerOnly)
 #ifdef GLOWS_ENABLE
 	m_bGlowEnabled.Set(false);
 	m_fGlowRed.Set(1.0f);
-	m_fGlowGreen.Set(0.0f);
-	m_fGlowBlue.Set(0.0f);
-	m_fGlowAlpha.Set(0.5f);
+	m_fGlowGreen.Set(1.0f);
+	m_fGlowBlue.Set(1.0f);
+	m_fGlowAlpha.Set(0.8f);
 #endif // GLOWS_ENABLE
 }
 
@@ -6409,12 +6409,12 @@ void CBaseEntity::AddPointsToTeam(int score, bool bAllowNegativeScore)
 	}
 }
 
-void CBaseEntity::ViewPunch(const QAngle &angleOffset)
+void CBaseEntity::ViewPunch(const QAngle &angleOffset, float strength)
 {
 	CBasePlayer *pPlayer = ToBasePlayer(this);
 	if (pPlayer)
 	{
-		pPlayer->CBasePlayer::ViewPunch(angleOffset);
+		pPlayer->CBasePlayer::ViewPunch(angleOffset, strength);
 	}
 }
 

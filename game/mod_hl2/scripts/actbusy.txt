@@ -139,7 +139,7 @@
 		"exit_sequence"		"d1_t03_Sit_Bed_Exit"
 		"min_time"		"0.0"
 		"max_time"		"0.0"
-		"interrupts"	"BA_INT_None"
+		"interrupts"	"BA_INT_DANGER"
 	}
 	"LineIdle01"
 	{
@@ -151,17 +151,17 @@
 	"d1_t01_BreakRoom_WatchBreen"
 	{
 		"busy_sequence" 	"d1_t01_BreakRoom_WatchBreen"
-		"min_time"		"0.0"
-		"max_time"		"0.0"
-		"interrupts"	"BA_INT_None"
+		"min_time"		"30.0"
+		"max_time"		"40.0"
+		"interrupts"	"BA_INT_DANGER"
 	}
 	"d1_t02_Plaza_Sit01_Idle"
 	{
 		"busy_sequence" 	"d1_t02_Plaza_Sit01_Idle"
 		"entry_sequence"	"Idle_to_d1_t01_BreakRoom_Sit01"
 		"exit_sequence"		"d1_t01_BreakRoom_Sit01_to_Idle"
-		"min_time"		"20.0"
-		"max_time"		"30.0"
+		"min_time"		"0.0"
+		"max_time"		"0.0"
 		"interrupts"	"BA_INT_DANGER"
 	}
 	"d1_t02_Plaza_Sit02"
@@ -169,8 +169,8 @@
 		"busy_sequence" 	"d1_t02_Plaza_Sit02"
 		"entry_sequence"	"d1_t01_BreakRoom_Sit02_Entry"
 		"exit_sequence"		"d1_t01_BreakRoom_Sit02_Exit"
-		"min_time"		"20.0"
-		"max_time"		"30.0"
+		"min_time"		"30.0"
+		"max_time"		"40.0"
 		"interrupts"	"BA_INT_DANGER"
 	}
 	"d1_t02_Playground_Cit2_Pockets"
@@ -178,14 +178,14 @@
 		"busy_sequence" 	"d1_t02_Playground_Cit2_Pockets"
 		"min_time"		"0.0"
 		"max_time"		"0.0"
-		"interrupts"	"BA_INT_None"
+		"interrupts"	"BA_INT_DANGER"
 	}
 	"d1_t02_Playground_Cit1_Arms_Crossed"
 	{
 		"busy_sequence" 	"d1_t02_Playground_Cit1_Arms_Crossed"
-		"min_time"		"0.0"
-		"max_time"		"0.0"
-		"interrupts"	"BA_INT_None"
+		"min_time"		"30.0"
+		"max_time"		"40.0"
+		"interrupts"	"BA_INT_DANGER"
 	}
 	"d1_t03_LookOutDoor"
 	{
@@ -248,9 +248,9 @@
 	{
 		"busy_sequence" 	"d1_t01_BreakRoom_WatchClock_Sit"
 		"entry_sequence"	"d1_t01_BreakRoom_WatchClock_Sit_Entry"
-		"min_time"		"0.0"
-		"max_time"		"0.0"
-		"interrupts"	"BA_INT_NONE"
+		"min_time"		"30.0"
+		"max_time"		"40.0"
+		"interrupts"	"BA_INT_DANGER"
 	}
 	"d1_t01_BreakRoom_WatchClock_Sit_MX"
 	{
@@ -265,8 +265,8 @@
 		"busy_anim" 	"ACT_BUSY_LEAN_LEFT"
 		"entry_anim"	"ACT_BUSY_LEAN_LEFT_ENTRY"
 		"exit_anim"		"ACT_BUSY_LEAN_LEFT_EXIT"
-		"min_time"		"10.0"
-		"max_time"		"20.0"
+		"min_time"		"0.0"
+		"max_time"		"0.0"
 		"interrupts"	"BA_INT_PLAYER"
 	}
 	"Lean_Left"
@@ -283,9 +283,9 @@
 		"busy_anim" 	"ACT_BUSY_LEAN_BACK"
 		"entry_anim"	"ACT_BUSY_LEAN_BACK_ENTRY"
 		"exit_anim"		"ACT_BUSY_LEAN_BACK_EXIT"
-		"min_time"		"10.0"
-		"max_time"		"20.0"
-		"interrupts"	"BA_INT_PLAYER"
+		"min_time"		"30.0"
+		"max_time"		"40.0"
+		"interrupts"	"BA_INT_DANGER"
 	}
 	"lean_back"
 	{
@@ -301,8 +301,8 @@
 		"busy_anim" 	"ACT_BUSY_SIT_GROUND"
 		"entry_anim"	"ACT_BUSY_SIT_GROUND_ENTRY"
 		"exit_anim"		"ACT_BUSY_SIT_GROUND_EXIT"
-		"min_time"		"20.0"
-		"max_time"		"30.0"
+		"min_time"		"30.0"
+		"max_time"		"40.0"
 		"interrupts"	"BA_INT_DANGER"
 	}
 	"ACT_BUSY_SIT_CHAIR"
@@ -317,8 +317,8 @@
 	"ACT_BUSY_STAND"
 	{
 		"busy_anim" 	"ACT_BUSY_STAND"
-		"min_time"		"10.0"
-		"max_time"		"20.0"
+		"min_time"		"0.0"
+		"max_time"		"0.0"
 		"interrupts"	"BA_INT_DANGER"
 	}
 	"ACT_BUSY_QUEUE"
@@ -434,9 +434,9 @@
 	{
 		"busy_anim" 		"ACT_BUSY_SIT_GROUND"
 		"entry_anim"		"ACT_BUSY_SIT_GROUND_ENTRY"
-		"min_time"		"0.0"
-		"max_time"		"0.0"
-		"interrupts"	"BA_INT_NONE"
+		"min_time"		"30.0"
+		"max_time"		"40.0"
+		"interrupts"	"BA_INT_DANGER"
 	}
 	"Cover_R"
 	{
@@ -466,6 +466,15 @@
 		"max_time"		"0.0"
 		"interrupts"	"BA_INT_NONE"
 	}
+	
+	"Citizen_WORK"
+	{
+		"busy_sequence"		"citizen4_valve"
+		"min_time"		"30.0"
+		"max_time"		"40.0"
+		"interrupts"	"BA_INT_DANGER"
+	}
+	
 
 //*****************************************************************************
 //************  Soldier actbusy section   *************************************
