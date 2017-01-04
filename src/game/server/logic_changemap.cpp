@@ -58,17 +58,21 @@ void CLogicChangeMap::InputChangeMap(inputdata_t &data)
 	// TODO : Should we limit the map name like valve does? cchMapNameMost
 
 	// Ignore changelevel transitions if the player's dead or attempting a challenge
+	// Only work on singleplayer
 	if (gpGlobals->maxClients == 1)
 	{
 		CBasePlayer *pPlayer = UTIL_GetLocalPlayer();
 		if (pPlayer && (!pPlayer->IsAlive() || pPlayer->GetBonusChallenge() > 0))
 			return;
 	}
+	else
+		return;
 
 	// Don't work in deathmatch
 	if (g_pGameRules->IsDeathmatch())
 		return;
 
+	// Changelevel already checks this, but what the hell.
 	if (!engine->IsMapValid(m_strMapname.ToCStr()))
 		return;
 

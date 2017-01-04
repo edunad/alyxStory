@@ -153,3 +153,15 @@
 	// Inputs
 	input ViewPunch(void) : "Performs the view punch."
 ]
+
+@NPCClass base(BaseNPC) studio("models/Zombie/Classic.mdl") = npc_zombie : "Zombie"
+[
+	spawnflags(flags) =
+	[
+		32768: "Don't Listen" : 0
+		65536: "Don't Look" : 0
+	]
+	
+	npcFOV(float) : "Npc FOV" : "0.2" : "Sets the FOV of the NPC (check npc_viewcone)"
+	npcFOVDistance(float) : "Max Npc FOV Distance" : "2048.0" : "Sets the max FOV distance of the NPC"
+]

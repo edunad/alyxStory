@@ -98,7 +98,7 @@ public:
 	void			AddSensingFlags( int iFlags )		{ m_iSensingFlags |= iFlags; }
 	void			RemoveSensingFlags( int iFlags )	{ m_iSensingFlags &= ~iFlags; }
 	bool			HasSensingFlags( int iFlags )		{ return (m_iSensingFlags & iFlags) == iFlags; }
-
+	
 	DECLARE_SIMPLE_DATADESC();
 
 private:

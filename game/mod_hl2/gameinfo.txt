@@ -1,14 +1,12 @@
 "GameInfo"
 {
-	game 		"Alyx Story"
-	title 		"Alyx St@ry"
+	game 		"Half-Life 2: Alyx Story"
+	title 		"HALF-LIFE'"
 	title2		""
 	developer	"Eduardo Fernandes (FailCake)"
 	developer_url	"https://failcake.me"
 	
 	supportsvr	1
-	nomodels	0
-	nocrosshair	1
 	
 	type		singleplayer_only
 

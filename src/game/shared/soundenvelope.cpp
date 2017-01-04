@@ -404,7 +404,9 @@ void CSoundPatch::Init( IRecipientFilter *pFilter, CBaseEntity *pEnt, int channe
 //-----------------------------------------------------------------------------
 void CSoundPatch::ChangePitch( float pitchTarget, float deltaTime )
 {
-	m_flags |= SND_CHANGE_PITCH;
+	if (m_flags != SND_CHANGE_PITCH)
+		m_flags = SND_CHANGE_PITCH;
+
 	m_pitch.SetTarget( pitchTarget, deltaTime );
 }
 
@@ -416,7 +418,9 @@ void CSoundPatch::ChangePitch( float pitchTarget, float deltaTime )
 //-----------------------------------------------------------------------------
 void CSoundPatch::ChangeVolume( float volumeTarget, float deltaTime )
 {
-	m_flags |= SND_CHANGE_VOL;
+	if (m_flags != SND_CHANGE_VOL)
+		m_flags = SND_CHANGE_VOL;
+
 	if ( volumeTarget > 1.0 )
 		volumeTarget = 1.0;
 	m_volume.SetTarget( volumeTarget, deltaTime );

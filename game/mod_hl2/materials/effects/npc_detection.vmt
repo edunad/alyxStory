@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+     "$basetexture" "effects/npc_detection"
+     "$model" 1
+     "$vertexcolor" 1
+     "$nodecal" "1"
+     "$translucent" "1"
+}

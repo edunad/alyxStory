@@ -195,6 +195,8 @@ void CFlare::Spawn( void )
 	SetSolid( SOLID_BBOX );
 	AddSolidFlags( FSOLID_NOT_SOLID );
 
+	SetRenderColor(0, 0, 0, 0);
+
 	SetMoveType( MOVETYPE_NONE );
 	SetFriction( 0.6f );
 	SetGravity( UTIL_ScaleForGravity( 400 ) );
@@ -248,7 +250,7 @@ void CFlare::StartBurnSound( void )
 	{
 		CPASAttenuationFilter filter( this );
 		m_pBurnSound = CSoundEnvelopeController::GetController().SoundCreate( 
-			filter, entindex(), CHAN_WEAPON, "Weapon_FlareGun.Burn", 3.0f );
+			filter, entindex(), CHAN_WEAPON, "Weapon_FlareGun.Burn", 0.03f );
 	}
 }
 
@@ -278,6 +280,9 @@ CFlare *CFlare::Create( Vector vecOrigin, QAngle vecAngles, CBaseEntity *pOwner,
 
 	//Don't start sparking immediately
 	pFlare->SetNextThink( gpGlobals->curtime + 0.5f );
+
+	// Hide the tip
+	pFlare->SetRenderMode(kRenderNone);
 
 	//Burn out time
 	pFlare->m_flTimeBurnOut = gpGlobals->curtime + lifetime;
