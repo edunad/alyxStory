@@ -14086,6 +14086,7 @@ bool CAI_BaseNPC::ShouldProbeCollideAgainstEntity( CBaseEntity *pEntity )
 				return false;
 		}
 	}
+	
 
 	return true;
 }
