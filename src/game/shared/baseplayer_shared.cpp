@@ -515,6 +515,9 @@ void CBasePlayer::UpdateStepSound( surfacedata_t *psurface, const Vector &vecOri
 	float velwalk;
 	int	fLadder;
 
+	if (!m_foostepAllowed)
+		return;
+
 	if ( m_flStepSoundTime > 0 )
 	{
 		m_flStepSoundTime -= 1000.0f * gpGlobals->frametime;
@@ -533,8 +536,6 @@ void CBasePlayer::UpdateStepSound( surfacedata_t *psurface, const Vector &vecOri
 	if ( GetMoveType() == MOVETYPE_NOCLIP || GetMoveType() == MOVETYPE_OBSERVER )
 		return;
 
-	if ( !sv_footsteps.GetFloat() )
-		return;
 
 	speed = VectorLength( vecVelocity );
 	float groundspeed = Vector2DLength( vecVelocity.AsVector2D() );
@@ -1065,205 +1066,219 @@ float IntervalDistance( float x, float x0, float x1 )
 	return 0;
 }
 
+static float EstimatedDistanceSquared(const Vector &point, const CBaseEntity *pEntity)
+{
+	Vector nearestPoint;
+	pEntity->CollisionProp()->CalcNearestPoint(point, &nearestPoint);
+	return (nearestPoint - point).LengthSqr();
+}
+
+
 CBaseEntity *CBasePlayer::FindUseEntity()
 {
-	Vector forward, up;
-	EyeVectors( &forward, NULL, &up );
-
-	trace_t tr;
-	// Search for objects in a sphere (tests for entities that are not solid, yet still useable)
+	Vector forward;
+	EyeVectors(&forward, NULL, NULL);
 	Vector searchCenter = EyePosition();
 
-	// NOTE: Some debris objects are useable too, so hit those as well
-	// A button, etc. can be made out of clip brushes, make sure it's +useable via a traceline, too.
-	int useableContents = MASK_SOLID | CONTENTS_DEBRIS | CONTENTS_PLAYERCLIP;
+	// Some debris objects are +usable, and clip brushes can be made into
+	// +usable entities.
+	int usableContents = MASK_SOLID | CONTENTS_DEBRIS | CONTENTS_PLAYERCLIP;
+
+	// However, we occasionally need to ignore clip brushes so that objects
+	// inside of or beyond them can be +used.
+	const int usableContentsIgnoreClip = usableContents & ~CONTENTS_PLAYERCLIP;
 
 #ifdef CSTRIKE_DLL
-	useableContents = MASK_NPCSOLID_BRUSHONLY | MASK_OPAQUE_AND_NPCS;
+	usableContents = MASK_NPCSOLID_BRUSHONLY | MASK_OPAQUE_AND_NPCS;
 #endif
 
 #ifdef HL1_DLL
-	useableContents = MASK_SOLID;
-#endif
-#ifndef CLIENT_DLL
-	CBaseEntity *pFoundByTrace = NULL;
+	usableContents = MASK_SOLID;
 #endif
 
-	// UNDONE: Might be faster to just fold this range into the sphere query
-	CBaseEntity *pObject = NULL;
+	// First, try to hit an entity directly in front of the player.
+	trace_t directTrace;
+	UTIL_TraceLine(searchCenter, searchCenter + PLAYER_USE_RADIUS * forward, usableContents, this, COLLISION_GROUP_NONE, &directTrace);
 
-	float nearestDist = FLT_MAX;
-	// try the hit entity if there is one, or the ground entity if there isn't.
 	CBaseEntity *pNearest = NULL;
+	CBaseEntity *pObject = directTrace.m_pEnt;
+	bool bUsable = IsUseableEntity(pObject, 0);
 
-	const int NUM_TANGENTS = 8;
-	// trace a box at successive angles down
-	//							forward, 45 deg, 30 deg, 20 deg, 15 deg, 10 deg, -10, -15
-	const float tangents[NUM_TANGENTS] = { 0, 1, 0.57735026919f, 0.3639702342f, 0.267949192431f, 0.1763269807f, -0.1763269807f, -0.267949192431f };
-	for ( int i = 0; i < NUM_TANGENTS; i++ )
+	if (!bUsable && (directTrace.contents & CONTENTS_PLAYERCLIP))
 	{
-		if ( i == 0 )
-		{
-			UTIL_TraceLine( searchCenter, searchCenter + forward * 1024, useableContents, this, COLLISION_GROUP_NONE, &tr );
-		}
-		else
-		{
-			Vector down = forward - tangents[i]*up;
-			VectorNormalize(down);
-			UTIL_TraceHull( searchCenter, searchCenter + down * 72, -Vector(16,16,16), Vector(16,16,16), useableContents, this, COLLISION_GROUP_NONE, &tr );
-		}
-		pObject = tr.m_pEnt;
+		// We hit a non-usable clip brush. Try tracing again, ignoring clip
+		// brushes, so that objects inside of or beyond them can be +used.
 
-#ifndef CLIENT_DLL
-		pFoundByTrace = pObject;
-#endif
-		bool bUsable = IsUseableEntity(pObject, 0);
-		while ( pObject && !bUsable && pObject->GetMoveParent() )
-		{
-			pObject = pObject->GetMoveParent();
-			bUsable = IsUseableEntity(pObject, 0);
-		}
+		// NOTE: If a usable clip brush is behind a non-usable clip brush,
+		// then we won't be able to +use it, unfortunately. This is difficult
+		// to workaround. For example, the non-usable clip brush cannot be added
+		// to a list of ignored entities, because it is part of the worldspawn,
+		// and we cannot ignore that.
+		UTIL_TraceLine(searchCenter, searchCenter + PLAYER_USE_RADIUS * forward, usableContentsIgnoreClip, this, COLLISION_GROUP_NONE, &directTrace);
 
-		if ( bUsable )
+		pObject = directTrace.m_pEnt;
+		bUsable = IsUseableEntity(pObject, 0);
+	}
+
+	// If the object is not usable, determine if a move ancestor is.
+	while (pObject && !bUsable && pObject->GetMoveParent())
+	{
+		pObject = pObject->GetMoveParent();
+		bUsable = IsUseableEntity(pObject, 0);
+	}
+
+	if (bUsable)
+	{
+		pNearest = pObject;
+
+		if (sv_debug_player_use.GetBool())
 		{
-			Vector delta = tr.endpos - tr.startpos;
-			float centerZ = CollisionProp()->WorldSpaceCenter().z;
-			delta.z = IntervalDistance( tr.endpos.z, centerZ + CollisionProp()->OBBMins().z, centerZ + CollisionProp()->OBBMaxs().z );
-			float dist = delta.Length();
-			if ( dist < PLAYER_USE_RADIUS )
+			const float distSquared = EstimatedDistanceSquared(searchCenter, pNearest);
+			Msg("Line trace found usable entity: %s, distance: %.2f\n", pNearest->GetDebugName(), sqrt(distSquared));
+		}
+	}
+	else
+	{
+		// Any objects directly in front of us weren't usable and close enough.
+		// Next, determine if the ground entity is usable.
+		float nearestDistSquared = FLT_MAX;
+
+		if (GetGroundEntity() && IsUseableEntity(GetGroundEntity(), FCAP_USE_ONGROUND))
+		{
+			pNearest = GetGroundEntity();
+			nearestDistSquared = EstimatedDistanceSquared(searchCenter, pNearest);
+
+			if (sv_debug_player_use.GetBool())
 			{
-#ifndef CLIENT_DLL
-
-				if ( sv_debug_player_use.GetBool() )
-				{
-					NDebugOverlay::Line( searchCenter, tr.endpos, 0, 255, 0, true, 30 );
-					NDebugOverlay::Cross3D( tr.endpos, 16, 0, 255, 0, true, 30 );
-				}
-
-				if ( pObject->MyNPCPointer() && pObject->MyNPCPointer()->IsPlayerAlly( this ) )
-				{
-					// If about to select an NPC, do a more thorough check to ensure
-					// that we're selecting the right one from a group.
-					pObject = DoubleCheckUseNPC( pObject, searchCenter, forward );
-				}
-#endif
-				if ( sv_debug_player_use.GetBool() )
-				{
-					Msg( "Trace using: %s\n", pObject ? pObject->GetDebugName() : "no usable entity found" );
-				}
-
-				pNearest = pObject;
-				
-				// if this is directly under the cursor just return it now
-				if ( i == 0 )
-					return pObject;
+				Msg("Ground query found usable entity: %s, distance: %.2f\n", pNearest->GetDebugName(), sqrt(nearestDistSquared));
 			}
 		}
-	}
 
-	// check ground entity first
-	// if you've got a useable ground entity, then shrink the cone of this search to 45 degrees
-	// otherwise, search out in a 90 degree cone (hemisphere)
-	if ( GetGroundEntity() && IsUseableEntity(GetGroundEntity(), FCAP_USE_ONGROUND) )
-	{
-		pNearest = GetGroundEntity();
-	}
-	if ( pNearest )
-	{
-		// estimate nearest object by distance from the view vector
-		Vector point;
-		pNearest->CollisionProp()->CalcNearestPoint( searchCenter, &point );
-		nearestDist = CalcDistanceToLine( point, searchCenter, forward );
-		if ( sv_debug_player_use.GetBool() )
+		// Next, determine which of the reachable and usable objects in the cone
+		// volume directly in front of player is closest, and whether or not any
+		// is closer than the ground entity.
+		for (CEntitySphereQuery sphere(searchCenter, PLAYER_USE_RADIUS); (pObject = sphere.GetCurrentEntity()) != NULL; sphere.NextEntity())
 		{
-			Msg("Trace found %s, dist %.2f\n", pNearest->GetClassname(), nearestDist );
-		}
-	}
+			if (!IsUseableEntity(pObject, 0))
+				continue;
 
-	for ( CEntitySphereQuery sphere( searchCenter, PLAYER_USE_RADIUS ); ( pObject = sphere.GetCurrentEntity() ) != NULL; sphere.NextEntity() )
-	{
-		if ( !pObject )
-			continue;
+			// Determine if the object is nearer than the previous nearest object.
+			Vector nearestPoint;
+			pObject->CollisionProp()->CalcNearestPoint(searchCenter, &nearestPoint);
 
-		if ( !IsUseableEntity( pObject, FCAP_USE_IN_RADIUS ) )
-			continue;
+			Vector dir = nearestPoint - searchCenter;
+			VectorNormalize(dir);
 
-		// see if it's more roughly in front of the player than previous guess
-		Vector point;
-		pObject->CollisionProp()->CalcNearestPoint( searchCenter, &point );
+			// Need to be looking at the object more or less.
+			// NOTE: If the closest point on the object happens to be off to the
+			// side, even though the object is predominantly if front of the player,
+			// then it will be rejected, unfortunately.
+			if (DotProduct(dir, forward) < 0.8)
+				continue;
 
-		Vector dir = point - searchCenter;
-		VectorNormalize(dir);
-		float dot = DotProduct( dir, forward );
+			const float distSquared = (nearestPoint - searchCenter).LengthSqr();
 
-		// Need to be looking at the object more or less
-		if ( dot < 0.8 )
-			continue;
-
-		float dist = CalcDistanceToLine( point, searchCenter, forward );
-
-		if ( sv_debug_player_use.GetBool() )
-		{
-			Msg("Radius found %s, dist %.2f\n", pObject->GetClassname(), dist );
-		}
-
-		if ( dist < nearestDist )
-		{
-			// Since this has purely been a radius search to this point, we now
-			// make sure the object isn't behind glass or a grate.
-			trace_t trCheckOccluded;
-			UTIL_TraceLine( searchCenter, point, useableContents, this, COLLISION_GROUP_NONE, &trCheckOccluded );
-
-			if ( trCheckOccluded.fraction == 1.0 || trCheckOccluded.m_pEnt == pObject )
+			if (sv_debug_player_use.GetBool())
 			{
-				pNearest = pObject;
-				nearestDist = dist;
+				Msg("Cone query found usable entity: %s, distance: %.2f\n", pObject->GetDebugName(), sqrt(distSquared));
+			}
+
+			if (distSquared < nearestDistSquared)
+			{
+				// The object is inside the cone, but it may be blocked by another
+				// object. Verify that we can trace to the object directly.
+
+				// NOTE: this traces to a particular point on the object's collision
+				// prop. If the trace to that point happens to be blocked by another
+				// object, even though other nearby visible points aren't, then we
+				// won't be able to +use the object, unfortunately.
+
+				// We ignore clip brushes here so that objects in or behind clip
+				// brushes can be +used. If the current object itself is a usable
+				// clip brush, this trace will fail to hit it, but unless it is
+				// blocked, the trace fraction will typically be 1.0 anyway, and
+				// pNearest will be set to the usable clip brush object.
+				trace_t tr;
+				UTIL_TraceLine(searchCenter, nearestPoint, usableContentsIgnoreClip, this, COLLISION_GROUP_NONE, &tr);
+
+				if (tr.fraction == 1.0 || tr.m_pEnt == pObject)
+				{
+					pNearest = pObject;
+					nearestDistSquared = distSquared;
+				}
 			}
 		}
+
 	}
 
 #ifndef CLIENT_DLL
-	if ( !pNearest )
+	if (!pNearest)
 	{
-		// Haven't found anything near the player to use, nor any NPC's at distance.
-		// Check to see if the player is trying to select an NPC through a rail, fence, or other 'see-though' volume.
-		trace_t trAllies;
-		UTIL_TraceLine( searchCenter, searchCenter + forward * PLAYER_USE_RADIUS, MASK_OPAQUE_AND_NPCS, this, COLLISION_GROUP_NONE, &trAllies );
+		// If we haven't found an object that the player can use yet,
+		// allow a player to use an NPC through 'see-through' volumes
+		// (rails, fenches, windows, grates, etc.).
+		UTIL_TraceLine(searchCenter, searchCenter + PLAYER_USE_RADIUS * forward, MASK_OPAQUE_AND_NPCS, this, COLLISION_GROUP_NONE, &directTrace);
+		pObject = directTrace.m_pEnt;
 
-		if ( trAllies.m_pEnt && IsUseableEntity( trAllies.m_pEnt, 0 ) && trAllies.m_pEnt->MyNPCPointer() && trAllies.m_pEnt->MyNPCPointer()->IsPlayerAlly( this ) )
+		if (pObject && IsUseableEntity(pObject, 0) && pObject->MyNPCPointer() && pObject->MyNPCPointer()->IsPlayerAlly(this))
 		{
 			// This is an NPC, take it!
-			pNearest = trAllies.m_pEnt;
+			pNearest = pObject;
+
+			if (sv_debug_player_use.GetBool())
+			{
+				const float distSquared = EstimatedDistanceSquared(searchCenter, pNearest);
+				Msg("Line trace found usable entity: %s, distance: %.2f\n", pNearest->GetDebugName(), sqrt(distSquared));
+			}
 		}
 	}
 
-	if ( pNearest && pNearest->MyNPCPointer() && pNearest->MyNPCPointer()->IsPlayerAlly( this ) )
+	if (pNearest == directTrace.m_pEnt && pNearest && pNearest->MyNPCPointer() && pNearest->MyNPCPointer()->IsPlayerAlly(this))
 	{
-		pNearest = DoubleCheckUseNPC( pNearest, searchCenter, forward );
-	}
+		// If about to select an NPC with a line trace, do a more thorough
+		// check to ensure that we're selecting the right one from a group.
+		// Lengthen trace slightly to account for the fact that we're
+		// tracing for hitboxes, which are usually farther away than OBBs.
+		trace_t tr;
+		UTIL_TraceLine(searchCenter, searchCenter + 1.1 * PLAYER_USE_RADIUS * forward, MASK_SHOT, this, COLLISION_GROUP_NONE, &tr);
+		pObject = tr.m_pEnt;
 
-	if ( sv_debug_player_use.GetBool() )
-	{
-		if ( !pNearest )
+		if (pObject != pNearest && pObject && pObject->MyNPCPointer() && pObject->MyNPCPointer()->IsPlayerAlly(this))
 		{
-			NDebugOverlay::Line( searchCenter, tr.endpos, 255, 0, 0, true, 30 );
-			NDebugOverlay::Cross3D( tr.endpos, 16, 255, 0, 0, true, 30 );
-		}
-		else if ( pNearest == pFoundByTrace )
-		{
-			NDebugOverlay::Line( searchCenter, tr.endpos, 0, 255, 0, true, 30 );
-			NDebugOverlay::Cross3D( tr.endpos, 16, 0, 255, 0, true, 30 );
-		}
-		else
-		{
-			NDebugOverlay::Box( pNearest->WorldSpaceCenter(), Vector(-8, -8, -8), Vector(8, 8, 8), 0, 255, 0, true, 30 );
+			// Player is selecting a different NPC through some negative space
+			// in the first NPC's hitboxes (between legs, over shoulder, etc).
+			pNearest = tr.m_pEnt;
+			directTrace = tr;
+
+			if (sv_debug_player_use.GetBool())
+			{
+				const float distSquared = EstimatedDistanceSquared(searchCenter, pNearest);
+				Msg("Hitbox line trace found usable entity: %s, distance: %.2f\n", pNearest->GetDebugName(), sqrt(distSquared));
+			}
 		}
 	}
 #endif
 
-	if ( sv_debug_player_use.GetBool() )
+	// Draw debug overlays and print debug messages.
+	if (sv_debug_player_use.GetBool())
 	{
-		Msg( "Radial using: %s\n", pNearest ? pNearest->GetDebugName() : "no usable entity found" );
+#ifndef CLIENT_DLL
+		if (!pNearest)
+		{
+			NDebugOverlay::Line(searchCenter, directTrace.endpos, 255, 0, 0, true, 30);
+			NDebugOverlay::Cross3D(directTrace.endpos, 16, 255, 0, 0, true, 30);
+		}
+		else if (pNearest == directTrace.m_pEnt)
+		{
+			NDebugOverlay::Line(searchCenter, directTrace.endpos, 0, 255, 0, true, 30);
+			NDebugOverlay::Cross3D(directTrace.endpos, 16, 0, 255, 0, true, 30);
+		}
+		else
+		{
+			NDebugOverlay::Box(pNearest->WorldSpaceCenter(), Vector(-8, -8, -8), Vector(8, 8, 8), 0, 255, 0, true, 30);
+		}
+#endif
+		Msg("Using: %s\n", pNearest ? pNearest->GetDebugName() : "no usable entity found");
 	}
 
 	return pNearest;
@@ -1276,83 +1291,83 @@ void CBasePlayer::PlayerUse ( void )
 {
 #ifdef GAME_DLL
 	// Was use pressed or released?
-	if ( ! ((m_nButtons | m_afButtonPressed | m_afButtonReleased) & IN_USE) )
+	if (!((m_nButtons | m_afButtonPressed | m_afButtonReleased) & IN_USE))
 		return;
 
-	if ( IsObserver() )
+	if (IsObserver())
 	{
 		// do special use operation in oberserver mode
-		if ( m_afButtonPressed & IN_USE )
-			ObserverUse( true );
-		else if ( m_afButtonReleased & IN_USE )
-			ObserverUse( false );
-		
+		if (m_afButtonPressed & IN_USE)
+			ObserverUse(true);
+		else if (m_afButtonReleased & IN_USE)
+			ObserverUse(false);
+
 		return;
 	}
 
 #if !defined(_XBOX)
 	// push objects in turbo physics mode
-	if ( (m_nButtons & IN_USE) && sv_turbophysics.GetBool() )
+	if ((m_nButtons & IN_USE) && sv_turbophysics.GetBool())
 	{
 		Vector forward, up;
-		EyeVectors( &forward, NULL, &up );
+		EyeVectors(&forward, NULL, &up);
 
 		trace_t tr;
-		// Search for objects in a sphere (tests for entities that are not solid, yet still useable)
+		// Search for objects in a sphere (tests for entities that are not solid, yet still usable)
 		Vector searchCenter = EyePosition();
 
 		CUsePushFilter filter;
 
-		UTIL_TraceLine( searchCenter, searchCenter + forward * 96.0f, MASK_SOLID, &filter, &tr );
+		UTIL_TraceLine(searchCenter, searchCenter + forward * 96.0f, MASK_SOLID, &filter, &tr);
 
 		// try the hit entity if there is one, or the ground entity if there isn't.
 		CBaseEntity *entity = tr.m_pEnt;
 
-		if ( entity )
+		if (entity)
 		{
 			IPhysicsObject *pObj = entity->VPhysicsGetObject();
 
-			if ( pObj )
+			if (pObj)
 			{
 				Vector vPushAway = (entity->WorldSpaceCenter() - WorldSpaceCenter());
 				vPushAway.z = 0;
 
-				float flDist = VectorNormalize( vPushAway );
-				flDist = MAX( flDist, 1 );
+				float flDist = VectorNormalize(vPushAway);
+				flDist = MAX(flDist, 1);
 
 				float flForce = sv_pushaway_force.GetFloat() / flDist;
-				flForce = MIN( flForce, sv_pushaway_max_force.GetFloat() );
+				flForce = MIN(flForce, sv_pushaway_max_force.GetFloat());
 
-				pObj->ApplyForceOffset( vPushAway * flForce, WorldSpaceCenter() );
+				pObj->ApplyForceOffset(vPushAway * flForce, WorldSpaceCenter());
 			}
 		}
 	}
 #endif
 
-	if ( m_afButtonPressed & IN_USE )
+	if (m_afButtonPressed & IN_USE)
 	{
 		// Controlling some latched entity?
-		if ( ClearUseEntity() )
+		if (ClearUseEntity())
 		{
 			return;
 		}
 		else
 		{
-			if ( m_afPhysicsFlags & PFLAG_DIROVERRIDE )
+			if (m_afPhysicsFlags & PFLAG_DIROVERRIDE)
 			{
 				m_afPhysicsFlags &= ~PFLAG_DIROVERRIDE;
-				m_iTrain = TRAIN_NEW|TRAIN_OFF;
+				m_iTrain = TRAIN_NEW | TRAIN_OFF;
 				return;
 			}
 			else
 			{	// Start controlling the train!
 				CBaseEntity *pTrain = GetGroundEntity();
-				if ( pTrain && !(m_nButtons & IN_JUMP) && (GetFlags() & FL_ONGROUND) && (pTrain->ObjectCaps() & FCAP_DIRECTIONAL_USE) && pTrain->OnControls(this) )
+				if (pTrain && !(m_nButtons & IN_JUMP) && (GetFlags() & FL_ONGROUND) && (pTrain->ObjectCaps() & FCAP_DIRECTIONAL_USE) && pTrain->OnControls(this))
 				{
 					m_afPhysicsFlags |= PFLAG_DIROVERRIDE;
 					m_iTrain = TrainSpeed(pTrain->m_flSpeed, ((CFuncTrackTrain*)pTrain)->GetMaxSpeed());
 					m_iTrain |= TRAIN_NEW;
-					EmitSound( "Player.UseTrain" );
+					EmitSound("Player.UseTrain");
 					return;
 				}
 			}
@@ -1362,36 +1377,36 @@ void CBasePlayer::PlayerUse ( void )
 	CBaseEntity *pUseEntity = FindUseEntity();
 
 	// Found an object
-	if ( pUseEntity )
+	if (pUseEntity)
 	{
 
 		//!!!UNDONE: traceline here to prevent +USEing buttons through walls			
 
 		int caps = pUseEntity->ObjectCaps();
 		variant_t emptyVariant;
-		if ( ( (m_nButtons & IN_USE) && (caps & FCAP_CONTINUOUS_USE) ) || ( (m_afButtonPressed & IN_USE) && (caps & (FCAP_IMPULSE_USE|FCAP_ONOFF_USE)) ) )
+		if (((m_nButtons & IN_USE) && (caps & FCAP_CONTINUOUS_USE)) || ((m_afButtonPressed & IN_USE) && (caps & (FCAP_IMPULSE_USE | FCAP_ONOFF_USE))))
 		{
-			if ( caps & FCAP_CONTINUOUS_USE )
+			if (caps & FCAP_CONTINUOUS_USE)
 			{
 				m_afPhysicsFlags |= PFLAG_USING;
 			}
 
-			if ( pUseEntity->ObjectCaps() & FCAP_ONOFF_USE )
+			if (pUseEntity->ObjectCaps() & FCAP_ONOFF_USE)
 			{
-				pUseEntity->AcceptInput( "Use", this, this, emptyVariant, USE_ON );
+				pUseEntity->AcceptInput("Use", this, this, emptyVariant, USE_ON);
 			}
 			else
 			{
-				pUseEntity->AcceptInput( "Use", this, this, emptyVariant, USE_TOGGLE );
+				pUseEntity->AcceptInput("Use", this, this, emptyVariant, USE_TOGGLE);
 			}
 		}
 		// UNDONE: Send different USE codes for ON/OFF.  Cache last ONOFF_USE object to send 'off' if you turn away
-		else if ( (m_afButtonReleased & IN_USE) && (pUseEntity->ObjectCaps() & FCAP_ONOFF_USE) )	// BUGBUG This is an "off" use
+		else if ((m_afButtonReleased & IN_USE) && (pUseEntity->ObjectCaps() & FCAP_ONOFF_USE))	// BUGBUG This is an "off" use
 		{
-			pUseEntity->AcceptInput( "Use", this, this, emptyVariant, USE_OFF );
+			pUseEntity->AcceptInput("Use", this, this, emptyVariant, USE_OFF);
 		}
 	}
-	else if ( m_afButtonPressed & IN_USE )
+	else if (m_afButtonPressed & IN_USE)
 	{
 		PlayUseDenySound();
 	}
@@ -1403,7 +1418,7 @@ ConVar	sv_suppress_viewpunch( "sv_suppress_viewpunch", "0", FCVAR_REPLICATED | F
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CBasePlayer::ViewPunch( const QAngle &angleOffset )
+void CBasePlayer::ViewPunch(const QAngle &angleOffset, float strength)
 {
 	//See if we're suppressing the view punching
 	if ( sv_suppress_viewpunch.GetBool() )
@@ -1413,7 +1428,7 @@ void CBasePlayer::ViewPunch( const QAngle &angleOffset )
 	if ( IsInAVehicle() )
 		return;
 
-	m_Local.m_vecPunchAngleVel += angleOffset * 20;
+	m_Local.m_vecPunchAngleVel += angleOffset * strength;
 }
 
 //-----------------------------------------------------------------------------

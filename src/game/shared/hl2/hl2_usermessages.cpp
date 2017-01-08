@@ -45,6 +45,8 @@ void RegisterUserMessages( void )
 	usermessages->Register( "LogoTimeMsg", 4 );
 	usermessages->Register( "AchievementEvent", -1 );
 	usermessages->Register( "UpdateJalopyRadar", -1 );
+	usermessages->Register( "CurrentTimescale", 4);	// Send one float for the new timescale
+	usermessages->Register( "DesiredTimescale", 13);	// Send timescale and some blending vars
 
 #ifndef _X360
 	// NVNT register haptic user messages

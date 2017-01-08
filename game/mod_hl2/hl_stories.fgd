@@ -1,14 +1,6 @@
 @include "base.fgd"
 @include "halflife2.fgd"
-
-@PointClass base(Angles) studio("models/editor/playerstart.mdl") = alyx_player_start :
-	"This entity indicates the area at which the player Will Spawn with custom size"
-[
-	playerSizeX(float) : "Player Size X" : "0" : "Scales the player's X (Default : 0)"
-	playerSizeY(float) : "Player Size Y" : "0" : "Scales the player's Y (Default : 0)"
-	playerSizeZ(float) : "Player Size Z" : "0" : "Scales the player's Z (Default : 0)"
-]
-
+	
 @PointClass base(Targetname) = logic_playmovie : "Plays a movie"
 [
 	MovieFilename(string) : "Movie Path" : "" : "Filename of the movie to play"
@@ -30,4 +22,146 @@
 
 	// Outputs
 	output OnPlaybackFinished(void) : "Fired when the movie has completed playing back or was skipped by the user."
+]
+
+@PointClass base(Targetname) = env_screeneffect :
+	"Allows screenspace effects to be played on the player's view."
+[
+	type(choices) : "Effect Type" : 0 : "Which effect to use." =
+	[
+		0 : "Intro Blur"
+		1 : "Groggy Vision"
+	]
+	
+	fade(choices) : "Fadeout on stop" : 0 : "If set to true, the effect will fadeout when stopped" =
+	[
+		0 : "False"
+		1 : "True"
+	]
+	
+	duration(float) : "Duration" : 0 : "Duration of the effect"
+	
+	// Inputs
+	input	StartEffect(void) : "Start the effect."
+	input   StopEffect(void) : "Stop the effect."
+]
+
+@PointClass base(Targetname) = env_resize_ply : 
+	"Set the player height"
+[
+	height(float) : "Player Height" : "64.0" : "Time in seconds to blend between time scales."
+	input ApplyResize(void) : "Apply the resize"
+]
+
+@PointClass base(Targetname) = logic_changemap : 
+	"Forces a map change without transitions"
+[
+	map(string) : "Map" : "" : "The map to change to"
+	input ChangeMap(void) : "Change map"
+]
+
+@PointClass base(Targetname,Angles,Parentname) studioprop("models/editor/camera.mdl") = point_viewcontrol : 
+	"A camera entity that controls the player's view. While it's active, the player will see out of the camera." 
+[
+	target(target_destination) : "Entity to Look At" : : "Name of the entity that the camera should point at and track while active."
+	targetattachment(string) : "Target Attachment Name" : : "If set, the camera will focus on the specified attachment on the 'Entity to Look At'."
+	wait(integer) : "Hold Time" : 10 : "The amount of time the camera should control the player's view for, after which it deactivates itself. If the camera should stay active until told to deactive, set the 'Infinite Hold Time' spawnflag."
+	moveto(target_destination) : "Path Corner" : : "The first path corner in a track that the camera should move along once it's activated. If not specified, the camera won't move."
+	interpolatepositiontoplayer(choices) : "Interpolate Position To Player" : 0 : "Gradually interpolate player's position to here on start. (Episodic only)" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	spawnflags(flags) =
+	[
+		1: "Start At Player" : 1
+		2: "Follow Player" : 1
+		4: "Freeze Player" : 0
+		8: "Infinite Hold Time" : 0
+		16:"Snap to goal angles" : 0
+		32:"Make Player non-solid" : 0
+		64:"Interruptable by Player" : 0
+		128:"Allow player look to pan/tilt" : 0
+	]
+	speed(string) : "Initial Speed" : "0" : "The starting speed that the camera moves at, if it's on a path track."
+	acceleration(string) : "Acceleration units/sec^2" : "500" : "The speed at which the camera accelerates to path corner's desired speeds."
+	deceleration(string) : "Stop Deceleration units/sec^2" : "500" : "The speed at which the camera decelerates to path corner's desired speeds."
+
+	// Inputs
+	input Enable(void) : "Enable the point_viewcontrol, and start controlling the player's view."
+	input Disable(void) : "Disable the point_viewcontrol, and stop controlling the player's view."
+
+	// Outputs
+	output OnEndFollow(void) : "Fired when the point_viewcontrol deactivates, due to the Disable input being received, the Entity to Look At being destroyed, or the Hold Time expiring."
+]
+
+@PointClass base(Targetname) = env_slomo : 
+	"Slow motion effect (Not Efficient Yet! - Kinda buggy)"
+[
+	duration(float) : "Duration" : "2.0" : "Duration of the effect in seconds"
+	amount(float) : "Ammount" : "0.35" : "Ammount to be applied"
+	decay(float) : "Decay" : "1.5" : "The decaying time"
+	
+	input StartSlomo(void) : "Start the slowmotion"
+	input StopSlomo(void) : "End the slowmotion"
+]
+
+@NPCClass base(TalkNPC) studio() = npc_kleiner : "Kleiner"
+[
+	model(choices) : "Model" : "models/Kleiner.mdl" =
+	[
+		"models/Kleiner.mdl" : "Normal"
+		"models/KleinerBM.mdl" : "Blackmesa"
+	]
+]
+
+@PointClass base(prop_dynamic) studioprop() = prop_dynamic_glow :
+	"A prop that can be placed in hierarchy and can play animations. It can also be configured to break when it takes enough damage.\n"+
+	"Works exactly like a prop_dynamic, but it can optionally have a custom glow around it."
+[
+	input StartGlowing(void) : "Starts the glow."
+	input StopGlowing(void) : "Stops the glow."
+	input ToggleGlow(void) : "Toggles the glow."
+	
+	input SetGlowColor(color255) : "Change the glow's color. Format: <Red 0-255> <Green 0-255> <Blue 0-255>"
+	input SetGlowRed(float) : "Sets the glow red color channel's value (0 - 255)."
+	input SetGlowGreen(float) : "Sets the glow green color channel's value (0 - 255)."
+	input SetGlowBlue(float) : "Sets the glow blue color channel's value (0 - 255)."
+	input SetGlowAlpha(float) : "Sets the glow alpha color channel's value (0 - 255)."
+]
+
+@PointClass base(Targetname) = env_footsteps : 
+	"Controls the player foosteps sound"
+[
+	input EnableFootsteps(void) : "Enable player footsteps"
+	input DisableFootsteps(void) : "Disable player footsteps"
+]
+
+@PointClass sphere() size(-4 -4 -4, 4 4 4) base(Targetname, Parentname) = env_viewpunch :
+	"Causes a view punch on players." 
+[
+	spawnflags(flags) =
+	[
+		1: "Punch all players (ignore radius)" : 0
+		2: "Punch players in the air" : 0
+	]
+
+	punchangle(angle) : "Punch angles" : "0 0 90" : "The punch angles to apply."
+	radius(float) : "Effect Radius" : "500" : "The radius around this entity in which to affect players."
+	strength(float) : "Strength Multiplier" : "20" : "The strength multiplier"
+	
+	// Inputs
+	input ViewPunch(void) : "Performs the view punch."
+]
+
+@NPCClass base(BaseNPC) studio("models/Zombie/Classic.mdl") = npc_zombie : "Zombie"
+[
+	spawnflags(flags) =
+	[
+		32768: "Don't Listen" : 0
+		65536: "Don't Look" : 0
+	]
+	
+	npcFOV(float) : "Npc FOV" : "0.2" : "Sets the FOV of the NPC (check npc_viewcone)"
+	npcFOVDistance(float) : "Max Npc FOV Distance" : "2048.0" : "Sets the max FOV distance of the NPC"
 ]

@@ -1348,7 +1348,7 @@ CBaseEntity *CNPC_BaseZombie::ClawAttack( float flDist, int iDamage, QAngle &qaV
 
 		if ( pPlayer != NULL && !(pPlayer->GetFlags() & FL_GODMODE ) )
 		{
-			pPlayer->ViewPunch( qaViewPunch );
+			pPlayer->ViewPunch( qaViewPunch, 20 );
 			
 			pPlayer->VelocityPunch( vecVelocityPunch );
 		}

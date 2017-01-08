@@ -811,10 +811,8 @@ void UpdateScreenShakeRumble( float shake, float balance )
 {
 	C_BasePlayer *localPlayer = C_BasePlayer::GetLocalPlayer();
 	if( !localPlayer || !localPlayer->IsAlive() )
-	{
 		return;
-	}
-
+	
 	g_RumbleEffects.UpdateScreenShakeRumble( shake, balance );
 }
 

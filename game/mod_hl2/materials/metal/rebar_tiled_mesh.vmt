@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$basetexture"  "metal/rebar_tiled_mesh"
+	"$bumpmap"  	"metal/rebar_tiled_mesh_n"
+	"$surfaceprop" "Metal"
+	
+	// add alpha test, remove decal
+	    $nocull 1
+	    $AlphaTest 1
+	    $AlphaTestReference 0.3 
+	    $nodecal 1
+}

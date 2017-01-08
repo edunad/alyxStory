@@ -3222,7 +3222,10 @@ void CAI_BaseNPC::UpdateEfficiency( bool bInPVS )
 				}
 			}
 			
-			iSound = pCurrentSound->NextSound();
+			if(pCurrentSound)
+				iSound = pCurrentSound->NextSound();
+			else
+				break;
 		}
 	}
 
@@ -3409,7 +3412,10 @@ void CAI_BaseNPC::UpdateSleepState( bool bInPVS )
 							break;
 						}
 
-						iSound = pCurrentSound->NextSound();
+						if (pCurrentSound)
+							iSound = pCurrentSound->NextSound();
+						else
+							break;
 					}
 				}
 			}
@@ -3678,12 +3684,9 @@ bool CAI_BaseNPC::PreNPCThink()
 {
 	static int iPrevFrame = -1;
 	static float frameTimeLimit = FLT_MAX;
-	static const ConVar *pHostTimescale;
 
-	if ( frameTimeLimit == FLT_MAX )
-	{
-		pHostTimescale = cvar->FindVar( "host_timescale" );
-	}
+	static const ConVar *pHostTimescale;
+	pHostTimescale = cvar->FindVar("host_timescale");
 
 	bool bUseThinkLimits = ( !m_bInChoreo && ShouldUseFrameThinkLimits() );
 
@@ -3706,9 +3709,10 @@ bool CAI_BaseNPC::PreNPCThink()
 		else if ( gpGlobals->framecount != iPrevFrame )
 		{
 			DbgFrameLimitMsg( "--- FRAME: %d (%d)\n", this, gpGlobals->framecount );
-			float timescale = pHostTimescale->GetFloat();
-			if ( timescale < 1 )
-				timescale = 1;
+
+			float timescale = pHostTimescale->GetFloat();  //engine->GetTimescale();
+			if (timescale < 1.0f)
+				timescale = 1.0f;
 
 			iPrevFrame = gpGlobals->framecount;
 			frameTimeLimit = NPC_THINK_LIMIT * timescale;
@@ -10398,7 +10402,7 @@ bool CAI_BaseNPC::ShouldFadeOnDeath( void )
 {
 	if ( g_RagdollLVManager.IsLowViolence() )
 	{
-		return true;
+		return (GlobalEntity_GetState("super_phys_gun") != GLOBAL_ON); // 2=GLOBAL_DEAD
 	}
 	else
 	{
@@ -14082,6 +14086,7 @@ bool CAI_BaseNPC::ShouldProbeCollideAgainstEntity( CBaseEntity *pEntity )
 				return false;
 		}
 	}
+	
 
 	return true;
 }

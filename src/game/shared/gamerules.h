@@ -331,6 +331,7 @@ public:
 	virtual bool CanHaveAmmo( CBaseCombatCharacter *pPlayer, const char *szName );
 	virtual void PlayerGotAmmo( CBaseCombatCharacter *pPlayer, char *szName, int iCount ) = 0;// called each time a player picks up some ammo in the world
 	virtual float GetAmmoQuantityScale( int iAmmoIndex ) { return 1.0f; }
+	virtual bool SetPlayerHeight(float h, CBasePlayer *pPlayer); // Resize player
 
 // AI Definitions
 	virtual void			InitDefaultAIRelationships( void ) { return; }
@@ -361,7 +362,7 @@ public:
 
 // Sounds
 	virtual bool PlayTextureSounds( void ) { return TRUE; }
-	virtual bool PlayFootstepSounds( CBasePlayer *pl ) { return TRUE; }
+	virtual bool PlayFootstepSounds( CBasePlayer *pl ) { return TRUE;  }
 
 // NPCs
 	virtual bool FAllowNPCs( void ) = 0;//are NPCs allowed

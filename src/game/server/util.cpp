@@ -930,7 +930,7 @@ void UTIL_ScreenShakeObject( CBaseEntity *pEnt, const Vector &center, float ampl
 //			radius - Radius of effect, 0 punches all clients.
 //			bInAir - if this is false, then it will only punch players standing on the ground.
 //-----------------------------------------------------------------------------
-void UTIL_ViewPunch( const Vector &center, QAngle angPunch, float radius, bool bInAir )
+void UTIL_ViewPunch(const Vector &center, QAngle angPunch, float radius, bool bInAir, float strength)
 {
 	for ( int i = 1; i <= gpGlobals->maxClients; i++ )
 	{
@@ -963,7 +963,7 @@ void UTIL_ViewPunch( const Vector &center, QAngle angPunch, float radius, bool b
 			}
 		}
 		
-		pPlayer->ViewPunch( angTemp );
+		pPlayer->ViewPunch(angTemp, strength);
 	}
 }
 

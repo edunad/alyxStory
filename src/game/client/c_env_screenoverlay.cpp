@@ -188,7 +188,6 @@ void C_EnvScreenOverlay::ClientThink( void )
 // Effect types
 enum 
 {
-	SCREENEFFECT_EP2_ADVISOR_STUN,
 	SCREENEFFECT_EP1_INTRO,
 	SCREENEFFECT_EP2_GROGGY,
 };
@@ -207,11 +206,13 @@ public:
 
 private:
 	float	m_flDuration;
+	int	    m_flFade;
 	int		m_nType;
-};
+};	
 
 IMPLEMENT_CLIENTCLASS_DT( C_EnvScreenEffect, DT_EnvScreenEffect, CEnvScreenEffect )
 	RecvPropFloat( RECVINFO( m_flDuration ) ),
+	RecvPropInt( RECVINFO(m_flFade) ),
 	RecvPropInt( RECVINFO( m_nType ) ),
 END_RECV_TABLE()
 
@@ -244,24 +245,14 @@ void C_EnvScreenEffect::ReceiveMessage( int classID, bf_read &msg )
 				if ( m_nType == SCREENEFFECT_EP1_INTRO )
 				{
 					if( g_pMaterialSystemHardwareConfig->GetDXSupportLevel() < 80 )
-					{
 						return;
-					}
-
+					
 					// Set our keys
 					pKeys->SetFloat( "duration", m_flDuration );
-					pKeys->SetInt( "fadeout", 0 );
+					pKeys->SetInt("fadeout", 0);
 
-					g_pScreenSpaceEffects->SetScreenSpaceEffectParams( "episodic_intro", pKeys );
-					g_pScreenSpaceEffects->EnableScreenSpaceEffect( "episodic_intro" );
-				}
-				else if ( m_nType == SCREENEFFECT_EP2_ADVISOR_STUN )
-				{
-					// Set our keys
-					pKeys->SetFloat( "duration", m_flDuration );
-
-					g_pScreenSpaceEffects->SetScreenSpaceEffectParams( "episodic_stun", pKeys );
-					g_pScreenSpaceEffects->EnableScreenSpaceEffect( "episodic_stun" );
+					g_pScreenSpaceEffects->SetScreenSpaceEffectParams( "episodic_intro_alyx", pKeys );
+					g_pScreenSpaceEffects->EnableScreenSpaceEffect( "episodic_intro_alyx" );
 				}
 				else if ( m_nType == SCREENEFFECT_EP2_GROGGY )
 				{
@@ -270,10 +261,10 @@ void C_EnvScreenEffect::ReceiveMessage( int classID, bf_read &msg )
 
 					// Set our keys
 					pKeys->SetFloat( "duration", m_flDuration );
-					pKeys->SetInt( "fadeout", 0 );
+					pKeys->SetInt("fadeout", 0);
 
-					g_pScreenSpaceEffects->SetScreenSpaceEffectParams( "ep2_groggy", pKeys );
-					g_pScreenSpaceEffects->EnableScreenSpaceEffect( "ep2_groggy" );
+					g_pScreenSpaceEffects->SetScreenSpaceEffectParams( "ep2_groggy_alyx", pKeys );
+					g_pScreenSpaceEffects->EnableScreenSpaceEffect( "ep2_groggy_alyx" );
 				}
                 
 				pKeys->deleteThis();
@@ -296,13 +287,9 @@ void C_EnvScreenEffect::ReceiveMessage( int classID, bf_read &msg )
 
 				// Set our keys
 				pKeys->SetFloat( "duration", m_flDuration );
-				pKeys->SetInt( "fadeout", 1 );
+				pKeys->SetInt("fadeout", m_flFade);
 
-				g_pScreenSpaceEffects->SetScreenSpaceEffectParams( "episodic_intro", pKeys );
-			}
-			else if ( m_nType == SCREENEFFECT_EP2_ADVISOR_STUN )
-			{
-				g_pScreenSpaceEffects->DisableScreenSpaceEffect( "episodic_stun" );
+				g_pScreenSpaceEffects->SetScreenSpaceEffectParams( "episodic_intro_alyx", pKeys );
 			}
 			else if ( m_nType == SCREENEFFECT_EP2_GROGGY )
 			{
@@ -317,9 +304,9 @@ void C_EnvScreenEffect::ReceiveMessage( int classID, bf_read &msg )
 
 				// Set our keys
 				pKeys->SetFloat( "duration", m_flDuration );
-				pKeys->SetInt( "fadeout", 1 );
+				pKeys->SetInt( "fadeout", m_flFade );
 
-				g_pScreenSpaceEffects->SetScreenSpaceEffectParams( "ep2_groggy", pKeys );
+				g_pScreenSpaceEffects->SetScreenSpaceEffectParams( "ep2_groggy_alyx", pKeys );
 			}
 
 			break;

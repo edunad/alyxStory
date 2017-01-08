@@ -1,0 +1,6 @@
+"lightmappedGeneric"
+{
+	"$baseTexture" "cement/train_cement"
+	"$surfaceprop" "concrete"
+	"%keywords" "cement" 
+}

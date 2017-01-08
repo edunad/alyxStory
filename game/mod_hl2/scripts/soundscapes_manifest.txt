@@ -14,4 +14,9 @@ soundscaples_manifest
 	"file"		"scripts/soundscapes_coast.txt"
 	"file"		"scripts/soundscapes_prison.txt"
 	"file"		"scripts/soundscapes_trainyard.txt"
+	
+		//episode 2
+	"file"		"scripts/soundscapes_silo.txt"
+	"file"		"scripts/soundscapes_outland.txt"	
+	"file"		"scripts/soundscapes_outland2.txt"
 }

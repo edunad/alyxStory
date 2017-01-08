@@ -272,7 +272,7 @@ public:
 
 	float						GetFOVDistanceAdjustFactor();
 
-	virtual void				ViewPunch( const QAngle &angleOffset );
+	virtual void				ViewPunch(const QAngle &angleOffset, float strength = 20);
 	void						ViewPunchReset( float tolerance = 0 );
 
 	void						UpdateButtonState( int nUserCmdButtonMask );
@@ -486,6 +486,8 @@ protected:
 	float			m_flDeathTime;		// last time player died
 
 	float			m_flStepSoundTime;
+	bool			m_foostepAllowed;
+
 	bool			m_IsFootprintOnLeft;
 
 private:

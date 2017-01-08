@@ -17,6 +17,7 @@
 #include "soundenvelope.h"
 #include "engine/IEngineSound.h"
 #include "ammodef.h"
+#include "ai_senses.h"
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
@@ -159,7 +160,10 @@ protected:
 private:
 	CHandle< CBaseDoor > m_hBlockingDoor;
 	float				 m_flDoorBashYaw;
-	
+
+	float				 m_flFOV;
+	float				 m_flDISTFOV;
+
 	CRandSimTimer 		 m_DurationDoorBash;
 	CSimTimer 	  		 m_NextTimeToStartDoorBash;
 
@@ -216,10 +220,17 @@ enum
 int ACT_ZOMBIE_TANTRUM;
 int ACT_ZOMBIE_WALLPOUND;
 
+#define SENSES_IGNORE_SOUND		32768		// Don't listen
+#define SENSES_IGNORE_VIEW		65536		// Don't look
+
 BEGIN_DATADESC( CZombie )
 
 	DEFINE_FIELD( m_hBlockingDoor, FIELD_EHANDLE ),
 	DEFINE_FIELD( m_flDoorBashYaw, FIELD_FLOAT ),
+
+	DEFINE_KEYFIELD(m_flFOV, FIELD_FLOAT, "npcFOV"),
+	DEFINE_KEYFIELD(m_flDISTFOV, FIELD_FLOAT, "npcFOVDistance"),
+
 	DEFINE_EMBEDDED( m_DurationDoorBash ),
 	DEFINE_EMBEDDED( m_NextTimeToStartDoorBash ),
 	DEFINE_FIELD( m_vPositionCharged, FIELD_POSITION_VECTOR ),
@@ -282,11 +293,18 @@ void CZombie::Spawn( void )
 #endif // HL2_EPISODIC
 
 	m_iHealth			= sk_zombie_health.GetFloat();
-	m_flFieldOfView		= 0.2;
+	m_flFieldOfView		= m_flFOV; // 0.2
 
 	CapabilitiesClear();
+	
+	/* SENSING CONTROLL */
+	if (GetSpawnFlags() & SENSES_IGNORE_SOUND)
+		GetSenses()->AddSensingFlags(SENSING_FLAGS_DONT_LISTEN);
 
-	//GetNavigator()->SetRememberStaleNodes( false );
+	if (GetSpawnFlags() & SENSES_IGNORE_VIEW)
+		GetSenses()->AddSensingFlags(SENSING_FLAGS_DONT_LOOK);
+	
+	GetSenses()->SetDistLook(m_flDISTFOV);
 
 	BaseClass::Spawn();
 

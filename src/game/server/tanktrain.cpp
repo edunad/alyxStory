@@ -14,40 +14,34 @@
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
-extern short g_sModelIndexFireball;
-#define SPRITE_FIREBALL		"sprites/zerogxplode.vmt"
-#define SPRITE_SMOKE		"sprites/steam1.vmt"
-
-void UTIL_RemoveHierarchy( CBaseEntity *pDead )
+void UTIL_RemoveHierarchy(CBaseEntity *pDead)
 {
-	if ( !pDead )
+	if (!pDead)
 		return;
 
-	if ( pDead->edict() )
+	if (pDead->edict())
 	{
 		CBaseEntity *pChild = pDead->FirstMoveChild();
-		while ( pChild )
+		while (pChild)
 		{
 			CBaseEntity *pEntity = pChild;
 			pChild = pChild->NextMovePeer();
 
-			UTIL_RemoveHierarchy( pEntity );
+			UTIL_RemoveHierarchy(pEntity);
 		}
 	}
-	UTIL_Remove( pDead );
+	UTIL_Remove(pDead);
 }
 
 class CFuncTankTrain : public CFuncTrackTrain
 {
 public:
-	DECLARE_CLASS( CFuncTankTrain, CFuncTrackTrain );
+	DECLARE_CLASS(CFuncTankTrain, CFuncTrackTrain);
 
-	void Spawn( void );
+	void Spawn(void);
 
-	// Filter out damage messages that don't contain blast damage (impervious to other forms of attack)
-	int	OnTakeDamage( const CTakeDamageInfo &info );
-	void Event_Killed( const CTakeDamageInfo &info );
-	void Blocked( CBaseEntity *pOther )
+	void Event_Killed(const CTakeDamageInfo &info);
+	void Blocked(CBaseEntity *pOther)
 	{
 		// FIxme, set speed to zero?
 	}
@@ -58,31 +52,21 @@ private:
 	COutputEvent m_OnDeath;
 };
 
-LINK_ENTITY_TO_CLASS( func_tanktrain, CFuncTankTrain );
+LINK_ENTITY_TO_CLASS(func_tanktrain, CFuncTankTrain);
 
-BEGIN_DATADESC( CFuncTankTrain )
+BEGIN_DATADESC(CFuncTankTrain)
 
-	// Outputs
-	DEFINE_OUTPUT(m_OnDeath, "OnDeath"),
+// Outputs
+DEFINE_OUTPUT(m_OnDeath, "OnDeath"),
 
 END_DATADESC()
 
 
-void CFuncTankTrain::Spawn( void )
+void CFuncTankTrain::Spawn(void)
 {
-	m_takedamage = true;
+	m_takedamage = DAMAGE_YES;
 	BaseClass::Spawn();
 }
-
-// Filter out damage messages that don't contain blast damage (impervious to other forms of attack)
-int	CFuncTankTrain::OnTakeDamage( const CTakeDamageInfo &info )
-{
-	if ( ! (info.GetDamageType() & DMG_BLAST) )
-		return 0;
-
-	return BaseClass::OnTakeDamage( info );
-}
-
 
 //-----------------------------------------------------------------------------
 // Purpose: Called when the train is killed.
@@ -91,12 +75,12 @@ int	CFuncTankTrain::OnTakeDamage( const CTakeDamageInfo &info )
 //			flDamage - The damage that the killing blow inflicted.
 //			bitsDamageType - Bitfield of damage types that were inflicted.
 //-----------------------------------------------------------------------------
-void CFuncTankTrain::Event_Killed( const CTakeDamageInfo &info )
+void CFuncTankTrain::Event_Killed(const CTakeDamageInfo &info)
 {
 	m_takedamage = DAMAGE_NO;
 	m_lifeState = LIFE_DEAD;
 
-	m_OnDeath.FireOutput( info.GetInflictor(), this );
+	m_OnDeath.FireOutput(info.GetInflictor(), this);
 }
 
 
@@ -106,10 +90,10 @@ void CFuncTankTrain::Event_Killed( const CTakeDamageInfo &info )
 class CTankTargetChange : public CPointEntity
 {
 public:
-	DECLARE_CLASS( CTankTargetChange, CPointEntity );
+	DECLARE_CLASS(CTankTargetChange, CPointEntity);
 
-	void Precache( void );
-	void Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE useType, float value );
+	void Precache(void);
+	void Use(CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE useType, float value);
 
 	DECLARE_DATADESC();
 
@@ -118,34 +102,34 @@ private:
 	string_t	m_newTargetName;
 };
 
-LINK_ENTITY_TO_CLASS( tanktrain_aitarget, CTankTargetChange );
+LINK_ENTITY_TO_CLASS(tanktrain_aitarget, CTankTargetChange);
 
-BEGIN_DATADESC( CTankTargetChange )
+BEGIN_DATADESC(CTankTargetChange)
 
-	// DEFINE_FIELD( m_newTarget, variant_t ),
-	DEFINE_KEYFIELD( m_newTargetName, FIELD_STRING, "newtarget" ),
+// DEFINE_FIELD( m_newTarget, variant_t ),
+DEFINE_KEYFIELD(m_newTargetName, FIELD_STRING, "newtarget"),
 
 END_DATADESC()
 
 
-void CTankTargetChange::Precache( void )
+void CTankTargetChange::Precache(void)
 {
 	BaseClass::Precache();
 
 	// This needs to be in Precache so save/load works
-	m_newTarget.SetString( m_newTargetName );
+	m_newTarget.SetString(m_newTargetName);
 }
 
-void CTankTargetChange::Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE useType, float value )
+void CTankTargetChange::Use(CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE useType, float value)
 {
-	CBaseEntity *pTarget = gEntList.FindEntityByName( NULL, m_target, NULL, pActivator, pCaller );
+	CBaseEntity *pTarget = gEntList.FindEntityByName(NULL, m_target, NULL, pActivator, pCaller);
 
 	// UNDONE: This should use more of the event system
-	while ( pTarget )
+	while (pTarget)
 	{
 		// Change the target over
-		pTarget->AcceptInput( "TargetEntity", this, this, m_newTarget, 0 );
-		pTarget = gEntList.FindEntityByName( pTarget, m_target, NULL, pActivator, pCaller );
+		pTarget->AcceptInput("TargetEntity", this, this, m_newTarget, 0);
+		pTarget = gEntList.FindEntityByName(pTarget, m_target, NULL, pActivator, pCaller);
 	}
 }
 
@@ -154,26 +138,26 @@ void CTankTargetChange::Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_
 class CTankTrainAI : public CPointEntity
 {
 public:
-	DECLARE_CLASS( CTankTrainAI, CPointEntity );
+	DECLARE_CLASS(CTankTrainAI, CPointEntity);
 
-	virtual ~CTankTrainAI( void );
+	virtual ~CTankTrainAI(void);
 
-	void Precache( void );
-	void Spawn( void );
-	void Activate( void );
-	void Think( void );
+	void Precache(void);
+	void Spawn(void);
+	void Activate(void);
+	void Think(void);
 
-	int		SoundEnginePitch( void );
-	void	SoundEngineStart( void );
-	void	SoundEngineStop( void );
-	void	SoundShutdown( void );
+	int		SoundEnginePitch(void);
+	void	SoundEngineStart(void);
+	void	SoundEngineStop(void);
+	void	SoundShutdown(void);
 
-	CBaseEntity *FindTarget( string_t target, CBaseEntity *pActivator );
+	CBaseEntity *FindTarget(string_t target, CBaseEntity *pActivator);
 
 	DECLARE_DATADESC();
 
 	// INPUTS
-	void InputTargetEntity( inputdata_t &inputdata );
+	void InputTargetEntity(inputdata_t &inputdata);
 
 private:
 	CHandle<CFuncTrackTrain>	m_hTrain;
@@ -189,23 +173,23 @@ private:
 	string_t		m_targetEntityName;
 };
 
-LINK_ENTITY_TO_CLASS( tanktrain_ai, CTankTrainAI );
+LINK_ENTITY_TO_CLASS(tanktrain_ai, CTankTrainAI);
 
-BEGIN_DATADESC( CTankTrainAI )
+BEGIN_DATADESC(CTankTrainAI)
 
-	DEFINE_FIELD( m_hTrain, FIELD_EHANDLE),
-	DEFINE_FIELD( m_hTargetEntity, FIELD_EHANDLE),
-	DEFINE_FIELD( m_soundPlaying, FIELD_INTEGER),
-	DEFINE_SOUNDPATCH( m_soundTreads ),
-	DEFINE_SOUNDPATCH( m_soundEngine ),
+DEFINE_FIELD(m_hTrain, FIELD_EHANDLE),
+DEFINE_FIELD(m_hTargetEntity, FIELD_EHANDLE),
+DEFINE_FIELD(m_soundPlaying, FIELD_INTEGER),
+DEFINE_SOUNDPATCH(m_soundTreads),
+DEFINE_SOUNDPATCH(m_soundEngine),
 
-	DEFINE_KEYFIELD( m_startSoundName, FIELD_STRING, "startsound" ),
-	DEFINE_KEYFIELD( m_engineSoundName, FIELD_STRING, "enginesound" ),
-	DEFINE_KEYFIELD( m_movementSoundName, FIELD_STRING, "movementsound" ),
-	DEFINE_FIELD( m_targetEntityName, FIELD_STRING),
+DEFINE_KEYFIELD(m_startSoundName, FIELD_STRING, "startsound"),
+DEFINE_KEYFIELD(m_engineSoundName, FIELD_STRING, "enginesound"),
+DEFINE_KEYFIELD(m_movementSoundName, FIELD_STRING, "movementsound"),
+DEFINE_FIELD(m_targetEntityName, FIELD_STRING),
 
-	// Inputs
-	DEFINE_INPUTFUNC( FIELD_STRING, "TargetEntity", InputTargetEntity ),
+// Inputs
+DEFINE_INPUTFUNC(FIELD_STRING, "TargetEntity", InputTargetEntity),
 
 END_DATADESC()
 
@@ -214,11 +198,11 @@ END_DATADESC()
 //-----------------------------------------------------------------------------
 // Purpose: Input handler for setting the target entity by name.
 //-----------------------------------------------------------------------------
-void CTankTrainAI::InputTargetEntity( inputdata_t &inputdata )
+void CTankTrainAI::InputTargetEntity(inputdata_t &inputdata)
 {
 	m_targetEntityName = inputdata.value.StringID();
-	m_hTargetEntity = FindTarget( m_targetEntityName, inputdata.pActivator );
-	SetNextThink( gpGlobals->curtime );
+	m_hTargetEntity = FindTarget(m_targetEntityName, inputdata.pActivator);
+	SetNextThink(gpGlobals->curtime);
 }
 
 
@@ -228,40 +212,40 @@ void CTankTrainAI::InputTargetEntity( inputdata_t &inputdata )
 //			pActivator - The activating entity if this is called from an input
 //				or Use handler, NULL otherwise.
 //-----------------------------------------------------------------------------
-CBaseEntity *CTankTrainAI::FindTarget( string_t target, CBaseEntity *pActivator )
+CBaseEntity *CTankTrainAI::FindTarget(string_t target, CBaseEntity *pActivator)
 {
-	return gEntList.FindEntityGeneric( NULL, STRING( target ), this, pActivator );
+	return gEntList.FindEntityGeneric(NULL, STRING(target), this, pActivator);
 }
 
 
-CTankTrainAI::~CTankTrainAI( void )
+CTankTrainAI::~CTankTrainAI(void)
 {
 	CSoundEnvelopeController &controller = CSoundEnvelopeController::GetController();
 
-	if ( m_soundTreads )
+	if (m_soundTreads)
 	{
-		controller.SoundDestroy( m_soundTreads );
+		controller.SoundDestroy(m_soundTreads);
 	}
-	
-	if ( m_soundEngine )
+
+	if (m_soundEngine)
 	{
-		controller.SoundDestroy( m_soundEngine );
+		controller.SoundDestroy(m_soundEngine);
 	}
 }
 
-void CTankTrainAI::Precache( void )
+void CTankTrainAI::Precache(void)
 {
-	PrecacheScriptSound( STRING( m_startSoundName ) );
-	PrecacheScriptSound( STRING( m_engineSoundName ) );
-	PrecacheScriptSound( STRING( m_movementSoundName ) );
+	PrecacheScriptSound(STRING(m_startSoundName));
+	PrecacheScriptSound(STRING(m_engineSoundName));
+	PrecacheScriptSound(STRING(m_movementSoundName));
 }
 
-int CTankTrainAI::SoundEnginePitch( void )
+int CTankTrainAI::SoundEnginePitch(void)
 {
 	CFuncTrackTrain *pTrain = m_hTrain;
-	
+
 	// we know this isn't NULL here
-	if ( pTrain->GetMaxSpeed() )
+	if (pTrain->GetMaxSpeed())
 	{
 		return 90 + (fabs(pTrain->GetCurrentSpeed()) * (20) / pTrain->GetMaxSpeed());
 	}
@@ -269,15 +253,15 @@ int CTankTrainAI::SoundEnginePitch( void )
 }
 
 
-void CTankTrainAI::SoundEngineStart( void )
+void CTankTrainAI::SoundEngineStart(void)
 {
 	CFuncTrackTrain *pTrain = m_hTrain;
 
 	SoundEngineStop();
 	// play startup sound for train
-	if ( m_startSoundName != NULL_STRING )
+	if (m_startSoundName != NULL_STRING)
 	{
-		CPASAttenuationFilter filter( pTrain );
+		CPASAttenuationFilter filter(pTrain);
 
 		EmitSound_t ep;
 		ep.m_nChannel = CHAN_ITEM;
@@ -285,108 +269,108 @@ void CTankTrainAI::SoundEngineStart( void )
 		ep.m_flVolume = 1.0f;
 		ep.m_SoundLevel = SNDLVL_NORM;
 
-		EmitSound( filter, pTrain->entindex(), ep );
+		EmitSound(filter, pTrain->entindex(), ep);
 	}
 
 	// play the looping sounds using the envelope controller
 	CSoundEnvelopeController &controller = CSoundEnvelopeController::GetController();
 
-	if ( m_soundTreads )
+	if (m_soundTreads)
 	{
-		controller.Play( m_soundTreads, 1.0, 100 );
+		controller.Play(m_soundTreads, 1.0, 100);
 	}
-	
-	if ( m_soundEngine )
+
+	if (m_soundEngine)
 	{
-		controller.Play( m_soundEngine, 0.5, 90 );
-		controller.CommandClear( m_soundEngine );
-		controller.CommandAdd( m_soundEngine, 0, SOUNDCTRL_CHANGE_PITCH, 1.5, random->RandomInt(130, 145) );
-		controller.CommandAdd( m_soundEngine, 1.5, SOUNDCTRL_CHANGE_PITCH, 2, random->RandomInt(105, 115) );
+		controller.Play(m_soundEngine, 0.5, 90);
+		controller.CommandClear(m_soundEngine);
+		controller.CommandAdd(m_soundEngine, 0, SOUNDCTRL_CHANGE_PITCH, 1.5, random->RandomInt(130, 145));
+		controller.CommandAdd(m_soundEngine, 1.5, SOUNDCTRL_CHANGE_PITCH, 2, random->RandomInt(105, 115));
 	}
-	
+
 	m_soundPlaying = true;
 }
 
 
-void CTankTrainAI::SoundEngineStop( void )
+void CTankTrainAI::SoundEngineStop(void)
 {
-	if ( !m_soundPlaying )
+	if (!m_soundPlaying)
 		return;
 
 	CSoundEnvelopeController &controller = CSoundEnvelopeController::GetController();
-	
-	if ( m_soundTreads )
+
+	if (m_soundTreads)
 	{
-		controller.SoundFadeOut( m_soundTreads, 0.25 );
+		controller.SoundFadeOut(m_soundTreads, 0.25);
 	}
 
-	if ( m_soundEngine )
+	if (m_soundEngine)
 	{
-		controller.CommandClear( m_soundEngine );
-		controller.SoundChangePitch( m_soundEngine, 70, 3.0 );
+		controller.CommandClear(m_soundEngine);
+		controller.SoundChangePitch(m_soundEngine, 70, 3.0);
 	}
-	m_soundPlaying = false;	
+	m_soundPlaying = false;
 }
 
 
-void CTankTrainAI::SoundShutdown( void )
+void CTankTrainAI::SoundShutdown(void)
 {
 	CSoundEnvelopeController &controller = CSoundEnvelopeController::GetController();
-	if ( m_soundTreads )
+	if (m_soundTreads)
 	{
-		controller.Shutdown( m_soundTreads );
+		controller.Shutdown(m_soundTreads);
 	}
 
-	if ( m_soundEngine )
+	if (m_soundEngine)
 	{
-		controller.Shutdown( m_soundEngine );
+		controller.Shutdown(m_soundEngine);
 	}
-	m_soundPlaying = false;	
+	m_soundPlaying = false;
 }
 
 //-----------------------------------------------------------------------------
 // Purpose: Set up think and AI
 //-----------------------------------------------------------------------------
-void CTankTrainAI::Spawn( void )
+void CTankTrainAI::Spawn(void)
 {
 	Precache();
 	m_soundPlaying = false;
 	m_hTargetEntity = NULL;
 }
 
-void CTankTrainAI::Activate( void )
+void CTankTrainAI::Activate(void)
 {
 	BaseClass::Activate();
-	
+
 	CBaseEntity *pTarget = NULL;
 
 	CFuncTrackTrain *pTrain = NULL;
 
-	if ( m_target != NULL_STRING )
+	if (m_target != NULL_STRING)
 	{
 		do
 		{
-			pTarget = gEntList.FindEntityByName( pTarget, m_target );
+			pTarget = gEntList.FindEntityByName(pTarget, m_target);
 			pTrain = dynamic_cast<CFuncTrackTrain *>(pTarget);
 		} while (!pTrain && pTarget);
 	}
 
 	m_hTrain = pTrain;
 
-	if ( pTrain )
+	if (pTrain)
 	{
-		SetNextThink( gpGlobals->curtime + 0.5f );
+		SetNextThink(gpGlobals->curtime + 0.5f);
 		CSoundEnvelopeController &controller = CSoundEnvelopeController::GetController();
 
-		if ( m_movementSoundName != NULL_STRING )
+		if (m_movementSoundName != NULL_STRING)
 		{
-			CPASAttenuationFilter filter( this, ATTN_NORM * 0.5 );
-			m_soundTreads = controller.SoundCreate( filter, pTrain->entindex(), CHAN_STATIC, STRING(m_movementSoundName), ATTN_NORM*0.5 );
+			CPASAttenuationFilter filter(this, ATTN_NORM * 0.5);
+			m_soundTreads = controller.SoundCreate(filter, pTrain->entindex(), CHAN_STATIC, STRING(m_movementSoundName), ATTN_NORM*0.5);
 		}
-		if ( m_engineSoundName != NULL_STRING )
+		if (m_engineSoundName != NULL_STRING)
 		{
-			CPASAttenuationFilter filter( this );
-			m_soundEngine = controller.SoundCreate( filter, pTrain->entindex(), CHAN_STATIC, STRING(m_engineSoundName), ATTN_NORM );
+			CPASAttenuationFilter filter(this);
+			m_soundEngine = controller.SoundCreate(filter, pTrain->entindex(), CHAN_STATIC, STRING(m_engineSoundName), ATTN_NORM);
 		}
 	}
 }
@@ -399,9 +383,9 @@ void CTankTrainAI::Activate( void )
 //			&destination - position to move close to
 // Output : int move direction 1 = forward, -1 = reverse, 0 = stop
 //-----------------------------------------------------------------------------
-int PathFindDirection( CPathTrack *pStart, const Vector &startPosition, const Vector &destination )
+int PathFindDirection(CPathTrack *pStart, const Vector &startPosition, const Vector &destination)
 {
-	if ( !pStart )
+	if (!pStart)
 		return 0;		// no path, don't move
 
 	CPathTrack *pPath = pStart->m_pnext;
@@ -414,9 +398,9 @@ int PathFindDirection( CPathTrack *pStart, const Vector &startPosition, const Ve
 	do
 	{
 		float dist = (pPath->GetLocalOrigin() - destination).LengthSqr();
-		
+
 		// This is closer than our current estimate
-		if ( dist < nearestDist )
+		if (dist < nearestDist)
 		{
 			nearestDist = dist;
 			pNearest = pPath;
@@ -424,7 +408,7 @@ int PathFindDirection( CPathTrack *pStart, const Vector &startPosition, const Ve
 			nearestReverse = 0;			// count until we hit the start again
 		}
 		CPathTrack *pNext = pPath->m_pnext;
-		if ( pNext )
+		if (pNext)
 		{
 			// UNDONE: Cache delta in path?
 			float delta = (pNext->GetLocalOrigin() - pPath->GetLocalOrigin()).LengthSqr();
@@ -438,11 +422,11 @@ int PathFindDirection( CPathTrack *pStart, const Vector &startPosition, const Ve
 			// not a looping path
 			// traverse back to other end of the path
 			int fail = 0;
-			while ( pPath->m_pprevious )
+			while (pPath->m_pprevious)
 			{
 				fail++;
 				// HACKHACK: Don't infinite loop
-				if ( fail > 256 )
+				if (fail > 256)
 					break;
 				pPath = pPath->m_pprevious;
 			}
@@ -452,14 +436,14 @@ int PathFindDirection( CPathTrack *pStart, const Vector &startPosition, const Ve
 			length = (float)COORD_EXTENT * (float)COORD_EXTENT; // HACKHACK: Max quad length
 		}
 
-	} while ( pPath != pStart );
+	} while (pPath != pStart);
 
 	// UNDONE: Fix this fudge factor
 	// if you are already at the path, or <100 units away, don't move
-	if ( pNearest == pStart || (pNearest->GetLocalOrigin() - startPosition).LengthSqr() < 100 )
+	if (pNearest == pStart || (pNearest->GetLocalOrigin() - startPosition).LengthSqr() < 100)
 		return 0;
 
-	if ( nearestForward <= nearestReverse )
+	if (nearestForward <= nearestReverse)
 		return 1;
 
 	return -1;
@@ -469,58 +453,58 @@ int PathFindDirection( CPathTrack *pStart, const Vector &startPosition, const Ve
 //-----------------------------------------------------------------------------
 // Purpose: Find a point on my path near to the target and move toward it
 //-----------------------------------------------------------------------------
-void CTankTrainAI::Think( void )
+void CTankTrainAI::Think(void)
 {
 	CFuncTrackTrain *pTrain = m_hTrain;
 
-	if ( !pTrain || pTrain->m_lifeState != LIFE_ALIVE )
+	if (!pTrain || pTrain->m_lifeState != LIFE_ALIVE)
 	{
 		SoundShutdown();
-		if ( pTrain )
-			UTIL_RemoveHierarchy( pTrain );
-		UTIL_Remove( this );
+		if (pTrain)
+			UTIL_RemoveHierarchy(pTrain);
+		UTIL_Remove(this);
 		return;
 	}
 
 	int desired = 0;
 	CBaseEntity *pTarget = m_hTargetEntity;
-	if ( pTarget )
+	if (pTarget)
 	{
-		desired = PathFindDirection( pTrain->m_ppath, pTrain->GetLocalOrigin(), pTarget->GetLocalOrigin() );
+		desired = PathFindDirection(pTrain->m_ppath, pTrain->GetLocalOrigin(), pTarget->GetLocalOrigin());
 	}
 
 	// If the train wants to stop, figure out throttle
 	// otherwise, just throttle in the indicated direction and let the train logic
 	// clip the speed
-	if ( !desired )
+	if (!desired)
 	{
-		if ( pTrain->m_flSpeed > 0 )
+		if (pTrain->m_flSpeed > 0)
 		{
 			desired = -1;
 		}
-		else if ( pTrain->m_flSpeed < 0 )
+		else if (pTrain->m_flSpeed < 0)
 		{
 			desired = 1;
 		}
 	}
-	
-	// UNDONE: Align the think time with arrival, and bump this up to a few seconds
-	SetNextThink( gpGlobals->curtime + 0.5f );
 
-	if ( desired != 0 )
+	// UNDONE: Align the think time with arrival, and bump this up to a few seconds
+	SetNextThink(gpGlobals->curtime + 0.5f);
+
+	if (desired != 0)
 	{
 		int wasMoving = (pTrain->m_flSpeed == 0) ? false : true;
 		// chaser wants train to move, send message
-		pTrain->SetSpeed( desired );
+		pTrain->SetSpeed(desired);
 		int isMoving = (pTrain->m_flSpeed == 0) ? false : true;
 
-		if ( !isMoving && wasMoving )
+		if (!isMoving && wasMoving)
 		{
 			SoundEngineStop();
 		}
-		else if ( isMoving )
+		else if (isMoving)
 		{
-			if ( !wasMoving )
+			if (!wasMoving)
 			{
 				SoundEngineStart();
 			}
@@ -530,6 +514,6 @@ void CTankTrainAI::Think( void )
 	{
 		SoundEngineStop();
 		// UNDONE: Align the think time with arrival, and bump this up to a few seconds
-		SetNextThink( gpGlobals->curtime + 1.0f );
+		SetNextThink(gpGlobals->curtime + 1.0f);
 	}
 }
