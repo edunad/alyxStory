@@ -404,10 +404,17 @@ void CSoundPatch::Init( IRecipientFilter *pFilter, CBaseEntity *pEnt, int channe
 //-----------------------------------------------------------------------------
 void CSoundPatch::ChangePitch( float pitchTarget, float deltaTime )
 {
-	if (m_flags != SND_CHANGE_PITCH)
-		m_flags = SND_CHANGE_PITCH;
+	// Game seems to love crashing here
+	try{
+		if (m_flags != SND_CHANGE_PITCH)
+			m_flags = SND_CHANGE_PITCH;
 
-	m_pitch.SetTarget( pitchTarget, deltaTime );
+		m_pitch.SetTarget(pitchTarget, deltaTime); 
+	}
+	catch (...)
+	{
+		DevMsg("Failed to change sound pitch!");
+	}
 }
 
 
@@ -418,12 +425,18 @@ void CSoundPatch::ChangePitch( float pitchTarget, float deltaTime )
 //-----------------------------------------------------------------------------
 void CSoundPatch::ChangeVolume( float volumeTarget, float deltaTime )
 {
-	if (m_flags != SND_CHANGE_VOL)
-		m_flags = SND_CHANGE_VOL;
+	try{
+		if (m_flags != SND_CHANGE_VOL)
+			m_flags = SND_CHANGE_VOL;
 
-	if ( volumeTarget > 1.0 )
-		volumeTarget = 1.0;
-	m_volume.SetTarget( volumeTarget, deltaTime );
+		if ( volumeTarget > 1.0 )
+			volumeTarget = 1.0;
+		m_volume.SetTarget( volumeTarget, deltaTime );
+	}
+	catch (...)
+	{
+		DevMsg("Failed to change sound volume!");
+	}
 }
 
 

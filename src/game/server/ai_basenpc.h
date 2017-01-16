@@ -916,6 +916,7 @@ private:
 	float				m_flWakeRadius;
 	bool				m_bWakeSquad;
 	int					m_nWakeTick;
+	float				m_flExtraSpeed;
 
 public:
 	//-----------------------------------------------------

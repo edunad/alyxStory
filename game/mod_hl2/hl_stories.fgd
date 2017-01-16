@@ -137,6 +137,13 @@
 	input DisableFootsteps(void) : "Disable player footsteps"
 ]
 
+@PointClass base(Targetname) = env_playerSpeed : 
+	"Controls the player speed (sorta like : sv_maxspeed)"
+[
+	input ApplySpeed(float) : "Set the player speed"
+]
+
+
 @PointClass sphere() size(-4 -4 -4, 4 4 4) base(Targetname, Parentname) = env_viewpunch :
 	"Causes a view punch on players." 
 [
@@ -164,4 +171,7 @@
 	
 	npcFOV(float) : "Npc FOV" : "0.2" : "Sets the FOV of the NPC (check npc_viewcone)"
 	npcFOVDistance(float) : "Max Npc FOV Distance" : "2048.0" : "Sets the max FOV distance of the NPC"
+	
+	npcExtraSpeed(float) : "Npc Extra Speed" : "0" : "Sets the max speed of the NPC"
+	input InputExtraSpeed(float) : "Changes npc movement extra speed"
 ]

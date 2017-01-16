@@ -292,6 +292,9 @@ public:
 	virtual void Extinguish() { RemoveFlag( FL_ONFIRE ); }
 	bool IsOnFire() { return ( (GetFlags() & FL_ONFIRE) != 0 ); }
 	void Scorch( int rate, int floor );
+
+	void InputExtraSpeed(inputdata_t &inputdata);
+
 	void InputIgnite( inputdata_t &inputdata );
 	void InputIgniteLifetime( inputdata_t &inputdata );
 	void InputIgniteNumHitboxFires( inputdata_t &inputdata );
@@ -305,6 +308,7 @@ public:
 
 	// animation needs
 	float				m_flGroundSpeed;	// computed linear movement rate for current sequence
+	float				m_flExtraGroundSpeed;
 	float				m_flLastEventCheck;	// cycle index of when events were last checked
 
 	virtual void SetLightingOriginRelative( CBaseEntity *pLightingOriginRelative );
