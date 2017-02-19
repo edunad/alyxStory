@@ -202,6 +202,7 @@ RecvPropVector(RECVINFO(m_audio.localSound[6])),
 RecvPropVector(RECVINFO(m_audio.localSound[7])),
 RecvPropInt(RECVINFO(m_audio.soundscapeIndex)),
 RecvPropInt(RECVINFO(m_audio.localBits)),
+RecvPropInt(RECVINFO(m_audio.volume)),
 RecvPropEHandle(RECVINFO(m_audio.ent)),
 END_RECV_TABLE()
 

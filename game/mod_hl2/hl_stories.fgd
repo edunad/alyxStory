@@ -175,3 +175,18 @@
 	npcExtraSpeed(float) : "Npc Extra Speed" : "0" : "Sets the max speed of the NPC"
 	input InputExtraSpeed(float) : "Changes npc movement extra speed"
 ]
+
+@SolidClass base(Trigger, Targetname) = trigger_motion : 
+	"A trigger volume detects if the player moved"
+[
+	spawnflags(flags) = []
+	minMovement(float) : "The MIN Movement required to trigger" : "10" : "Sets the min movement required"
+	// Outputs
+	output OnMotionDetected(void) : "Fired whenever the player moves inside the brush"
+]
+
+@PointClass base(env_soundscape) sphere() iconsprite("editor/env_soundscape.vmt") = env_soundscape_triggerable : 
+	"An entity that works like env_soundscape except that it works in conjunction with trigger_soundscape to determine when a player hears it."
+[
+	volume(float) : "Soundscape Volume" : "1.0" : "Sets the soundscape master volume"
+]

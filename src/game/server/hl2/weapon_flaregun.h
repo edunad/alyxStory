@@ -29,38 +29,38 @@
 class CFlare : public CBaseCombatCharacter
 {
 public:
-	DECLARE_CLASS( CFlare, CBaseCombatCharacter );
+	DECLARE_CLASS(CFlare, CBaseCombatCharacter);
 
 	CFlare();
 	~CFlare();
 
-	static CFlare *	GetActiveFlares( void );
-	CFlare *		GetNextFlare( void ) const { return m_pNextFlare; }
+	static CFlare *	GetActiveFlares(void);
+	CFlare *		GetNextFlare(void) const { return m_pNextFlare; }
 
-	static CFlare *Create( Vector vecOrigin, QAngle vecAngles, CBaseEntity *pOwner, float lifetime );
+	static CFlare *Create(Vector vecOrigin, QAngle vecAngles, CBaseEntity *pOwner, float lifetime);
 
-	virtual unsigned int PhysicsSolidMaskForEntity( void ) const;
+	virtual unsigned int PhysicsSolidMaskForEntity(void) const;
 
-	void	Spawn( void );
-	void	Precache( void );
-	int		Restore( IRestore &restore );
-	void	Activate( void );
+	void	Spawn(void);
+	void	Precache(void);
+	int		Restore(IRestore &restore);
+	void	Activate(void);
 
-	void	StartBurnSound( void );
+	void	StartBurnSound(void);
 
-	void	Start( float lifeTime );
-	void	Die( float fadeTime );
-	void	Launch( const Vector &direction, float speed );
+	void	Start(float lifeTime);
+	void	Die(float fadeTime);
+	void	Launch(const Vector &direction, float speed);
 
-	Class_T Classify( void );
+	Class_T Classify(void);
 
-	void	FlareTouch( CBaseEntity *pOther );
-	void	FlareBurnTouch( CBaseEntity *pOther );
-	void	FlareThink( void );
+	void	FlareTouch(CBaseEntity *pOther);
+	void	FlareBurnTouch(CBaseEntity *pOther);
+	void	FlareThink(void);
 
-	void	InputStart( inputdata_t &inputdata );
-	void	InputDie( inputdata_t &inputdata );
-	void	InputLaunch( inputdata_t &inputdata );
+	void	InputStart(inputdata_t &inputdata);
+	void	InputDie(inputdata_t &inputdata);
+	void	InputLaunch(inputdata_t &inputdata);
 
 	DECLARE_SERVERCLASS();
 	DECLARE_DATADESC();
@@ -69,38 +69,37 @@ public:
 
 	CBaseEntity *m_pOwner;
 	int			m_nBounces;			// how many times has this flare bounced?
-	CNetworkVar( float, m_flTimeBurnOut );	// when will the flare burn out?
-	CNetworkVar( float, m_flScale );
+	CNetworkVar(float, m_flTimeBurnOut);	// when will the flare burn out?
+	CNetworkVar(float, m_flScale);
 	float		m_flDuration;
 	float		m_flNextDamage;
-	
+
 	CSoundPatch	*m_pBurnSound;
 	bool		m_bFading;
-	CNetworkVar( bool, m_bLight );
-	CNetworkVar( bool, m_bSmoke );
-	CNetworkVar( bool, m_bPropFlare );
+	CNetworkVar(bool, m_bLight);
+	CNetworkVar(bool, m_bSmoke);
+	CNetworkVar(bool, m_bPropFlare);
 
 	bool		m_bInActiveList;
 	CFlare *	m_pNextFlare;
 
-	void		RemoveFromActiveFlares( void );
-	void		AddToActiveFlares( void );
+	void		RemoveFromActiveFlares(void);
+	void		AddToActiveFlares(void);
 };
 
 //---------------------
 // Flaregun
 //---------------------
-class CFlaregun:public CBaseHLCombatWeapon
+class CFlaregun :public CBaseHLCombatWeapon
 {
 public:
-	DECLARE_CLASS( CFlaregun, CBaseHLCombatWeapon );
+	DECLARE_CLASS(CFlaregun, CBaseHLCombatWeapon);
 
 	DECLARE_SERVERCLASS();
 
-	void Precache( void );
-	void PrimaryAttack( void );
-	void SecondaryAttack( void );
+	void Precache(void);
+	void PrimaryAttack(void);
+	void SecondaryAttack(void);
 };
 
 #endif // WEAPON_FLAREGUN_H
-

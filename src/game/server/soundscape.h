@@ -17,7 +17,9 @@ struct ss_update_t
 	CBasePlayer *pPlayer;
 	CEnvSoundscape	*pCurrentSoundscape;
 	Vector		playerPosition;
+
 	float		currentDistance;
+
 	int			traceCount;
 	bool		bInRange;
 };
@@ -35,7 +37,7 @@ public:
 	void Spawn( void );
 	void Precache( void );
 	void UpdateForPlayer( ss_update_t &update );
-	void WriteAudioParamsTo( audioparams_t &audio );
+	void WriteAudioParamsTo( audioparams_t &audio, float volume );
 	virtual int UpdateTransmitState();
 	bool InRangeOfPlayer( CBasePlayer *pPlayer );
 	void DrawDebugGeometryOverlays( void );
@@ -57,6 +59,7 @@ private:
 public:
 	COutputEvent	m_OnPlay;
 	float	m_flRadius;
+	float	m_flVolume;
 	string_t m_soundscapeName;
 	int		m_soundscapeIndex;
 	int		m_soundscapeEntityId;

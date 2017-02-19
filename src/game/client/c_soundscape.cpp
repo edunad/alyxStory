@@ -187,7 +187,7 @@ public:
 	KeyValues *SoundscapeByIndex( int index );
 	
 	// main-level soundscape processing, called on new soundscape
-	void StartNewSoundscape( KeyValues *pSoundscape );
+	void StartNewSoundscape( KeyValues *pSoundscape, float volume );
 	void StartSubSoundscape( KeyValues *pSoundscape, subsoundscapeparams_t &params );
 
 	// root level soundscape keys
@@ -464,7 +464,7 @@ CON_COMMAND_F_COMPLETION( playsoundscape, "Forces a soundscape to play", FCVAR_C
 
 CON_COMMAND_F( stopsoundscape, "Stops all soundscape processing and fades current looping sounds", FCVAR_CHEAT )
 {
-	g_SoundscapeSystem.StartNewSoundscape( NULL );
+	g_SoundscapeSystem.StartNewSoundscape( NULL, 0.0f );
 }
 
 void C_SoundscapeSystem::ForceSoundscape( const char *pSoundscapeName, float radius )
@@ -474,7 +474,7 @@ void C_SoundscapeSystem::ForceSoundscape( const char *pSoundscapeName, float rad
 	{
 		m_forcedSoundscapeIndex = index;
 		m_forcedSoundscapeRadius = radius;
-		g_SoundscapeSystem.StartNewSoundscape( SoundscapeByIndex(index) );
+		g_SoundscapeSystem.StartNewSoundscape( SoundscapeByIndex(index), 1.0f );
 	}
 	else
 	{
@@ -559,10 +559,11 @@ void C_SoundscapeSystem::UpdateAudioParams( audioparams_t &audio )
 
 	m_params = audio;
 	m_forcedSoundscapeIndex = -1;
+
 	if ( audio.ent.Get() && audio.soundscapeIndex >= 0 && audio.soundscapeIndex < m_soundscapes.Count() )
 	{
 		DevReportSoundscapeName( audio.soundscapeIndex );
-		StartNewSoundscape( m_soundscapes[audio.soundscapeIndex] );
+ 		StartNewSoundscape(m_soundscapes[audio.soundscapeIndex], audio.volume );
 	}
 	else
 	{
@@ -578,7 +579,7 @@ void C_SoundscapeSystem::UpdateAudioParams( audioparams_t &audio )
 
 
 // Called when a soundscape is activated (leading edge of becoming the active soundscape)
-void C_SoundscapeSystem::StartNewSoundscape( KeyValues *pSoundscape )
+void C_SoundscapeSystem::StartNewSoundscape( KeyValues *pSoundscape, float volume )
 {
 	int i;
 
@@ -593,6 +594,7 @@ void C_SoundscapeSystem::StartNewSoundscape( KeyValues *pSoundscape )
 			m_loopingSounds[i].volumeCurrent = 0;
 		}
 	}
+
 	// update ID
 	m_loopingSoundId++;
 
@@ -607,7 +609,7 @@ void C_SoundscapeSystem::StartNewSoundscape( KeyValues *pSoundscape )
 		params.wroteSoundMixer = false;
 		params.wroteDSPVolume = false;
 
-		params.masterVolume = 1.0;
+		params.masterVolume = volume; // 1.0
 		params.startingPosition = 0;
 		params.recurseLevel = 0;
 		params.positionOverride = -1;
