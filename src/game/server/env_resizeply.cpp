@@ -9,7 +9,7 @@
 class CEnvResizePly : public CPointEntity
 {
 private:
-	float m_height;
+	float m_playerHeight;
 	DECLARE_DATADESC();
 
 public:
@@ -18,9 +18,6 @@ public:
 	~CEnvResizePly(void);
 	virtual void	Spawn(void);
 
-	inline	float	Height(void) { return m_height; }
-	inline	void	SetHeight(float h) { m_height = h; }
-
 	// Input handlers
 	void InputResizePlayer(inputdata_t &data);
 };
@@ -28,7 +25,7 @@ public:
 LINK_ENTITY_TO_CLASS(env_resize_ply, CEnvResizePly);
 
 BEGIN_DATADESC(CEnvResizePly)
-DEFINE_KEYFIELD(m_height, FIELD_FLOAT, "height"),
+DEFINE_KEYFIELD(m_playerHeight, FIELD_FLOAT, "height"),
 DEFINE_INPUTFUNC(FIELD_VOID, "ApplyResize", InputResizePlayer),
 END_DATADESC()
 
@@ -56,6 +53,6 @@ void CEnvResizePly::InputResizePlayer(inputdata_t &data)
 			pPlayer = UTIL_GetLocalPlayer();
 		}
 
-		game->SetPlayerHeight(m_height, pPlayer);
+		game->SetPlyHeight(m_playerHeight, pPlayer);
 	}
 }

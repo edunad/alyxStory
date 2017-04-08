@@ -130,6 +130,23 @@
 	input SetGlowAlpha(float) : "Sets the glow alpha color channel's value (0 - 255)."
 ]
 
+@PointClass base(prop_physics) studioprop() = prop_physics_glow :
+	"A prop that physically simulates as a single rigid body. It can be constrained to other physics objects using hinges "+
+	"or other constraints. It can also be configured to break when it takes enough damage. Health can be overridden on this version."+
+	"Works exactly like a prop_dynamic, but it can optionally have a custom glow around it."
+[
+	input StartGlowing(void) : "Starts the glow."
+	input StopGlowing(void) : "Stops the glow."
+	input ToggleGlow(void) : "Toggles the glow."
+	
+	input SetGlowColor(color255) : "Change the glow's color. Format: <Red 0-255> <Green 0-255> <Blue 0-255>"
+	input SetGlowRed(float) : "Sets the glow red color channel's value (0 - 255)."
+	input SetGlowGreen(float) : "Sets the glow green color channel's value (0 - 255)."
+	input SetGlowBlue(float) : "Sets the glow blue color channel's value (0 - 255)."
+	input SetGlowAlpha(float) : "Sets the glow alpha color channel's value (0 - 255)."
+]
+
+
 @PointClass base(Targetname) = env_footsteps : 
 	"Controls the player foosteps sound"
 [
