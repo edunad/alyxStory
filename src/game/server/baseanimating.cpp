@@ -154,6 +154,8 @@ static CIKSaveRestoreOps s_IKSaveRestoreOp;
 BEGIN_DATADESC( CBaseAnimating )
 
 	DEFINE_FIELD( m_flGroundSpeed, FIELD_FLOAT ),
+	DEFINE_FIELD( m_flExtraGroundSpeed, FIELD_FLOAT),
+
 	DEFINE_FIELD( m_flLastEventCheck, FIELD_TIME ),
 	DEFINE_FIELD( m_bSequenceFinished, FIELD_BOOLEAN ),
 	DEFINE_FIELD( m_bSequenceLoops, FIELD_BOOLEAN ),
@@ -197,6 +199,7 @@ BEGIN_DATADESC( CBaseAnimating )
 	DEFINE_FIELD( m_flDissolveStartTime, FIELD_TIME ),
 
  // DEFINE_FIELD( m_boneCacheHandle, memhandle_t ),
+	DEFINE_INPUTFUNC(FIELD_FLOAT, "InputExtraSpeed", InputExtraSpeed),
 
 	DEFINE_INPUTFUNC( FIELD_VOID, "Ignite", InputIgnite ),
 	DEFINE_INPUTFUNC( FIELD_FLOAT, "IgniteLifetime", InputIgniteLifetime ),
@@ -892,6 +895,7 @@ void CBaseAnimating::ResetSequenceInfo ( )
 	}
 
 	CStudioHdr *pStudioHdr = GetModelPtr();
+
 	m_flGroundSpeed = GetSequenceGroundSpeed( pStudioHdr, GetSequence() ) * GetModelScale();
 	m_bSequenceLoops = ((GetSequenceFlags( pStudioHdr, GetSequence() ) & STUDIO_LOOPING) != 0);
 	// m_flAnimTime = gpGlobals->time;
@@ -1002,7 +1006,7 @@ float CBaseAnimating::GetSequenceGroundSpeed( CStudioHdr *pStudioHdr, int iSeque
 
 float CBaseAnimating::GetIdealSpeed( ) const
 {
-	return m_flGroundSpeed;
+	return m_flGroundSpeed + m_flExtraGroundSpeed;
 }
 
 float CBaseAnimating::GetIdealAccel( ) const
@@ -2330,7 +2334,7 @@ Vector CBaseAnimating::GetGroundSpeedVelocity( void )
 
 	AngleVectors( vecAngles, &vecVelocity );
 
-	vecVelocity = vecVelocity * m_flGroundSpeed;
+	vecVelocity = vecVelocity * (m_flGroundSpeed + m_flExtraGroundSpeed);
 
 	return vecVelocity;
 }
@@ -3511,6 +3515,13 @@ void CBaseAnimating::ResetSequence(int nSequence)
 	{
 		ResetSequenceInfo();
 	}
+}
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+void CBaseAnimating::InputExtraSpeed(inputdata_t &inputdata)
+{
+	m_flExtraGroundSpeed = inputdata.value.Float();
 }
 
 //-----------------------------------------------------------------------------

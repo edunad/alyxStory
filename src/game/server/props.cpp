@@ -2409,6 +2409,7 @@ void COrnamentProp::InputDetach(inputdata_t &inputdata)
 LINK_ENTITY_TO_CLASS(physics_prop, CPhysicsProp);
 LINK_ENTITY_TO_CLASS(prop_physics, CPhysicsProp);
 LINK_ENTITY_TO_CLASS(prop_physics_override, CPhysicsProp);
+LINK_ENTITY_TO_CLASS(prop_physics_glow, CPhysicsProp);
 
 BEGIN_DATADESC(CPhysicsProp)
 
@@ -2493,7 +2494,7 @@ void CPhysicsProp::Spawn()
 		return;
 
 	// Now condense all classnames to one
-	if (FClassnameIs(this, "prop_physics_override"))
+	if (FClassnameIs(this, "prop_physics_override") || FClassnameIs(this, "prop_physics_glow"))
 	{
 		SetClassname("prop_physics");
 	}
@@ -2646,7 +2647,7 @@ bool CPhysicsProp::CanBePickedUpByPhyscannon(void)
 //-----------------------------------------------------------------------------
 bool CPhysicsProp::OverridePropdata(void)
 {
-	return (FClassnameIs(this, "prop_physics_override"));
+	return (FClassnameIs(this, "prop_physics_override") || FClassnameIs(this, "prop_physics_glow"));
 }
 
 //-----------------------------------------------------------------------------

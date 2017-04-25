@@ -300,6 +300,7 @@ void CAI_BlendedMotor::SetMoveScriptAnim( float flNewSpeed )
 	CAI_Navigator *pNavigator = GetNavigator();
 
 	SetPlaybackRate( m_flCurrRate );
+
 	// calc weight of idle animation layer that suppresses the run animation
 	float flWeight = 0.0f;
 	if (GetIdealSpeed() > 0.0f)
@@ -313,6 +314,7 @@ void CAI_BlendedMotor::SetMoveScriptAnim( float flNewSpeed )
 		SetPlaybackRate( m_flCurrRate );
 		flWeight = 0.0;
 	}
+
 	// Msg("weight %.3f rate %.3f\n", flWeight, m_flCurrRate );
 	m_flCurrRate = MIN( m_flCurrRate + (1.0 - m_flCurrRate) * 0.8f, 1.0f );
 

@@ -4826,6 +4826,106 @@ void CServerRagdollTrigger::EndTouch(CBaseEntity *pOther)
 	}
 }
 
+
+
+//-----------------------------------------------------------------------------
+// Purpose: Detects player motion
+//			
+//-----------------------------------------------------------------------------
+class CTriggerMotion : public CBaseTrigger
+{
+public:
+	DECLARE_CLASS(CTriggerMotion, CBaseTrigger);
+
+	void Spawn(void);
+
+	void MotionThink(void);
+
+	void StartTouch(CBaseEntity *pOther);
+	void EndTouch(CBaseEntity *pOther);
+
+	void HasPlayerMoved();
+
+	DECLARE_DATADESC();
+private:
+	float m_minMovement;
+	Vector m_lastPosition;
+	CBaseEntity *pPlayer;
+
+	// Outputs
+	COutputEvent m_OnMotionDetected;
+};
+
+BEGIN_DATADESC(CTriggerMotion)
+
+DEFINE_FIELD(pPlayer, FIELD_CLASSPTR),
+DEFINE_FIELD(m_minMovement, FIELD_FLOAT),
+
+DEFINE_FUNCTION(MotionThink),
+
+DEFINE_KEYFIELD(m_minMovement, FIELD_FLOAT, "minMovement"),
+DEFINE_OUTPUT(m_OnMotionDetected, "OnMotionDetected"),
+END_DATADESC()
+
+
+LINK_ENTITY_TO_CLASS(trigger_motion, CTriggerMotion);
+
+
+//-----------------------------------------------------------------------------
+// Purpose: 
+//-----------------------------------------------------------------------------
+void CTriggerMotion::Spawn(void)
+{
+	BaseClass::Spawn();
+	InitTrigger();
+
+	SetThink(&CTriggerMotion::MotionThink);
+	SetNextThink(gpGlobals->curtime);
+}
+
+//-----------------------------------------------------------------------------
+// Purpose: 
+//-----------------------------------------------------------------------------
+void CTriggerMotion::HasPlayerMoved()
+{
+	if (pPlayer == NULL) return;
+
+	Vector newPos = pPlayer->GetAbsOrigin();
+	//float dist = UTIL_DistApprox(newPos, m_lastPosition);
+
+	if (m_lastPosition.DistTo(newPos) > m_minMovement)
+		m_OnMotionDetected.FireOutput(pPlayer, this);
+
+	m_lastPosition = newPos;
+}
+
+// TODO : MAKE THIS AFFECT ANY ENTITY?
+void CTriggerMotion::StartTouch(CBaseEntity *pOther)
+{
+	if (!pOther->IsPlayer())
+		return;
+
+	// Save the current player pos
+	m_lastPosition = pOther->GetAbsOrigin();
+	pPlayer = pOther;
+}
+
+void CTriggerMotion::EndTouch(CBaseEntity *pOther)
+{
+	if (!pOther->IsPlayer())
+		return;
+
+	// Reset
+	pPlayer = NULL;
+}
+
+void CTriggerMotion::MotionThink()
+{
+	// if I hurt anyone, think again
+	HasPlayerMoved();
+	SetNextThink(gpGlobals->curtime + 0.1f);
+}
+
 #ifdef HL1_DLL
 //----------------------------------------------------------------------------------
 // func_friction

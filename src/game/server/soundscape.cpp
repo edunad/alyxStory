@@ -71,6 +71,7 @@ LINK_ENTITY_TO_CLASS( env_soundscape, CEnvSoundscape );
 BEGIN_DATADESC( CEnvSoundscape )
 
 	DEFINE_KEYFIELD( m_flRadius, FIELD_FLOAT, "radius" ),
+	DEFINE_KEYFIELD( m_flVolume, FIELD_FLOAT, "volume"),
 	// don't save, recomputed on load
 	//DEFINE_FIELD( m_soundscapeIndex, FIELD_INTEGER ),
 	DEFINE_FIELD( m_soundscapeName, FIELD_STRING ),
@@ -104,6 +105,7 @@ CEnvSoundscape::CEnvSoundscape()
 	m_soundscapeName = NULL_STRING;
 	m_soundscapeIndex = -1;
 	m_soundscapeEntityId = -1;
+	m_flVolume = 1.0f;
 	m_bDisabled = false;
 	g_SoundscapeSystem.AddSoundscapeEntity( this );
 }
@@ -215,11 +217,14 @@ int CEnvSoundscape::UpdateTransmitState()
 	return SetTransmitState( FL_EDICT_ALWAYS );
 }
 
-void CEnvSoundscape::WriteAudioParamsTo( audioparams_t &audio )
+void CEnvSoundscape::WriteAudioParamsTo( audioparams_t &audio, float volume )
 {
 	audio.ent.Set( this );
 	audio.soundscapeIndex = m_soundscapeIndex;
 	audio.localBits = 0;
+	audio.volume.Set(volume);
+
+
 	for ( int i = 0; i < ARRAYSIZE(m_positionNames); i++ )
 	{
 		if ( m_positionNames[i] != NULL_STRING )
@@ -292,8 +297,8 @@ void CEnvSoundscape::UpdateForPlayer( ss_update_t &update )
 
 			if ( tr.fraction == 1 && !tr.startsolid )
 			{
-				audioparams_t &audio = update.pPlayer->GetAudioParams();
-				WriteAudioParamsTo( audio );
+				WriteAudioParamsTo(update.pPlayer->GetAudioParams(), this->m_flVolume);
+
 				update.pCurrentSoundscape = this;
 				update.bInRange = true;
 				update.currentDistance = range;
@@ -310,6 +315,7 @@ void CEnvSoundscape::UpdateForPlayer( ss_update_t &update )
  		if ( update.pPlayer )
 		{
 			audioparams_t &audio = update.pPlayer->GetAudioParams();
+
 			if ( audio.ent.Get() != this )
 			{
 				if ( InRangeOfPlayer( update.pPlayer ) )
@@ -435,7 +441,9 @@ void CEnvSoundscapeTriggerable::DelegateStartTouch( CBaseEntity *pEnt )
 
 	// Add us to the player's list of soundscapes and 
 	pPlayer->m_hTriggerSoundscapeList.AddToHead( this );
-	WriteAudioParamsTo( pPlayer->GetAudioParams() );
+
+	// Write audio params
+	WriteAudioParamsTo(pPlayer->GetAudioParams(), this->m_flVolume);
 }
 
 
@@ -453,7 +461,7 @@ void CEnvSoundscapeTriggerable::DelegateEndTouch( CBaseEntity *pEnt )
 		if ( pSS )
 		{
 			// Make this one current.
-			pSS->WriteAudioParamsTo( pPlayer->GetAudioParams() );
+			pSS->WriteAudioParamsTo(pPlayer->GetAudioParams(), this->m_flVolume);
 			return;
 		}
 		else

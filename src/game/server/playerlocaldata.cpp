@@ -33,6 +33,7 @@ BEGIN_SEND_TABLE_NOBASE( CPlayerLocalData, DT_Local )
 	SendPropFloat	(SENDINFO(m_flDucktime), 12, SPROP_ROUNDDOWN|SPROP_CHANGES_OFTEN, 0.0f, 2048.0f ),
 	SendPropFloat	(SENDINFO(m_flDuckJumpTime), 12, SPROP_ROUNDDOWN, 0.0f, 2048.0f ),
 	SendPropFloat	(SENDINFO(m_flJumpTime), 12, SPROP_ROUNDDOWN, 0.0f, 2048.0f ),
+
 #if PREDICTION_ERROR_CHECK_LEVEL > 1 
 	SendPropFloat	(SENDINFO(m_flFallVelocity), 32, SPROP_NOSCALE ),
 
@@ -82,6 +83,7 @@ BEGIN_SEND_TABLE_NOBASE( CPlayerLocalData, DT_Local )
 	SendPropVector( SENDINFO_STRUCTARRAYELEM( m_audio.localSound, 7 ), -1, SPROP_COORD),
 	SendPropInt( SENDINFO_STRUCTELEM( m_audio.soundscapeIndex ), 17, 0 ),
 	SendPropInt( SENDINFO_STRUCTELEM( m_audio.localBits ), NUM_AUDIO_LOCAL_SOUNDS, SPROP_UNSIGNED ),
+	SendPropInt(SENDINFO_STRUCTELEM(m_audio.volume), 0, SPROP_NOSCALE),
 	SendPropEHandle( SENDINFO_STRUCTELEM( m_audio.ent ) ),
 END_SEND_TABLE()
 
@@ -129,6 +131,7 @@ BEGIN_SIMPLE_DATADESC( audioparams_t )
 	DEFINE_AUTO_ARRAY( localSound, FIELD_VECTOR ),
 	DEFINE_FIELD( soundscapeIndex, FIELD_INTEGER ),
 	DEFINE_FIELD( localBits, FIELD_INTEGER ),
+	DEFINE_FIELD( volume, FIELD_FLOAT),
 	DEFINE_FIELD( ent, FIELD_EHANDLE ),
 
 END_DATADESC()

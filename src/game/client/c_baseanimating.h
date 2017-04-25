@@ -538,6 +538,8 @@ protected:
 private:
 
 	float							m_flGroundSpeed;	// computed linear movement rate for current sequence
+	float							m_flExtraGroundSpeed;
+
 	float							m_flLastEventCheck;	// cycle index of when events were last checked
 	bool							m_bSequenceFinished;// flag set when StudioAdvanceFrame moves across a frame boundry
 	bool							m_bSequenceLoops;	// true if the sequence loops

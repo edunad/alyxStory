@@ -162,6 +162,7 @@ private:
 	float				 m_flDoorBashYaw;
 
 	float				 m_flFOV;
+	float				 mSpeed;
 	float				 m_flDISTFOV;
 
 	CRandSimTimer 		 m_DurationDoorBash;
@@ -230,7 +231,6 @@ BEGIN_DATADESC( CZombie )
 
 	DEFINE_KEYFIELD(m_flFOV, FIELD_FLOAT, "npcFOV"),
 	DEFINE_KEYFIELD(m_flDISTFOV, FIELD_FLOAT, "npcFOVDistance"),
-
 	DEFINE_EMBEDDED( m_DurationDoorBash ),
 	DEFINE_EMBEDDED( m_NextTimeToStartDoorBash ),
 	DEFINE_FIELD( m_vPositionCharged, FIELD_POSITION_VECTOR ),
@@ -275,28 +275,20 @@ void CZombie::Spawn( void )
 	Precache();
 
 	if( FClassnameIs( this, "npc_zombie" ) )
-	{
 		m_fIsTorso = false;
-	}
 	else
-	{
-		// This was placed as an npc_zombie_torso
 		m_fIsTorso = true;
-	}
+	
 
 	m_fIsHeadless = false;
 
-#ifdef HL2_EPISODIC
-	SetBloodColor( BLOOD_COLOR_ZOMBIE );
-#else
-	SetBloodColor( BLOOD_COLOR_GREEN );
-#endif // HL2_EPISODIC
+	SetBloodColor( BLOOD_COLOR_RED );
 
 	m_iHealth			= sk_zombie_health.GetFloat();
 	m_flFieldOfView		= m_flFOV; // 0.2
 
 	CapabilitiesClear();
-	
+
 	/* SENSING CONTROLL */
 	if (GetSpawnFlags() & SENSES_IGNORE_SOUND)
 		GetSenses()->AddSensingFlags(SENSING_FLAGS_DONT_LISTEN);
@@ -305,10 +297,9 @@ void CZombie::Spawn( void )
 		GetSenses()->AddSensingFlags(SENSING_FLAGS_DONT_LOOK);
 	
 	GetSenses()->SetDistLook(m_flDISTFOV);
+	m_flNextMoanSound = gpGlobals->curtime + random->RandomFloat( 1.0, 4.0 );
 
 	BaseClass::Spawn();
-
-	m_flNextMoanSound = gpGlobals->curtime + random->RandomFloat( 1.0, 4.0 );
 }
 
 //-----------------------------------------------------------------------------
@@ -860,7 +851,7 @@ int CZombie::OnTakeDamage_Alive( const CTakeDamageInfo &inputInfo )
 //-----------------------------------------------------------------------------
 bool CZombie::IsHeavyDamage( const CTakeDamageInfo &info )
 {
-#ifdef HL2_EPISODIC
+
 	if ( info.GetDamageType() & DMG_BUCKSHOT )
 	{
 		if ( !m_fIsTorso && info.GetDamage() > (m_iMaxHealth/3) )
@@ -883,7 +874,6 @@ bool CZombie::IsHeavyDamage( const CTakeDamageInfo &info )
 			return true;
 		}
 	}
-#endif // HL2_EPISODIC
 
 	return BaseClass::IsHeavyDamage(info);
 }

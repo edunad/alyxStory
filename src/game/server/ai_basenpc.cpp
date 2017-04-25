@@ -7354,6 +7354,9 @@ void CAI_BaseNPC::StartNPC( void )
 
 	InitSquad();
 
+	// Init speed
+	m_flExtraGroundSpeed = m_flExtraSpeed;
+
 	//---------------------------------
 	//
 	// Spread think times of simultaneously spawned NPCs so that they don't all happen at the same time
@@ -10659,6 +10662,10 @@ BEGIN_DATADESC( CAI_BaseNPC )
     DEFINE_FIELD( m_iMySquadSlot,				FIELD_INTEGER ),
 	DEFINE_KEYFIELD( m_strHintGroup,			FIELD_STRING, "hintgroup" ),
 	DEFINE_KEYFIELD( m_bHintGroupNavLimiting,	FIELD_BOOLEAN, "hintlimiting" ),
+
+	/* SPEED */
+	DEFINE_KEYFIELD(m_flExtraSpeed, FIELD_FLOAT, "npcExtraSpeed"),
+
  	DEFINE_EMBEDDEDBYREF( m_pTacticalServices ),
  	DEFINE_FIELD( m_flWaitFinished,			FIELD_TIME ),
 	DEFINE_FIELD( m_flNextFlinchTime,		FIELD_TIME ),
@@ -11347,6 +11354,7 @@ CAI_BaseNPC::CAI_BaseNPC(void)
 	m_fIsUsingSmallHull			= true;
 
 	m_bHintGroupNavLimiting		= false;
+	m_flExtraSpeed				= 0;
 
 	m_fNoDamageDecal			= false;
 

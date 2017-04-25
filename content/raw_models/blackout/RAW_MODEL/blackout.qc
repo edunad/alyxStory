@@ -25,7 +25,6 @@ $BBox -0.781 -62.918 -0.781 0.781 0.781 10.271
 // $HBoxSet "entryboxes"
 // $HBox 0 "Blackout.base" -10 0 -10 10 72 10 ""
 
-
 $Sequence "idle" {
 	"blackout_anims\idle.smd"
 	activity "ACT_IDLE" 1
@@ -33,6 +32,13 @@ $Sequence "idle" {
 	fadeout 0.2
 	fps 30
 	loop
+}
+
+$Sequence "breakBone" {
+	"blackout_anims\anim.breakBone.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
 }
 
 $Sequence "exit1Nightmare" {

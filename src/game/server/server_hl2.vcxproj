@@ -835,6 +835,7 @@ exit 1
   <ItemGroup>
     <ClCompile Include="..\shared\game_timescale_shared.cpp" />
     <ClCompile Include="env_footsteps.cpp" />
+    <ClCompile Include="env_playerSpeed.cpp" />
     <ClCompile Include="env_slomo.cpp" />
     <ClCompile Include="env_warpball.cpp" />
     <ClCompile Include="gamedll_replay.cpp" />

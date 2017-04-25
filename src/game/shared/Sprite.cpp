@@ -195,7 +195,7 @@ void CSprite::Spawn( void )
 
 	Precache();
 	SetModel( STRING( GetModelName() ) );
-	CollisionProp()->SetSurroundingBoundsType( USE_GAME_CODE );
+	CollisionProp()->SetSurroundingBoundsType(USE_GAME_CODE); // USE_GAME_CODE
 
 	m_flMaxFrame = (float)modelinfo->GetModelFrameCount( GetModel() ) - 1;
 	AddEffects( EF_NOSHADOW | EF_NORECEIVESHADOW );

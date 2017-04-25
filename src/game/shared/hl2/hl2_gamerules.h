@@ -74,7 +74,7 @@ private:
 
 	virtual void			InitDefaultAIRelationships( void );
 	virtual const char*		AIClassText(int classType);
-	virtual const char *GetGameDescription( void ) { return "Half-Life 2"; }
+	virtual const char *GetGameDescription( void ) { return "Half-Life 2 : Alyx's Story"; }
 
 	// Ammo
 	virtual void			PlayerThink( CBasePlayer *pPlayer );

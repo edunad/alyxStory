@@ -3460,6 +3460,9 @@
     <ClCompile Include="logic_changemap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="env_playerSpeed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

@@ -327,19 +327,22 @@ void CSoundscapeSystem::FrameUpdatePostEntityThink()
 				// if we got this far, we're looking at an entity that is contending
 				// for current player sound. the closest entity to player wins.
 				CEnvSoundscape *pCurrent = (CEnvSoundscape *)( audio.ent.Get() );
+				ss_update_t update;
+
 				if ( pCurrent )
 				{
 					int nEntIndex = pCurrent->m_soundscapeEntityId - 1;
 					NOTE_UNUSED( nEntIndex );
 					Assert( m_soundscapeEntities[nEntIndex] == pCurrent );
 				}
-				ss_update_t update;
+				
 				update.pPlayer = pPlayer;
 				update.pCurrentSoundscape = pCurrent;
 				update.playerPosition = pPlayer->EarPosition();
 				update.bInRange = false;
 				update.currentDistance = 0;
 				update.traceCount = 0;
+
 				if ( pCurrent )
 				{
 					pCurrent->UpdateForPlayer(update);
