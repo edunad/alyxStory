@@ -1749,6 +1749,10 @@ File: D:\alyxStory\game\mod_hl2\materials\models\effects\urban_puddle01a_normal.
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\game\mod_hl2\materials\models\effects\urban_puddle01a_ssbump.vtf
 Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\metal\metalducts.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\metal\metalducts_n.vtf
+Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\game\mod_hl2\materials\metal\rebar_tiled_mesh.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\game\mod_hl2\materials\metal\rebar_tiled_mesh_n.vtf
@@ -1975,6 +1979,8 @@ File: D:\alyxStory\game\mod_hl2\materials\effects\fleck_ash2.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\game\mod_hl2\materials\effects\fleck_ash3.vtf
 Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\effects\npc_detection.vtf
+Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\game\mod_hl2\materials\effects\vignette.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\game\mod_hl2\materials\de_cbble\grass_alt\grass_a.vtf
@@ -2082,5 +2088,37 @@ Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\game\mod_hl2\materials\decals\wires03.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\game\mod_hl2\materials\decals\wires04.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concretewall075a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concrete_bts_ceiling001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concrete_bts_modular_wall001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concrete_bts_modular_wall001c.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concrete_bts_wall001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concrete_modular_wall001a.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concrete_modular_wall001a_height-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concrete_modular_wall001b.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concrete_modular_wall001_gradient00.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concrete_modular_wall001_gradient01.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\concrete_modular_wall001_gradient05.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\cracked_n.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\cracked_ne.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\cracked_nw.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\observationwall_001a_height-ssbump.vtf
+Error: Cannot fix (file is 7.4 or lower)
+File: D:\alyxStory\game\mod_hl2\materials\concrete\pavement_height-ssbump.vtf
 Error: Cannot fix (file is 7.4 or lower)
 File: D:\alyxStory\game\mod_hl2\materials\cement\train_cement.vtf

@@ -1,5 +1,7 @@
-VertexLitGeneric
-
+patch
+{
+include "materials/models/props_foliage/tree_include_dryleaves.vmt"
+insert
 {
 $baseTexture "models\props_foliage\Urban_Trees_branches02_mip0"
 $AlphaTest 1
@@ -9,4 +11,4 @@ $model 1
 $FlashlightNoLambert 1
 "%keywords" l4d2
 }
-
+}
