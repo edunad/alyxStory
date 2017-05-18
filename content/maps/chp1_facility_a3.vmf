@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "8351"
+	"mapversion" "8361"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "8351"
+	"mapversion" "3498"
 	"classname" "worldspawn"
 	"chaptertitle" "2 years later"
 	"detailmaterial" "detail/detailsprites"
@@ -2450,8 +2450,8 @@ world
 		{
 			"id" "3121"
 			"plane" "(408 0 184) (544 0 184) (544 0 496)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 231.111] 0.45"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-1 0 0 294.222] 0.45"
 			"vaxis" "[0 0 -1 -180] 0.55"
 			"rotation" "0"
 			"lightmapscale" "8"
@@ -2689,8 +2689,8 @@ world
 		{
 			"id" "3140"
 			"plane" "(522 259 184) (298 259 184) (298 259 496)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 -41.3335] 0.45"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[1 0 0 -490.222] 0.45"
 			"vaxis" "[0 0 -1 -180] 0.55"
 			"rotation" "0"
 			"lightmapscale" "8"
@@ -2826,8 +2826,8 @@ world
 		{
 			"id" "3144"
 			"plane" "(306 259 184) (306 0 184) (306 0 496)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 1 0 -448.889] 0.45"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 1 0 -385.778] 0.45"
 			"vaxis" "[0 0 -1 -180] 0.55"
 			"rotation" "0"
 			"lightmapscale" "8"
@@ -2974,8 +2974,8 @@ world
 		{
 			"id" "3447"
 			"plane" "(522 195 184) (522 304 184) (522 304 496)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 -1 0 158.222] 0.45"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -1 0 221.333] 0.45"
 			"vaxis" "[0 0 -1 -180] 0.55"
 			"rotation" "0"
 			"lightmapscale" "8"
@@ -3050,8 +3050,8 @@ world
 		{
 			"id" "3453"
 			"plane" "(522 0 184) (522 125 184) (522 125 496)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 -1 0 158.222] 0.45"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -1 0 221.333] 0.45"
 			"vaxis" "[0 0 -1 -180] 0.55"
 			"rotation" "0"
 			"lightmapscale" "8"
@@ -3126,8 +3126,8 @@ world
 		{
 			"id" "3477"
 			"plane" "(522 125 288) (522 195 288) (522 195 496)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 -1 0 158.222] 0.45"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -1 0 221.333] 0.45"
 			"vaxis" "[0 0 -1 -180] 0.55"
 			"rotation" "0"
 			"lightmapscale" "8"
@@ -3224,8 +3224,8 @@ world
 		{
 			"id" "3551"
 			"plane" "(296 0 184) (332 0 184) (332 0 496)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 231.111] 0.45"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-1 0 0 294.222] 0.45"
 			"vaxis" "[0 0 -1 -180] 0.55"
 			"rotation" "0"
 			"lightmapscale" "8"
@@ -3300,8 +3300,8 @@ world
 		{
 			"id" "3557"
 			"plane" "(332 0 292) (408 0 292) (408 0 496)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 231.111] 0.45"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-1 0 0 294.222] 0.45"
 			"vaxis" "[0 0 -1 -180] 0.55"
 			"rotation" "0"
 			"lightmapscale" "8"
@@ -3539,11 +3539,11 @@ world
 		{
 			"id" "3852"
 			"plane" "(432 -6 116) (336 -6 116) (336 -6 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 32] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0.998629 0 0.0523359 -177.222] 0.25"
+			"vaxis" "[0.0523359 0 -0.998629 -344.788] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		editor
@@ -3973,11 +3973,11 @@ world
 		{
 			"id" "4037"
 			"plane" "(344 -216 8) (344 -1288 8) (344 -1288 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 32] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -0.998629 0.0523359 -377.65] 0.25"
+			"vaxis" "[0 -0.0523359 -0.998629 -328.461] 0.25"
 			"rotation" "0"
-			"lightmapscale" "9"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -4180,11 +4180,11 @@ world
 		{
 			"id" "4048"
 			"plane" "(128 -200 8) (336 -200 8) (336 -200 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 32] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0.998629 0 0.0523359 -440.861] 0.25"
+			"vaxis" "[0.0523359 0 -0.998629 -358.606] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -4315,11 +4315,11 @@ world
 		{
 			"id" "4060"
 			"plane" "(336 -72 8) (128 -72 8) (128 -72 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 32] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0.998629 0 0.0523359 -440.86] 0.25"
+			"vaxis" "[0.0523359 0 -0.998629 -358.606] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -4450,11 +4450,11 @@ world
 		{
 			"id" "4072"
 			"plane" "(344 -11 8) (344 -64 8) (344 -64 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 32] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 0.998629 0.0523359 196.859] 0.25"
+			"vaxis" "[0 0.0523359 -0.998629 -271.518] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -4609,11 +4609,11 @@ world
 		{
 			"id" "4084"
 			"plane" "(425 -280 8) (425 -11 8) (425 -11 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 -1 0 0] 0.25"
-			"vaxis" "[0 0 -1 32] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -0.998629 0.0523359 472.48] 0.25"
+			"vaxis" "[0 -0.0523359 -0.998629 -257.073] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -4844,11 +4844,11 @@ world
 		{
 			"id" "4240"
 			"plane" "(628 -288 8) (432 -288 8) (432 -288 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 -384] 0.25"
-			"vaxis" "[0 0 -1 32] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0.998629 0 0.0523359 -74.7693] 0.25"
+			"vaxis" "[0.0523359 0 -0.998628 -285.752] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -5055,11 +5055,11 @@ world
 		{
 			"id" "4294"
 			"plane" "(424 -720 8) (424 -368 8) (424 -368 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 -1 0 -256] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 0.998629 0.0523359 496.931] 0.25"
+			"vaxis" "[0 0.0523359 -0.998628 -121.625] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -5214,11 +5214,11 @@ world
 		{
 			"id" "4306"
 			"plane" "(432 -360 8) (632 -360 8) (632 -360 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 320] 0.25"
-			"vaxis" "[0 0 -1 32] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0.998629 0 0.0523359 -74.7692] 0.25"
+			"vaxis" "[0.0523359 0 -0.998628 -285.752] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -8659,11 +8659,11 @@ world
 		{
 			"id" "6369"
 			"plane" "(432 -800 7.99999) (632 -800 7.99999) (632 -800 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 320] 0.25"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.998629 0 0.0523359 -205.402] 0.25"
+			"vaxis" "[-0.0523359 0 -0.998628 -185.265] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -8794,11 +8794,11 @@ world
 		{
 			"id" "6381"
 			"plane" "(632 -728 8) (432 -728 8) (432 -728 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 -352] 0.25"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.998629 0 0.0523359 -205.402] 0.25"
+			"vaxis" "[-0.0523359 0 -0.998628 -185.266] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -8929,11 +8929,11 @@ world
 		{
 			"id" "6393"
 			"plane" "(424 -1320 8) (424 -808 8) (424 -808 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 -1 0 32] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -0.998629 0.0523359 -486.688] 0.25"
+			"vaxis" "[0 -0.0523359 -0.998628 -441.501] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -9110,11 +9110,11 @@ world
 		{
 			"id" "6402"
 			"plane" "(640 -1319 -16) (432 -1319 -16) (432 -1319 169)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 32] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0.998629 0 0.0523359 16.4036] 0.25"
+			"vaxis" "[0.0523359 0 -0.998628 -254.137] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		editor
@@ -9153,7 +9153,7 @@ world
 		{
 			"id" "6406"
 			"plane" "(448 64 496) (448 0 496) (448 0 184)"
-			"material" "NATURE/ROCKWALL007"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
 			"uaxis" "[0 -1 0 -189.333] 0.45"
 			"vaxis" "[0 0 -1 -180] 0.55"
 			"rotation" "0"
@@ -9258,7 +9258,7 @@ world
 		{
 			"id" "6404"
 			"plane" "(522 64 496) (448 64 496) (448 64 184)"
-			"material" "NATURE/ROCKWALL007"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
 			"uaxis" "[-1 0 0 152] 0.45"
 			"vaxis" "[0 0 -1 -180] 0.55"
 			"rotation" "0"
@@ -9862,22 +9862,22 @@ world
 		{
 			"id" "8188"
 			"plane" "(288 -1424 -16) (288 -1504 -16) (288 -1504 220)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 1 0 510.131] 0.245245"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 0.998629 0.0523359 438.772] 0.25"
+			"vaxis" "[0 0.052336 -0.998629 277.815] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
 		{
 			"id" "8189"
 			"plane" "(-448 -1424 -16) (288 -1424 -16) (288 -1424 220)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 -9.66113] 0.245245"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.99863 0 0.052336 -3] 0.25"
+			"vaxis" "[-0.052336 0 -0.99863 40] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -9949,11 +9949,11 @@ world
 		{
 			"id" "8201"
 			"plane" "(0 -1504 9) (355 -1504 9) (355 -1504 154)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 384] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.998629 0 0.0523359 -322.56] 0.25"
+			"vaxis" "[-0.0523359 0 -0.998629 23.2524] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -10003,11 +10003,11 @@ world
 		{
 			"id" "8205"
 			"plane" "(592 -1504 8) (592 -1319 8) (592 -1319 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 -1 0 -320] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -0.998629 0.0523359 -327.609] 0.25"
+			"vaxis" "[0 -0.0523359 -0.998628 -406.329] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -10101,11 +10101,11 @@ world
 		{
 			"id" "8243"
 			"plane" "(379 -1504 9) (392 -1504 9) (392 -1504 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 384] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.998629 0 0.0523359 -322.56] 0.25"
+			"vaxis" "[-0.0523359 0 -0.998629 23.2523] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -10177,11 +10177,11 @@ world
 		{
 			"id" "8249"
 			"plane" "(355 -1504 9) (379 -1504 9) (379 -1504 107)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 384] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.998629 0 0.0523359 -322.56] 0.25"
+			"vaxis" "[-0.0523359 0 -0.998629 23.2524] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -10253,11 +10253,11 @@ world
 		{
 			"id" "8255"
 			"plane" "(379 -1504 154) (355 -1504 154) (355 -1504 123)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 384] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.998629 0 0.0523359 -322.56] 0.25"
+			"vaxis" "[-0.0523359 0 -0.998629 23.2523] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -11599,11 +11599,11 @@ world
 		{
 			"id" "8794"
 			"plane" "(136 -1284 -16) (136 -1200 -16) (136 -1200 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 1 0 32] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 0.998629 0.0523359 23.0398] 0.25"
+			"vaxis" "[0 0.0523359 -0.998629 256.027] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -11838,11 +11838,11 @@ world
 		{
 			"id" "9108"
 			"plane" "(-248 -1200 -72) (-248 -1288 -72) (-248 -1288 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 1 0 32] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -0.998629 0.0523359 -77.2764] 0.25"
+			"vaxis" "[0 -0.052336 -0.998629 -178.555] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -14360,11 +14360,11 @@ world
 		{
 			"id" "11019"
 			"plane" "(336 -1292 8) (136 -1292 8) (136 -1292 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 320] 0.25"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.998629 0 0.0523359 -498.621] 0.25"
+			"vaxis" "[-0.0523359 0 -0.998629 14.0254] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -14481,8 +14481,8 @@ world
 					"row1" "0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 -1 0 0 1 0 0 -1 0 0 1"
 					"row2" "0 0 1 0 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1"
 					"row3" "0 0 1 0 0 1 0 0 0 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1"
-					"row4" "0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1"
-					"row5" "0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1"
+					"row4" "0 0 1 0 0 1 0 0 1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1"
+					"row5" "0 0 1 0 0 1 0 0 1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1"
 					"row6" "0 0 1 0 0 1 0 0 1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1"
 					"row7" "0 0 1 0 0 1 0 0 1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1"
 					"row8" "0 0 1 0 0 1 0 0 1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0"
@@ -14493,10 +14493,10 @@ world
 					"row1" "1.82452 0 0 0 0.838608 1.54044 6.31879 0.320114 3.59501"
 					"row2" "3.16111 0.462222 0 0 0.532598 0.227101 11.7073 3.27262 8.83261"
 					"row3" "4.96277 1 0 0.922168 0.252197 2.18923 10.0575 6.67989 8.0072"
-					"row4" "5.3129 3.49356 0.923531 2.11428 2.2562 2.81299 5.48576 3.61218 11.1319"
-					"row5" "5.81599 7.19898 1.55659 5.24545 3.50838 2.00099 5.28674 3.49951 13.0159"
-					"row6" "8.61622 6.86727 1.96792 10.4962 0.577551 1.4705 4.56742 6 7.02932"
-					"row7" "12.0741 9.1338 4.1572 9.17405 2.95882 3.46797 6.91628 7.11618 1.30877"
+					"row4" "5.3129 3.49356 0.923531 2.11428 0.0413117 3.73064 5.48576 3.61218 11.1319"
+					"row5" "5.81599 7.19898 1.55659 5.24545 1.03682 5.37483 5.28674 3.49951 13.0159"
+					"row6" "8.61622 6.86727 1.96792 10.4962 1.68667 5.38825 4.56742 6 7.02932"
+					"row7" "12.0741 9.1338 4.1572 9.17405 2.48395 4.79985 6.91628 7.11618 1.30877"
 					"row8" "9.8712 8.47705 5 1.95721 1.54936 4.45347 4.59122 8.71818 0"
 				}
 				offsets
@@ -14654,11 +14654,11 @@ world
 		{
 			"id" "11055"
 			"plane" "(-434 -1420 8) (288 -1420 8) (288 -1420 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 -9.66113] 0.245245"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
-			"rotation" "0"
-			"lightmapscale" "8"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.99863 0 0.052336 -3] 0.25"
+			"vaxis" "[-0.052336 0 -0.99863 40] 0.25"
+			"rotation" "3"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -14789,11 +14789,11 @@ world
 		{
 			"id" "11067"
 			"plane" "(-252.125 -1292 8) (-434 -1292 8) (-434 -1292 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 213.003] 0.227344"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.99863 0 0.052336 -3] 0.25"
+			"vaxis" "[-0.052336 0 -0.99863 40] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -14924,11 +14924,11 @@ world
 		{
 			"id" "11091"
 			"plane" "(80 -1205 8) (-192 -1205 8) (-192 -1205 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 -416] 0.25"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.998629 0 0.0523359 261.189] 0.25"
+			"vaxis" "[-0.052336 0 -0.998629 27.0128] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -15059,11 +15059,11 @@ world
 		{
 			"id" "11212"
 			"plane" "(-434 -1408 8) (-434 -1424 8) (-434 -1424 154)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 1 0 382.125] 0.245245"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -0.998629 0.0523359 -358.296] 0.25"
+			"vaxis" "[0 -0.052336 -0.998629 -139.617] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -15135,11 +15135,11 @@ world
 		{
 			"id" "11218"
 			"plane" "(-434 -1288 8) (-434 -1312 8) (-434 -1312 154)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 1 0 382.138] 0.245245"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -0.998629 0.0523359 -358.296] 0.25"
+			"vaxis" "[0 -0.052336 -0.998629 -139.617] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -15211,11 +15211,11 @@ world
 		{
 			"id" "11224"
 			"plane" "(-434 -1312 116) (-434 -1408 116) (-434 -1408 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[0 1 0 382.138] 0.245245"
-			"vaxis" "[0 0 -1 32.3866] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[0 -0.998629 0.0523359 -358.296] 0.25"
+			"vaxis" "[0 -0.052336 -0.998629 -139.617] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -22008,7 +22008,7 @@ world
 		{
 			"id" "12585"
 			"plane" "(-151 -127 182) (71 -127 182) (71 98 182)"
-			"material" "NATURE/ROCKWALL007"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 32] 0.25"
 			"rotation" "0"
@@ -28309,11 +28309,11 @@ world
 		{
 			"id" "20770"
 			"plane" "(554 -1504 9) (1048 -1504 9) (1048 -1504 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 384] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.998629 0 0.0523359 364.894] 0.25"
+			"vaxis" "[-0.0523359 0 -0.998628 32.4561] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -75361,11 +75361,11 @@ entity
 		{
 			"id" "9798"
 			"plane" "(-192 -1205 8) (-248 -1240 8) (-248 -1240 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 32] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.846836 -0.529272 0.0523359 386.672] 0.25"
+			"vaxis" "[-0.0443808 -0.027738 -0.998629 -100.575] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		editor
@@ -75556,11 +75556,11 @@ entity
 		{
 			"id" "9814"
 			"plane" "(-176 -1200 8) (-192 -1205 8) (-192 -1205 136)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[1 0 0 32] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.953172 -0.297866 0.0523359 396.386] 0.25"
+			"vaxis" "[-0.0499536 -0.0156105 -0.998629 -46.4001] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		editor
@@ -75697,11 +75697,11 @@ entity
 		{
 			"id" "9824"
 			"plane" "(80 -1205 136) (136 -1240 136) (136 -1240 8)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 32] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.846836 0.529273 0.0523359 203.71] 0.25"
+			"vaxis" "[-0.0443808 0.027738 -0.998629 158.164] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		editor
@@ -75827,11 +75827,11 @@ entity
 		{
 			"id" "9835"
 			"plane" "(64 -1200 136) (80 -1205 136) (80 -1205 8)"
-			"material" "NATURE/ROCKWALL007"
-			"uaxis" "[-1 0 0 32] 0.25"
-			"vaxis" "[0 0 -1 -480] 0.25"
+			"material" "GG_TIBET/CS_TIBET_STONE_06"
+			"uaxis" "[-0.953172 0.297866 0.0523359 146.359] 0.25"
+			"vaxis" "[-0.0499536 0.0156105 -0.998629 101.493] 0.25"
 			"rotation" "0"
-			"lightmapscale" "8"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		editor
@@ -79222,7 +79222,7 @@ entity
 		side
 		{
 			"id" "11184"
-			"plane" "(-446 -1390 101) (-446 -1384 101) (-436 -1384 101)"
+			"plane" "(-445.714 -1390 101) (-445.714 -1384 101) (-434.286 -1384 101)"
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[0 -1 0 0] 0.25"
 			"vaxis" "[-1 0 0 44] 0.25"
@@ -79233,7 +79233,7 @@ entity
 		side
 		{
 			"id" "11183"
-			"plane" "(-446 -1401 86) (-446 -1401 92) (-436 -1401 92)"
+			"plane" "(-445.714 -1401 86) (-445.714 -1401 92) (-434.286 -1401 92)"
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 -44] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -79244,7 +79244,7 @@ entity
 		side
 		{
 			"id" "11182"
-			"plane" "(-436 -1401 86) (-436 -1401 92) (-436 -1390 101)"
+			"plane" "(-434.286 -1401 86) (-434.286 -1401 92) (-434.286 -1390 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[0 -0.642788 0.766044 -218.444] 0.25"
 			"vaxis" "[0 -0.766044 -0.642788 -430.636] 0.25"
@@ -79255,7 +79255,7 @@ entity
 		side
 		{
 			"id" "11181"
-			"plane" "(-446 -1384 101) (-446 -1390 101) (-446 -1401 92)"
+			"plane" "(-445.714 -1384 101) (-445.714 -1390 101) (-445.714 -1401 92)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[0 -0.642788 0.766044 -218.444] 0.25"
 			"vaxis" "[0 -0.766044 -0.642788 -430.636] 0.25"
@@ -79266,7 +79266,7 @@ entity
 		side
 		{
 			"id" "11180"
-			"plane" "(-436 -1384 101) (-446 -1384 101) (-446 -1401 86)"
+			"plane" "(-434.286 -1384 101) (-445.714 -1384 101) (-445.714 -1401 86)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[1 0 0 -186] 0.25"
 			"vaxis" "[0 -1 0 -320] 0.25"
@@ -79277,85 +79277,9 @@ entity
 		side
 		{
 			"id" "11179"
-			"plane" "(-436 -1401 92) (-446 -1401 92) (-446 -1390 101)"
+			"plane" "(-434.286 -1401 92) (-445.714 -1401 92) (-445.714 -1390 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[1 0 0 -184] 0.25"
-			"vaxis" "[0 -1 0 -320] 0.25"
-			"rotation" "90"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 180 0"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	solid
-	{
-		"id" "58314"
-		side
-		{
-			"id" "11190"
-			"plane" "(-434 -1408 116) (-448 -1408 116) (-448 -1312 116)"
-			"material" "STONE/STONEWALL050J"
-			"uaxis" "[1 0 0 -189] 0.25"
-			"vaxis" "[0 -1 0 -320] 0.25"
-			"rotation" "90"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "11189"
-			"plane" "(-434 -1312 101) (-448 -1312 101) (-448 -1408 101)"
-			"material" "STONE/STONEWALL050J"
-			"uaxis" "[1 0 0 -189] 0.25"
-			"vaxis" "[0 -1 0 -320] 0.25"
-			"rotation" "90"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "11188"
-			"plane" "(-448 -1312 101) (-434 -1312 101) (-434 -1312 116)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 -44] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "11187"
-			"plane" "(-434 -1408 101) (-448 -1408 101) (-448 -1408 116)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 -44] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "11186"
-			"plane" "(-434 -1312 101) (-434 -1408 101) (-434 -1408 116)"
-			"material" "STONE/STONEWALL050J"
-			"uaxis" "[0 0 1 -18] 0.25"
-			"vaxis" "[0 -1 0 -320] 0.25"
-			"rotation" "90"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "11185"
-			"plane" "(-448 -1408 101) (-448 -1312 101) (-448 -1312 116)"
-			"material" "STONE/STONEWALL050J"
-			"uaxis" "[0 0 1 -18] 0.25"
 			"vaxis" "[0 -1 0 -320] 0.25"
 			"rotation" "90"
 			"lightmapscale" "16"
@@ -79374,7 +79298,7 @@ entity
 		side
 		{
 			"id" "11196"
-			"plane" "(-434 -1408 101) (-448 -1408 101) (-448 -1401 101)"
+			"plane" "(-432 -1408 101) (-448 -1408 101) (-448 -1401 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[1 0 0 -189] 0.25"
 			"vaxis" "[0 -1 0 -320] 0.25"
@@ -79385,7 +79309,7 @@ entity
 		side
 		{
 			"id" "11195"
-			"plane" "(-434 -1401 8) (-448 -1401 8) (-448 -1408 8)"
+			"plane" "(-432 -1401 8) (-448 -1401 8) (-448 -1408 8)"
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[0 -1 0 0] 0.25"
 			"vaxis" "[-1 0 0 44] 0.25"
@@ -79396,7 +79320,7 @@ entity
 		side
 		{
 			"id" "11194"
-			"plane" "(-448 -1401 8) (-434 -1401 8) (-434 -1401 101)"
+			"plane" "(-448 -1401 8) (-432 -1401 8) (-432 -1401 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[1 0 0 -186] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -79407,7 +79331,7 @@ entity
 		side
 		{
 			"id" "11193"
-			"plane" "(-434 -1408 8) (-448 -1408 8) (-448 -1408 101)"
+			"plane" "(-432 -1408 8) (-448 -1408 8) (-448 -1408 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[1 0 0 -189] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -79418,7 +79342,7 @@ entity
 		side
 		{
 			"id" "11192"
-			"plane" "(-434 -1401 8) (-434 -1408 8) (-434 -1408 101)"
+			"plane" "(-432 -1401 8) (-432 -1408 8) (-432 -1408 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[0 -1 0 -64] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -79450,7 +79374,7 @@ entity
 		side
 		{
 			"id" "11202"
-			"plane" "(-446 -1333 101) (-446 -1327 101) (-436 -1327 101)"
+			"plane" "(-445.714 -1333 101) (-445.714 -1327 101) (-434.286 -1327 101)"
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[0 1 0 -12] 0.25"
 			"vaxis" "[1 0 0 -8] 0.25"
@@ -79461,7 +79385,7 @@ entity
 		side
 		{
 			"id" "11201"
-			"plane" "(-436 -1316 86) (-436 -1316 92) (-446 -1316 92)"
+			"plane" "(-434.286 -1316 86) (-434.286 -1316 92) (-445.714 -1316 92)"
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[-1 0 0 8] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -79472,7 +79396,7 @@ entity
 		side
 		{
 			"id" "11200"
-			"plane" "(-446 -1316 86) (-446 -1316 92) (-446 -1327 101)"
+			"plane" "(-445.714 -1316 86) (-445.714 -1316 92) (-445.714 -1327 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[0 0.642788 0.766044 111.375] 0.25"
 			"vaxis" "[0 0.766044 -0.642788 214.732] 0.25"
@@ -79483,7 +79407,7 @@ entity
 		side
 		{
 			"id" "11199"
-			"plane" "(-436 -1333 101) (-436 -1327 101) (-436 -1316 92)"
+			"plane" "(-434.286 -1333 101) (-434.286 -1327 101) (-434.286 -1316 92)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[0 0.642788 0.766044 111.375] 0.25"
 			"vaxis" "[0 0.766044 -0.642788 214.732] 0.25"
@@ -79494,7 +79418,7 @@ entity
 		side
 		{
 			"id" "11198"
-			"plane" "(-436 -1316 86) (-446 -1316 86) (-446 -1333 101)"
+			"plane" "(-434.286 -1316 86) (-445.714 -1316 86) (-445.714 -1333 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[1 0 0 -186] 0.25"
 			"vaxis" "[0 -0.749838 0.661622 200.54] 0.25"
@@ -79505,7 +79429,7 @@ entity
 		side
 		{
 			"id" "11197"
-			"plane" "(-436 -1327 101) (-446 -1327 101) (-446 -1316 92)"
+			"plane" "(-434.286 -1327 101) (-445.714 -1327 101) (-445.714 -1316 92)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[-1 0 0 160] 0.25"
 			"vaxis" "[0 1 0 320] 0.25"
@@ -79526,7 +79450,7 @@ entity
 		side
 		{
 			"id" "11208"
-			"plane" "(-434 -1319 101) (-448 -1319 101) (-448 -1312 101)"
+			"plane" "(-432 -1319 101) (-448 -1319 101) (-448 -1312 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[1 0 0 -189] 0.25"
 			"vaxis" "[0 -1 0 -320] 0.25"
@@ -79537,7 +79461,7 @@ entity
 		side
 		{
 			"id" "11207"
-			"plane" "(-434 -1312 8) (-448 -1312 8) (-448 -1319 8)"
+			"plane" "(-432 -1312 8) (-448 -1312 8) (-448 -1319 8)"
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[0 -1 0 36] 0.25"
 			"vaxis" "[-1 0 0 44] 0.25"
@@ -79548,7 +79472,7 @@ entity
 		side
 		{
 			"id" "11206"
-			"plane" "(-448 -1312 8) (-434 -1312 8) (-434 -1312 101)"
+			"plane" "(-448 -1312 8) (-432 -1312 8) (-432 -1312 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[1 0 0 -189] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -79559,7 +79483,7 @@ entity
 		side
 		{
 			"id" "11205"
-			"plane" "(-434 -1319 8) (-448 -1319 8) (-448 -1319 101)"
+			"plane" "(-432 -1319 8) (-448 -1319 8) (-448 -1319 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[1 0 0 -186] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -79570,7 +79494,7 @@ entity
 		side
 		{
 			"id" "11204"
-			"plane" "(-434 -1312 8) (-434 -1319 8) (-434 -1319 101)"
+			"plane" "(-432 -1312 8) (-432 -1319 8) (-432 -1319 101)"
 			"material" "STONE/STONEWALL050J"
 			"uaxis" "[0 -1 0 -63] 0.25"
 			"vaxis" "[0 0 -1 4] 0.25"
@@ -79586,6 +79510,82 @@ entity
 			"uaxis" "[0 -1 0 -63] 0.25"
 			"vaxis" "[0 0 -1 4] 0.25"
 			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 180 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	solid
+	{
+		"id" "58314"
+		side
+		{
+			"id" "33560"
+			"plane" "(-432 -1408 116) (-448 -1408 116) (-448 -1312 116)"
+			"material" "STONE/STONEWALL050J"
+			"uaxis" "[1 0 0 -189] 0.25"
+			"vaxis" "[0 -1 0 -320] 0.25"
+			"rotation" "90"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33559"
+			"plane" "(-432 -1312 101) (-448 -1312 101) (-448 -1408 101)"
+			"material" "STONE/STONEWALL050J"
+			"uaxis" "[1 0 0 -189] 0.25"
+			"vaxis" "[0 -1 0 -320] 0.25"
+			"rotation" "90"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33558"
+			"plane" "(-448 -1312 101) (-432 -1312 101) (-432 -1312 116)"
+			"material" "STONE/STONEWALL050J"
+			"uaxis" "[1 0 0 -189] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33557"
+			"plane" "(-432 -1408 101) (-448 -1408 101) (-448 -1408 116)"
+			"material" "STONE/STONEWALL050J"
+			"uaxis" "[1 0 0 -189] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33556"
+			"plane" "(-432 -1312 101) (-432 -1408 101) (-432 -1408 116)"
+			"material" "STONE/STONEWALL050J"
+			"uaxis" "[0 0 1 -18] 0.25"
+			"vaxis" "[0 -1 0 -320] 0.25"
+			"rotation" "90"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33555"
+			"plane" "(-448 -1408 101) (-448 -1312 101) (-448 -1312 116)"
+			"material" "STONE/STONEWALL050J"
+			"uaxis" "[0 0 1 -18] 0.25"
+			"vaxis" "[0 -1 0 -320] 0.25"
+			"rotation" "90"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
 		}
@@ -121824,7 +121824,7 @@ entity
 	"nodeid" "154"
 	"spawnflags" "0"
 	"TargetNode" "-1"
-	"origin" "-70 41 15"
+	"origin" "-79 42 8"
 	editor
 	{
 		"color" "232 219 8"
@@ -121920,7 +121920,7 @@ entity
 	"nodeid" "158"
 	"spawnflags" "0"
 	"TargetNode" "-1"
-	"origin" "-12 -1260 8.00001"
+	"origin" "-12 -1260 12"
 	editor
 	{
 		"color" "232 219 8"
@@ -137648,96 +137648,6 @@ entity
 }
 entity
 {
-	"id" "277229"
-	"classname" "func_areaportal"
-	"PortalVersion" "1"
-	"StartOpen" "1"
-	solid
-	{
-		"id" "277227"
-		side
-		{
-			"id" "33071"
-			"plane" "(-448 -1312 116) (-434 -1312 116) (-434 -1408 116)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "33070"
-			"plane" "(-448 -1408 8) (-434 -1408 8) (-434 -1312 8)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[-1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "33069"
-			"plane" "(-448 -1312 116) (-448 -1408 116) (-448 -1408 8)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[0 -1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "33068"
-			"plane" "(-434 -1312 8) (-434 -1408 8) (-434 -1408 116)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "33067"
-			"plane" "(-434 -1312 116) (-448 -1312 116) (-448 -1312 8)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[-1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "33066"
-			"plane" "(-434 -1408 8) (-448 -1408 8) (-448 -1408 116)"
-			"material" "TOOLS/TOOLSAREAPORTAL"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 255 255"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	editor
-	{
-		"color" "0 255 255"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 6500]"
-	}
-}
-entity
-{
 	"id" "277236"
 	"classname" "func_areaportal"
 	"PortalVersion" "1"
@@ -138322,6 +138232,96 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "277229"
+	"classname" "func_areaportal"
+	"PortalVersion" "1"
+	"StartOpen" "1"
+	solid
+	{
+		"id" "277227"
+		side
+		{
+			"id" "33566"
+			"plane" "(-448 -1408 116) (-448 -1312 116) (-432 -1312 116)"
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33565"
+			"plane" "(-448 -1312 8) (-448 -1408 8) (-432 -1408 8)"
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33564"
+			"plane" "(-448 -1408 8) (-448 -1312 8) (-448 -1312 116)"
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[0 -1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33563"
+			"plane" "(-432 -1312 8) (-432 -1408 8) (-432 -1408 116)"
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33562"
+			"plane" "(-448 -1312 8) (-432 -1312 8) (-432 -1312 116)"
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[-1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "33561"
+			"plane" "(-432 -1408 8) (-448 -1408 8) (-448 -1408 116)"
+			"material" "TOOLS/TOOLSAREAPORTAL"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 255 255"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "0 255 255"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 6500]"
 	}
 }
 cameras
