@@ -60,9 +60,9 @@ void CGameTimescale::LevelShutdownPostEntity()
 
 void CGameTimescale::SetCurrentTimescale( float flTimescale )
 {
-	/*if ( m_flCurrentTimescale == flTimescale && m_flCurrentTimescale == engine->Time() )
+	if ( m_flCurrentTimescale == flTimescale && m_flCurrentTimescale == engine->Time() )
 		return;
-	*/
+	
 
 	static const ConVar *pHostTimescale = cvar->FindVar("host_timescale");
 	if (m_flCurrentTimescale == flTimescale && m_flCurrentTimescale == pHostTimescale->GetFloat())
@@ -77,14 +77,17 @@ void CGameTimescale::SetCurrentTimescale( float flTimescale )
 
 	m_flStartBlendTime = 0.0f;
 	m_flStartBlendRealtime = 0.0f;
-	
-#ifndef CLIENT_DLL
-	/*UserMessageBegin( filter, "CurrentTimescale" );
-		WRITE_FLOAT( m_flCurrentTimescale );
-	MessageEnd();*/
 
-	engine->ServerCommand(UTIL_VarArgs("host_timescale %f\n", m_flCurrentTimescale));
-#endif
+	#ifndef CLIENT_DLL
+		engine->ServerCommand(UTIL_VarArgs("host_timescale %f\n", m_flCurrentTimescale));
+
+		// Pass the change info to the client so it can do prediction
+		CReliableBroadcastRecipientFilter filter;
+		UserMessageBegin( filter, "CurrentTimescale" );
+		WRITE_FLOAT(m_flCurrentTimescale);
+		MessageEnd();
+	#endif
+
 }
 
 void CGameTimescale::SetDesiredTimescaleAtTime( float flDesiredTimescale, float flDurationRealTimeSeconds /*= 0.0f*/, Interpolators_e nInterpolatorType /*= INTERPOLATOR_LINEAR*/, float flStartBlendTime /*= 0.0f*/ )
@@ -113,6 +116,17 @@ void CGameTimescale::SetDesiredTimescale( float flDesiredTimescale, float flDura
 	}
 
 	m_flStartTimescale = m_flCurrentTimescale;
+
+	#ifndef CLIENT_DLL
+		// Pass the change info to the client so it can do prediction
+		CReliableBroadcastRecipientFilter filter;
+		UserMessageBegin(filter, "DesiredTimescale");
+		WRITE_FLOAT(m_flDesiredTimescale);
+		WRITE_FLOAT(m_flDurationRealTimeSeconds);
+		WRITE_BYTE(m_nInterpolatorType);
+		WRITE_FLOAT(m_flStartBlendTime);
+		MessageEnd();
+	#endif
 }
 
 
@@ -155,16 +169,11 @@ void CGameTimescale::UpdateTimescale( void )
 			m_flCurrentTimescale = m_flStartTimescale * ( 1.0f - flInterp ) + m_flDesiredTimescale * flInterp;
 		}
 	}
-	
-	//if (m_flCurrentTimescale != engine->GetTimescale())
-	#ifndef CLIENT_DLL
-	static const ConVar *pHostTimescale = cvar->FindVar("host_timescale");
 
+	#ifndef CLIENT_DLL
+	ConVar *pHostTimescale = cvar->FindVar("host_timescale");
 	if (m_flCurrentTimescale != pHostTimescale->GetFloat())
 	{
-		//engine->SetTimescale( m_flCurrentTimescale );
-			//engine->ClientCmd_Unrestricted(UTIL_VarArgs("host_timescale %f\n", m_flCurrentTimescale));
-		//engine->ClientCmd_Unrestricted("host_timescale 0.4\n");
 		engine->ServerCommand(UTIL_VarArgs("host_timescale %f\n", m_flCurrentTimescale));
 	}
 	#endif
@@ -181,13 +190,9 @@ void CGameTimescale::ResetTimescale( void )
 	m_flStartBlendTime = 0.0f;
 	m_flStartBlendRealtime = 0.0f;
 
-	//engine->SetTimescale( 1.0f );
-
 	#ifndef CLIENT_DLL
-		//engine->ClientCmd_Unrestricted("host_timescale 1.0\n");
 		engine->ServerCommand("host_timescale 1.0\n");
 	#endif
-
 }
 
 

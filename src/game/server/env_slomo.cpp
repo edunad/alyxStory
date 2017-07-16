@@ -45,15 +45,13 @@ void CEnvSlomo::Spawn(void)
 
 void CEnvSlomo::InputStartSlomo(inputdata_t &inputdata)
 {
-	CHalfLife2* game = HL2GameRules();
-	if (game)
-		game->StartSlowmotion(m_Duration, m_Amount, m_Decay);
+	CGameRules* game = GameRules();
+	if (game) game->StartSlowmotion(m_Duration, m_Amount, m_Decay);
 }
 
 
 void CEnvSlomo::InputStopSlomo(inputdata_t &inputdata)
 {
-	CHalfLife2* game = HL2GameRules();
-	if (game)
-		game->StopSlowmotion();
+	CGameRules* game = GameRules();
+	if (game) game->StopSlowmotion();
 }
