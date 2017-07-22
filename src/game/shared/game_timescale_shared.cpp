@@ -17,6 +17,7 @@ CGameTimescale* GameTimescale() { return &g_GameTimescale; }
 CGameTimescale::CGameTimescale( void ) : CAutoGameSystemPerFrame( "CGameTimescale" )
 {
 	m_flStartBlendRealtime = 0.0f;
+	
 }
 
 CGameTimescale::~CGameTimescale()
@@ -26,7 +27,6 @@ CGameTimescale::~CGameTimescale()
 
 bool CGameTimescale::Init()
 {
-
 	ResetTimescale();
 	return true;
 }
@@ -60,12 +60,9 @@ void CGameTimescale::LevelShutdownPostEntity()
 
 void CGameTimescale::SetCurrentTimescale( float flTimescale )
 {
-	if ( m_flCurrentTimescale == flTimescale && m_flCurrentTimescale == engine->Time() )
-		return;
-	
 
-	static const ConVar *pHostTimescale = cvar->FindVar("host_timescale");
-	if (m_flCurrentTimescale == flTimescale && m_flCurrentTimescale == pHostTimescale->GetFloat())
+	ConVar *pHostTimescale = cvar->FindVar("host_timescale");
+	if (m_flCurrentTimescale == flTimescale && m_flCurrentTimescale == engine->Time() && m_flCurrentTimescale == pHostTimescale->GetFloat())
 		return;
 
 	// No ramp in/out, just set it!
@@ -78,9 +75,9 @@ void CGameTimescale::SetCurrentTimescale( float flTimescale )
 	m_flStartBlendTime = 0.0f;
 	m_flStartBlendRealtime = 0.0f;
 
-	#ifndef CLIENT_DLL
-		engine->ServerCommand(UTIL_VarArgs("host_timescale %f\n", m_flCurrentTimescale));
+	pHostTimescale->SetValue(1);
 
+	#ifndef CLIENT_DLL
 		// Pass the change info to the client so it can do prediction
 		CReliableBroadcastRecipientFilter filter;
 		UserMessageBegin( filter, "CurrentTimescale" );
@@ -170,13 +167,9 @@ void CGameTimescale::UpdateTimescale( void )
 		}
 	}
 
-	#ifndef CLIENT_DLL
 	ConVar *pHostTimescale = cvar->FindVar("host_timescale");
 	if (m_flCurrentTimescale != pHostTimescale->GetFloat())
-	{
-		engine->ServerCommand(UTIL_VarArgs("host_timescale %f\n", m_flCurrentTimescale));
-	}
-	#endif
+		pHostTimescale->SetValue(m_flCurrentTimescale);
 }
 
 void CGameTimescale::ResetTimescale( void )
@@ -190,9 +183,8 @@ void CGameTimescale::ResetTimescale( void )
 	m_flStartBlendTime = 0.0f;
 	m_flStartBlendRealtime = 0.0f;
 
-	#ifndef CLIENT_DLL
-		engine->ServerCommand("host_timescale 1.0\n");
-	#endif
+	ConVar *pHostTimescale = cvar->FindVar("host_timescale");
+	pHostTimescale->SetValue(1.0f);
 }
 
 

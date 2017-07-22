@@ -1,7 +1,7 @@
 "WorldVertexTransition"
 {
 	"$basetexture" "Nature/rockwall_cave01a"
-	"$basetexture2" "nature/dirtfloor001a"
+	"$basetexture2" "nature/hr_c/hr_dirt_001_color"
 	"%detailtype" "citygrass01"
 	"%tooltexture" "nature/blenddebris002a_tooltexture"
 	"$surfaceprop" "dirt"
