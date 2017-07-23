@@ -160,10 +160,7 @@ CGameRules::CGameRules() : CAutoGameSystemPerFrame( "CGameRules" )
 	m_flSlowMotionStartTime = 0.0f;
 	m_flSlowMotionAmmount = 0.0f;
 	m_flSlowMotionDecay = 0.0f;
-
-	/*ConVar *pHostTimescale = cvar->FindVar("host_timescale");
-	pHostTimescale->m_nFlags &= ~FCVAR_CHEAT;*/
-
+	
 	GameTimescale()->SetDesiredTimescale(1.0f);
 }
 
@@ -227,6 +224,10 @@ void CGameRules::StartSlowmotion(float duration, float ammount, float decay)
 	m_flSlowMotionStartTime = gpGlobals->curtime;
 	m_flSlowMotionAmmount = ammount;
 	m_flSlowMotionDecay = decay;
+
+	// Slowmo needs cheats enabled
+	ConVar *pCheats = cvar->FindVar("sv_cheats");
+	pCheats->SetValue(1);
 }
 
 void CGameRules::StopSlowmotion()

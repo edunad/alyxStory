@@ -75,6 +75,7 @@ void CGameTimescale::SetCurrentTimescale( float flTimescale )
 	m_flStartBlendTime = 0.0f;
 	m_flStartBlendRealtime = 0.0f;
 
+	pHostTimescale->AddFlags(FCVAR_NOTIFY);
 	pHostTimescale->SetValue(1);
 
 	#ifndef CLIENT_DLL
@@ -185,6 +186,9 @@ void CGameTimescale::ResetTimescale( void )
 
 	ConVar *pHostTimescale = cvar->FindVar("host_timescale");
 	pHostTimescale->SetValue(1.0f);
+
+	ConVar *pCheats = cvar->FindVar("sv_cheats");
+	pCheats->SetValue(0);
 }
 
 
