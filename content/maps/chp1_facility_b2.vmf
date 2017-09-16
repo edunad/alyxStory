@@ -97719,6 +97719,7 @@ entity
 	"duration" "0.8"
 	"renderamt" "150"
 	"rendercolor" "168 0 0"
+	"ReverseFadeDuration" "2"
 	"spawnflags" "1"
 	"targetname" "fade.blood"
 	"origin" "2030 -1300.9 -1029.43"
@@ -127039,6 +127040,7 @@ entity
 	"holdtime" "5"
 	"renderamt" "255"
 	"rendercolor" "0 0 0"
+	"ReverseFadeDuration" "2"
 	"spawnflags" "0"
 	"targetname" "fade.levelend"
 	"origin" "5918 -55.7043 -135.078"
@@ -134029,8 +134031,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[4535.23 -469.526 175.025]"
-		"look" "[4557.7 -448.719 103.576]"
+		"position" "[1459.54 -1615.33 -1019.72]"
+		"look" "[1424.52 -1595.44 -1086.22]"
 	}
 }
 cordon

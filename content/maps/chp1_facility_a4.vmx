@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "11040"
+	"mapversion" "11041"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "11040"
+	"mapversion" "11041"
 	"classname" "worldspawn"
 	"chaptertitle" "2 years later"
 	"detailmaterial" "detail/detailsprites"
@@ -119889,7 +119889,7 @@ entity
 {
 	"id" "1595336"
 	"classname" "logic_changemap"
-	"map" "chp1_facility_b1"
+	"map" "chp1_facility_b2"
 	"targetname" "changelevel"
 	"origin" "2528 -4446.5 -11.3885"
 	editor

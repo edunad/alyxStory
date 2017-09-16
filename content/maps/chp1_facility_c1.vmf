@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "3581"
+	"mapversion" "3585"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "3581"
+	"mapversion" "3585"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -71046,6 +71046,7 @@ entity
 	"holdtime" "2"
 	"renderamt" "255"
 	"rendercolor" "0 0 0"
+	"ReverseFadeDuration" "2"
 	"spawnflags" "1"
 	"targetname" "fade.mapStart"
 	"origin" "224 -1.18453 172.374"
@@ -134828,11 +134829,11 @@ entity
 		{
 			"id" "24606"
 			"plane" "(-122 -1227 168) (-122 -1230 168) (-122 -1230 169)"
-			"material" "METAL/METALFLOOR010A"
-			"uaxis" "[0 1 0 89.332] 0.15"
-			"vaxis" "[0 0 -1 60] 0.15"
+			"material" "HALFLIFE/STRIPES2"
+			"uaxis" "[0 0 -1 4] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
-			"lightmapscale" "16"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -134882,11 +134883,11 @@ entity
 		{
 			"id" "24614"
 			"plane" "(-122 -1228 130) (-122 -1229 130) (-122 -1229 168)"
-			"material" "METAL/METALFLOOR010A"
-			"uaxis" "[0 1 0 401.332] 0.15"
-			"vaxis" "[0 0 -1 60] 0.15"
+			"material" "HALFLIFE/STRIPES2"
+			"uaxis" "[0 0 -1 4] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
-			"lightmapscale" "16"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -135231,11 +135232,11 @@ entity
 		{
 			"id" "24635"
 			"plane" "(-51 -1230 168) (-51 -1227 168) (-51 -1227 169)"
-			"material" "METAL/METALFLOOR010A"
-			"uaxis" "[0 -1 0 -449.332] 0.15"
-			"vaxis" "[0 0 -1 60] 0.15"
+			"material" "HALFLIFE/STRIPES2"
+			"uaxis" "[0 0 1 -24] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
-			"lightmapscale" "16"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		editor
@@ -135285,11 +135286,11 @@ entity
 		{
 			"id" "24643"
 			"plane" "(-51 -1229 130) (-51 -1228 130) (-51 -1228 168)"
-			"material" "METAL/METALFLOOR010A"
-			"uaxis" "[0 1 0 401.332] 0.15"
-			"vaxis" "[0 0 -1 60] 0.15"
+			"material" "HALFLIFE/STRIPES2"
+			"uaxis" "[0 0 1 -24] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
-			"lightmapscale" "16"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 		}
 		side
@@ -143256,6 +143257,7 @@ entity
 	"holdtime" "5"
 	"renderamt" "255"
 	"rendercolor" "0 0 0"
+	"ReverseFadeDuration" "2"
 	"spawnflags" "0"
 	"targetname" "fade.elevator.end"
 	"origin" "-113.524 -1362 592.297"
@@ -145425,6 +145427,94 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "144508"
+	"classname" "func_detail"
+	solid
+	{
+		"id" "144444"
+		side
+		{
+			"id" "26189"
+			"plane" "(-122 -1227 131) (-51 -1227 131) (-51 -1229 131)"
+			"material" "HALFLIFE/STRIPES2"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26188"
+			"plane" "(-122 -1229 130) (-51 -1229 130) (-51 -1227 130)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26187"
+			"plane" "(-122 -1227 131) (-122 -1229 131) (-122 -1229 130)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26186"
+			"plane" "(-51 -1227 130) (-51 -1229 130) (-51 -1229 131)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26185"
+			"plane" "(-51 -1227 131) (-122 -1227 131) (-122 -1227 130)"
+			"material" "METAL/METALFLOOR010A"
+			"uaxis" "[1 0 0 -332] 0.15"
+			"vaxis" "[0 0 -1 60] 0.15"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26184"
+			"plane" "(-51 -1229 130) (-122 -1229 130) (-122 -1229 131)"
+			"material" "METAL/METALFLOOR010A"
+			"uaxis" "[1 0 0 484] 0.15"
+			"vaxis" "[0 0 -1 60] 0.15"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 180 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "0 180 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
 	}
 }
 cameras
