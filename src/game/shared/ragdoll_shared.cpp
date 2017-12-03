@@ -923,7 +923,7 @@ void CRagdollLRURetirement::Update(float frametime) // Non-episodic version
 	if (g_RagdollLVManager.IsLowViolence())
 	{
 		iMaxRagdollCount = 0;
-	}
+	}	
 	m_iRagdollCount = 0;
 	m_iSimulatedRagdollCount = 0;
 

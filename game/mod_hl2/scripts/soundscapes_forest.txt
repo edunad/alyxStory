@@ -51,3 +51,48 @@
 		}
 	}
 }
+"inside.factory.forest"
+{
+	"dsp" "1"
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"soundlevel"	"SNDLVL_85dB"
+		"wave"	"ambient/shoots_jungle_lp_03.wav"
+	}
+
+	"playrandom"
+	{
+		"time"		"1,10"
+		"volume"	"0.2"
+		"pitch"		"90,105"
+		"soundlevel"	"SNDLVL_85dB"
+		"rndwave"
+		{
+			"wave"	"ambient/insects/amb_destroyed_elevator_lp_01.wav"
+			"wave"	"ambient/insects/amb_destroyed_elevator_lp_02.wav"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"4,8"
+		"volume"	"0.2"
+		"pitch"		"90,105"
+		"soundlevel"	"SNDLVL_85dB"
+		"rndwave"
+		{
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_01.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_02.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_03.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_04.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_05.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_06.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_07.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_08.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_09.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_10.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_11.wav"
+		}
+	}
+}
