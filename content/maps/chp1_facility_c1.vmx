@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "3584"
+	"mapversion" "3587"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "3584"
+	"mapversion" "3587"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -57771,82 +57771,6 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
-	solid
-	{
-		"id" "144444"
-		side
-		{
-			"id" "26178"
-			"plane" "(-122 -1227 131) (-51 -1227 131) (-51 -1229 131)"
-			"material" "HALFLIFE/STRIPES2"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "26179"
-			"plane" "(-122 -1229 130) (-51 -1229 130) (-51 -1227 130)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "26180"
-			"plane" "(-122 -1227 131) (-122 -1229 131) (-122 -1229 130)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "26181"
-			"plane" "(-51 -1227 130) (-51 -1229 130) (-51 -1229 131)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "26182"
-			"plane" "(-51 -1227 131) (-122 -1227 131) (-122 -1227 130)"
-			"material" "METAL/METALFLOOR010A"
-			"uaxis" "[1 0 0 -332] 0.15"
-			"vaxis" "[0 0 -1 60] 0.15"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "26183"
-			"plane" "(-51 -1229 130) (-122 -1229 130) (-122 -1229 131)"
-			"material" "METAL/METALFLOOR010A"
-			"uaxis" "[1 0 0 484] 0.15"
-			"vaxis" "[0 0 -1 60] 0.15"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 240 133"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
 	group
 	{
 		"id" "144"
@@ -71165,7 +71089,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "1250"
-	"spawnflags" "48"
+	"spawnflags" "112"
 	"targetname" "snd.elevator.door"
 	"origin" "80 0 160.929"
 	editor
@@ -145494,7 +145418,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "1250"
-	"spawnflags" "49"
+	"spawnflags" "113"
 	"targetname" "snd.ely.maintheme"
 	"origin" "65 1124.85 41.1928"
 	editor
@@ -145503,6 +145427,94 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "144508"
+	"classname" "func_detail"
+	solid
+	{
+		"id" "144444"
+		side
+		{
+			"id" "26189"
+			"plane" "(-122 -1227 131) (-51 -1227 131) (-51 -1229 131)"
+			"material" "HALFLIFE/STRIPES2"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26188"
+			"plane" "(-122 -1229 130) (-51 -1229 130) (-51 -1227 130)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26187"
+			"plane" "(-122 -1227 131) (-122 -1229 131) (-122 -1229 130)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26186"
+			"plane" "(-51 -1227 130) (-51 -1229 130) (-51 -1229 131)"
+			"material" "TOOLS/TOOLSNODRAW"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "12"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26185"
+			"plane" "(-51 -1227 131) (-122 -1227 131) (-122 -1227 130)"
+			"material" "METAL/METALFLOOR010A"
+			"uaxis" "[1 0 0 -332] 0.15"
+			"vaxis" "[0 0 -1 60] 0.15"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26184"
+			"plane" "(-51 -1229 130) (-122 -1229 130) (-122 -1229 131)"
+			"material" "METAL/METALFLOOR010A"
+			"uaxis" "[1 0 0 484] 0.15"
+			"vaxis" "[0 0 -1 60] 0.15"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 180 0"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "0 180 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
 	}
 }
 cameras

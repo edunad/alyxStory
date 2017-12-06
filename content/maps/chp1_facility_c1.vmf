@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "3585"
+	"mapversion" "3587"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "3585"
+	"mapversion" "3587"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -71089,7 +71089,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "1250"
-	"spawnflags" "48"
+	"spawnflags" "112"
 	"targetname" "snd.elevator.door"
 	"origin" "80 0 160.929"
 	editor
@@ -145418,7 +145418,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "1250"
-	"spawnflags" "49"
+	"spawnflags" "113"
 	"targetname" "snd.ely.maintheme"
 	"origin" "65 1124.85 41.1928"
 	editor

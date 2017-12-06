@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "85"
+	"mapversion" "87"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "85"
+	"mapversion" "87"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1891,7 +1891,7 @@ entity
 	"wait" "3"
 	connections
 	{
-		"OnPressed" "plspls_nopause,StopSound,,0,-1"
+		"OnPressed" "plspls_nopause,FadeOut,1,0,-1"
 		"OnPressed" "plspls,StopSound,,0,-1"
 		"OnPressed" "plspls_loop,StopSound,,0,-1"
 		"OnPressed" "plspls_looppause,StopSound,,0,-1"
@@ -2005,7 +2005,7 @@ entity
 	{
 		"OnPressed" "plspls_loop,PlaySound,,0,-1"
 		"OnPressed" "plspls,StopSound,,0,-1"
-		"OnPressed" "plspls_nopause,StopSound,,0,-1"
+		"OnPressed" "plspls_nopause,FadeOut,1,0,-1"
 		"OnPressed" "plspls_looppause,StopSound,,0,-1"
 	}
 	solid
@@ -2366,6 +2366,24 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "1140"
+	"classname" "env_spark"
+	"angles" "0 0 0"
+	"Magnitude" "1"
+	"spawnflags" "0"
+	"targetname" "spark"
+	"TrailLength" "1"
+	"origin" "61.0499 223.695 73"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
 	}
 }
 cameras

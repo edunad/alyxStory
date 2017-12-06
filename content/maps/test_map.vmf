@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "86"
+	"mapversion" "88"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "86"
+	"mapversion" "88"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1727,6 +1727,10 @@ entity
 	"radius" "1250"
 	"spawnflags" "113"
 	"targetname" "plspls"
+	connections
+	{
+		"OnSoundEnd" "spark,SparkOnce,,0,-1"
+	}
 	"origin" "60 236 144"
 	editor
 	{
@@ -1891,7 +1895,7 @@ entity
 	"wait" "3"
 	connections
 	{
-		"OnPressed" "plspls_nopause,StopSound,,0,-1"
+		"OnPressed" "plspls_nopause,FadeOut,1,0,-1"
 		"OnPressed" "plspls,StopSound,,0,-1"
 		"OnPressed" "plspls_loop,StopSound,,0,-1"
 		"OnPressed" "plspls_looppause,StopSound,,0,-1"
@@ -2005,7 +2009,7 @@ entity
 	{
 		"OnPressed" "plspls_loop,PlaySound,,0,-1"
 		"OnPressed" "plspls,StopSound,,0,-1"
-		"OnPressed" "plspls_nopause,StopSound,,0,-1"
+		"OnPressed" "plspls_nopause,FadeOut,1,0,-1"
 		"OnPressed" "plspls_looppause,StopSound,,0,-1"
 	}
 	solid
@@ -2370,14 +2374,14 @@ entity
 }
 entity
 {
-	"id" "1140"
+	"id" "1217"
 	"classname" "env_spark"
 	"angles" "0 0 0"
 	"Magnitude" "1"
 	"spawnflags" "0"
 	"targetname" "spark"
 	"TrailLength" "1"
-	"origin" "61.0499 223.695 73"
+	"origin" "59.2312 224 131.474"
 	editor
 	{
 		"color" "220 30 220"

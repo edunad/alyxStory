@@ -166,7 +166,6 @@ public:
 	void Precache(void);
 	void Activate(void);
 	void RampThink(void);
-	void SoundThink(void);
 	void InitModulationParms(void);
 	void ComputeMaxAudibleDistance();
 
@@ -236,7 +235,6 @@ DEFINE_ARRAY(m_dpv, FIELD_CHARACTER, sizeof(dynpitchvol_t)),
 
 // Function Pointers
 DEFINE_FUNCTION(RampThink),
-DEFINE_FUNCTION(SoundThink),
 
 // Inputs
 DEFINE_INPUTFUNC(FIELD_VOID, "PlaySound", InputPlaySound),
@@ -280,7 +278,6 @@ void CAmbientGeneric::Spawn(void)
 	// start thinking yet.
 
 	SetThink(&CAmbientGeneric::RampThink);
-	SetThink(&CAmbientGeneric::SoundThink);
 	SetNextThink(TICK_NEVER_THINK);
 
 	m_fActive = false;
@@ -570,15 +567,6 @@ void CAmbientGeneric::UpdateOnRemove(void)
 	BaseClass::UpdateOnRemove();
 }
 
-void CAmbientGeneric::SoundThink(void){
-	if (m_soundEnd != NULL && gpGlobals->curtime >= m_soundEnd){
-		m_OnSoundEnded.FireOutput(NULL, this);
-		SendSound(SND_STOP);
-	}
-
-	SetNextThink(gpGlobals->curtime + 0.1f);
-}
-
 //-----------------------------------------------------------------------------
 // Purpose: Think at 5hz if we are dynamically modifying pitch or volume of the
 //			playing sound.  This function will ramp pitch and/or volume up or
@@ -592,8 +580,12 @@ void CAmbientGeneric::RampThink(void)
 	int fChanged = 0;		// false if pitch and vol remain unchanged this round
 	int	prev;	
 
-	if (!m_dpv.spinup && !m_dpv.spindown && !m_dpv.fadein && !m_dpv.fadeout && !m_dpv.lfotype)
-		return;						// no ramps or lfo, stop thinking
+	if (m_soundEnd != NULL && gpGlobals->curtime >= m_soundEnd){
+		m_OnSoundEnded.FireOutput(NULL, this);
+		SendSound(SND_STOP);
+
+		return; // stop thinking
+	}			
 
 	// ==============
 	// pitch envelope

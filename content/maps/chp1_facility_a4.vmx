@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "11041"
+	"mapversion" "11045"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "11041"
+	"mapversion" "11045"
 	"classname" "worldspawn"
 	"chaptertitle" "2 years later"
 	"detailmaterial" "detail/detailsprites"
@@ -53595,8 +53595,8 @@ world
 					"row4" "40.1684 36.8776 32.8945 24.0399 7.06866 5.37468 9.65292 17.4552 25.8736"
 					"row5" "40.1693 33.514 18.1112 16.76 13.271 19.5497 18.9099 23.8447 30.263"
 					"row6" "44.2626 36.9997 22.112 16.8291 25.676 30.9539 33.9909 34.831 32.6707"
-					"row7" "44.8199 39.5217 25.3623 18.9536 21.6375 27.6853 28.2612 29.7686 21.2503"
-					"row8" "30.0281 30.3097 24.2317 11.6181 8.09248 11.2598 14.8325 17.7941 9.4219"
+					"row7" "46.4713 39.5217 25.3623 18.9536 21.6375 27.6853 28.2612 29.7686 21.2503"
+					"row8" "32.6955 30.3097 24.2317 11.6181 8.09248 11.2598 14.8325 17.7941 9.4219"
 				}
 				offsets
 				{
@@ -53754,8 +53754,8 @@ world
 					"row4" "12.4604 13.0287 20.1854 19.4368 18.8575 22.3328 19.4363 29.8981 40.1684"
 					"row5" "20.3363 21.2994 25.3975 22.0988 20.4558 20.6271 20.6408 28.1498 40.1693"
 					"row6" "36.4703 34.0947 31.5802 34.4496 29.0488 25.4128 23.4029 32.739 44.2626"
-					"row7" "53.2134 51.5398 38.0223 38.3496 39.4506 42.5905 40.6742 43.3031 48.1226"
-					"row8" "26.1524 42.4222 30.3699 24.9931 28.8812 45.0707 42.0652 40.894 35.363"
+					"row7" "53.2134 51.5398 38.0223 38.3496 39.4506 42.5905 40.6742 43.3031 46.4713"
+					"row8" "26.1524 42.4222 30.3699 24.9931 28.8812 45.0707 42.0652 40.894 32.6955"
 				}
 				offsets
 				{
@@ -105079,7 +105079,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "1250"
-	"spawnflags" "16"
+	"spawnflags" "80"
 	"targetname" "snd.crane.break.wire"
 	"origin" "282 -3853 342"
 	editor
@@ -105099,7 +105099,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "1250"
-	"spawnflags" "49"
+	"spawnflags" "113"
 	"targetname" "snd.earthquake"
 	"origin" "214.749 -3272 36.946"
 	editor
@@ -105138,7 +105138,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "1250"
-	"spawnflags" "48"
+	"spawnflags" "112"
 	"targetname" "snd.crane.distress"
 	"origin" "282 -3864 342"
 	editor
@@ -105182,7 +105182,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "2002"
-	"spawnflags" "48"
+	"spawnflags" "112"
 	"targetname" "snd.wire.break"
 	"origin" "266 -3853.37 340.478"
 	editor
@@ -116373,7 +116373,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "176"
-	"spawnflags" "0"
+	"spawnflags" "64"
 	"origin" "1714.23 -3368.01 13.9864"
 	editor
 	{
@@ -117878,7 +117878,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "457"
-	"spawnflags" "0"
+	"spawnflags" "64"
 	"origin" "1704 -3687 -4.91853"
 	editor
 	{
@@ -119908,6 +119908,7 @@ entity
 	"holdtime" "2"
 	"renderamt" "255"
 	"rendercolor" "0 0 0"
+	"ReverseFadeDuration" "2"
 	"spawnflags" "0"
 	"targetname" "fade.fall"
 	"origin" "2532 -4464.85 -7.94049"
@@ -122758,7 +122759,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "1250"
-	"spawnflags" "49"
+	"spawnflags" "113"
 	"targetname" "snd.ambient.rumble"
 	"origin" "1536 -3663 49"
 	editor
