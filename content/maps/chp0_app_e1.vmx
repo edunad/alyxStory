@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "5111"
+	"mapversion" "5112"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -38,7 +38,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "5111"
+	"mapversion" "5112"
 	"classname" "worldspawn"
 	"coldworld" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -60659,7 +60659,7 @@ entity
 	"id" "148099"
 	"classname" "env_fade"
 	"duration" "1"
-	"holdtime" "0.7"
+	"holdtime" "1"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"ReverseFadeDuration" "2"
