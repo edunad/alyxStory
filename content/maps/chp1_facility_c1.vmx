@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "3604"
+	"mapversion" "3605"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "3604"
+	"mapversion" "3605"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -146334,7 +146334,7 @@ entity
 	"targetname" "placeholder.talkEli"
 	"x" "-1"
 	"y" "1"
-	"origin" "-1504 -912 232.25"
+	"origin" "-1504 -925 229"
 	editor
 	{
 		"color" "220 30 220"

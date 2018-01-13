@@ -1,0 +1,46 @@
+﻿Build started 10/11/2016 01:16:24.
+     1>Project "D:\alyxStory\src\utils\motionmapper\motionmapper.vcxproj" on node 6 (Build target(s)).
+     1>PreBuildEvent:
+         if EXIST ..\..\..\game\bin\.\motionmapper.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\motionmapper.exe"') do set valveTmpIsReadOnly="%%A"
+         set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
+         if "%valveTmpIsReadOnlyLetter%"=="R" del /q "D:\alyxStory\src\utils\motionmapper\Debug\"motionmapper.exe
+         if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "motionmapper.vcxproj"
+         if ERRORLEVEL 1 exit /b 1
+         
+         :VCEnd
+       Link:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\.\\motionmapper.exe" /INCREMENTAL /NOLOGO shell32.lib user32.lib advapi32.lib gdi32.lib comdlg32.lib ole32.lib winmm.lib /NODEFAULTLIB:libc /NODEFAULTLIB:libcd /NODEFAULTLIB:libcmt /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\.\/motionmapper.pdb" /SUBSYSTEM:CONSOLE,"5.01" /TLBID:1 /DYNAMICBASE:NO /NXCOMPAT /IMPLIB:".\Debug\.\motionmapper.lib" /MACHINE:X86 /SAFESEH:NO /NXCOMPAT /ignore:4221 .\Debug\.\\pointeroverride.obj
+         .\Debug\.\/cmdlib.obj
+         .\Debug\.\/filesystem_helpers.obj
+         .\Debug\.\/filesystem_init.obj
+         .\Debug\.\/filesystem_tools.obj
+         .\Debug\.\/memoverride.obj
+         .\Debug\.\/motionmapper.obj
+         .\Debug\.\/scriplib.obj
+         ..\..\lib\public\mathlib.lib
+         ..\..\lib\public\nvtristrip.lib
+         ..\..\lib\public\tier0.lib
+         ..\..\lib\public\tier1.lib
+         ..\..\lib\public\tier2.lib
+         ..\..\lib\public\vstdlib.lib
+            Creating library .\Debug\.\motionmapper.lib and object .\Debug\.\motionmapper.exp
+         motionmapper.vcxproj -> D:\alyxStory\src\utils\motionmapper\.\Debug\.\motionmapper.exe
+       PostBuildEvent:
+         copy "D:\alyxStory\src\utils\motionmapper\Debug\"motionmapper.exe ..\..\..\game\bin\.\motionmapper.exe >nul
+         if ERRORLEVEL 1 goto BuildEventFailed
+         if exist "D:\alyxStory\src\utils\motionmapper\Debug\"motionmapper.map copy "D:\alyxStory\src\utils\motionmapper\Debug\"motionmapper.map ..\..\..\game\bin\.\motionmapper.map >nul
+         copy "D:\alyxStory\src\utils\motionmapper\Debug\"motionmapper.pdb ..\..\..\game\bin\.\motionmapper.pdb >nul
+         if ERRORLEVEL 1 goto BuildEventFailed
+         goto BuildEventOK
+         :BuildEventFailed
+         echo *** ERROR! PostBuildStep FAILED for Motionmapper! EXE or DLL is probably running. ***
+         del /q "D:\alyxStory\src\utils\motionmapper\Debug\"motionmapper.exe
+         exit 1
+         :BuildEventOK
+         
+         :VCEnd
+     1>Done Building Project "D:\alyxStory\src\utils\motionmapper\motionmapper.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.61

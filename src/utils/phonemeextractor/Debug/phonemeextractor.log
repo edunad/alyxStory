@@ -1,0 +1,26 @@
+﻿Build started 10/11/2016 01:21:12.
+     1>Project "D:\alyxStory\src\utils\phonemeextractor\phonemeextractor.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         if EXIST ..\..\..\game\bin\phonemeextractors\.\phonemeextractor.dll for /f "delims=" %%A in ('attrib "..\..\..\game\bin\phonemeextractors\.\phonemeextractor.dll"') do set valveTmpIsReadOnly="%%A"
+         set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
+         if "%valveTmpIsReadOnlyLetter%"=="R" del /q "D:\alyxStory\src\utils\phonemeextractor\Debug\"phonemeextractor.dll
+         if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "phonemeextractor.vcxproj"
+         if ERRORLEVEL 1 exit /b 1
+         
+         :VCEnd
+         This VCPROJ is out of sync with its VPC scripts.
+           phonemeextractor.vpc mismatches (0xae387c05 vs 0x54b4aa19).
+           Please use VPC to re-generate!
+           
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: The command "if EXIST ..\..\..\game\bin\phonemeextractors\.\phonemeextractor.dll for /f "delims=" %%A in ('attrib "..\..\..\game\bin\phonemeextractors\.\phonemeextractor.dll"') do set valveTmpIsReadOnly="%%A"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: if "%valveTmpIsReadOnlyLetter%"=="R" del /q "D:\alyxStory\src\utils\phonemeextractor\Debug\"phonemeextractor.dll
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "phonemeextractor.vcxproj"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: if ERRORLEVEL 1 exit /b 1
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: 
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(122,5): error MSB3073: :VCEnd" exited with code 1.
+     1>Done Building Project "D:\alyxStory\src\utils\phonemeextractor\phonemeextractor.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.21

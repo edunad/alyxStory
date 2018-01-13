@@ -1,0 +1,25 @@
+﻿Build started 10/11/2016 01:21:12.
+     1>Project "D:\alyxStory\src\utils\qc_eyes\qc_eyes.vcxproj" on node 3 (Build target(s)).
+     1>PreBuildEvent:
+         if EXIST ..\..\..\game\bin\.\qc_eyes.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\qc_eyes.exe"') do set valveTmpIsReadOnly="%%A"
+         set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
+         if "%valveTmpIsReadOnlyLetter%"=="R" del /q "D:\alyxStory\src\utils\qc_eyes\Debug\"qc_eyes.exe
+         if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "qc_eyes.vcxproj"
+         if ERRORLEVEL 1 exit /b 1
+         
+         :VCEnd
+       Link:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\.\\qc_eyes.exe" /INCREMENTAL /NOLOGO shell32.lib user32.lib advapi32.lib gdi32.lib comdlg32.lib ole32.lib windowscodecs.lib /NODEFAULTLIB:libc /NODEFAULTLIB:libcd /NODEFAULTLIB:libcmt /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\.\/qc_eyes.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE:NO /NXCOMPAT /IMPLIB:".\Debug\.\qc_eyes.lib" /MACHINE:X86 /SAFESEH:NO /NXCOMPAT /ignore:4221 .\Debug\.\\pointeroverride.obj
+         .\Debug\.\QC_Eyes.res
+         .\Debug\.\/QC_Eyes.obj
+         .\Debug\.\/QC_EyesDlg.obj
+         .\Debug\.\/StdAfx.obj
+         ..\..\lib\public\tier0.lib
+         ..\..\lib\public\tier1.lib
+         ..\..\lib\public\vstdlib.lib
+     1>LINK : fatal error LNK1104: cannot open file 'nafxcwd.lib'
+     1>Done Building Project "D:\alyxStory\src\utils\qc_eyes\qc_eyes.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.33
