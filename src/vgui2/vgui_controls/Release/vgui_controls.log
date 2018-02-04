@@ -1,5 +1,5 @@
-﻿Build started 03/01/2018 20:24:31.
-     1>Project "D:\alyxStory\src\vgui2\vgui_controls\vgui_controls.vcxproj" on node 6 (Rebuild target(s)).
+﻿Build started 04/02/2018 20:35:04.
+     1>Project "D:\alyxStory\src\vgui2\vgui_controls\vgui_controls.vcxproj" on node 4 (Build target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\lib\public\.\vgui_controls.lib ( for /f "delims=" %%A in ('attrib "..\..\lib\public\.\vgui_controls.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\..\lib\public\. mkdir ..\..\lib\public\. )
@@ -173,8 +173,8 @@
          .\Release\.\/WizardPanel.obj
          .\Release\.\/WizardSubPanel.obj
          vgui_controls.vcxproj -> D:\alyxStory\src\vgui2\vgui_controls\..\..\lib\public\.\vgui_controls.lib
-     1>Done Building Project "D:\alyxStory\src\vgui2\vgui_controls\vgui_controls.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "D:\alyxStory\src\vgui2\vgui_controls\vgui_controls.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:22.79
+Time Elapsed 00:00:12.34

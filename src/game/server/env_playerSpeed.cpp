@@ -36,6 +36,6 @@ void CEnvPlayerSpeed::Spawn(void)
 
 void CEnvPlayerSpeed::InputSpeed(inputdata_t &inputdata)
 {
-	CBasePlayer *pPlayer = UTIL_GetLocalPlayer();
-	pPlayer->SetMaxSpeed(inputdata.value.Float());
+	ConVar *pMaxSpeed = cvar->FindVar("sv_maxspeed");
+	pMaxSpeed->SetValue(inputdata.value.Float());
 }

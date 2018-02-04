@@ -1,5 +1,5 @@
-﻿Build started 03/01/2018 20:45:52.
-     1>Project "D:\alyxStory\src\tier1\tier1.vcxproj" on node 4 (Rebuild target(s)).
+﻿Build started 04/02/2018 20:35:04.
+     1>Project "D:\alyxStory\src\tier1\tier1.vcxproj" on node 3 (Build target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\tier1.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\tier1.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -94,8 +94,8 @@
          .\Release\.\/utlstring.obj
          .\Release\.\/utlsymbol.obj
          tier1.vcxproj -> D:\alyxStory\src\tier1\..\lib\public\.\tier1.lib
-     1>Done Building Project "D:\alyxStory\src\tier1\tier1.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "D:\alyxStory\src\tier1\tier1.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.20
+Time Elapsed 00:00:10.85

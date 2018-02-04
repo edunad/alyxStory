@@ -1,5 +1,5 @@
-﻿Build started 03/01/2018 20:45:52.
-     1>Project "D:\alyxStory\src\raytrace\raytrace.vcxproj" on node 3 (Rebuild target(s)).
+﻿Build started 04/02/2018 20:35:04.
+     1>Project "D:\alyxStory\src\raytrace\raytrace.vcxproj" on node 5 (Build target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\raytrace.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\raytrace.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -25,8 +25,8 @@
          .\Release\.\/trace2.obj
          .\Release\.\/trace3.obj
          raytrace.vcxproj -> D:\alyxStory\src\raytrace\..\lib\public\.\raytrace.lib
-     1>Done Building Project "D:\alyxStory\src\raytrace\raytrace.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "D:\alyxStory\src\raytrace\raytrace.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.67
+Time Elapsed 00:00:05.52

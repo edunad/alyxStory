@@ -1,5 +1,5 @@
-﻿Build started 03/01/2018 20:45:52.
-     1>Project "D:\alyxStory\src\mathlib\mathlib.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 04/02/2018 20:35:04.
+     1>Project "D:\alyxStory\src\mathlib\mathlib.vcxproj" on node 2 (Build target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\mathlib.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\mathlib.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -63,8 +63,8 @@
          .\Release\.\/vector.obj
          .\Release\.\/vmatrix.obj
          mathlib.vcxproj -> D:\alyxStory\src\mathlib\..\lib\public\.\mathlib.lib
-     1>Done Building Project "D:\alyxStory\src\mathlib\mathlib.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "D:\alyxStory\src\mathlib\mathlib.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.47
+Time Elapsed 00:00:07.81
