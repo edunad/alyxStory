@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "3605"
+	"mapversion" "3606"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "3605"
+	"mapversion" "3606"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -116775,7 +116775,7 @@ entity
 	"classname" "color_correction"
 	"fadeInDuration" "0.5"
 	"fadeOutDuration" "0.5"
-	"filename" "materials/correction/chp1_b_map.raw"
+	"filename" "materials/correction/chp_1_facility_map.raw"
 	"maxfalloff" "-1"
 	"maxweight" "1.0"
 	"minfalloff" "-1"
