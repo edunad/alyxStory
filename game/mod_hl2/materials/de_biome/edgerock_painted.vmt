@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "de_biome/edgerock_painted"
+	"$surfaceprop" "concrete"
+}

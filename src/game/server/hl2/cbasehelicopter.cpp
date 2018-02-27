@@ -94,6 +94,7 @@ BEGIN_DATADESC( CBaseHelicopter )
 	DEFINE_FIELD( m_flMaxSpeedFiring,	FIELD_FLOAT ),
 	DEFINE_FIELD( m_flGoalSpeed,		FIELD_FLOAT ),
 	DEFINE_KEYFIELD( m_flInitialSpeed, FIELD_FLOAT, "InitialSpeed" ),
+	DEFINE_KEYFIELD( m_flMotorVolume, FIELD_FLOAT, "MotorVolume"),
 
 	DEFINE_FIELD( m_flRandomOffsetTime, FIELD_TIME ),
 	DEFINE_FIELD( m_vecRandomOffset, FIELD_VECTOR ),
@@ -1087,7 +1088,7 @@ void CBaseHelicopter::UpdateRotorWashVolume()
 //------------------------------------------------------------------------------
 float CBaseHelicopter::GetRotorVolume( void )
 {
-	return m_bSuppressSound ? 0.0f : 1.0f;
+	return m_bSuppressSound ? 0.0f : m_flMotorVolume;
 }
 
 
@@ -1164,7 +1165,7 @@ void CBaseHelicopter::InitializeRotorSound( void )
 	if ( m_pRotorBlast )
 	{
 		// Start the blast sound and then immediately drop it to 0 (starting it at 0 wouldn't start it)
-		controller.Play( m_pRotorBlast, 1.0, 100 );
+		controller.Play(m_pRotorBlast, m_flMotorVolume, 100);
 		controller.SoundChangeVolume(m_pRotorBlast, 0, 0.0);
 	}
 

@@ -1,4 +1,4 @@
-﻿Build started 04/02/2018 20:35:04.
+﻿Build started 17/02/2018 11:56:48.
      1>Project "D:\alyxStory\src\mathlib\mathlib.vcxproj" on node 2 (Build target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\mathlib.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\mathlib.lib"') do set valveTmpIsReadOnly="%%A"
@@ -13,32 +13,6 @@
          if ERRORLEVEL 1 exit /b 1
          
          :VCEnd
-       CustomBuild:
-         Running VPC CRC Check - mathlib.vpc
-       ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\common /I..\public /I..\public\tier0 /I..\public\tier1 /I..\public\mathlib /Z7 /nologo /W4 /WX /MP /O2 /Ob2 /Oi /Ot /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D WIN32 /D _WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D LIBNAME=mathlib /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D MATHLIB_LIB /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D PROJECTDIR=D:\alyxStory\src\mathlib /D _DLL_EXT=.dll /D SOURCE1=1 /D VPCGAME=valve /GF /Gm- /MT /GS /Gy /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Release\.\/" /Fd".\Release\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt /d2Zi+ /Gw 3dnow.cpp almostequal.cpp anorms.cpp bumpvects.cpp color_conversion.cpp halton.cpp IceKey.cpp imagequant.cpp lightdesc.cpp mathlib_base.cpp polyhedron.cpp powsse.cpp quantize.cpp randsse.cpp simdvectormatrix.cpp sparse_convolution_noise.cpp spherical.cpp sse.cpp sseconst.cpp ssenoise.cpp vector.cpp vmatrix.cpp
-         3dnow.cpp
-         almostequal.cpp
-         anorms.cpp
-         bumpvects.cpp
-         color_conversion.cpp
-         halton.cpp
-         IceKey.cpp
-         imagequant.cpp
-         lightdesc.cpp
-         mathlib_base.cpp
-         polyhedron.cpp
-         powsse.cpp
-         quantize.cpp
-         randsse.cpp
-         simdvectormatrix.cpp
-         sparse_convolution_noise.cpp
-         spherical.cpp
-         sse.cpp
-         sseconst.cpp
-         ssenoise.cpp
-         vector.cpp
-         vmatrix.cpp
        Lib:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"..\lib\public\.\mathlib.lib" /NOLOGO  /ignore:4221 .\Release\.\/3dnow.obj
          .\Release\.\/almostequal.obj
@@ -67,4 +41,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.81
+Time Elapsed 00:00:01.27

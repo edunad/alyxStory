@@ -301,3 +301,102 @@
 	// Outputs
 	output OnBeginFade(void) : "Fired when the fade has begun."
 ]
+
+@BaseClass base( BaseNPC ) = BaseHelicopter
+[
+	InitialSpeed(string) : "Initial Speed" : "0" : "Sets the helicopter's desired speed that it should try to reach as soon as it's spawned."
+	target(target_destination) : "Target path_track" : : "(Optional) The name of a path_track entity that this NPC will fly to after spawning."
+	MotorVolume(string) : "Max Motor Volume" : "0.5" : "Sets the helicopter's max motor volume."
+	
+	// Inputs
+	input MoveTopSpeed(void) : "The helicopter will immediately move at top speed toward its current goal, or in its current orientation if it's on top of its goal."
+	input MoveSpecifiedSpeed(float): "The helicopter will immediately move at the specified speed (you provide this as parameter override in units per second) towards its current goal."
+	input ChangePathCorner(target_destination) : "Tell the helicopter to move to a path corner on a new path."
+	input SelfDestruct(void) : "Self Destruct."
+	input Activate(void) : "Activate. Use to wake up a helicopter that spawned with the 'Await Input' spawnflag on."
+	input SetTrack(target_destination) : "Set a track for the helicopter to adhere to. The helicopter will do nothing if he's on the same path, and will move to the closest point on the specified track if he's on a different path."
+	input FlyToSpecificTrackViaPath(target_destination) : "The helicopter will first fly to the closest point on the path if he's on a different path. Then he'll fly along the path to the specified track point."
+	input StartPatrol(void) : "Start patrolling back and forth along the current track."
+	input StopPatrol(void) : "Stop patrolling back and forth along the track. This will cause the helicopter to come to rest at the track which he's currently flying toward."
+	input ChooseFarthestPathPoint(void) : "When tracking an enemy, choose the point on the path furthest from the enemy, but still in firing range."
+	input ChooseNearestPathPoint(void) : "When tracking an enemy, choose the point on the path nearest from the enemy."
+	input StartBreakableMovement(void) : "The helicopter is now allowed to disobey direct commands to go to particular points if he senses an enemy. He will move to the closest point (or farthest point, if ChooseFarthestPathPoint is used), on the path if he senses an enemy."
+	input StopBreakableMovement(void) : "The helicopter can not disobey direct commands. He will continue to fly along his patrol path or to his specified target even if he senses an enemy."
+
+	spawnflags(Flags) =
+	[
+		// AWAIT INPUT will make the helicopter spawn disabled, awaiting 
+		// the "Activate" input to start acting.
+		32 : "No Rotorwash" : 0
+		64 : "Await Input" : 0
+	]
+]
+
+@NPCClass base(BaseHelicopter) studio("models/combine_dropship.mdl" ) = npc_combinedropship : "Combine Dropship"
+[
+	spawnflags(Flags) =
+	[
+		32768 : "Wait for input before dropoff" : 0
+	]
+
+	LandTarget(target_destination) : "Land target name"
+	GunRange(float) : "Crate Gun Range" : 2048 : "If the dropship's carrying a crate with a gun on it, it'll only shoot targets within this range."
+
+	RollermineTemplate(target_destination) : "Name of Rollermine Template" : "" : "If this dropship drops any rollermines due to the 'DropMines' input being fired, it will use this template for the rollermines it creates. If left blank, ordinary rollermines will be dropped."
+
+	NPCTemplate(target_destination) : "Name of Template NPC 1"
+	NPCTemplate2(target_destination) : "Name of Template NPC 2"
+	NPCTemplate3(target_destination) : "Name of Template NPC 3"
+	NPCTemplate4(target_destination) : "Name of Template NPC 4"
+	NPCTemplate5(target_destination) : "Name of Template NPC 5"
+	NPCTemplate6(target_destination) : "Name of Template NPC 6"
+
+	Dustoff1(target_destination) : "Name of dustoff point for NPC 1"
+	Dustoff2(target_destination) : "Name of dustoff point for NPC 2"
+	Dustoff3(target_destination) : "Name of dustoff point for NPC 3"
+	Dustoff4(target_destination) : "Name of dustoff point for NPC 4"
+	Dustoff5(target_destination) : "Name of dustoff point for NPC 5"
+	Dustoff6(target_destination) : "Name of dustoff point for NPC 6"
+
+	APCVehicleName(target_destination) : "Name of the APC to drop"
+	Invulnerable(Choices) : "Invulnerable" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
+	CrateType(Choices) : "Crate Type" : 2 =
+	[
+		-3 : "Jeep (No crate)"
+		-2 : "APC (No crate)"
+		-1 : "Strider (No crate)"
+		0 : "Roller Hopper"
+		1 : "Soldier Crate"
+		2 : "None"
+	]
+
+	// Inputs
+	input LandLeaveCrate(integer) : "Land, drop soldiers, and leave the crate behind. Specify the number of troops to drop off in the parameter."
+	input LandTakeCrate(integer) : "Land, drop soldiers, but don't leave the crate behind. Specify the number of troops to drop off in the parameter."
+	input DropMines(integer) : "Drop Rollermines. Specify the number of mines to drop in the parameter."
+	input DropStrider(void) : "Drop the Strider you're carrying. Now."
+	input DropAPC(void) : "Drop the APC you're carrying. Now."
+	input Hover(target_destination) : "Hover over a named target entity until told to fly to a path."
+	input Pickup(string) : "Pickup an entity."
+	input SetLandTarget(string) : "Set my land target name."
+	input SetGunRange(float) : "Set my crate gun's range."
+
+	input EnableRotorSound(void) : "Turns on rotor sounds"
+	input DisableRotorSound(void) : "Turns off rotor sounds"
+
+	input StopWaitingForDropoff(void) : "Stop waiting for the dropoff. Dropoff as soon as possible."
+
+
+	// Outputs
+	output OnFinishedDropoff(void)  : "Fires when the dropship has finished a dropoff."
+	output OnFinishedPickup(void) : "Fires when the dropship has finished a pickup."
+
+	output OnCrateShotDownBeforeDropoff(float) : "Fires when the container was shot down before it dropped off soldiers. The parameter contains the number of soldiers that weren't successfully dropped off."
+	output OnCrateShotDownAfterDropoff(void) : "Fires when the container was shot down after it dropped off soldiers."
+
+]

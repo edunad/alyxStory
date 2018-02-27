@@ -1,0 +1,8 @@
+"WorldVertexTransition"
+{
+	$basetexture2 "de_biome/hr_stone_b_biome"
+	$basetexture "de_biome/hr_stone_bmoss"
+	$surfaceprop2 concrete
+	$surfaceprop concrete
+	$blendmodulatetexture "nature/blend_texture_01"
+}
