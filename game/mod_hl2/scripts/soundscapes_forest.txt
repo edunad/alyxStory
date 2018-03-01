@@ -60,19 +60,6 @@
 		"soundlevel"	"SNDLVL_85dB"
 		"wave"	"ambient/shoots_jungle_lp_03.wav"
 	}
-
-	"playrandom"
-	{
-		"time"		"1,10"
-		"volume"	"0.2"
-		"pitch"		"90,105"
-		"soundlevel"	"SNDLVL_85dB"
-		"rndwave"
-		{
-			"wave"	"ambient/insects/amb_destroyed_elevator_lp_01.wav"
-			"wave"	"ambient/insects/amb_destroyed_elevator_lp_02.wav"
-		}
-	}
 	
 	"playrandom"
 	{

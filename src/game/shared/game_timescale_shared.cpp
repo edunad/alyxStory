@@ -72,7 +72,7 @@ void CGameTimescale::SetCurrentTimescale( float flTimescale )
 	m_flDurationRealTimeSeconds = 0.0f;
 	m_nInterpolatorType = INTERPOLATOR_LINEAR;
 
-	m_flStartBlendTime = 0.0f;
+	m_flStartBlendTime = 0.0f;	
 	m_flStartBlendRealtime = 0.0f;
 
 	pHostTimescale->AddFlags(FCVAR_NOTIFY);

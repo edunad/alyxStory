@@ -106,7 +106,8 @@ public:
 	
 	// Overrides the base class's think and prevents it from running at all.
 	virtual void Think();
-
+	void StopSoundscape(inputdata_t &data);
+	
 
 private:
 
