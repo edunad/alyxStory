@@ -1,6 +1,0 @@
-"lightmappedgeneric"
-{
-	"$basetexture"  "metal/hr_metal/hr_metal_corrugated_001b_color"
-	"$color"        "[0.6 0.6 0.6]"
-	"$reflectivity" "[0.6 0.6 0.6]"
-}

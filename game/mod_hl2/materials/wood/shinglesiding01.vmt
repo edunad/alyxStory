@@ -1,8 +1,0 @@
-LightmappedGeneric
-{
-	"$baseTexture" 	"wood/shinglesiding01"
-//	"$bumpmap" 		"wood/shinglesiding01_ssbump"
-//	"$ssbump" 		"1"
-	"$surfaceprop" 	"wood"
-	"%keywords"		"house, de_house"
-}

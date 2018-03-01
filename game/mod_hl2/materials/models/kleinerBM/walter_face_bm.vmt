@@ -1,7 +1,0 @@
-"VertexLitGeneric"
-{
-	// Original shader: VertexLitTexture
-	"$basetexture" "models/kleinerBM/walter_face_bm"
-	"$bumpmap" "models/kleinerBM/walter_face_normal"
-	"$halflambert" 1
-}

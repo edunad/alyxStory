@@ -1,6 +1,0 @@
-"VertexlitGeneric"
-{
-	"$basetexture" "models/props/de_vertigo/metal_rendered"
-	"$envmapmask" "models/props/de_vertigo/metal_rendered_ref"
-	"$envmap" "env_cubemap"
-}
