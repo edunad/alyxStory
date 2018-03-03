@@ -1,0 +1,62 @@
+//Adrian: This file contains the credits info for both the Intro and outro.
+"credits.txt"
+{
+	"OutroCreditsNames"
+	{
+	   "ALYX STORY" "ClientTitleFont"
+	   "== Alpha Development =="	  "CreditsText"
+	   " "	"CreditsText"
+	   " "	"CreditsText"	
+	   "Eduardo Fernandes (FailCake) - Coding, Mapping and Production"   "CreditsText"
+	   "Kevin Witteveen (Aeralius) - Music and Sounds"  "CreditsText"
+	   "Shirleehee - Voice Acting" "CreditsText"
+	   "Blanca - Few models" "CreditsText"
+	   "Dramein - Testing" "CreditsText"
+	   "Bromvlieg - Testing" "CreditsText"
+	   "Revolving DCON - Testing, Legal Stuff, Moral support :)" "CreditsText"
+	   "D3lta - Testing"	"CreditsText"
+	   " "	"CreditsText"
+	   " "	"CreditsText"
+	   " "	"CreditsText"
+	   "Special thanks to"   "ClientTitleFont"
+	   " "	"CreditsText"
+	   " "	"CreditsText"
+	   "V"	"WeaponIcons"
+	   "For all used Portal2 , Ep2 , Ep1 , Hl2 , CS:GO models and textures"    "CreditsText"
+	   " "	"CreditsText"
+	   "EpicLPer's for NETHERIUM" "CreditsText"
+	   "3dregenerator for the Music box" "CreditsText"
+	   "sunabouzu for the Wall textures" "CreditsText"
+	   "Kevin MacLeod for the Radio Music" "CreditsText"
+	   "And you, for playing this unfinished alpha mod :)"	"CreditsText"
+	   " "	"CreditsText"
+	   " "	"CreditsText"	
+	   "This is only a alpha demo, some of the used textures and models are only placeholders."	"CreditsText"
+	   "And so, it's missing lots of contents and chapters."	"CreditsText"
+	   " "	"CreditsText"
+	   " "	"CreditsText"	
+	   "Visit www.mythicalrawr.net/alyxstory for more info"	"ClientTitleFont"	
+	}
+
+	"CreditsParams"
+	{
+		"logo" "ALYX STORY"
+		"logo2" "== Alpha Development =="
+		
+		"fadeintime"	"1"
+		"fadeouttime"	"1"
+		"fadeholdtime"	"1.0"
+		"nextfadetime"	"1.0"
+		"pausebetweenwaves" "1.0"
+		"logotime" "1.0"
+		"posx"	"96"
+		"posy"	"360"
+
+		"color" "255 255 255 128"
+
+		//Outro Parameters
+		"scrolltime" "40"
+		"separation"  "10"
+	}
+
+}

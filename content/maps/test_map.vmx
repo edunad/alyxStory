@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "124"
+	"mapversion" "127"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "124"
+	"mapversion" "127"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -2904,7 +2904,7 @@ entity
 	"wait" "3"
 	connections
 	{
-		"OnPressed" "creds,RollCredits,,0,-1"
+		"OnPressed" "creds,RollOutroCredits,,0,-1"
 		"OnPressed" "camera.credits,Enable,,0,-1"
 		"OnPressed" "end.scredits,PlaySound,,0,-1"
 	}
@@ -2999,7 +2999,7 @@ entity
 	"targetname" "creds"
 	connections
 	{
-		"OnCreditsDone" "gm.end,EndGame,,0,-1"
+		"OnCreditsDone" "msg.dog,Command,statupmenu force,0,-1"
 	}
 	"origin" "240.929 97.7185 73"
 	editor
@@ -3047,20 +3047,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
-	"id" "1439"
-	"classname" "game_end"
-	"targetname" "gm.end"
-	"origin" "233.679 99.6656 126.632"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 2000]"
 	}
 }
 entity
@@ -3512,7 +3498,9 @@ entity
 {
 	"id" "1690"
 	"classname" "aiscripted_schedule"
+	"forcestate" "2"
 	"goalent" "tfh"
+	"graball" "1"
 	"interruptability" "2"
 	"m_iszEntity" "npc.go"
 	"schedule" "2"
@@ -3525,6 +3513,20 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 7500]"
+	}
+}
+entity
+{
+	"id" "1772"
+	"classname" "point_clientcommand"
+	"targetname" "msg.dog"
+	"origin" "232.679 97.8254 123.437"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras

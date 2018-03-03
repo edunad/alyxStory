@@ -156,7 +156,7 @@ exit 1
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Command>if EXIST ..\..\..\game\mod_hl2\bin\.\$(TargetFileName) for /f "delims=" %%A in ('attrib "..\..\..\game\mod_hl2\bin\.\$(TargetFileName)"') do set valveTmpIsReadOnly="%%A"
+      <Command>if EXIST ..\..\..\game\mod_alyxstory\bin\.\$(TargetFileName) for /f "delims=" %%A in ('attrib "..\..\..\game\mod_alyxstory\bin\.\$(TargetFileName)"') do set valveTmpIsReadOnly="%%A"
 set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
 if "%valveTmpIsReadOnlyLetter%"=="R" del /q "$(TargetDir)"$(TargetFileName)
 if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "client_hl2.vcxproj"
@@ -236,11 +236,11 @@ if ERRORLEVEL 1 exit /b 1
     </Bscmake>
     <PostBuildEvent>
       <Message>Publishing to ..\..\..\game\mod_hl2\bin\.</Message>
-      <Command>if not exist "..\..\..\game\mod_hl2\bin\." mkdir "..\..\..\game\mod_hl2\bin\."
-copy "$(TargetDir)$(TargetFileName)" "..\..\..\game\mod_hl2\bin\.\$(TargetFileName)"
+      <Command>if not exist "..\..\..\game\mod_hl2\bin\." mkdir "..\..\..\game\mod_alyxstory\bin\."
+copy "$(TargetDir)$(TargetFileName)" "..\..\..\game\mod_alyxstory\bin\.\$(TargetFileName)"
 if ERRORLEVEL 1 goto BuildEventFailed
-if exist "$(TargetDir)$(TargetName).map" copy "$(TargetDir)$(TargetName).map" ..\..\..\game\mod_hl2\bin\.\$(TargetName).map
-copy "$(TargetDir)$(TargetName).pdb" ..\..\..\game\mod_hl2\bin\.\$(TargetName).pdb
+if exist "$(TargetDir)$(TargetName).map" copy "$(TargetDir)$(TargetName).map" ..\..\..\game\mod_alyxstory\bin\.\$(TargetName).map
+copy "$(TargetDir)$(TargetName).pdb" ..\..\..\game\mod_alyxstory\bin\.\$(TargetName).pdb
 if ERRORLEVEL 1 goto BuildEventFailed
 goto BuildEventOK
 :BuildEventFailed

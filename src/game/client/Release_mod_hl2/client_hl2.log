@@ -1,7 +1,7 @@
-﻿Build started 03/03/2018 18:33:30.
+﻿Build started 03/03/2018 20:31:41.
      1>Project "D:\alyxStory\src\game\client\client_hl2.vcxproj" on node 3 (Build target(s)).
      1>PreBuildEvent:
-         if EXIST ..\..\..\game\mod_hl2\bin\.\client.dll for /f "delims=" %%A in ('attrib "..\..\..\game\mod_hl2\bin\.\client.dll"') do set valveTmpIsReadOnly="%%A"
+         if EXIST ..\..\..\game\mod_alyxstory\bin\.\client.dll for /f "delims=" %%A in ('attrib "..\..\..\game\mod_alyxstory\bin\.\client.dll"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
          if "%valveTmpIsReadOnlyLetter%"=="R" del /q "D:\alyxStory\src\game\client\Release_mod_hl2\"client.dll
          if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "client_hl2.vcxproj"
@@ -1033,11 +1033,11 @@
             Creating library .\Release_mod_hl2\\client.lib and object .\Release_mod_hl2\\client.exp
          client_hl2.vcxproj -> D:\alyxStory\src\game\client\.\Release_mod_hl2\client.dll
        PostBuildEvent:
-         if not exist "..\..\..\game\mod_hl2\bin\." mkdir "..\..\..\game\mod_hl2\bin\."
-         copy "D:\alyxStory\src\game\client\Release_mod_hl2\client.dll" "..\..\..\game\mod_hl2\bin\.\client.dll"
+         if not exist "..\..\..\game\mod_hl2\bin\." mkdir "..\..\..\game\mod_alyxstory\bin\."
+         copy "D:\alyxStory\src\game\client\Release_mod_hl2\client.dll" "..\..\..\game\mod_alyxstory\bin\.\client.dll"
          if ERRORLEVEL 1 goto BuildEventFailed
-         if exist "D:\alyxStory\src\game\client\Release_mod_hl2\client.map" copy "D:\alyxStory\src\game\client\Release_mod_hl2\client.map" ..\..\..\game\mod_hl2\bin\.\client.map
-         copy "D:\alyxStory\src\game\client\Release_mod_hl2\client.pdb" ..\..\..\game\mod_hl2\bin\.\client.pdb
+         if exist "D:\alyxStory\src\game\client\Release_mod_hl2\client.map" copy "D:\alyxStory\src\game\client\Release_mod_hl2\client.map" ..\..\..\game\mod_alyxstory\bin\.\client.map
+         copy "D:\alyxStory\src\game\client\Release_mod_hl2\client.pdb" ..\..\..\game\mod_alyxstory\bin\.\client.pdb
          if ERRORLEVEL 1 goto BuildEventFailed
          goto BuildEventOK
          :BuildEventFailed
@@ -1047,10 +1047,11 @@
          :BuildEventOK
          
          :VCEnd
+         A subdirectory or file ..\..\..\game\mod_alyxstory\bin\. already exists.
                  1 file(s) copied.
                  1 file(s) copied.
      1>Done Building Project "D:\alyxStory\src\game\client\client_hl2.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:01:05.14
+Time Elapsed 00:01:09.56

@@ -1,4 +1,4 @@
-﻿Build started 03/03/2018 18:33:19.
+﻿Build started 03/03/2018 20:31:30.
      1>Project "D:\alyxStory\src\tier1\tier1.vcxproj" on node 3 (Build target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\tier1.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\tier1.lib"') do set valveTmpIsReadOnly="%%A"
@@ -98,4 +98,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:08.64
+Time Elapsed 00:00:06.75
