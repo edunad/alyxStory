@@ -2,6 +2,6 @@
 {
 	"$basetexture2"         "nature/dirtfloor009c"
 	"$basetexture"          "nature/cliff04a"
-	"$blendmodulatetexture" "nature/pavement_ssbump"
+	"$blendmodulatetexture" "nature/hr_c/alley_blend"
 	"$surfaceprop"          "grass"
 }

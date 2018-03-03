@@ -110,75 +110,18 @@ $position -1 0.58
 
 CHAPTER1_TITLE
 {
-#HL2_Chapter1_Title
+#mod_hl2_chapter1_Title
 }
 
 CHAPTER2_TITLE
 {
-#HL2_Chapter2_Title
+#mod_hl2_chapter2_Title
 }
 
 CHAPTER3_TITLE
 {
-#HL2_Chapter3_Title
+#mod_hl2_chapter3_Title
 }
-
-CHAPTER4_TITLE
-{
-#HL2_Chapter4_Title
-}
-
-CHAPTER5_TITLE
-{
-#HL2_Chapter5_Title
-}
-
-CHAPTER6_TITLE
-{
-#HL2_Chapter6_Title
-}
-
-CHAPTER7_TITLE
-{
-#HL2_Chapter7_Title
-}
-
-CHAPTER8_TITLE
-{
-#HL2_Chapter8_Title
-}
-
-CHAPTER9_TITLE
-{
-#HL2_Chapter9_Title
-}
-
-CHAPTER9A_TITLE
-{
-#HL2_Chapter9a_Title
-}
-
-
-CHAPTER10_TITLE
-{
-#HL2_Chapter10_Title
-}
-
-CHAPTER11_TITLE
-{
-#HL2_Chapter11_Title
-}
-
-CHAPTER12_TITLE
-{
-#HL2_Chapter12_Title
-}
-
-CHAPTER13_TITLE
-{
-#HL2_Chapter13_Title
-}
-
 
 // In-Game messages
 $position 0.1 0.1
@@ -267,7 +210,7 @@ $boxsize 0.0
 
 GAMETITLE
 {
-Half-Life
+Alyx Story
 }
 
 //HAZARD COURSE TEXT

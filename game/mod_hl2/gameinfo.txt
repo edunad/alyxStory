@@ -1,12 +1,12 @@
 "GameInfo"
 {
 	game 		"Half-Life 2: Alyx Story"
-	title 		"HALF-LIFE'"
-	title2		""
+	title 		"ALYX STORY"
+	title2		"== Alpha Development =="
 	developer	"Eduardo Fernandes (FailCake)"
 	developer_url	"https://failcake.me"
 	
-	supportsvr	1
+	supportsvr	0
 	
 	type		singleplayer_only
 
@@ -27,8 +27,6 @@
 			game				|all_source_engine_paths|hl2/hl2_sound_vo_english.vpk
 			game				|all_source_engine_paths|hl2/hl2_sound_misc.vpk
 			game				|all_source_engine_paths|hl2/hl2_misc.vpk
-			game				|all_source_engine_paths|episodic/ep1_pak_dir.vpk
-			game				|all_source_engine_paths|ep2/ep2_pak_dir.vpk
 			platform			|all_source_engine_paths|platform/platform_misc.vpk
 
 			game+game_write		hl2
