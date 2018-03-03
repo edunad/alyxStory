@@ -1,6 +1,6 @@
 "GameInfo"
 {
-	game 		"Half-Life 2: Alyx Story"
+	game 		"Alyx Story : Alpha Development"
 	title 		"ALYX STORY"
 	title2		"== Alpha Development =="
 	developer	"Eduardo Fernandes (FailCake)"

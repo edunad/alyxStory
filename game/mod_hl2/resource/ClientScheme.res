@@ -61,7 +61,6 @@ Scheme
 		"Main.Title2.Y"				"190"
 		"Main.Title2.Y_hidef"		"174"
 		"Main.Title2.Color"	"255 255 255 100"
-		"Main.Title2.Size"	"100"
 		
 		// Top-left corner of the menu on the main screen
 		"Main.Menu.X"			"53"
