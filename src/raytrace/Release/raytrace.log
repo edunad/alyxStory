@@ -1,25 +1,5 @@
-﻿Build started 17/02/2018 11:56:48.
-     1>Project "D:\alyxStory\src\raytrace\raytrace.vcxproj" on node 3 (Build target(s)).
-     1>PreBuildEvent:
-         if EXIST ..\lib\public\.\raytrace.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\raytrace.lib"') do set valveTmpIsReadOnly="%%A"
-         ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
-         set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
-         if "%valveTmpIsReadOnlyLetter%"=="R" (
-             attrib -r ..\lib\public\.\raytrace.lib
-             ..\devtools\bin\gnu\touch.exe -d "1999-01-01" ..\lib\public\.\raytrace.lib
-             attrib +r ..\lib\public\.\raytrace.lib
-         )
-         if exist "..\devtools\bin\vpc.exe" "..\devtools\bin\vpc.exe" -crc2 "raytrace.vcxproj"
-         if ERRORLEVEL 1 exit /b 1
-         
-         :VCEnd
-       Lib:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"..\lib\public\.\raytrace.lib" /NOLOGO  /ignore:4221 .\Release\.\/raytrace.obj
-         .\Release\.\/trace2.obj
-         .\Release\.\/trace3.obj
-         raytrace.vcxproj -> D:\alyxStory\src\raytrace\..\lib\public\.\raytrace.lib
-     1>Done Building Project "D:\alyxStory\src\raytrace\raytrace.vcxproj" (Build target(s)).
+﻿Build started 03/03/2018 18:17:33.
 
 Build succeeded.
 
-Time Elapsed 00:00:01.17
+Time Elapsed 00:00:00.02

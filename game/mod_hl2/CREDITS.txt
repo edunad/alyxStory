@@ -1,3 +1,15 @@
+Main Team :
+Eduardo Fernandes (www.failcake.me) - Developer / Producer, pretty much everything else.
+Aeralius(https://soundcloud.com/aeraliusofficial) - Music / Sounds 
+
+Special Thanks:
+Revolving DCON - For moral support and opinions :)
+Bromvlieg - Testing
+Dramein - Testing
+Shirleehee - Few voices
+Blanca - Few models (unused, but thanks!)
+
+OTHER :
 FUTURAMA Fry : Belongs to Fox
 NETHERIUM Models : https://steamcommunity.com/sharedfiles/filedetails/?id=287796381
 Musicbox Model : https://free3d.com/3d-model/music-box-28268.html
@@ -7,5 +19,3 @@ Other models taken from HL2, HL2:EP1, HL2:EP2, CS:GO, PORTAL 2
 Please note, these models are only placeholders, i take no credit for textures / models and they belong to their respective owners.
 
 ==== --- ====
-Official Music made by Aeralius : https://soundcloud.com/aeraliusofficial
-Mod developed by FailCake (edunad) : www.failcake.me
