@@ -4,9 +4,10 @@
 	title 		"ALYX STORY"
 	title2		"== Alpha Development =="
 	developer	"Eduardo Fernandes (FailCake)"
-	developer_url	"https://failcake.me"
+	developer_url	"http://mythicalrawr.net/alyxstory"
 	
 	supportsvr	0
+	SupportsDX8 0
 	
 	type		singleplayer_only
 
