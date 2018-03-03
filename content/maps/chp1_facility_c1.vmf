@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "3613"
+	"mapversion" "3645"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "3613"
+	"mapversion" "3645"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -36795,11 +36795,11 @@ world
 					"row0" "7.84412 8.06738 1.01465 20.3618 45.2135 30.2199 24.592 59.3438 67.7148"
 					"row1" "5.51135 2.55542 0.807739 19.5176 39.6349 32.0903 29.8813 56.4831 62.9626"
 					"row2" "4.34717 2.53882 2.14624 18.8464 43.8895 27.6935 41.2667 57.0583 53.1193"
-					"row3" "2.06201 4.03906 5.49536 12.8594 48.0955 28.4726 45.1068 57.3887 43.704"
-					"row4" "3.33252 1.30005 8.72412 7.1283 50.3981 41.0909 55.3895 57.8855 32.2299"
-					"row5" "8.33691 10.6862 17.6175 26.7324 53.3275 62.3751 67.3469 51.963 31.8583"
-					"row6" "19.6529 29.2054 41.1102 45.9954 69.9489 77.4658 76.6129 57.4808 31.633"
-					"row7" "30.5087 53.6191 59.5205 61.603 75.1033 83.3651 82.2503 63.1871 21.3893"
+					"row3" "2.06201 4.03906 5.49536 12.8594 48.0955 28.4726 40.1068 42.3887 43.704"
+					"row4" "3.33252 1.30005 8.72412 7.1283 50.3981 41.0909 25.3895 42.8855 32.2299"
+					"row5" "8.33691 10.6862 17.6175 26.7324 53.3275 62.3751 42.3469 36.963 31.8583"
+					"row6" "19.6529 29.2054 41.1102 45.9954 69.9489 77.4658 46.6129 47.4808 31.633"
+					"row7" "30.5087 53.6191 59.5205 61.603 75.1033 83.3651 62.2503 58.1871 21.3893"
 					"row8" "46.9707 69.634 70.1497 72.5319 91.5425 90.2069 87.1663 83.5872 24.1818"
 				}
 				offsets
@@ -67249,7 +67249,7 @@ entity
 	"model" "models/props_mining/struts_wall02.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
-	"solid" "0"
+	"solid" "6"
 	"origin" "37.1828 2498.2 -36.6569"
 	editor
 	{
@@ -67934,16 +67934,16 @@ entity
 {
 	"id" "95871"
 	"classname" "light_spot"
-	"_cone" "90"
+	"_cone" "45"
 	"_constant_attn" "0"
 	"_distance" "0"
 	"_exponent" "1"
 	"_fifty_percent_distance" "184"
 	"_hardfalloff" "0"
-	"_inner_cone" "50"
+	"_inner_cone" "30"
 	"_light" "184 132 97 200"
 	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "0.7"
+	"_lightscaleHDR" "1"
 	"_linear_attn" "0"
 	"_quadratic_attn" "1"
 	"_zero_percent_distance" "260"
@@ -71429,7 +71429,7 @@ entity
 	"ReverseFadeDuration" "2"
 	"spawnflags" "1"
 	"targetname" "fade.mapStart"
-	"origin" "224 -1.18453 172.374"
+	"origin" "222 -1 172.374"
 	editor
 	{
 		"color" "220 30 220"
@@ -71451,7 +71451,7 @@ entity
 		"OnTrigger" "prop.elevator.door,SetAnimation,open,1.5,-1"
 		"OnTrigger" "brush.elevator.door,Disable,,2.5,-1"
 	}
-	"origin" "223 -1.14678 154.053"
+	"origin" "222 -1 154.053"
 	editor
 	{
 		"color" "220 30 220"
@@ -72263,7 +72263,7 @@ entity
 {
 	"id" "5436"
 	"classname" "prop_dynamic_override"
-	"angles" "0 105 15"
+	"angles" "0 0 0"
 	"DisableBoneFollowers" "0"
 	"disablereceiveshadows" "0"
 	"disableshadows" "1"
@@ -74847,7 +74847,7 @@ entity
 {
 	"id" "16387"
 	"classname" "prop_static"
-	"angles" "0 0 0"
+	"angles" "0 340 0"
 	"disableselfshadowing" "0"
 	"disableshadows" "1"
 	"disablevertexlighting" "0"
@@ -74861,7 +74861,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-1318 -2014 365"
+	"origin" "-1448 -2214 365"
 	editor
 	{
 		"color" "255 255 0"
@@ -100284,7 +100284,7 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"spawnflags" "0"
-	"origin" "-1502.93 -1941 131.493"
+	"origin" "-1514.66 -1969.44 131.493"
 	editor
 	{
 		"color" "220 30 220"
@@ -100324,7 +100324,7 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"spawnflags" "0"
-	"origin" "-1515.93 -1925 125.273"
+	"origin" "-1527.66 -1953.44 125.273"
 	editor
 	{
 		"color" "220 30 220"
@@ -102146,10 +102146,10 @@ entity
 		side
 		{
 			"id" "13901"
-			"plane" "(-1537.63 -2003 253.493) (-1538.1 -2002.12 253.571) (-1460.39 -1960.8 253.571)"
+			"plane" "(-1521.7 -1998.53 253.493) (-1521.99 -1997.58 253.571) (-1437.83 -1971.85 253.57)"
 			"material" "METAL/FOREST_METAL_06A"
-			"uaxis" "[-0.882948 -0.469472 0 -103.99] 0.25"
-			"vaxis" "[-0.468024 0.880226 0.0784591 -264.778] 0.25"
+			"uaxis" "[-0.956305 -0.292372 0 417.91] 0.25"
+			"vaxis" "[-0.29147 0.953357 0.0784591 384.585] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102157,10 +102157,10 @@ entity
 		side
 		{
 			"id" "13900"
-			"plane" "(-1543 -1992.91 120.981) (-1542.53 -1993.79 120.903) (-1464.83 -1952.47 120.903)"
+			"plane" "(-1525.05 -1987.6 120.981) (-1524.75 -1988.55 120.903) (-1440.6 -1962.82 120.903)"
 			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[-0.882948 -0.469472 0 -11.9899] 0.25"
-			"vaxis" "[0.468024 -0.880226 -0.0784591 -18.2221] 0.25"
+			"uaxis" "[-0.956305 -0.292372 0 61.9105] 0.25"
+			"vaxis" "[0.29147 -0.953357 -0.0784591 -27.5847] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102168,10 +102168,10 @@ entity
 		side
 		{
 			"id" "13899"
-			"plane" "(-1542.53 -1993.79 120.903) (-1543 -1992.91 120.981) (-1538.1 -2002.12 253.573)"
+			"plane" "(-1524.75 -1988.55 120.902) (-1525.05 -1987.6 120.98) (-1521.99 -1997.58 253.571)"
 			"material" "METAL/FOREST_METAL_06A"
-			"uaxis" "[0.468024 -0.880226 -0.0784591 389.778] 0.25"
-			"vaxis" "[-0.0368343 0.0692753 -0.996917 56.3293] 0.25"
+			"uaxis" "[0.29147 -0.953357 -0.0784591 -259.585] 0.25"
+			"vaxis" "[-0.0229392 0.0750308 -0.996917 188.026] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102179,10 +102179,10 @@ entity
 		side
 		{
 			"id" "13898"
-			"plane" "(-1465.29 -1951.6 120.981) (-1464.83 -1952.47 120.903) (-1459.93 -1961.68 253.496)"
+			"plane" "(-1440.88 -1961.88 120.979) (-1440.59 -1962.82 120.902) (-1437.54 -1972.8 253.493)"
 			"material" "METAL/FOREST_METAL_06A"
-			"uaxis" "[-0.468024 0.880226 0.0784591 26.2219] 0.25"
-			"vaxis" "[-0.0368343 0.0692753 -0.996917 56.3293] 0.25"
+			"uaxis" "[-0.29147 0.953357 0.0784591 163.585] 0.25"
+			"vaxis" "[-0.0229392 0.0750308 -0.996917 188.026] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102190,10 +102190,10 @@ entity
 		side
 		{
 			"id" "13897"
-			"plane" "(-1543 -1992.91 120.98) (-1465.29 -1951.6 120.979) (-1460.39 -1960.81 253.572)"
+			"plane" "(-1525.05 -1987.6 120.981) (-1440.88 -1961.88 120.98) (-1437.83 -1971.86 253.568)"
 			"material" "METAL/FOREST_METAL_06A"
-			"uaxis" "[-0.882948 -0.469472 0 -103.99] 0.25"
-			"vaxis" "[-0.0368343 0.0692753 -0.996917 56.3293] 0.25"
+			"uaxis" "[-0.956305 -0.292372 0 417.91] 0.25"
+			"vaxis" "[-0.0229392 0.0750308 -0.996917 188.026] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102201,10 +102201,10 @@ entity
 		side
 		{
 			"id" "13896"
-			"plane" "(-1464.83 -1952.47 120.905) (-1542.54 -1993.79 120.905) (-1537.63 -2003 253.498)"
+			"plane" "(-1440.6 -1962.82 120.903) (-1524.75 -1988.55 120.903) (-1521.7 -1998.53 253.492)"
 			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0.882948 0.469472 0 11.9899] 0.25"
-			"vaxis" "[-0.0368343 0.0692753 -0.996917 3.32936] 0.25"
+			"uaxis" "[0.956305 0.292372 0 -61.9105] 0.25"
+			"vaxis" "[-0.0229392 0.0750308 -0.996917 7.02589] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102234,10 +102234,10 @@ entity
 		side
 		{
 			"id" "13907"
-			"plane" "(-1491.26 -1975.2 228.877) (-1491.67 -1974.74 229) (-1443.34 -1946.25 228.836)"
+			"plane" "(-1470.88 -1980.09 228.878) (-1471.19 -1979.56 229) (-1418.31 -1960.82 228.836)"
 			"material" "METAL/FOREST_METAL_06A"
-			"uaxis" "[-0.811147 -0.584814 -0.00577816 151.251] 0.25"
-			"vaxis" "[-0.577206 0.80098 0.158948 365.297] 0.25"
+			"uaxis" "[-0.907832 -0.419295 -0.00577816 436.066] 0.25"
+			"vaxis" "[-0.413767 0.8964 0.158948 97.3854] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102245,10 +102245,10 @@ entity
 		side
 		{
 			"id" "13906"
-			"plane" "(-1503.93 -1958.97 119.924) (-1503.53 -1959.42 119.802) (-1455.19 -1930.94 119.638)"
+			"plane" "(-1480.22 -1961.74 119.924) (-1479.92 -1962.26 119.802) (-1427.03 -1943.53 119.638)"
 			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[-0.811147 -0.584814 -0.00577816 -12.7484] 0.25"
-			"vaxis" "[0.577206 -0.80098 -0.158948 -8.29694] 0.25"
+			"uaxis" "[-0.907832 -0.419295 -0.00577816 16.0669] 0.25"
+			"vaxis" "[0.413767 -0.8964 -0.158948 -60.3855] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102256,10 +102256,10 @@ entity
 		side
 		{
 			"id" "13905"
-			"plane" "(-1503.53 -1959.42 119.804) (-1503.93 -1958.97 119.925) (-1491.67 -1974.73 229)"
+			"plane" "(-1479.91 -1962.26 119.802) (-1480.22 -1961.74 119.924) (-1471.19 -1979.56 229)"
 			"material" "METAL/FOREST_METAL_06B"
-			"uaxis" "[0.496966 -0.846574 -0.190624 136.447] 0.25"
-			"vaxis" "[-0.158676 0.130174 -0.978712 -425.861] 0.25"
+			"uaxis" "[0.326301 -0.925846 -0.190624 -16.6031] 0.25"
+			"vaxis" "[-0.130922 0.158059 -0.978712 -26.2271] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102267,10 +102267,10 @@ entity
 		side
 		{
 			"id" "13904"
-			"plane" "(-1455.59 -1930.48 119.76) (-1455.19 -1930.94 119.638) (-1442.93 -1946.72 228.713)"
+			"plane" "(-1418 -1961.36 228.712) (-1418.31 -1960.82 228.837) (-1427.33 -1943 119.763)"
 			"material" "METAL/FOREST_METAL_06B"
-			"uaxis" "[-0.650479 0.740749 0.167833 197.837] 0.25"
-			"vaxis" "[-0.0650036 0.162624 -0.984545 385.889] 0.25"
+			"uaxis" "[-0.497186 0.851257 0.167833 506.525] 0.25"
+			"vaxis" "[-0.0327792 0.172039 -0.984545 146.537] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102278,10 +102278,10 @@ entity
 		side
 		{
 			"id" "13903"
-			"plane" "(-1503.93 -1958.97 119.924) (-1455.59 -1930.48 119.762) (-1443.34 -1946.25 228.837)"
+			"plane" "(-1480.21 -1961.74 119.925) (-1427.33 -1943 119.762) (-1418.31 -1960.82 228.838)"
 			"material" "METAL/FOREST_METAL_06B"
-			"uaxis" "[-0.811191 -0.584753 -0.00577847 -137.6] 0.25"
-			"vaxis" "[-0.125984 0.188656 -0.973929 226.398] 0.25"
+			"uaxis" "[-0.907863 -0.419227 -0.00577847 147.351] 0.25"
+			"vaxis" "[-0.087672 0.209229 -0.973929 116.713] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102289,10 +102289,10 @@ entity
 		side
 		{
 			"id" "13902"
-			"plane" "(-1455.19 -1930.94 119.638) (-1503.53 -1959.42 119.802) (-1491.27 -1975.2 228.88)"
+			"plane" "(-1427.02 -1943.53 119.638) (-1479.91 -1962.26 119.802) (-1470.87 -1980.09 228.878)"
 			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0.811191 0.584753 0.00577847 12.7393] 0.25"
-			"vaxis" "[-0.125984 0.188656 -0.973929 19.292] 0.25"
+			"uaxis" "[0.907863 0.419227 0.00577847 -16.2117] 0.25"
+			"vaxis" "[-0.087672 0.209229 -0.973929 37.6073] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -102714,7 +102714,7 @@ entity
 	"maxdxlevel" "0"
 	"MinAnimTime" "5"
 	"mindxlevel" "0"
-	"model" "models/props_debris/metal_panel01a_breakable.mdl"
+	"model" "models/props_debris/metal_panel01a.mdl"
 	"modelscale" "1.0"
 	"PerformanceMode" "0"
 	"pressuredelay" "0"
@@ -103527,7 +103527,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-919 1893 271"
+	"origin" "-919 1957 275"
 	editor
 	{
 		"color" "255 255 0"
@@ -111620,7 +111620,7 @@ entity
 	"maxdxlevel" "0"
 	"MinAnimTime" "5"
 	"mindxlevel" "0"
-	"model" "models/props_wasteland/exterior_fence_notbarbed002c.mdl"
+	"model" "models/props_c17/fence01a.mdl"
 	"modelscale" "1.0"
 	"PerformanceMode" "0"
 	"pressuredelay" "0"
@@ -111633,7 +111633,7 @@ entity
 	"skin" "0"
 	"solid" "0"
 	"spawnflags" "0"
-	"origin" "142 2021 45"
+	"origin" "142 2024 15"
 	editor
 	{
 		"color" "220 30 220"
@@ -112611,9 +112611,8 @@ entity
 	"m_bIgnoreGravity" "1"
 	"m_fMoveTo" "0"
 	"m_iszEntity" "npc.prevent.alyxpart1"
-	"m_iszEntry" "Sit_Chair"
 	"m_iszPlay" "Sit_Chair"
-	"spawnflags" "880"
+	"spawnflags" "624"
 	"targetname" "sequence.prevent.alyx"
 	"origin" "116 1833 -27.9024"
 	editor
@@ -117785,7 +117784,7 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"spawnflags" "0"
-	"origin" "973 998 -74"
+	"origin" "958 994 -74"
 	editor
 	{
 		"color" "220 30 220"
@@ -118479,7 +118478,7 @@ entity
 	"maxdxlevel" "0"
 	"MinAnimTime" "5"
 	"mindxlevel" "0"
-	"model" "models/props_debris/metal_panel01a_breakable.mdl"
+	"model" "models/props_debris/metal_panel01a.mdl"
 	"modelscale" "1.0"
 	"PerformanceMode" "0"
 	"pressuredelay" "0"
@@ -120653,7 +120652,7 @@ entity
 	"maxdxlevel" "0"
 	"MinAnimTime" "5"
 	"mindxlevel" "0"
-	"model" "models/props_debris/metal_panel01a_breakable.mdl"
+	"model" "models/props_debris/metal_panel01a.mdl"
 	"modelscale" "1.0"
 	"PerformanceMode" "0"
 	"pressuredelay" "0"
@@ -120786,7 +120785,7 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"spawnflags" "0"
-	"origin" "-1524.27 -1956.56 126.469"
+	"origin" "-1536 -1985 126.469"
 	editor
 	{
 		"color" "220 30 220"
@@ -120799,8 +120798,9 @@ entity
 {
 	"id" "110412"
 	"classname" "info_overlay"
+	"angles" "0 0 0"
 	"BasisNormal" "-0.499132 0.84791 0.17865"
-	"BasisOrigin" "-1491.55 -1962.55 171.524"
+	"BasisOrigin" "-1491 -1978 171.524"
 	"BasisU" "0.866526 0.488409 0.102905"
 	"BasisV" "0 0.206168 -0.978517"
 	"EndU" "0"
@@ -120814,7 +120814,7 @@ entity
 	"uv1" "-64 64 0"
 	"uv2" "64 64 0"
 	"uv3" "64 -64 0"
-	"origin" "-1491.55 -1962.55 171.524"
+	"origin" "-1491 -1978 171.524"
 	editor
 	{
 		"color" "80 150 225"
@@ -130128,9 +130128,11 @@ entity
 	"origin" "-1300.5 -568 198.71"
 	"spawnflags" "1"
 	"StartDisabled" "0"
+	"targetname" "trigger.talktoeli"
 	connections
 	{
 		"OnTrigger" "sequence.alyx.exit.start,CancelSequence,,0,-1"
+		"OnTrigger" "msg.hint,Enable,,0,-1"
 	}
 	solid
 	{
@@ -140840,7 +140842,7 @@ entity
 {
 	"id" "132455"
 	"classname" "prop_dynamic_override"
-	"angles" "0 104.5 0"
+	"angles" "0 0 0"
 	"DisableBoneFollowers" "0"
 	"disablereceiveshadows" "0"
 	"disableshadows" "1"
@@ -142623,6 +142625,7 @@ entity
 	connections
 	{
 		"OnPass" "fade.elevator.end,Fade,,0,-1"
+		"OnPass" "changelvl,ChangeMap,,3,-1"
 	}
 	"origin" "-86 -1304 578"
 	editor
@@ -143888,7 +143891,6 @@ entity
 	connections
 	{
 		"OnTrigger" "sequence.alyx.exit.start.3,CancelSequence,,0,-1"
-		"OnTrigger" "placeholder.talkEli,Display,,0,-1"
 	}
 	solid
 	{
@@ -143978,13 +143980,14 @@ entity
 {
 	"id" "137322"
 	"classname" "trigger_once"
-	"origin" "626 1013.5 -14.5"
+	"origin" "864 1068 -57.5"
 	"spawnflags" "1"
 	"StartDisabled" "0"
 	connections
 	{
 		"OnTrigger" "logic.allow.alyx.exit,Trigger,,0,-1"
-		"OnTrigger" "placeholder.takeDog,Display,,0,-1"
+		"OnTrigger" "msg.hint,Disable,,0,-1"
+		"OnTrigger" "trigger.talktoeli,Disable,,0,-1"
 	}
 	solid
 	{
@@ -143992,10 +143995,10 @@ entity
 		side
 		{
 			"id" "26146"
-			"plane" "(620 1082 56) (632 1082 56) (632 945 56)"
+			"plane" "(776 984 13) (776 1152 13) (952 1152 13)"
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
+			"uaxis" "[1 0 0 56] 0.25"
+			"vaxis" "[0 -1 0 28] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -144003,10 +144006,10 @@ entity
 		side
 		{
 			"id" "26145"
-			"plane" "(620 945 -85) (632 945 -85) (632 1082 -85)"
+			"plane" "(776 1152 -128) (776 984 -128) (952 984 -128)"
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
+			"uaxis" "[-1 0 0 -56] 0.25"
+			"vaxis" "[0 -1 0 28] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -144014,10 +144017,10 @@ entity
 		side
 		{
 			"id" "26144"
-			"plane" "(620 1082 56) (620 945 56) (620 945 -85)"
+			"plane" "(776 984 -128) (776 1152 -128) (776 1152 13)"
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 -1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"uaxis" "[0 -1 0 28] 0.25"
+			"vaxis" "[0 0 -1 -44] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -144025,10 +144028,10 @@ entity
 		side
 		{
 			"id" "26143"
-			"plane" "(632 1082 -85) (632 945 -85) (632 945 56)"
+			"plane" "(952 1152 -128) (952 984 -128) (952 984 13)"
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"uaxis" "[0 1 0 -28] 0.25"
+			"vaxis" "[0 0 -1 -44] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -144036,10 +144039,10 @@ entity
 		side
 		{
 			"id" "26142"
-			"plane" "(632 1082 56) (620 1082 56) (620 1082 -85)"
+			"plane" "(776 1152 -128) (952 1152 -128) (952 1152 13)"
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[-1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"uaxis" "[-1 0 0 -56] 0.25"
+			"vaxis" "[0 0 -1 -44] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -144047,10 +144050,10 @@ entity
 		side
 		{
 			"id" "26141"
-			"plane" "(632 945 -85) (620 945 -85) (620 945 56)"
+			"plane" "(952 984 -128) (776 984 -128) (776 984 13)"
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"uaxis" "[1 0 0 56] 0.25"
+			"vaxis" "[0 0 -1 -44] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
 			"smoothing_groups" "0"
@@ -146213,54 +146216,160 @@ entity
 }
 entity
 {
-	"id" "149495"
-	"classname" "game_text"
-	"channel" "1"
-	"color" "255 255 255"
-	"color2" "240 110 0"
-	"effect" "0"
-	"fadein" "0.5"
-	"fadeout" "0.5"
-	"fxtime" "0"
-	"holdtime" "3"
-	"message" "[Placeholder] Talk to ELI"
-	"spawnflags" "1"
-	"targetname" "placeholder.talkEli"
-	"x" "-1"
-	"y" "1"
-	"origin" "-1504 -925 229"
+	"id" "152149"
+	"classname" "env_soundscape_triggerable"
+	"radius" "29"
+	"soundscape" "ep2_mines.chamber"
+	"targetname" "soundscape.ambience"
+	"volume" "0.6"
+	"origin" "222 -1 267.596"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
 {
-	"id" "149661"
-	"classname" "game_text"
-	"channel" "1"
-	"color" "255 255 255"
-	"color2" "240 110 0"
-	"effect" "0"
-	"fadein" "0.5"
-	"fadeout" "0.5"
-	"fxtime" "0"
-	"holdtime" "3"
-	"message" "[Placeholder] Go play outside with d.o.g (no d.o.g model yet)"
+	"id" "152161"
+	"classname" "trigger_soundscape"
+	"origin" "176 -1 101"
+	"soundscape" "soundscape.ambience"
 	"spawnflags" "1"
-	"targetname" "placeholder.takeDog"
-	"x" "-1"
-	"y" "1"
-	"origin" "612 1007.48 30.5846"
+	"StartDisabled" "0"
+	solid
+	{
+		"id" "152159"
+		side
+		{
+			"id" "26309"
+			"plane" "(168 11 117) (184 11 117) (184 -13 117)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26308"
+			"plane" "(168 -13 85) (184 -13 85) (184 11 85)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26307"
+			"plane" "(168 11 117) (168 -13 117) (168 -13 85)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26306"
+			"plane" "(184 11 85) (184 -13 85) (184 -13 117)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26305"
+			"plane" "(184 11 117) (168 11 117) (168 11 85)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "26304"
+			"plane" "(184 -13 85) (168 -13 85) (168 -13 117)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 30 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "154692"
+	"classname" "logic_changemap"
+	"map" "chp1_facility_d1"
+	"targetname" "changelvl"
+	"origin" "-86 -1304 873"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "157189"
+	"classname" "point_message"
+	"message" "[Placeholder] Go Talk to eli"
+	"radius" "180"
+	"spawnflags" "1"
+	"targetname" "msg.hint"
+	"origin" "-1446 -872 198"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "157227"
+	"classname" "point_message"
+	"message" "[Placeholder] Go play outside with d.o.g (no d.o.g model yet)"
+	"radius" "128"
+	"spawnflags" "0"
+	"targetname" "msg.hint.eli"
+	"origin" "864 1101 -37"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras

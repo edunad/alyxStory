@@ -399,5 +399,10 @@
 
 	output OnCrateShotDownBeforeDropoff(float) : "Fires when the container was shot down before it dropped off soldiers. The parameter contains the number of soldiers that weren't successfully dropped off."
 	output OnCrateShotDownAfterDropoff(void) : "Fires when the container was shot down after it dropped off soldiers."
+]
 
+@PointClass base(game_text) iconsprite("editor/game_text.vmt") = mm_game_text : 
+    "An entity that displays customized text on player's screens."
+[
+  input DisplayText(string) : "Display this message text."
 ]

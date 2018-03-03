@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "5238"
+	"mapversion" "5248"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -38,7 +38,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "5238"
+	"mapversion" "5248"
 	"classname" "worldspawn"
 	"coldworld" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -8445,7 +8445,7 @@ world
 		{
 			"id" "19144"
 			"plane" "(1056 -58 -32) (928 -58 -32) (928 -58 128)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -9353,8 +9353,8 @@ world
 		{
 			"id" "19251"
 			"plane" "(1256 -328 128) (1072 -328 128) (1072 -328 0)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
-			"uaxis" "[-1 0 0 0] 0.25"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
+			"uaxis" "[-1 0 0 160] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
@@ -9599,8 +9599,8 @@ world
 		{
 			"id" "19265"
 			"plane" "(1320 -64 -32) (1192 -64 -32) (1192 -64 128)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
-			"uaxis" "[1 0 0 -32] 0.25"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
+			"uaxis" "[1 0 0 160] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "12"
@@ -9703,11 +9703,11 @@ world
 		{
 			"id" "19294"
 			"plane" "(1264 -432 1) (1264 -272 1) (1368 -272 1)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
-			"uaxis" "[1 0 0 -32] 0.25"
-			"vaxis" "[0 -1 0 -64] 0.25"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
+			"uaxis" "[1 0 0 160] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
-			"lightmapscale" "10"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -11521,11 +11521,11 @@ world
 		{
 			"id" "19504"
 			"plane" "(1312 -160 0) (1368 -160 0) (1368 -208 0)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
-			"uaxis" "[1 0 0 -32] 0.25"
-			"vaxis" "[0 -1 0 -64] 0.25"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
+			"uaxis" "[1 0 0 160] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
-			"lightmapscale" "10"
+			"lightmapscale" "12"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -13642,7 +13642,7 @@ world
 		{
 			"id" "20418"
 			"plane" "(1384 -600 0) (1528 -600 0) (1528 -600 128)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[-1 0 0 32] 0.25"
 			"vaxis" "[0 0 -1 128] 0.25"
 			"rotation" "0"
@@ -13746,7 +13746,7 @@ world
 		{
 			"id" "20435"
 			"plane" "(1384 -600 0) (1384 -440 0) (1528 -440 0)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -224] 0.25"
 			"rotation" "0"
@@ -14340,7 +14340,7 @@ world
 		{
 			"id" "20490"
 			"plane" "(1290 96 -32) (1290 -40 -32) (1290 -40 128)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -19670,7 +19670,7 @@ world
 		{
 			"id" "20985"
 			"plane" "(1377 328 -86) (1535 328 -86) (1535 72 -86)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[1 0 0 -208] 0.25"
 			"rotation" "0"
@@ -19884,7 +19884,7 @@ world
 		{
 			"id" "20992"
 			"plane" "(1535 326 -88) (1377 326 -88) (1377 326 -32)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 0 1 368] 0.25"
 			"vaxis" "[1 0 0 -208] 0.25"
 			"rotation" "0"
@@ -20043,7 +20043,7 @@ world
 		{
 			"id" "21004"
 			"plane" "(1377 74 -88) (1535 74 -88) (1535 74 -32)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 0 1 368] 0.25"
 			"vaxis" "[-1 0 0 176] 0.25"
 			"rotation" "0"
@@ -20180,7 +20180,7 @@ world
 		{
 			"id" "21018"
 			"plane" "(1378 328 -88) (1378 72 -88) (1378 72 -32)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 0 1 368] 0.25"
 			"vaxis" "[0 1 0 0] 0.25"
 			"rotation" "0"
@@ -20339,7 +20339,7 @@ world
 		{
 			"id" "21030"
 			"plane" "(1534 72 -88) (1534 328 -88) (1534 328 -32)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 0 1 368] 0.25"
 			"vaxis" "[0 -1 0 64] 0.25"
 			"rotation" "0"
@@ -21432,7 +21432,7 @@ world
 		{
 			"id" "21306"
 			"plane" "(1529 728 149) (1384 728 149) (1384 728 272)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[1 0 0 -352] 0.25"
 			"vaxis" "[0 0 -1 212] 0.25"
 			"rotation" "0"
@@ -21591,7 +21591,7 @@ world
 		{
 			"id" "21318"
 			"plane" "(1384 -104 149) (1529 -104 149) (1529 -104 272)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[-1 0 0 32] 0.25"
 			"vaxis" "[0 0 -1 212] 0.25"
 			"rotation" "0"
@@ -22510,7 +22510,7 @@ world
 		{
 			"id" "21448"
 			"plane" "(1290 256 128) (1290 392 128) (1290 392 -32)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 -1 0 128] 0.25"
 			"vaxis" "[0 0 1 -384] 0.25"
 			"rotation" "0"
@@ -23201,7 +23201,7 @@ world
 		{
 			"id" "21544"
 			"plane" "(1290 716 -32) (1290 580 -32) (1290 580 128)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 1 0 -176] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -24120,7 +24120,7 @@ world
 		{
 			"id" "21687"
 			"plane" "(680 -136 -32) (680 -344 -32) (680 -344 128)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 1 0 160] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -24659,7 +24659,7 @@ world
 		{
 			"id" "21783"
 			"plane" "(1290 256 272) (1290 392 272) (1290 392 136)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 1 0 -416] 0.25"
 			"vaxis" "[0 0 -1 480] 0.25"
 			"rotation" "0"
@@ -25198,7 +25198,7 @@ world
 		{
 			"id" "21849"
 			"plane" "(1290 580 272) (1290 716 272) (1290 716 136)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 1 0 -176] 0.25"
 			"vaxis" "[0 0 -1 480] 0.25"
 			"rotation" "0"
@@ -25661,7 +25661,7 @@ world
 		{
 			"id" "21915"
 			"plane" "(1290 -40 272) (1290 96 272) (1290 96 136)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 480] 0.25"
 			"rotation" "0"
@@ -25896,7 +25896,7 @@ world
 		{
 			"id" "22195"
 			"plane" "(1264 -534 -2.38419e-006) (1368 -534 -2.38419e-006) (1368 -534 128)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[-1 0 0 -32] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -26511,7 +26511,7 @@ world
 		{
 			"id" "22261"
 			"plane" "(848 -343 149) (968 -343 149) (968 -343 280)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[-1 0 0 448] 0.25"
 			"vaxis" "[0 0 -1 212] 0.25"
 			"rotation" "0"
@@ -27050,7 +27050,7 @@ world
 		{
 			"id" "22309"
 			"plane" "(1350 -264 149) (1350 -160 149) (1350 -160 280)"
-			"material" "CONCRETE/BLENDCONCRETEDEBRIS001A"
+			"material" "CONCRETE/CONCRETEFLOOR020B"
 			"uaxis" "[0 -1 0 -480] 0.25"
 			"vaxis" "[0 0 -1 212] 0.25"
 			"rotation" "0"
@@ -42742,8 +42742,10 @@ entity
 		"OnTrigger" "zoom.final.4,Zoom,,2.3,-1"
 		"OnTrigger" "server,Command,stopsound,4,-1"
 		"OnTrigger" "logic.changemap,ChangeMap,,6,-1"
+		"OnTrigger" "clientcmd,Command,incrementvar sv_unlockedchapters 2 100 -1,5.9,-1"
+		"OnTrigger" "clientcmd,Command,	incrementvar sv_unlockedchapters 2 100 1,5.95,-1"
 	}
-	"origin" "2613.87 -1460.58 8"
+	"origin" "2610 -1478 8"
 	editor
 	{
 		"color" "220 30 220"
@@ -53122,7 +53124,7 @@ entity
 	"maxdxlevel" "0"
 	"MinAnimTime" "5"
 	"mindxlevel" "0"
-	"model" "models/props_silo/silo_launchroom_monitor.mdl"
+	"model" "models/props_lab/monitor01a.mdl"
 	"modelscale" "1.0"
 	"PerformanceMode" "0"
 	"pressuredelay" "0"
@@ -53132,49 +53134,9 @@ entity
 	"renderfx" "0"
 	"rendermode" "0"
 	"SetBodyGroup" "0"
-	"skin" "1"
+	"skin" "0"
 	"solid" "0"
 	"origin" "744 -333 42.37"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "139345"
-	"classname" "prop_dynamic_override"
-	"angles" "1 0 0"
-	"DisableBoneFollowers" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "0"
-	"ExplodeDamage" "0"
-	"ExplodeRadius" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"health" "0"
-	"MaxAnimTime" "10"
-	"maxdxlevel" "0"
-	"MinAnimTime" "5"
-	"mindxlevel" "0"
-	"model" "models/props_interiors/painting_landscape01.mdl"
-	"modelscale" "1.0"
-	"PerformanceMode" "0"
-	"pressuredelay" "0"
-	"RandomAnimation" "0"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"SetBodyGroup" "0"
-	"skin" "5"
-	"solid" "0"
-	"spawnflags" "0"
-	"origin" "755 -344 80.9149"
 	editor
 	{
 		"color" "220 30 220"
@@ -61719,6 +61681,20 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "166888"
+	"classname" "point_clientcommand"
+	"targetname" "clientcmd"
+	"origin" "2620 -1518 9"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
 	}
 }
 cameras
