@@ -28,6 +28,7 @@
 	   "EpicLPer's for NETHERIUM" "CreditsText"
 	   "3dregenerator for the Music box" "CreditsText"
 	   "sunabouzu for the Wall textures" "CreditsText"
+	   "Kevin MacLeod for the Radio Music" "CreditsText"
 	   "And you, for playing this unfinished alpha mod :)"	"CreditsText"
 	   " "	"CreditsText"
 	   " "	"CreditsText"	
