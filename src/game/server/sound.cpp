@@ -582,8 +582,6 @@ void CAmbientGeneric::RampThink(void)
 
 	if (m_soundEnd != NULL && gpGlobals->curtime >= m_soundEnd){
 		m_OnSoundEnded.FireOutput(NULL, this);
-		SendSound(SND_STOP);
-
 		return; // stop thinking
 	}			
 

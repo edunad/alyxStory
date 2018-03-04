@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "5247"
+	"mapversion" "5249"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -38,7 +38,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "5247"
+	"mapversion" "5249"
 	"classname" "worldspawn"
 	"coldworld" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -38551,7 +38551,7 @@ entity
 	"id" "9771"
 	"classname" "ambient_generic"
 	"health" "4"
-	"message" "musicbox_alyx.wav"
+	"message" "music/musicbox_alyx.wav"
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "168"

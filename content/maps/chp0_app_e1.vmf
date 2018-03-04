@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "5248"
+	"mapversion" "5250"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -38,7 +38,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "5248"
+	"mapversion" "5250"
 	"classname" "worldspawn"
 	"coldworld" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -38551,7 +38551,7 @@ entity
 	"id" "9771"
 	"classname" "ambient_generic"
 	"health" "4"
-	"message" "musicbox_alyx.wav"
+	"message" "music/musicbox_alyx.wav"
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "168"
@@ -59335,6 +59335,7 @@ entity
 		"OnTrigger" "teleport.toFinalGman,Disable,,0.02,-1"
 		"OnTrigger" "teleport.toWakeup,Disable,,0,-1"
 		"OnTrigger" "logic.gmansequence,Trigger,,0.02,-1"
+		"OnTrigger" "corridor.sparks,StopSpark,,0,-1"
 	}
 	"origin" "1402 520 108.938"
 	editor
