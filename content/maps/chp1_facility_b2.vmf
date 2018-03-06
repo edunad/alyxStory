@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "6674"
+	"mapversion" "6675"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "6674"
+	"mapversion" "6675"
 	"classname" "worldspawn"
 	"coldworld" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -101546,93 +101546,6 @@ entity
 	"classname" "func_detail"
 	solid
 	{
-		"id" "60697"
-		side
-		{
-			"id" "10346"
-			"plane" "(1994 -1789 -983) (1994 -1788 -983) (2068.8 -1788 -983)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 -1 0 -32] 0.25"
-			"vaxis" "[-1 0 0 40] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "10345"
-			"plane" "(1994 -1788 -983) (1994 -1788 -998) (2022 -1788 -1002)"
-			"material" "GLASS/GLASSWINDOW006B"
-			"uaxis" "[1 0 0 -394.667] 0.1875"
-			"vaxis" "[0 0 -1 -334.222] 0.140625"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "10344"
-			"plane" "(1994 -1789 -998) (1994 -1789 -983) (2068.8 -1789 -983)"
-			"material" "GLASS/GLASSWINDOW006B"
-			"uaxis" "[1 0 0 -395] 0.1875"
-			"vaxis" "[0 0 -1 -334.111] 0.140625"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "10343"
-			"plane" "(1994 -1788 -983) (1994 -1789 -983) (1994 -1789 -998)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 -1 0 -32] 0.25"
-			"vaxis" "[0 0 -1 -20] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "10342"
-			"plane" "(1994 -1788 -998) (1994 -1789 -998) (2021.98 -1789 -1001.98)"
-			"material" "GLASS/GLASSWINDOW006B"
-			"uaxis" "[0.834129 0.407272 -0.371964 191.293] 0.1875"
-			"vaxis" "[0.371964 -0.913307 -0.16587 -7.51758] 0.140625"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "10341"
-			"plane" "(2072 -1789 -998.99) (2072 -1788 -999) (2022 -1788 -1002)"
-			"material" "GLASS/GLASSWINDOW006B"
-			"uaxis" "[0.98126 0.137566 0.134922 312.991] 0.1875"
-			"vaxis" "[-0.134922 0.990444 -0.0285935 215.473] 0.140625"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "10340"
-			"plane" "(2068.8 -1789 -983) (2068.8 -1788 -983) (2072 -1788 -999)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "12"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 180 0"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	solid
-	{
 		"id" "60696"
 		side
 		{
@@ -137265,7 +137178,7 @@ entity
 	"origin" "4481 -992 -1315"
 	editor
 	{
-		"color" "111 164 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 2000]"
@@ -137276,8 +137189,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[4751.1 -976.909 -1280.32]"
-		"look" "[4748.67 -989.643 -1356.97]"
+		"position" "[5380.76 -1369.04 -1242.7]"
+		"look" "[5304.56 -1378.12 -1255.13]"
 	}
 }
 cordon
