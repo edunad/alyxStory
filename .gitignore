@@ -1,112 +1,29 @@
-src/everything.sln
 src/everything.sdf
 src/games.sdf
 src/games.sln
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/CL.read.1.tlog
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/CL.write.1.tlog
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/Client (Episodic).lastbuildstate
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/Client (Episodic).write.1u.tlog
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/cl.command.1.tlog
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/custombuild.command.1.tlog
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/custombuild.read.1.tlog
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/custombuild.write.1.tlog
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/link.command.1.tlog
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/link.read.1.tlog
-src/game/client/Debug_mod_episodic/Client (.353A799F.tlog/link.write.1.tlog
-src/game/client/Debug_mod_episodic/client.exp
-src/game/client/Debug_mod_episodic/vc120.idb
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/CL.read.1.tlog
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/CL.write.1.tlog
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/Client (HL2).lastbuildstate
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/Client (HL2).write.1u.tlog
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/cl.command.1.tlog
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/custombuild.command.1.tlog
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/custombuild.read.1.tlog
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/custombuild.write.1.tlog
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/link.command.1.tlog
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/link.read.1.tlog
-src/game/client/Debug_mod_hl2/Client (HL2).tlog/link.write.1.tlog
-src/game/client/Debug_mod_hl2/client.exp
-src/game/client/Debug_mod_hl2/vc120.idb
+src/game/client/Debug_mod_episodic/
+src/game/client/Debug_mod_hl2/
 src/game/client/client_episodic.vpc.sentinel
 src/game/client/client_hl2.vpc.sentinel
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/CL.read.1.tlog
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/CL.write.1.tlog
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/Server (Episodic).lastbuildstate
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/Server (Episodic).write.1u.tlog
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/cl.command.1.tlog
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/custombuild.command.1.tlog
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/custombuild.read.1.tlog
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/custombuild.write.1.tlog
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/link.command.1.tlog
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/link.read.1.tlog
-src/game/server/Debug_mod_episodic/Server (.7855B476.tlog/link.write.1.tlog
-src/game/server/Debug_mod_episodic/server.exp
-src/game/server/Debug_mod_episodic/vc120.idb
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/CL.read.1.tlog
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/CL.write.1.tlog
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/Server (HL2).lastbuildstate
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/Server (HL2).write.1u.tlog
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/cl.command.1.tlog
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/custombuild.command.1.tlog
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/custombuild.read.1.tlog
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/custombuild.write.1.tlog
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/link.command.1.tlog
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/link.read.1.tlog
-src/game/server/Debug_mod_hl2/Server (HL2).tlog/link.write.1.tlog
-src/game/server/Debug_mod_hl2/server.exp
-src/game/server/Debug_mod_hl2/vc120.idb
+src/game/server/Debug_mod_episodic/
+src/game/server/Debug_mod_hl2/
 src/game/server/server_episodic.vpc.sentinel
 src/game/server/server_hl2.vpc.sentinel
 src/games.opensdf
 src/games.sdf
 src/games.sln
-src/mathlib/Debug/mathlib.tlog/CL.read.1.tlog
-src/mathlib/Debug/mathlib.tlog/CL.write.1.tlog
-src/mathlib/Debug/mathlib.tlog/Lib-link.read.1.tlog
-src/mathlib/Debug/mathlib.tlog/Lib-link.write.1.tlog
-src/mathlib/Debug/mathlib.tlog/cl.command.1.tlog
-src/mathlib/Debug/mathlib.tlog/custombuild.command.1.tlog
-src/mathlib/Debug/mathlib.tlog/custombuild.read.1.tlog
-src/mathlib/Debug/mathlib.tlog/custombuild.write.1.tlog
-src/mathlib/Debug/mathlib.tlog/lib.command.1.tlog
-src/mathlib/Debug/mathlib.tlog/mathlib.lastbuildstate
-src/mathlib/Debug/vc120.idb
+src/mathlib/Debug/
+src/mathlib/Release/
 src/mathlib/mathlib.vpc.sentinel
-src/raytrace/Debug/Raytrace.tlog/CL.read.1.tlog
-src/raytrace/Debug/Raytrace.tlog/CL.write.1.tlog
-src/raytrace/Debug/Raytrace.tlog/Lib-link.read.1.tlog
-src/raytrace/Debug/Raytrace.tlog/Lib-link.write.1.tlog
-src/raytrace/Debug/Raytrace.tlog/Raytrace.lastbuildstate
-src/raytrace/Debug/Raytrace.tlog/cl.command.1.tlog
-src/raytrace/Debug/Raytrace.tlog/custombuild.command.1.tlog
-src/raytrace/Debug/Raytrace.tlog/custombuild.read.1.tlog
-src/raytrace/Debug/Raytrace.tlog/custombuild.write.1.tlog
-src/raytrace/Debug/Raytrace.tlog/lib.command.1.tlog
-src/raytrace/Debug/vc120.idb
+src/raytrace/Debug/
+src/raytrace/Release/
 src/raytrace/raytrace.vpc.sentinel
-src/tier1/Debug/tier1.tlog/CL.read.1.tlog
-src/tier1/Debug/tier1.tlog/CL.write.1.tlog
-src/tier1/Debug/tier1.tlog/Lib-link.read.1.tlog
-src/tier1/Debug/tier1.tlog/Lib-link.write.1.tlog
-src/tier1/Debug/tier1.tlog/cl.command.1.tlog
-src/tier1/Debug/tier1.tlog/custombuild.command.1.tlog
-src/tier1/Debug/tier1.tlog/custombuild.read.1.tlog
-src/tier1/Debug/tier1.tlog/custombuild.write.1.tlog
-src/tier1/Debug/tier1.tlog/lib.command.1.tlog
-src/tier1/Debug/tier1.tlog/tier1.lastbuildstate
-src/tier1/Debug/vc120.idb
+src/tier1/Debug/
+src/tier1/Release/
 src/tier1/tier1.vpc.sentinel
-src/vgui2/vgui_controls/Debug/vc120.idb
-src/vgui2/vgui_controls/Debug/vgui_controls.tlog/CL.read.1.tlog
-src/vgui2/vgui_controls/Debug/vgui_controls.tlog/CL.write.1.tlog
-src/vgui2/vgui_controls/Debug/vgui_controls.tlog/Lib-link.read.1.tlog
-src/vgui2/vgui_controls/Debug/vgui_controls.tlog/Lib-link.write.1.tlog
-src/vgui2/vgui_controls/Debug/vgui_controls.tlog/cl.command.1.tlog
-src/vgui2/vgui_controls/Debug/vgui_controls.tlog/custombuild.command.1.tlog
-src/vgui2/vgui_controls/Debug/vgui_controls.tlog/custombuild.read.1.tlog
-src/vgui2/vgui_controls/Debug/vgui_controls.tlog/custombuild.write.1.tlog
-src/vgui2/vgui_controls/Debug/vgui_controls.tlog/lib.command.1.tlog
-src/vgui2/vgui_controls/Debug/vgui_controls.tlog/vgui_controls.lastbuildstate
-src/vgui2/vgui_controls/vgui_controls.vpc.sentinel
+src/vgui2/Release/
+src/vgui2/Debug/
 save
+src/.vs/
+
+/game/mod_alyxstory/cfg/config.cfg
