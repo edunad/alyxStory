@@ -27,3 +27,6 @@ save
 src/.vs/
 
 /game/mod_alyxstory/cfg/config.cfg
+Release_mod_hl2
+Debug
+Release

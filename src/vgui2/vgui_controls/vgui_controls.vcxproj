@@ -55,7 +55,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Command>if EXIST ..\..\lib\public\.\$(TargetName).lib ( for /f "delims=" %%A in ('attrib "..\..\lib\public\.\$(TargetName).lib"') do set valveTmpIsReadOnly="%%A"
+      <Command>if EXIST ..\lib\public\.\$(TargetName).lib ( for /f "delims=" %%A in ('attrib "..\..\lib\public\.\$(TargetName).lib"') do set valveTmpIsReadOnly="%%A"
 ) else ( if not EXIST ..\..\lib\public\. mkdir ..\..\lib\public\. )
 set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
 if "%valveTmpIsReadOnlyLetter%"=="R" (
