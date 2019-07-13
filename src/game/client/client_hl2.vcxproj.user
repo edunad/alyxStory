@@ -10,7 +10,7 @@
     <LocalDebuggerCommandArguments>-sw -w 1280 -h 720 -console -game "D:\alyxStory\game\mod_alyxstory"</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerCommand>D:\Program Files (x86)\Steam\steamapps\common\Source SDK Base 2013 Singleplayer\hl2.exe</LocalDebuggerCommand>
-    <LocalDebuggerWorkingDirectory>D:\Program Files\Steam\steamapps\common\Source SDK Base 2013 Singleplayer\</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory>$(ProjectDir)</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup>
     <ShowAllFiles>true</ShowAllFiles>

@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "6695"
+	"mapversion" "6697"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "6695"
+	"mapversion" "6697"
 	"classname" "worldspawn"
 	"coldworld" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -78648,61 +78648,6 @@ entity
 }
 entity
 {
-	"id" "9487"
-	"classname" "prop_static"
-	"angles" "0 275.5 0"
-	"disableselfshadowing" "0"
-	"disableshadows" "1"
-	"disablevertexlighting" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/props_junk/trashcluster01a.mdl"
-	"screenspacefade" "0"
-	"skin" "0"
-	"solid" "6"
-	"origin" "667 -1723 -1054.15"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 15500]"
-	}
-}
-entity
-{
-	"id" "9511"
-	"classname" "infodecal"
-	"texture" "decals/trashdecal03a"
-	"origin" "658.075 -1694.1 -1064"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 -9768]"
-	}
-}
-entity
-{
-	"id" "9514"
-	"classname" "infodecal"
-	"texture" "decals/trashdecal01a"
-	"origin" "693.081 -1691.19 -1064"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 -9268]"
-	}
-}
-entity
-{
 	"id" "9520"
 	"classname" "infodecal"
 	"texture" "decals/trashdecal04a"
@@ -137603,7 +137548,7 @@ entity
 	"id" "220547"
 	"classname" "info_lighting"
 	"targetname" "info.light.start.0"
-	"origin" "632 -1692 -951.719"
+	"origin" "780 -1741 -951.859"
 	editor
 	{
 		"color" "220 30 220"
@@ -137612,13 +137557,53 @@ entity
 		"logicalpos" "[0 0]"
 	}
 }
+entity
+{
+	"id" "220584"
+	"classname" "prop_dynamic_override"
+	"angles" "0 3.5 0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "1"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"model" "models/props_forest/fern01.mdl"
+	"modelscale" "1.0"
+	"PerformanceMode" "0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"skin" "0"
+	"solid" "6"
+	"spawnflags" "0"
+	"origin" "714 -1733 -1030"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 15500]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[569.197 -1697.32 -905.681]"
-		"look" "[633.899 -1704.14 -948.255]"
+		"position" "[586.844 -1688.26 -949.446]"
+		"look" "[643.517 -1687.48 -1002.67]"
 	}
 }
 cordon

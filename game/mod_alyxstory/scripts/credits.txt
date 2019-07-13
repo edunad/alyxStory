@@ -35,7 +35,7 @@
 	   "And so, it's missing lots of contents and chapters."	"CreditsText"
 	   " "	"CreditsText"
 	   " "	"CreditsText"	
-	   "Visit www.mythicalrawr.net/alyxstory for more info"	"ClientTitleFont"	
+	   "Visit https://www.moddb.com/mods/alyx-story-hl2-mod for more info"	"ClientTitleFont"	
 	}
 
 	"CreditsParams"

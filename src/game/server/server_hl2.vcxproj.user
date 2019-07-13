@@ -5,4 +5,9 @@
     <LocalDebuggerCommandArguments>-allowdebug -sw -h 720 -w 1280 -dev -console -game "D:\alyxStory\game\mod_hl2"</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommand>D:\Program Files\Steam\steamapps\common\Source SDK Base 2013 Singleplayer\hl2.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-sw -h 720 -w 1280 -console -game "D:\alyxStory\game\mod_hl2"</LocalDebuggerCommandArguments>
+  </PropertyGroup>
 </Project>

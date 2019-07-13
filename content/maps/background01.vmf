@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "68"
+	"mapversion" "70"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "68"
+	"mapversion" "70"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1014,7 +1014,7 @@ entity
 	"id" "557"
 	"classname" "func_dustmotes"
 	"Alpha" "255"
-	"Color" "187 242 241"
+	"Color" "237 252 252"
 	"DistMax" "400"
 	"Frozen" "0"
 	"LifetimeMax" "5"
@@ -1022,7 +1022,7 @@ entity
 	"SizeMax" "20"
 	"SizeMin" "15"
 	"SpawnRate" "25"
-	"SpeedMax" "5"
+	"SpeedMax" "2"
 	"StartDisabled" "0"
 	solid
 	{
@@ -1130,7 +1130,7 @@ entity
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "168"
-	"spawnflags" "113"
+	"spawnflags" "81"
 	"targetname" "snd.musicbox"
 	"origin" "-10.7429 -4 12"
 	editor
