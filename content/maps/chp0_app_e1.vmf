@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "5260"
+	"mapversion" "5261"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -38,7 +38,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "5260"
+	"mapversion" "5261"
 	"classname" "worldspawn"
 	"coldworld" "1"
 	"detailmaterial" "detail/detailsprites"

@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "5259"
+	"mapversion" "5261"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -38,7 +38,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "5259"
+	"mapversion" "5261"
 	"classname" "worldspawn"
 	"coldworld" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -21436,7 +21436,7 @@ world
 			"uaxis" "[1 0 0 -352] 0.25"
 			"vaxis" "[0 0 -1 212] 0.25"
 			"rotation" "0"
-			"lightmapscale" "12"
+			"lightmapscale" "6"
 			"smoothing_groups" "0"
 			dispinfo
 			{
@@ -21595,7 +21595,7 @@ world
 			"uaxis" "[-1 0 0 32] 0.25"
 			"vaxis" "[0 0 -1 212] 0.25"
 			"rotation" "0"
-			"lightmapscale" "12"
+			"lightmapscale" "6"
 			"smoothing_groups" "0"
 			dispinfo
 			{
