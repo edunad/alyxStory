@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "3116"
+	"mapversion" "3118"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -38,7 +38,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "7090"
+	"mapversion" "3118"
 	"classname" "worldspawn"
 	"coldworld" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -19853,7 +19853,7 @@ entity
 	"id" "9771"
 	"classname" "ambient_generic"
 	"health" "4"
-	"message" "musicbox.wav"
+	"message" "musicbox_alyx.wav"
 	"pitch" "100"
 	"pitchstart" "100"
 	"radius" "168"
@@ -20699,6 +20699,8 @@ entity
 	"id" "14482"
 	"classname" "npc_zombie"
 	"angles" "0 159.5 0"
+	"npcFOV" "0.2"
+	"npcFOVDistance" "2048.0"
 	"physdamagescale" "1.0"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -20718,6 +20720,8 @@ entity
 	"id" "14492"
 	"classname" "npc_zombie"
 	"angles" "0 239.5 0"
+	"npcFOV" "0.2"
+	"npcFOVDistance" "2048.0"
 	"physdamagescale" "1.0"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -28347,7 +28351,7 @@ entity
 	"LifetimeMin" "3"
 	"SizeMax" "25"
 	"SizeMin" "10"
-	"SpawnRate" "50"
+	"SpawnRate" "70"
 	"SpeedMax" "13"
 	"StartDisabled" "1"
 	"targetname" "dustcloud.smoke.house"

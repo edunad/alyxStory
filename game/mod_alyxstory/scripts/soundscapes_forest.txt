@@ -1,0 +1,85 @@
+"outside.forest"
+{
+	"dsp" "1"
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"soundlevel"	"SNDLVL_85dB"
+		"wave"	"ambient/woodland_ambient_1.wav"
+	}
+
+	"playrandom"
+	{
+		"time"		"1,10"
+		"volume"	"0.2"
+		"pitch"		"90,105"
+		"soundlevel"	"SNDLVL_85dB"
+		"rndwave"
+		{
+			"wave"	"ambient/wind_leaves_mild_gust_1.wav"
+		}
+	}
+	
+	"playrandom"
+	{
+		"time"		"4,8"
+		"volume"	"0.2"
+		"pitch"		"90,105"
+		"soundlevel"	"SNDLVL_85dB"
+		"rndwave"
+		{
+			"wave"	"ambient/bird/bird1.wav"
+			"wave"	"ambient/bird/bird2.wav"
+			"wave"	"ambient/bird/bird3.wav"
+			"wave"	"ambient/bird/bird4.wav"
+			"wave"	"ambient/bird/bird5.wav"
+			"wave"	"ambient/bird/bird6.wav"
+			"wave"	"ambient/bird/bird7.wav"
+			"wave"	"ambient/bird/bird8.wav"
+			"wave"	"ambient/bird/bird9.wav"
+			"wave"	"ambient/bird/bird10.wav"
+			"wave"	"ambient/bird/bird11.wav"
+			"wave"	"ambient/bird/bird12.wav"
+			"wave"	"ambient/bird/bird13.wav"
+			"wave"	"ambient/bird/bird14.wav"
+			"wave"	"ambient/bird/bird15.wav"
+			"wave"	"ambient/bird/bird16.wav"
+			"wave"	"ambient/bird/bird17.wav"
+			"wave"	"ambient/bird/bird18.wav"
+			"wave"	"ambient/bird/bird19.wav"
+			"wave"	"ambient/bird/bird20.wav"
+		}
+	}
+}
+"inside.factory.forest"
+{
+	"dsp" "1"
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"soundlevel"	"SNDLVL_85dB"
+		"wave"	"ambient/shoots_jungle_lp_03.wav"
+	}
+	
+	"playrandom"
+	{
+		"time"		"4,8"
+		"volume"	"0.2"
+		"pitch"		"90,105"
+		"soundlevel"	"SNDLVL_85dB"
+		"rndwave"
+		{
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_01.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_02.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_03.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_04.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_05.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_06.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_07.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_08.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_09.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_10.wav"
+			"wave"	"ambient/bird/amb_destroyed_elevator_1shot_11.wav"
+		}
+	}
+}

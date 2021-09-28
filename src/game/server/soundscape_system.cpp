@@ -195,12 +195,18 @@ void CSoundscapeSystem::LevelInitPreEntity()
 	g_SoundscapeSystem.Init();
 }
 
+void CSoundscapeSystem::PurgeSounds(){
+	g_SoundscapeSystem.FlushSoundscapes();	// don't bother forgetting about the entities
+	g_SoundscapeSystem.Init();
+}
+
 void CSoundscapeSystem::LevelInitPostEntity()
 {
 	if ( IsX360() )
 	{
 		m_soundscapeSounds.Purge();
 	}
+
 	CUtlVector<bbox_t> clusterbounds;
 	int clusterCount = engine->GetClusterCount();
 	clusterbounds.SetCount( clusterCount );

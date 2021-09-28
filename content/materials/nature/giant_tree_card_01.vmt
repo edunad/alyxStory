@@ -1,7 +1,0 @@
-"LightmappedGeneric"
-{
-	"$baseTexture" "nature/giant_tree_card_01"
-//	"$translucent" "1"
-	"$alphatest" "1"
-	"$surfaceprop" "no_decal"
-}

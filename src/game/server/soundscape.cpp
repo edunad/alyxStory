@@ -421,6 +421,7 @@ void CEnvSoundscape::DrawDebugGeometryOverlays( void )
 LINK_ENTITY_TO_CLASS( env_soundscape_triggerable, CEnvSoundscapeTriggerable );
 
 BEGIN_DATADESC( CEnvSoundscapeTriggerable )
+	DEFINE_INPUTFUNC(FIELD_VOID, "StopSoundscape", StopSoundscape),
 END_DATADESC()
 
 
@@ -428,6 +429,10 @@ CEnvSoundscapeTriggerable::CEnvSoundscapeTriggerable()
 {
 }
 
+
+void CEnvSoundscapeTriggerable::StopSoundscape(inputdata_t &inputdata){
+	g_SoundscapeSystem.RemoveSoundscapeEntity(this);
+}
 
 void CEnvSoundscapeTriggerable::DelegateStartTouch( CBaseEntity *pEnt )
 {

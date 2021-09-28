@@ -1,0 +1,50 @@
+﻿Build started 10/11/2016 01:16:24.
+     1>Project "D:\alyxStory\src\utils\captioncompiler\captioncompiler.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         if EXIST ..\..\..\game\bin\.\captioncompiler.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\captioncompiler.exe"') do set valveTmpIsReadOnly="%%A"
+         set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
+         if "%valveTmpIsReadOnlyLetter%"=="R" del /q "D:\alyxStory\src\utils\captioncompiler\Debug\"captioncompiler.exe
+         if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "captioncompiler.vcxproj"
+         if ERRORLEVEL 1 exit /b 1
+         
+         :VCEnd
+       Link:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\.\\captioncompiler.exe" /INCREMENTAL /NOLOGO shell32.lib user32.lib advapi32.lib gdi32.lib comdlg32.lib ole32.lib /NODEFAULTLIB:libc /NODEFAULTLIB:libcd /NODEFAULTLIB:libcmt /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\.\/captioncompiler.pdb" /SUBSYSTEM:CONSOLE,"5.01" /TLBID:1 /DYNAMICBASE:NO /NXCOMPAT /IMPLIB:".\Debug\.\captioncompiler.lib" /MACHINE:X86 /SAFESEH:NO /NXCOMPAT /ignore:4221 .\Debug\.\\pointeroverride.obj
+         .\Debug\.\/cmdlib.obj
+         .\Debug\.\/filesystem_helpers.obj
+         .\Debug\.\/filesystem_init.obj
+         .\Debug\.\/pacifier.obj
+         .\Debug\.\/scriplib.obj
+         .\Debug\.\/stringregistry.obj
+         .\Debug\.\/captioncompiler.obj
+         .\Debug\.\/compiledcaptionswap.obj
+         .\Debug\.\/filesystem_tools.obj
+         .\Debug\.\/memoverride.obj
+         ..\..\lib\public\appframework.lib
+         ..\..\lib\public\mathlib.lib
+         ..\..\lib\public\tier0.lib
+         ..\..\lib\public\tier1.lib
+         ..\..\lib\public\tier2.lib
+         ..\..\lib\public\tier3.lib
+         ..\..\lib\public\vstdlib.lib
+            Creating library .\Debug\.\captioncompiler.lib and object .\Debug\.\captioncompiler.exp
+         captioncompiler.vcxproj -> D:\alyxStory\src\utils\captioncompiler\.\Debug\.\captioncompiler.exe
+       PostBuildEvent:
+         copy "D:\alyxStory\src\utils\captioncompiler\Debug\"captioncompiler.exe ..\..\..\game\bin\.\captioncompiler.exe >nul
+         if ERRORLEVEL 1 goto BuildEventFailed
+         if exist "D:\alyxStory\src\utils\captioncompiler\Debug\"captioncompiler.map copy "D:\alyxStory\src\utils\captioncompiler\Debug\"captioncompiler.map ..\..\..\game\bin\.\captioncompiler.map >nul
+         copy "D:\alyxStory\src\utils\captioncompiler\Debug\"captioncompiler.pdb ..\..\..\game\bin\.\captioncompiler.pdb >nul
+         if ERRORLEVEL 1 goto BuildEventFailed
+         goto BuildEventOK
+         :BuildEventFailed
+         echo *** ERROR! PostBuildStep FAILED for Captioncompiler! EXE or DLL is probably running. ***
+         del /q "D:\alyxStory\src\utils\captioncompiler\Debug\"captioncompiler.exe
+         exit 1
+         :BuildEventOK
+         
+         :VCEnd
+     1>Done Building Project "D:\alyxStory\src\utils\captioncompiler\captioncompiler.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.16

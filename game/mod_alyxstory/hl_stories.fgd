@@ -1,0 +1,408 @@
+@include "base.fgd"
+@include "halflife2.fgd"
+	
+@PointClass base(Targetname) = logic_playmovie : "Plays a movie"
+[
+	MovieFilename(string) : "Movie Path" : "" : "Filename of the movie to play"
+	allowskip(choices) : "Allow User to Skip" : 0 : "Whether or not the user may skip the video with common keys" =
+	[
+		0 : "False"
+		1 : "True"
+	]
+	loopvideo(choices) : "Loop Video" : 0 : "If set to true, the movie will loop forever" =
+	[
+		0 : "False"
+		1 : "True"
+	]
+	fadeintime(float) : "Fade In Time" : 0 : "Time it takes for the video to fade in"
+	
+	input PlayMovie(void) : "Play the movie."
+	input PlayLevelTransitionMovie(string) : "Plays a movie with specific settings used for level transitions.  Pass the name of the movie in the parameters.  To be fired at the end of a level."
+	input FadeAllMovies(void) : "Fade movies out for all players connected."
+
+	// Outputs
+	output OnPlaybackFinished(void) : "Fired when the movie has completed playing back or was skipped by the user."
+]
+
+@PointClass base(Targetname) = env_screeneffect :
+	"Allows screenspace effects to be played on the player's view."
+[
+	type(choices) : "Effect Type" : 0 : "Which effect to use." =
+	[
+		0 : "Intro Blur"
+		1 : "Groggy Vision"
+	]
+	
+	fade(choices) : "Fadeout on stop" : 0 : "If set to true, the effect will fadeout when stopped" =
+	[
+		0 : "False"
+		1 : "True"
+	]
+	
+	duration(float) : "Duration" : 0 : "Duration of the effect"
+	
+	// Inputs
+	input	StartEffect(void) : "Start the effect."
+	input   StopEffect(void) : "Stop the effect."
+]
+
+@PointClass base(Targetname) = env_resize_ply : 
+	"Set the player height"
+[
+	height(float) : "Player Height" : "64.0" : "Time in seconds to blend between time scales."
+	input ApplyResize(void) : "Apply the resize"
+]
+
+@PointClass base(Targetname) = logic_changemap : 
+	"Forces a map change without transitions"
+[
+	map(string) : "Map" : "" : "The map to change to"
+	input ChangeMap(void) : "Change map"
+]
+
+@PointClass base(Targetname,Angles,Parentname) studioprop("models/editor/camera.mdl") = point_viewcontrol : 
+	"A camera entity that controls the player's view. While it's active, the player will see out of the camera." 
+[
+	target(target_destination) : "Entity to Look At" : : "Name of the entity that the camera should point at and track while active."
+	targetattachment(string) : "Target Attachment Name" : : "If set, the camera will focus on the specified attachment on the 'Entity to Look At'."
+	wait(integer) : "Hold Time" : 10 : "The amount of time the camera should control the player's view for, after which it deactivates itself. If the camera should stay active until told to deactive, set the 'Infinite Hold Time' spawnflag."
+	moveto(target_destination) : "Path Corner" : : "The first path corner in a track that the camera should move along once it's activated. If not specified, the camera won't move."
+	interpolatepositiontoplayer(choices) : "Interpolate Position To Player" : 0 : "Gradually interpolate player's position to here on start. (Episodic only)" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	spawnflags(flags) =
+	[
+		1: "Start At Player" : 1
+		2: "Follow Player" : 1
+		4: "Freeze Player" : 0
+		8: "Infinite Hold Time" : 0
+		16:"Snap to goal angles" : 0
+		32:"Make Player non-solid" : 0
+		64:"Interruptable by Player" : 0
+		128:"Allow player look to pan/tilt" : 0
+	]
+	speed(string) : "Initial Speed" : "0" : "The starting speed that the camera moves at, if it's on a path track."
+	acceleration(string) : "Acceleration units/sec^2" : "500" : "The speed at which the camera accelerates to path corner's desired speeds."
+	deceleration(string) : "Stop Deceleration units/sec^2" : "500" : "The speed at which the camera decelerates to path corner's desired speeds."
+
+	// Inputs
+	input Enable(void) : "Enable the point_viewcontrol, and start controlling the player's view."
+	input Disable(void) : "Disable the point_viewcontrol, and stop controlling the player's view."
+
+	// Outputs
+	output OnEndFollow(void) : "Fired when the point_viewcontrol deactivates, due to the Disable input being received, the Entity to Look At being destroyed, or the Hold Time expiring."
+]
+
+@PointClass base(Targetname) = env_slomo : 
+	"Slow motion effect (Not Efficient Yet! - Kinda buggy)"
+[
+	duration(float) : "Duration" : "2.0" : "Duration of the effect in seconds"
+	amount(float) : "Ammount" : "0.35" : "Ammount to be applied"
+	decay(float) : "Decay" : "1.5" : "The decaying time"
+	
+	input StartSlomo(void) : "Start the slowmotion"
+	input StopSlomo(void) : "End the slowmotion"
+]
+
+@NPCClass base(TalkNPC) studio() = npc_kleiner : "Kleiner"
+[
+	model(choices) : "Model" : "models/Kleiner.mdl" =
+	[
+		"models/Kleiner.mdl" : "Normal"
+		"models/KleinerBM.mdl" : "Blackmesa"
+	]
+]
+
+@PointClass base(prop_dynamic) studioprop() = prop_dynamic_glow :
+	"A prop that can be placed in hierarchy and can play animations. It can also be configured to break when it takes enough damage.\n"+
+	"Works exactly like a prop_dynamic, but it can optionally have a custom glow around it."
+[
+	input StartGlowing(void) : "Starts the glow."
+	input StopGlowing(void) : "Stops the glow."
+	input ToggleGlow(void) : "Toggles the glow."
+	
+	input SetGlowColor(color255) : "Change the glow's color. Format: <Red 0-255> <Green 0-255> <Blue 0-255>"
+	input SetGlowRed(float) : "Sets the glow red color channel's value (0 - 255)."
+	input SetGlowGreen(float) : "Sets the glow green color channel's value (0 - 255)."
+	input SetGlowBlue(float) : "Sets the glow blue color channel's value (0 - 255)."
+	input SetGlowAlpha(float) : "Sets the glow alpha color channel's value (0 - 255)."
+]
+
+@PointClass base(prop_physics) studioprop() = prop_physics_glow :
+	"A prop that physically simulates as a single rigid body. It can be constrained to other physics objects using hinges "+
+	"or other constraints. It can also be configured to break when it takes enough damage. Health can be overridden on this version."+
+	"Works exactly like a prop_dynamic, but it can optionally have a custom glow around it."
+[
+	input StartGlowing(void) : "Starts the glow."
+	input StopGlowing(void) : "Stops the glow."
+	input ToggleGlow(void) : "Toggles the glow."
+	
+	input SetGlowColor(color255) : "Change the glow's color. Format: <Red 0-255> <Green 0-255> <Blue 0-255>"
+	input SetGlowRed(float) : "Sets the glow red color channel's value (0 - 255)."
+	input SetGlowGreen(float) : "Sets the glow green color channel's value (0 - 255)."
+	input SetGlowBlue(float) : "Sets the glow blue color channel's value (0 - 255)."
+	input SetGlowAlpha(float) : "Sets the glow alpha color channel's value (0 - 255)."
+]
+
+
+@PointClass base(Targetname) = env_footsteps : 
+	"Controls the player foosteps sound"
+[
+	input EnableFootsteps(void) : "Enable player footsteps"
+	input DisableFootsteps(void) : "Disable player footsteps"
+]
+
+@PointClass base(Targetname) = env_playerSpeed : 
+	"Controls the player speed (sorta like : sv_maxspeed)"
+[
+	input ApplySpeed(float) : "Set the player speed"
+]
+
+
+@PointClass sphere() size(-4 -4 -4, 4 4 4) base(Targetname, Parentname) = env_viewpunch :
+	"Causes a view punch on players." 
+[
+	spawnflags(flags) =
+	[
+		1: "Punch all players (ignore radius)" : 0
+		2: "Punch players in the air" : 0
+	]
+
+	punchangle(angle) : "Punch angles" : "0 0 90" : "The punch angles to apply."
+	radius(float) : "Effect Radius" : "500" : "The radius around this entity in which to affect players."
+	strength(float) : "Strength Multiplier" : "20" : "The strength multiplier"
+	
+	// Inputs
+	input ViewPunch(void) : "Performs the view punch."
+]
+
+@NPCClass base(BaseNPC) studio("models/Zombie/Classic.mdl") = npc_zombie : "Zombie"
+[
+	spawnflags(flags) =
+	[
+		32768: "Don't Listen" : 0
+		65536: "Don't Look" : 0
+	]
+	
+	npcFOV(float) : "Npc FOV" : "0.2" : "Sets the FOV of the NPC (check npc_viewcone)"
+	npcFOVDistance(float) : "Max Npc FOV Distance" : "2048.0" : "Sets the max FOV distance of the NPC"
+	
+	npcExtraSpeed(float) : "Npc Extra Speed" : "0" : "Sets the max speed of the NPC"
+	input InputExtraSpeed(float) : "Changes npc movement extra speed"
+]
+
+@SolidClass base(Trigger, Targetname) = trigger_motion : 
+	"A trigger volume detects if the player moved"
+[
+	spawnflags(flags) = []
+	minMovement(float) : "The MIN Movement required to trigger" : "10" : "Sets the min movement required"
+	// Outputs
+	output OnMotionDetected(void) : "Fired whenever the player moves inside the brush"
+]
+
+@PointClass base(env_soundscape) sphere() iconsprite("editor/env_soundscape.vmt") = env_soundscape_triggerable : 
+	"An entity that works like env_soundscape except that it works in conjunction with trigger_soundscape to determine when a player hears it."
+[
+	volume(float) : "Soundscape Volume" : "1.0" : "Sets the soundscape master volume"
+	input InputStopSoundscapes(void): "Stops all soundscapes"
+]
+
+@PointClass base(Targetname) iconsprite("editor/ambient_generic.vmt") sphere() = ambient_generic : "Universal ambient sound. Use it to play and control a single sound."
+[
+	message(sound) : "Sound Name" : "" : "Name of the GameSound entry for the sound to play. Also supports direct .wav filenames."
+	health(integer) : "Volume" : 10 : "Sound volume, expressed as a range from 0 to 10, where 10 is the loudest."
+	preset(choices) :"Dynamic Presets" : 0 =						// NEEDHELP
+	[
+		0: "None"
+		1: "Huge Machine"
+		2: "Big Machine"
+		3: "Machine"
+		4: "Slow Fade in"  
+		5: "Fade in"
+		6: "Quick Fade in"
+		7: "Slow Pulse"
+		8: "Pulse"
+		9: "Quick pulse"
+		10: "Slow Oscillator"
+		11: "Oscillator"
+		12: "Quick Oscillator"
+		13: "Grunge pitch"
+		14: "Very low pitch"
+		15: "Low pitch"
+		16: "High pitch"
+		17: "Very high pitch"
+		18: "Screaming pitch"
+		19: "Oscillate spinup/down"
+		20: "Pulse spinup/down"
+		21: "Random pitch"
+		22: "Random pitch fast"
+		23: "Incremental Spinup"
+		24: "Alien"
+		25: "Bizzare"
+		26: "Planet X"
+		27: "Haunted"
+	]
+	volstart(integer) : "Start Volume" : 0							// NEEDHELP
+	fadeinsecs(integer) : "Fade in time in seconds (0-100)" : 0		// NEEDHELP
+	fadeoutsecs(integer) : "Fade out time in seconds (0-100)" : 0	// NEEDHELP
+	pitch(integer) : "Pitch" : 100 : "Sound pitch, expressed as a range from 1 to 255, where 100 is the sound's default pitch."
+	pitchstart(integer) : "Start Pitch" : 100						// NEEDHELP
+	spinup(integer) : "Spin up time (0-100)" : 0					// NEEDHELP
+	spindown(integer) : "Spin down time (0-100)" : 0				// NEEDHELP
+	lfotype(integer) : "LFO type 0)off 1)sqr 2)tri 3)rnd" : 0		// NEEDHELP
+	lforate(integer) : "LFO rate (0-1000)" : 0						// NEEDHELP
+	lfomodpitch(integer) : "LFO mod pitch (0-100)" : 0				// NEEDHELP
+	lfomodvol(integer) : "LFO mod vol (0-100)" : 0					// NEEDHELP
+	cspinup(integer) : "Incremental Spinup Count" : 0				// NEEDHELP
+	radius(string) : "Max Audible Distance" : "1250" : "Maximum distance at which this sound is audible."
+	spawnflags(flags) =
+	[
+		1: "Play everywhere" : 0
+		16:"Start Silent": 1
+		32:"Is Not Looped": 1
+		64:"Should Pause": 1
+	]
+	SourceEntityName(target_destination) : "SourceEntityName" : : "If an entity is specified, sound will come from this named entity instead of the location of ambient_generic."
+
+	// Inputs
+	input Pitch(integer) : "Sets the sound pitch, expressed as a range from 1 to 255, where 100 is the sound's default pitch."
+	input PlaySound(void) : "Starts the sound."
+	input StopSound(void) : "Stops the sound if it is playing."
+	input ToggleSound(void) : "Toggles the sound between playing and stopping."
+	input Volume(integer) : "Sets the sound volume, expressed as a range from 0 to 10, where 10 is the loudest."
+	input FadeIn(integer) : "Fades the sound up to full volume over a specified number of seconds, with a range from 0 to 100 seconds."
+	input FadeOut(integer) : "Fades the sound to silence over a specified number of seconds, with a range from 0 to 100 seconds."
+	
+	// Outputs
+	output OnSoundEnd(void) : "Fired when the sound ends, only works with non-looping sounds"
+]
+
+@PointClass base(Targetname) iconsprite("editor/env_fade") = env_fade : 
+	"An entity that controls screen fades."
+[
+	spawnflags(flags) =
+	[
+		1: "Fade From" : 0
+		2: "Modulate" : 0
+		4: "Triggering player only" : 0
+		8: "Stay Out" : 0
+	]
+	duration(string) : "Duration (seconds)" : "2" : "The time that it will take to fade the screen in or out."
+	holdtime(string) : "Hold Fade (seconds)" : "0" : "The time to hold the faded in/out state."
+	renderamt(integer) : "Fade Alpha" : 255 : "Alpha of the fade, where 0 = fully transparent and 255 = fully opaque." 
+	rendercolor(color255) : "Fade Color (R G B)" : "0 0 0"
+	ReverseFadeDuration(float) : "Reverse Fade Duration (seconds)" : "2" : "The duration of the reverse fade."
+	
+	// Inputs
+	input Fade(void) : "Start the screen fade."
+	input FadeReverse(void) : "Begin doing the reverse of the current fade."
+
+	// Outputs
+	output OnBeginFade(void) : "Fired when the fade has begun."
+]
+
+@BaseClass base( BaseNPC ) = BaseHelicopter
+[
+	InitialSpeed(string) : "Initial Speed" : "0" : "Sets the helicopter's desired speed that it should try to reach as soon as it's spawned."
+	target(target_destination) : "Target path_track" : : "(Optional) The name of a path_track entity that this NPC will fly to after spawning."
+	MotorVolume(string) : "Max Motor Volume" : "0.5" : "Sets the helicopter's max motor volume."
+	
+	// Inputs
+	input MoveTopSpeed(void) : "The helicopter will immediately move at top speed toward its current goal, or in its current orientation if it's on top of its goal."
+	input MoveSpecifiedSpeed(float): "The helicopter will immediately move at the specified speed (you provide this as parameter override in units per second) towards its current goal."
+	input ChangePathCorner(target_destination) : "Tell the helicopter to move to a path corner on a new path."
+	input SelfDestruct(void) : "Self Destruct."
+	input Activate(void) : "Activate. Use to wake up a helicopter that spawned with the 'Await Input' spawnflag on."
+	input SetTrack(target_destination) : "Set a track for the helicopter to adhere to. The helicopter will do nothing if he's on the same path, and will move to the closest point on the specified track if he's on a different path."
+	input FlyToSpecificTrackViaPath(target_destination) : "The helicopter will first fly to the closest point on the path if he's on a different path. Then he'll fly along the path to the specified track point."
+	input StartPatrol(void) : "Start patrolling back and forth along the current track."
+	input StopPatrol(void) : "Stop patrolling back and forth along the track. This will cause the helicopter to come to rest at the track which he's currently flying toward."
+	input ChooseFarthestPathPoint(void) : "When tracking an enemy, choose the point on the path furthest from the enemy, but still in firing range."
+	input ChooseNearestPathPoint(void) : "When tracking an enemy, choose the point on the path nearest from the enemy."
+	input StartBreakableMovement(void) : "The helicopter is now allowed to disobey direct commands to go to particular points if he senses an enemy. He will move to the closest point (or farthest point, if ChooseFarthestPathPoint is used), on the path if he senses an enemy."
+	input StopBreakableMovement(void) : "The helicopter can not disobey direct commands. He will continue to fly along his patrol path or to his specified target even if he senses an enemy."
+
+	spawnflags(Flags) =
+	[
+		// AWAIT INPUT will make the helicopter spawn disabled, awaiting 
+		// the "Activate" input to start acting.
+		32 : "No Rotorwash" : 0
+		64 : "Await Input" : 0
+	]
+]
+
+@NPCClass base(BaseHelicopter) studio("models/combine_dropship.mdl" ) = npc_combinedropship : "Combine Dropship"
+[
+	spawnflags(Flags) =
+	[
+		32768 : "Wait for input before dropoff" : 0
+	]
+
+	LandTarget(target_destination) : "Land target name"
+	GunRange(float) : "Crate Gun Range" : 2048 : "If the dropship's carrying a crate with a gun on it, it'll only shoot targets within this range."
+
+	RollermineTemplate(target_destination) : "Name of Rollermine Template" : "" : "If this dropship drops any rollermines due to the 'DropMines' input being fired, it will use this template for the rollermines it creates. If left blank, ordinary rollermines will be dropped."
+
+	NPCTemplate(target_destination) : "Name of Template NPC 1"
+	NPCTemplate2(target_destination) : "Name of Template NPC 2"
+	NPCTemplate3(target_destination) : "Name of Template NPC 3"
+	NPCTemplate4(target_destination) : "Name of Template NPC 4"
+	NPCTemplate5(target_destination) : "Name of Template NPC 5"
+	NPCTemplate6(target_destination) : "Name of Template NPC 6"
+
+	Dustoff1(target_destination) : "Name of dustoff point for NPC 1"
+	Dustoff2(target_destination) : "Name of dustoff point for NPC 2"
+	Dustoff3(target_destination) : "Name of dustoff point for NPC 3"
+	Dustoff4(target_destination) : "Name of dustoff point for NPC 4"
+	Dustoff5(target_destination) : "Name of dustoff point for NPC 5"
+	Dustoff6(target_destination) : "Name of dustoff point for NPC 6"
+
+	APCVehicleName(target_destination) : "Name of the APC to drop"
+	Invulnerable(Choices) : "Invulnerable" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
+	CrateType(Choices) : "Crate Type" : 2 =
+	[
+		-3 : "Jeep (No crate)"
+		-2 : "APC (No crate)"
+		-1 : "Strider (No crate)"
+		0 : "Roller Hopper"
+		1 : "Soldier Crate"
+		2 : "None"
+	]
+
+	// Inputs
+	input LandLeaveCrate(integer) : "Land, drop soldiers, and leave the crate behind. Specify the number of troops to drop off in the parameter."
+	input LandTakeCrate(integer) : "Land, drop soldiers, but don't leave the crate behind. Specify the number of troops to drop off in the parameter."
+	input DropMines(integer) : "Drop Rollermines. Specify the number of mines to drop in the parameter."
+	input DropStrider(void) : "Drop the Strider you're carrying. Now."
+	input DropAPC(void) : "Drop the APC you're carrying. Now."
+	input Hover(target_destination) : "Hover over a named target entity until told to fly to a path."
+	input Pickup(string) : "Pickup an entity."
+	input SetLandTarget(string) : "Set my land target name."
+	input SetGunRange(float) : "Set my crate gun's range."
+
+	input EnableRotorSound(void) : "Turns on rotor sounds"
+	input DisableRotorSound(void) : "Turns off rotor sounds"
+
+	input StopWaitingForDropoff(void) : "Stop waiting for the dropoff. Dropoff as soon as possible."
+
+
+	// Outputs
+	output OnFinishedDropoff(void)  : "Fires when the dropship has finished a dropoff."
+	output OnFinishedPickup(void) : "Fires when the dropship has finished a pickup."
+
+	output OnCrateShotDownBeforeDropoff(float) : "Fires when the container was shot down before it dropped off soldiers. The parameter contains the number of soldiers that weren't successfully dropped off."
+	output OnCrateShotDownAfterDropoff(void) : "Fires when the container was shot down after it dropped off soldiers."
+]
+
+@PointClass base(game_text) iconsprite("editor/game_text.vmt") = mm_game_text : 
+    "An entity that displays customized text on player's screens."
+[
+  input DisplayText(string) : "Display this message text."
+]

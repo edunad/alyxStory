@@ -30,6 +30,8 @@
 
 #endif
 
+#include "game_timescale_shared.h"
+
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
@@ -154,6 +156,12 @@ CGameRules::CGameRules() : CAutoGameSystemPerFrame( "CGameRules" )
 	ClearMultiDamage();
 
 	m_flNextVerboseLogOutput = 0.0f;
+	m_flSlowMotionEndTime = 0.0f;
+	m_flSlowMotionStartTime = 0.0f;
+	m_flSlowMotionAmmount = 0.0f;
+	m_flSlowMotionDecay = 0.0f;
+	
+	GameTimescale()->SetDesiredTimescale(1.0f);
 }
 
 //-----------------------------------------------------------------------------
@@ -208,6 +216,34 @@ bool CGameRules::SetPlyHeight(float h, CBasePlayer *pPlayer)
 	pPlayer->ResetDuck(); // Source fixes it (gamemovement.cpp) ! TODO : Fix it myself
 
 	return true;
+}
+
+void CGameRules::StartSlowmotion(float duration, float ammount, float decay)
+{
+	m_flSlowMotionEndTime = gpGlobals->curtime + duration;
+	m_flSlowMotionStartTime = gpGlobals->curtime;
+	m_flSlowMotionAmmount = ammount;
+	m_flSlowMotionDecay = decay;
+
+	// Slowmo needs cheats enabled
+	ConVar *pCheats = cvar->FindVar("sv_cheats");
+	pCheats->SetValue(1);
+}
+
+void CGameRules::StopSlowmotion()
+{
+	m_flSlowMotionEndTime = gpGlobals->curtime;
+}
+
+void CGameRules::ThinkUpdateTimescale() RESTRICT 
+{
+	if (m_flSlowMotionEndTime > gpGlobals->curtime)
+	{
+		GameTimescale()->SetDesiredTimescale(m_flSlowMotionAmmount, m_flSlowMotionDecay, CGameTimescale::INTERPOLATOR_EASE_IN_OUT, 0.10f);
+		return;
+	}
+
+	GameTimescale()->SetDesiredTimescale(1.0f, 1.5f, CGameTimescale::INTERPOLATOR_EASE_IN_OUT, 0.10f);
 }
 
 
@@ -604,6 +640,7 @@ ConVar skill( "skill", "1" );
 
 void CGameRules::Think()
 {
+	ThinkUpdateTimescale();
 	GetVoiceGameMgr()->Update( gpGlobals->frametime );
 	SetSkillLevel( skill.GetInt() );
 

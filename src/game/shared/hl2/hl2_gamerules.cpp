@@ -24,8 +24,6 @@
 	#include "weapon_physcannon.h"
 #endif
 
-#include "game_timescale_shared.h"
-
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
@@ -34,17 +32,9 @@ REGISTER_GAMERULES_CLASS( CHalfLife2 );
 
 BEGIN_NETWORK_TABLE_NOBASE( CHalfLife2, DT_HL2GameRules )
 	#ifdef CLIENT_DLL
-		RecvPropBool( RECVINFO( m_bMegaPhysgun ) ),
-		RecvPropFloat(RECVINFO(m_flSlowMotionEndTime)),
-		RecvPropFloat(RECVINFO(m_flSlowMotionStartTime)),
-		RecvPropFloat(RECVINFO(m_flSlowMotionAmmount)),
-		RecvPropFloat(RECVINFO(m_flSlowMotionDecay)),
+		RecvPropBool( RECVINFO( m_bMegaPhysgun ) )
 	#else
-		SendPropBool( SENDINFO( m_bMegaPhysgun ) ),
-		SendPropFloat(SENDINFO(m_flSlowMotionEndTime), 0, SPROP_NOSCALE),
-		SendPropFloat(SENDINFO(m_flSlowMotionStartTime), 0, SPROP_NOSCALE),
-		SendPropFloat(SENDINFO(m_flSlowMotionAmmount), 0, SPROP_NOSCALE),
-		SendPropFloat(SENDINFO(m_flSlowMotionDecay), 0, SPROP_NOSCALE),
+		SendPropBool( SENDINFO( m_bMegaPhysgun ) )
 	#endif
 END_NETWORK_TABLE()
 
@@ -263,13 +253,6 @@ ConVar  alyx_darkness_force( "alyx_darkness_force", "0", FCVAR_CHEAT | FCVAR_REP
 		
 		m_flLastHealthDropTime = 0.0f;
 		m_flLastGrenadeDropTime = 0.0f;
-
-		m_flSlowMotionEndTime = 0.0f;
-		m_flSlowMotionStartTime = 0.0f;
-		m_flSlowMotionAmmount = 0.0f;
-		m_flSlowMotionDecay = 0.0f;
-
-		GameTimescale()->SetDesiredTimescale(1.0f);
 	}
 
 	//-----------------------------------------------------------------------------
@@ -1336,37 +1319,12 @@ ConVar  alyx_darkness_force( "alyx_darkness_force", "0", FCVAR_CHEAT | FCVAR_REP
 		}
 	}
 
-	void CHalfLife2::StartSlowmotion(float duration, float ammount, float decay)
-	{
-		m_flSlowMotionEndTime = gpGlobals->curtime + duration;
-		m_flSlowMotionStartTime = gpGlobals->curtime;
-		m_flSlowMotionAmmount = ammount;
-		m_flSlowMotionDecay = decay;
-	}
-
-	void CHalfLife2::StopSlowmotion()
-	{
-		m_flSlowMotionEndTime = gpGlobals->curtime;
-	}
-
-	void CHalfLife2::ThinkUpdateTimescale() RESTRICT 
-	{
-		if (m_flSlowMotionEndTime > gpGlobals->curtime)
-		{
-			GameTimescale()->SetDesiredTimescale(m_flSlowMotionAmmount, m_flSlowMotionDecay, CGameTimescale::INTERPOLATOR_EASE_IN_OUT, 0.10f);
-			return;
-		}
-
-		GameTimescale()->SetDesiredTimescale(1.0f, 1.5f, CGameTimescale::INTERPOLATOR_EASE_IN_OUT, 0.10f);
-	}
-
 	void CHalfLife2::PlayerThink( CBasePlayer *pPlayer )
 	{
 	}
 
 	void CHalfLife2::Think( void )
 	{
-		ThinkUpdateTimescale();
 		BaseClass::Think();
 
 		if( physcannon_mega_enabled.GetBool() == true )

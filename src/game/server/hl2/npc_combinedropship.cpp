@@ -141,7 +141,7 @@ enum LandingState_t
 #define DROPSHIP_NEAR_SOUND_MAX_DISTANCE 2500
 #define DROPSHIP_GROUND_WASH_MIN_ALTITUDE 100.0f
 #define DROPSHIP_GROUND_WASH_MAX_ALTITUDE 750.0f
-
+#define DROPSHIP_MAXVOLUME 40
 
 
 //=============================================================================
@@ -1461,22 +1461,22 @@ void CNPC_CombineDropship::InitializeRotorSound( void )
 	// NOTE: m_pRotorSound is started up by the base class
 	if ( m_pCannonSound )
 	{
-		controller.Play( m_pCannonSound, 0.0, 100 );
+		controller.Play(m_pCannonSound, 0.0, DROPSHIP_MAXVOLUME);
 	}
 
 	if ( m_pDescendingWarningSound )
 	{
-		controller.Play( m_pDescendingWarningSound, 0.0, 100 );
+		controller.Play(m_pDescendingWarningSound, 0.0, DROPSHIP_MAXVOLUME);
 	}
 
 	if ( m_pRotorOnGroundSound )
 	{
-		controller.Play( m_pRotorOnGroundSound, 0.0, 100 );
+		controller.Play(m_pRotorOnGroundSound, 0.0, DROPSHIP_MAXVOLUME);
 	}
 	
 	if ( m_pNearRotorSound )
 	{
-		controller.Play( m_pNearRotorSound, 0.0, 100 );
+		controller.Play(m_pNearRotorSound, 0.0, DROPSHIP_MAXVOLUME);
 	}
 
 	m_engineThrust = 1.0f;

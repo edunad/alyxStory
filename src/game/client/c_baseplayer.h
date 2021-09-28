@@ -200,7 +200,7 @@ public:
 	virtual float				GetDefaultAnimSpeed( void ) { return 1.0; }
 
 	void						SetMaxSpeed( float flMaxSpeed ) { m_flMaxspeed = flMaxSpeed; }
-	float						MaxSpeed() const		{ return m_flMaxspeed; }
+	float						MaxSpeed() const { return m_flMaxspeed; }
 
 	// Should this object cast shadows?
 	virtual ShadowType_t		ShadowCastType() { return SHADOWS_NONE; }
@@ -485,6 +485,8 @@ protected:
 	bool			m_bWasFreezeFraming; 
 	float			m_flDeathTime;		// last time player died
 
+	float			m_flMaxspeed;
+
 	float			m_flStepSoundTime;
 	bool			m_foostepAllowed;
 
@@ -500,7 +502,6 @@ private:
 	EHANDLE			m_hOldVehicle;
 	EHANDLE			m_hUseEntity;
 	
-	float			m_flMaxspeed;
 
 	int				m_iBonusProgress;
 	int				m_iBonusChallenge;

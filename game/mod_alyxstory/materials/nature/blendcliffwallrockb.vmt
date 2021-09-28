@@ -1,0 +1,16 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "nature/rockwall_cave01a"
+	"$basetexture2" "nature/hr_c/hr_dirt_001_color"
+	"%detailtype" "citygrass01"
+	"$surfaceprop" "dirt"
+	"$surfaceprop2" "dirt"
+	"$basetexturetransform" "center .5 .5 scale 1 1 rotate 0 translate 0 0"
+        	"$basetexturetransform2" "center .5 .5 scale 1 1 rotate 0 translate 0 0"
+
+
+		"$bumpmap" "dev/flat_normal"
+		"$bumpmap2" "nature/rockwall015a_normal"
+
+
+}

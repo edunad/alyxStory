@@ -147,10 +147,10 @@ private:
 		// default max # of particles at one time
 		DEFAULT_PARTICLES	= 2048,
 #else
-		DEFAULT_PARTICLES   = 1024,
+		DEFAULT_PARTICLES   = 2048,
 #endif
 
-		// no fewer than this no matter what's on the command line
+		// no fewer than this no matter what's on the command linezs
 		MIN_PARTICLES		= 512,	
 
 #ifndef _XBOX

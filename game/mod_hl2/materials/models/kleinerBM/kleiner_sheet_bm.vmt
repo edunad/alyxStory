@@ -1,5 +1,0 @@
-"VertexLitGeneric"
-{
-	"$baseTexture" "models/kleinerBM/kleiner_sheet_bm"
-	"$halflambert" 1
-}

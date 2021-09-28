@@ -1,0 +1,8 @@
+"worldvertextransition"
+{
+	"$basetexture2"         "nature/dirtfloor009c"
+	"$basetexture"          "decals/moss_wall_decal"
+	"$blendmodulatetexture" "nature/pavement_ssbump"
+	"%detailtype" "citygrass01"
+	"$surfaceprop"          "grass"
+}

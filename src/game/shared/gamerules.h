@@ -213,6 +213,11 @@ public:
 // CBaseEntity overrides.
 public:
 
+	// stim pack and time scaling
+	virtual void			StartSlowmotion(float duration, float ammount, float decay);
+	virtual void			StopSlowmotion();
+	void					ThinkUpdateTimescale() RESTRICT;
+
 // Setup
 	
 	// Called when game rules are destroyed by CWorld
@@ -419,8 +424,20 @@ public:
 
 #ifndef CLIENT_DLL
 private:
+
 	float m_flNextVerboseLogOutput;
 #endif // CLIENT_DLL
+
+	/* Slow motion related */
+	float	GetSlowmotionEndTime() { return m_flSlowMotionEndTime; }
+	float   GetSlowmotionStartTime() { return m_flSlowMotionStartTime; }
+	float   GetSlowmotionAmmount() { return m_flSlowMotionAmmount; }
+	float   GetSlowmotionDecay() { return m_flSlowMotionDecay; }
+
+	CNetworkVar(float, m_flSlowMotionEndTime);
+	CNetworkVar(float, m_flSlowMotionStartTime);
+	CNetworkVar(float, m_flSlowMotionAmmount);
+	CNetworkVar(float, m_flSlowMotionDecay);
 };
 
 
