@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "6440"
-	"mapversion" "2577"
+	"mapversion" "2578"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -50,7 +50,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "2577"
+	"mapversion" "2578"
 	"classname" "worldspawn"
 	"chaptertitle" "2 years later"
 	"detailmaterial" "detail/detailsprites"
@@ -66,7 +66,7 @@ world
 		{
 			"id" "7"
 			"plane" "(1024 -128 32) (1424 -128 32) (1424 -288 32)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -142,7 +142,7 @@ world
 		{
 			"id" "13"
 			"plane" "(480 0 32) (480 368 32) (720 368 32)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -370,7 +370,7 @@ world
 		{
 			"id" "43"
 			"plane" "(1424 -504 32) (1424 -112 32) (1808 -112 32)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -2965,7 +2965,7 @@ world
 		{
 			"id" "792"
 			"plane" "(1432 -504 32) (2184 -504 32) (2184 -680 32)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -5728,7 +5728,7 @@ world
 		{
 			"id" "2274"
 			"plane" "(728 112 200) (1032 112 200) (1032 0 200)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -6488,7 +6488,7 @@ world
 		{
 			"id" "2636"
 			"plane" "(720 368 32) (912 368 32) (912 192 32)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -7867,7 +7867,7 @@ world
 		{
 			"id" "3048"
 			"plane" "(248 368 536) (1280 368 536) (1280 192 536)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -9159,7 +9159,7 @@ world
 		{
 			"id" "3222"
 			"plane" "(656 368 868) (944 368 868) (944 -160 868)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -9919,7 +9919,7 @@ world
 		{
 			"id" "3372"
 			"plane" "(240 368 1200) (1096 368 1200) (1096 176 1200)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -10375,7 +10375,7 @@ world
 		{
 			"id" "3516"
 			"plane" "(656 368 1504) (880 368 1504) (880 -168 1504)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -10766,7 +10766,7 @@ world
 		{
 			"id" "4027"
 			"plane" "(880 -144 1504) (944 -144 1504) (944 -168 1504)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -11809,7 +11809,7 @@ world
 		{
 			"id" "8142"
 			"plane" "(944 -168 1504) (944 -608 1600) (656 -608 1600)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -12286,7 +12286,7 @@ world
 		{
 			"id" "8526"
 			"plane" "(656 -1240 1600) (656 -608 1600) (944 -608 1600)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -12438,7 +12438,7 @@ world
 		{
 			"id" "8718"
 			"plane" "(952 -632 1600) (1384 -632 1600) (1384 -888 1600)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -12753,7 +12753,7 @@ world
 		{
 			"id" "11054"
 			"plane" "(1176 -304 1600) (1384 -304 1600) (1384 -632 1600)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -13296,7 +13296,7 @@ world
 		{
 			"id" "12004"
 			"plane" "(512 -1152 1600) (656 -1152 1600) (656 -1232 1600)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -13372,7 +13372,7 @@ world
 		{
 			"id" "12016"
 			"plane" "(448 -1432 1616) (448 -1232 1616) (656 -1232 1616)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -13980,7 +13980,7 @@ world
 		{
 			"id" "12951"
 			"plane" "(656 -1248 1608) (816 -1248 1608) (816 -1384 1608)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -14132,7 +14132,7 @@ world
 		{
 			"id" "12963"
 			"plane" "(656 -1392 1600) (952 -1392 1600) (952 -1552 1600)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -24131,9 +24131,9 @@ world
 		{
 			"id" "34225"
 			"plane" "(1336 -4600 1784) (1336 -4656 1784) (1336 -4656 1672)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[0 1 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 1 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24142,7 +24142,7 @@ world
 		{
 			"id" "34226"
 			"plane" "(1344 -4600 1672) (1344 -4656 1672) (1344 -4656 1784)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24153,7 +24153,7 @@ world
 		{
 			"id" "34227"
 			"plane" "(1344 -4600 1784) (1336 -4600 1784) (1336 -4600 1672)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24164,7 +24164,7 @@ world
 		{
 			"id" "34228"
 			"plane" "(1344 -4656 1672) (1336 -4656 1672) (1336 -4656 1784)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24207,7 +24207,7 @@ world
 		{
 			"id" "34267"
 			"plane" "(1152 -4648 1784) (1152 -4656 1784) (1152 -4656 1672)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24229,9 +24229,9 @@ world
 		{
 			"id" "34269"
 			"plane" "(1336 -4648 1784) (1152 -4648 1784) (1152 -4648 1672)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[1 0 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24240,7 +24240,7 @@ world
 		{
 			"id" "34270"
 			"plane" "(1336 -4656 1672) (1152 -4656 1672) (1152 -4656 1784)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24283,7 +24283,7 @@ world
 		{
 			"id" "34273"
 			"plane" "(1152 -4304 1784) (1152 -4648 1784) (1152 -4648 1672)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24294,9 +24294,9 @@ world
 		{
 			"id" "34274"
 			"plane" "(1160 -4304 1672) (1160 -4648 1672) (1160 -4648 1784)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[0 1 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 1 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24305,7 +24305,7 @@ world
 		{
 			"id" "34275"
 			"plane" "(1160 -4304 1784) (1152 -4304 1784) (1152 -4304 1672)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24381,7 +24381,7 @@ world
 		{
 			"id" "34281"
 			"plane" "(1230 -4304 1784) (1160 -4304 1784) (1160 -4304 1672)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24392,9 +24392,9 @@ world
 		{
 			"id" "34282"
 			"plane" "(1230 -4312 1672) (1160 -4312 1672) (1160 -4312 1784)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[1 0 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24457,7 +24457,7 @@ world
 		{
 			"id" "34287"
 			"plane" "(1336 -4304 1784) (1282 -4304 1784) (1282 -4304 1672)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24468,9 +24468,9 @@ world
 		{
 			"id" "34288"
 			"plane" "(1336 -4312 1672) (1282 -4312 1672) (1282 -4312 1784)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[1 0 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24511,9 +24511,9 @@ world
 		{
 			"id" "34543"
 			"plane" "(1336 -4384 1711) (1336 -4600 1711) (1336 -4600 1672)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[0 1 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 1 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24522,7 +24522,7 @@ world
 		{
 			"id" "34544"
 			"plane" "(1344 -4384 1672) (1344 -4600 1672) (1344 -4600 1711)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24587,9 +24587,9 @@ world
 		{
 			"id" "34549"
 			"plane" "(1336 -4304 1784) (1336 -4384 1784) (1336 -4384 1672)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[0 1 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 1 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24598,7 +24598,7 @@ world
 		{
 			"id" "34550"
 			"plane" "(1344 -4304 1672) (1344 -4384 1672) (1344 -4384 1784)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24609,7 +24609,7 @@ world
 		{
 			"id" "34551"
 			"plane" "(1344 -4304 1784) (1336 -4304 1784) (1336 -4304 1672)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24663,9 +24663,9 @@ world
 		{
 			"id" "34555"
 			"plane" "(1336 -4384 1784) (1336 -4600 1784) (1336 -4600 1759)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[0 1 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 1 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24674,7 +24674,7 @@ world
 		{
 			"id" "34556"
 			"plane" "(1344 -4384 1759) (1344 -4600 1759) (1344 -4600 1784)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24739,9 +24739,9 @@ world
 		{
 			"id" "34561"
 			"plane" "(1336 -4505 1759) (1336 -4574 1759) (1336 -4574 1711)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[0 1 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 1 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24750,7 +24750,7 @@ world
 		{
 			"id" "34562"
 			"plane" "(1344 -4505 1711) (1344 -4574 1711) (1344 -4574 1759)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24815,9 +24815,9 @@ world
 		{
 			"id" "34574"
 			"plane" "(1336 -4410 1759) (1336 -4479 1759) (1336 -4479 1711)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[0 1 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 1 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24826,7 +24826,7 @@ world
 		{
 			"id" "34573"
 			"plane" "(1344 -4410 1711) (1344 -4479 1711) (1344 -4479 1759)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24913,7 +24913,7 @@ world
 		{
 			"id" "35229"
 			"plane" "(1282 -4304 1784) (1230 -4304 1784) (1230 -4304 1781)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -60] 0.25"
 			"rotation" "0"
@@ -24924,9 +24924,9 @@ world
 		{
 			"id" "35230"
 			"plane" "(1282 -4312 1781) (1230 -4312 1781) (1230 -4312 1784)"
-			"material" "WOOD/MILWALL017"
-			"uaxis" "[1 0 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -24945,7 +24945,7 @@ world
 		{
 			"id" "35375"
 			"plane" "(1200 -4184 1669) (1288 -4184 1669) (1288 -4304 1669)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -24956,7 +24956,7 @@ world
 		{
 			"id" "35376"
 			"plane" "(1200 -4304 1664) (1288 -4304 1664) (1288 -4184 1664)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -24967,7 +24967,7 @@ world
 		{
 			"id" "35377"
 			"plane" "(1200 -4184 1669) (1200 -4304 1669) (1200 -4304 1664)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -24978,7 +24978,7 @@ world
 		{
 			"id" "35378"
 			"plane" "(1288 -4184 1664) (1288 -4304 1664) (1288 -4304 1669)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -24989,7 +24989,7 @@ world
 		{
 			"id" "35379"
 			"plane" "(1288 -4184 1669) (1200 -4184 1669) (1200 -4184 1664)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25021,7 +25021,7 @@ world
 		{
 			"id" "35842"
 			"plane" "(1288 -4272 1664) (1288 -4192 1664) (1296 -4192 1664)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -25043,7 +25043,7 @@ world
 		{
 			"id" "35840"
 			"plane" "(1296 -4272 1652.4) (1296 -4272 1664) (1296 -4192 1664)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25054,7 +25054,7 @@ world
 		{
 			"id" "35839"
 			"plane" "(1296 -4192 1652.4) (1296 -4192 1664) (1288 -4192 1664)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25065,7 +25065,7 @@ world
 		{
 			"id" "35838"
 			"plane" "(1288 -4272 1656) (1288 -4272 1664) (1296 -4272 1664)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25076,7 +25076,7 @@ world
 		{
 			"id" "35837"
 			"plane" "(1288 -4192 1656) (1288 -4272 1656) (1296 -4272 1652.4)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -25097,7 +25097,7 @@ world
 		{
 			"id" "35848"
 			"plane" "(1296 -4272 1660) (1296 -4192 1660) (1304 -4192 1660)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -25119,7 +25119,7 @@ world
 		{
 			"id" "35846"
 			"plane" "(1304 -4272 1648.8) (1304 -4272 1660) (1304 -4192 1660)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25130,7 +25130,7 @@ world
 		{
 			"id" "35845"
 			"plane" "(1304 -4192 1648.8) (1304 -4192 1660) (1296 -4192 1660)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25141,7 +25141,7 @@ world
 		{
 			"id" "35844"
 			"plane" "(1296 -4272 1652.4) (1296 -4272 1660) (1304 -4272 1660)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25152,7 +25152,7 @@ world
 		{
 			"id" "35843"
 			"plane" "(1296 -4192 1652.4) (1296 -4272 1652.4) (1304 -4272 1648.8)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -25173,7 +25173,7 @@ world
 		{
 			"id" "35854"
 			"plane" "(1304 -4272 1656) (1304 -4192 1656) (1312 -4192 1656)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -25195,7 +25195,7 @@ world
 		{
 			"id" "35852"
 			"plane" "(1312 -4272 1645.2) (1312 -4272 1656) (1312 -4192 1656)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25206,7 +25206,7 @@ world
 		{
 			"id" "35851"
 			"plane" "(1312 -4192 1645.2) (1312 -4192 1656) (1304 -4192 1656)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25217,7 +25217,7 @@ world
 		{
 			"id" "35850"
 			"plane" "(1304 -4272 1648.8) (1304 -4272 1656) (1312 -4272 1656)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25228,7 +25228,7 @@ world
 		{
 			"id" "35849"
 			"plane" "(1304 -4192 1648.8) (1304 -4272 1648.8) (1312 -4272 1645.2)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -25249,7 +25249,7 @@ world
 		{
 			"id" "35860"
 			"plane" "(1312 -4272 1652) (1312 -4192 1652) (1320 -4192 1652)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -25271,7 +25271,7 @@ world
 		{
 			"id" "35858"
 			"plane" "(1320 -4272 1641.6) (1320 -4272 1652) (1320 -4192 1652)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25282,7 +25282,7 @@ world
 		{
 			"id" "35857"
 			"plane" "(1320 -4192 1641.6) (1320 -4192 1652) (1312 -4192 1652)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25293,7 +25293,7 @@ world
 		{
 			"id" "35856"
 			"plane" "(1312 -4272 1645.2) (1312 -4272 1652) (1320 -4272 1652)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25304,7 +25304,7 @@ world
 		{
 			"id" "35855"
 			"plane" "(1312 -4192 1645.2) (1312 -4272 1645.2) (1320 -4272 1641.6)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -25325,7 +25325,7 @@ world
 		{
 			"id" "35866"
 			"plane" "(1328 -4272 1644) (1328 -4192 1644) (1336 -4192 1644)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -25347,7 +25347,7 @@ world
 		{
 			"id" "35864"
 			"plane" "(1336 -4272 1634.4) (1336 -4272 1644) (1336 -4192 1644)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25358,7 +25358,7 @@ world
 		{
 			"id" "35863"
 			"plane" "(1336 -4192 1634.4) (1336 -4192 1644) (1328 -4192 1644)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25369,7 +25369,7 @@ world
 		{
 			"id" "35862"
 			"plane" "(1328 -4272 1638) (1328 -4272 1644) (1336 -4272 1644)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25380,7 +25380,7 @@ world
 		{
 			"id" "35861"
 			"plane" "(1328 -4192 1638) (1328 -4272 1638) (1336 -4272 1634.4)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -25401,7 +25401,7 @@ world
 		{
 			"id" "35872"
 			"plane" "(1320 -4272 1648) (1320 -4192 1648) (1328 -4192 1648)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -25423,7 +25423,7 @@ world
 		{
 			"id" "35870"
 			"plane" "(1328 -4272 1638) (1328 -4272 1648) (1328 -4192 1648)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25434,7 +25434,7 @@ world
 		{
 			"id" "35869"
 			"plane" "(1328 -4192 1638) (1328 -4192 1648) (1320 -4192 1648)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25445,7 +25445,7 @@ world
 		{
 			"id" "35868"
 			"plane" "(1320 -4272 1641.6) (1320 -4272 1648) (1328 -4272 1648)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25456,7 +25456,7 @@ world
 		{
 			"id" "35867"
 			"plane" "(1320 -4192 1641.6) (1320 -4272 1641.6) (1328 -4272 1638)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -25477,7 +25477,7 @@ world
 		{
 			"id" "35878"
 			"plane" "(1336 -4272 1640) (1336 -4192 1640) (1344 -4192 1640)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -25499,7 +25499,7 @@ world
 		{
 			"id" "35876"
 			"plane" "(1344 -4272 1630.8) (1344 -4272 1640) (1344 -4192 1640)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25510,7 +25510,7 @@ world
 		{
 			"id" "35875"
 			"plane" "(1344 -4192 1630.8) (1344 -4192 1640) (1336 -4192 1640)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25521,7 +25521,7 @@ world
 		{
 			"id" "35874"
 			"plane" "(1336 -4272 1634.4) (1336 -4272 1640) (1344 -4272 1640)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25532,7 +25532,7 @@ world
 		{
 			"id" "35873"
 			"plane" "(1336 -4192 1634.4) (1336 -4272 1634.4) (1344 -4272 1630.8)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -25553,7 +25553,7 @@ world
 		{
 			"id" "35884"
 			"plane" "(1344 -4272 1636) (1344 -4192 1636) (1352 -4192 1636)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -25575,7 +25575,7 @@ world
 		{
 			"id" "35882"
 			"plane" "(1352 -4272 1627.2) (1352 -4272 1636) (1352 -4192 1636)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25586,7 +25586,7 @@ world
 		{
 			"id" "35881"
 			"plane" "(1352 -4192 1627.2) (1352 -4192 1636) (1344 -4192 1636)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25597,7 +25597,7 @@ world
 		{
 			"id" "35880"
 			"plane" "(1344 -4272 1630.8) (1344 -4272 1636) (1352 -4272 1636)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25608,7 +25608,7 @@ world
 		{
 			"id" "35879"
 			"plane" "(1344 -4192 1630.8) (1344 -4272 1630.8) (1352 -4272 1627.2)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -25629,7 +25629,7 @@ world
 		{
 			"id" "35890"
 			"plane" "(1352 -4272 1632) (1352 -4192 1632) (1360 -4192 1632)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -25651,7 +25651,7 @@ world
 		{
 			"id" "35888"
 			"plane" "(1360 -4272 1623.6) (1360 -4272 1632) (1360 -4192 1632)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25662,7 +25662,7 @@ world
 		{
 			"id" "35887"
 			"plane" "(1360 -4192 1623.6) (1360 -4192 1632) (1352 -4192 1632)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25673,7 +25673,7 @@ world
 		{
 			"id" "35886"
 			"plane" "(1352 -4272 1627.2) (1352 -4272 1632) (1360 -4272 1632)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25684,7 +25684,7 @@ world
 		{
 			"id" "35885"
 			"plane" "(1352 -4192 1627.2) (1352 -4272 1627.2) (1360 -4272 1623.6)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -25705,7 +25705,7 @@ world
 		{
 			"id" "35896"
 			"plane" "(1360 -4272 1628) (1360 -4192 1628) (1368 -4192 1628)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -25727,7 +25727,7 @@ world
 		{
 			"id" "35894"
 			"plane" "(1368 -4272 1620) (1368 -4272 1628) (1368 -4192 1628)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25738,7 +25738,7 @@ world
 		{
 			"id" "35893"
 			"plane" "(1368 -4192 1620) (1368 -4192 1628) (1360 -4192 1628)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25749,7 +25749,7 @@ world
 		{
 			"id" "35892"
 			"plane" "(1360 -4272 1623.6) (1360 -4272 1628) (1368 -4272 1628)"
-			"material" "WOOD/MILFLR002"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -25760,7 +25760,7 @@ world
 		{
 			"id" "35891"
 			"plane" "(1360 -4192 1623.6) (1360 -4272 1623.6) (1368 -4272 1620)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -26769,7 +26769,7 @@ world
 		{
 			"id" "38318"
 			"plane" "(1392 -4304 1784) (1344 -4304 1784) (1344 -4656 1784)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -26791,7 +26791,7 @@ world
 		{
 			"id" "38316"
 			"plane" "(1392 -4656 1784) (1344 -4656 1784) (1344 -4656 1817.6)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -26802,7 +26802,7 @@ world
 		{
 			"id" "38315"
 			"plane" "(1344 -4304 1817.6) (1392 -4304 1784) (1392 -4656 1784)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.15"
 			"rotation" "90"
@@ -26834,7 +26834,7 @@ world
 		{
 			"id" "38529"
 			"plane" "(1292.11 -4648 1848) (1160 -4648 1848) (1160 -4312 1848)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.15"
 			"rotation" "90"
@@ -26845,9 +26845,9 @@ world
 		{
 			"id" "38530"
 			"plane" "(1294 -4312 1847) (1160 -4312 1847) (1160 -4648 1847)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
-			"uaxis" "[1 0 0 -134] 0.26"
-			"vaxis" "[0 -1 0 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 -6] 0.26"
+			"vaxis" "[0 -1 0 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -26856,7 +26856,7 @@ world
 		{
 			"id" "38531"
 			"plane" "(1160 -4648 1847) (1160 -4312 1847) (1160 -4312 1848)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 0 1 0] 0.25"
 			"vaxis" "[0 1 0 0] 0.15"
 			"rotation" "90"
@@ -26867,9 +26867,9 @@ world
 		{
 			"id" "38532"
 			"plane" "(1292.11 -4648 1848) (1292.11 -4312 1848) (1294 -4312 1847)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
-			"uaxis" "[0 0 1 -134] 0.26"
-			"vaxis" "[0 1 0 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 0 1 -6] 0.26"
+			"vaxis" "[0 1 0 91] 0.21875"
 			"rotation" "90"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -26910,7 +26910,7 @@ world
 		{
 			"id" "38652"
 			"plane" "(1301 -4304 1784) (1301 -4256 1784) (1152 -4256 1784)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "0"
@@ -26921,7 +26921,7 @@ world
 		{
 			"id" "38651"
 			"plane" "(1152 -4304 1848) (1152 -4304 1784) (1152 -4256 1784)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -26943,7 +26943,7 @@ world
 		{
 			"id" "38649"
 			"plane" "(1301 -4256 1784) (1301 -4304 1848) (1152 -4304 1848)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[-1 0 0 0] 0.25"
 			"vaxis" "[0 1 0 0] 0.15"
 			"rotation" "90"
@@ -26975,9 +26975,9 @@ world
 		{
 			"id" "38843"
 			"plane" "(1301 -4304 1848) (1301 -4256 1784) (1392 -4304 1784)"
-			"material" "WOOD/MILROOF001"
-			"uaxis" "[0.882949 -0.469472 0 -263.905] 0.200943"
-			"vaxis" "[-0.469472 -0.882949 0 -504.378] 0.0834413"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0.882949 -0.469472 0 -7.905] 0.200943"
+			"vaxis" "[-0.469472 -0.882949 0 -120.378] 0.0834413"
 			"rotation" "-28"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -26986,7 +26986,7 @@ world
 		{
 			"id" "38842"
 			"plane" "(1301 -4256 1784) (1301 -4304 1784) (1392 -4304 1784)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.25"
 			"rotation" "90"
@@ -27040,7 +27040,7 @@ world
 		{
 			"id" "41379"
 			"plane" "(1152 -4656 1656) (1344 -4656 1656) (1344 -4304 1656)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -27051,7 +27051,7 @@ world
 		{
 			"id" "41378"
 			"plane" "(1152 -4304 1672) (1152 -4656 1672) (1152 -4656 1656)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -27062,7 +27062,7 @@ world
 		{
 			"id" "41377"
 			"plane" "(1344 -4304 1656) (1344 -4656 1656) (1344 -4656 1672)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -27073,7 +27073,7 @@ world
 		{
 			"id" "41376"
 			"plane" "(1344 -4304 1672) (1152 -4304 1672) (1152 -4304 1656)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -27084,7 +27084,7 @@ world
 		{
 			"id" "41375"
 			"plane" "(1344 -4656 1656) (1152 -4656 1656) (1152 -4656 1672)"
-			"material" "WOOD/MILWALL011"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -28335,7 +28335,7 @@ world
 		{
 			"id" "38486"
 			"plane" "(1152 -4656 1848) (1152 -4656 1784) (1152 -4304 1784)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -28357,7 +28357,7 @@ world
 		{
 			"id" "38484"
 			"plane" "(1152 -4656 1784) (1152 -4656 1848) (1160 -4656 1848)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -28379,9 +28379,9 @@ world
 		{
 			"id" "38482"
 			"plane" "(1160 -4304 1848) (1160 -4304 1784) (1160 -4656 1784)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
-			"uaxis" "[0 1 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 1 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -28390,7 +28390,7 @@ world
 		{
 			"id" "38481"
 			"plane" "(1160 -4656 1848) (1152 -4656 1848) (1152 -4304 1848)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.15"
 			"rotation" "90"
@@ -28423,7 +28423,7 @@ world
 		{
 			"id" "38497"
 			"plane" "(1344 -4304 1817.6) (1344 -4312 1817.6) (1301 -4312 1848)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.15"
 			"rotation" "90"
@@ -28467,9 +28467,9 @@ world
 		{
 			"id" "38493"
 			"plane" "(1344 -4312 1817.6) (1344 -4312 1784) (1160 -4312 1784)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
-			"uaxis" "[1 0 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -28478,7 +28478,7 @@ world
 		{
 			"id" "38492"
 			"plane" "(1160 -4304 1848) (1301 -4304 1848) (1301 -4312 1848)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.15"
 			"rotation" "90"
@@ -28500,7 +28500,7 @@ world
 		{
 			"id" "38510"
 			"plane" "(1344 -4656 1817.6) (1344 -4656 1784) (1160 -4656 1784)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -28511,7 +28511,7 @@ world
 		{
 			"id" "38509"
 			"plane" "(1301 -4656 1848) (1301 -4648 1848) (1344 -4648 1817.6)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.15"
 			"rotation" "90"
@@ -28555,9 +28555,9 @@ world
 		{
 			"id" "38505"
 			"plane" "(1344 -4648 1784) (1344 -4648 1817.6) (1301 -4648 1848)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
-			"uaxis" "[1 0 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -28566,7 +28566,7 @@ world
 		{
 			"id" "38504"
 			"plane" "(1160 -4656 1848) (1160 -4648 1848) (1301 -4648 1848)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -28588,7 +28588,7 @@ world
 		{
 			"id" "38522"
 			"plane" "(1301 -4312 1848) (1344 -4312 1817.6) (1344 -4648 1817.6)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.15"
 			"rotation" "90"
@@ -28632,9 +28632,9 @@ world
 		{
 			"id" "38518"
 			"plane" "(1292 -4648 1848) (1344 -4648 1810.18) (1344 -4312 1810.18)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
-			"uaxis" "[1 0 0 -134] 0.26"
-			"vaxis" "[0 -1 0 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 -6] 0.26"
+			"vaxis" "[0 -1 0 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -28643,7 +28643,7 @@ world
 		{
 			"id" "38517"
 			"plane" "(1292 -4312 1848) (1301 -4312 1848) (1301 -4648 1848)"
-			"material" "WOOD/MILROOF001"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[1 0 0 0] 0.15"
 			"rotation" "90"
@@ -28720,9 +28720,9 @@ world
 		{
 			"id" "38523"
 			"plane" "(1336 -4648 1784) (1336 -4312 1784) (1336 -4312 1816)"
-			"material" "WOOD/VOSTOK_WOOD_CEILING"
-			"uaxis" "[0 1 0 -134] 0.26"
-			"vaxis" "[0 0 -1 475] 0.21875"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[0 1 0 -6] 0.26"
+			"vaxis" "[0 0 -1 91] 0.21875"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -57331,9 +57331,9 @@ entity
 		{
 			"id" "7689"
 			"plane" "(1062 431 1536) (1128 431 1536) (1128 434 1536)"
-			"material" "WOOD/TARGET_BULLSEYE_WOOD_1"
-			"uaxis" "[1 0 0 -156] 0.25"
-			"vaxis" "[0 -1 0 -180] 0.25"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 -28] 0.25"
+			"vaxis" "[0 -1 0 -52] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -57375,8 +57375,8 @@ entity
 		{
 			"id" "7685"
 			"plane" "(1128 431 1536) (1062 431 1536) (1062 431 1600)"
-			"material" "WOOD/TARGET_BULLSEYE_WOOD_1"
-			"uaxis" "[1 0 0 -156] 0.25"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 -28] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -57483,8 +57483,8 @@ entity
 		{
 			"id" "7701"
 			"plane" "(975 543 1536) (1041 543 1536) (1041 546 1536)"
-			"material" "WOOD/TARGET_BULLSEYE_WOOD_1"
-			"uaxis" "[1 0 0 192] 0.25"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 64] 0.25"
 			"vaxis" "[0 -1 0 12] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -57527,8 +57527,8 @@ entity
 		{
 			"id" "7697"
 			"plane" "(1041 543 1536) (975 543 1536) (975 543 1600)"
-			"material" "WOOD/TARGET_BULLSEYE_WOOD_1"
-			"uaxis" "[1 0 0 192] 0.25"
+			"material" "DEV/DEV_MEASUREGENERIC01"
+			"uaxis" "[1 0 0 64] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -65762,7 +65762,7 @@ entity
 		{
 			"id" "13224"
 			"plane" "(512 -1152 1616) (640 -1152 1616) (640 -1232 1616)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"
@@ -65850,7 +65850,7 @@ entity
 		{
 			"id" "13230"
 			"plane" "(512 -1152 1608) (648 -1152 1608) (648 -1232 1608)"
-			"material" "TILE/OBSERVATION_TILEFLOOR001A"
+			"material" "DEV/DEV_MEASUREGENERIC01"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 -32] 0.25"
 			"rotation" "0"

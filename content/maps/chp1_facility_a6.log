@@ -6167,3 +6167,230 @@ Level flags = 0
 Total triangle count: 7889
 Writing d:\alyxstory\content\maps\chp1_facility_a6.bsp
 11 seconds elapsed
+
+
+
+materialPath: D:\alyxStory\game\mod_alyxstory\materials
+Loading d:\alyxstory\content\maps\chp1_facility_a6.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Could not locate 'GameData' key in d:\alyxstory\game\mod_alyxstory\gameinfo.txt
+Patching WVT material: maps/chp1_facility_a6/nature/hr_c/hr_dirt_mulch_blend_grass_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 142 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing d:\alyxstory\content\maps\chp1_facility_a6.prt...Building visibility clusters...
+done (0)
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day02_10*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day02_10*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Found a displacement edge abutting multiple other edges.
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (275138 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 2985 texinfos to 1205
+Reduced 149 texdatas to 123 (7240 bytes to 5922)
+Writing d:\alyxstory\content\maps\chp1_facility_a6.bsp
+1 second elapsed
+
+
+
+24 threads
+reading d:\alyxstory\content\maps\chp1_facility_a6.bsp
+reading d:\alyxstory\content\maps\chp1_facility_a6.prt
+ 152 portalclusters
+ 381 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 4 visible clusters (0.05%)
+Total clusters visible: 7725
+Average clusters visible: 50
+Building PAS...
+Average clusters audible: 85
+visdatasize:5991  compressed from 7296
+writing d:\alyxstory\content\maps\chp1_facility_a6.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\alyxstory\content\maps\chp1_facility_a6.bsp
+Error! Unable to load file "models/props_foliage/bush01.dx80.vtx"
+Error! Unable to load file "models/props_foliage/mall_big_plant01.dx80.vtx"
+2704 faces
+175959 square feet [25338228.00 square inches]
+365 Displacements
+249488 Square Feet [35926300.00 Square Inches]
+2704 patches before subdivision
+40496 patches after subdivision
+88 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 1863350, max 461
+transfer lists:  14.2 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(13333, 5806, 2500)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1254, 499, 185)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(130, 49, 16)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(16, 6, 2)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 1, 0)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0074 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+4 of 4 (100% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  86/1024         4128/49152    ( 8.4%) 
+brushes                671/8192         8052/98304    ( 8.2%) 
+brushsides            5298/65536       42384/524288   ( 8.1%) 
+planes                6432/65536      128640/1310720  ( 9.8%) 
+vertexes              5759/65536       69108/786432   ( 8.8%) 
+nodes                 1167/65536       37344/2097152  ( 1.8%) 
+texinfos              1205/12288       86760/884736   ( 9.8%) 
+texdata                123/2048         3936/65536    ( 6.0%) 
+dispinfos              365/0           64240/0        ( 0.0%) 
+disp_verts           29229/0          584580/0        ( 0.0%) 
+disp_tris            46144/0           92288/0        ( 0.0%) 
+disp_lmsamples     1610880/0         1610880/0        ( 0.0%) 
+faces                 2704/65536      151424/3670016  ( 4.1%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             2195/65536      122920/3670016  ( 3.3%) 
+leaves                1254/65536       40128/2097152  ( 1.9%) 
+leaffaces             3003/65536        6006/131072   ( 4.6%) 
+leafbrushes           1468/65536        2936/131072   ( 2.2%) 
+areas                    9/256            72/2048     ( 3.5%) 
+surfedges            22084/512000      88336/2048000  ( 4.3%) 
+edges                13989/256000      55956/1024000  ( 5.5%) 
+LDR worldlights         88/8192         7744/720896   ( 1.1%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            4/32768          48/393216   ( 0.0%) 
+waterstrips            240/32768        2400/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          6819/65536       13638/131072   (10.4%) 
+cubemapsamples          46/1024          736/16384    ( 4.5%) 
+overlays                14/512          4928/180224   ( 2.7%) 
+LDR lightdata         [variable]     5247556/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]        5991/16777216 ( 0.0%) 
+entdata               [variable]      386090/393216   (98.2%) VERY FULL!
+LDR ambient table     1254/65536        5016/262144   ( 1.9%) 
+HDR ambient table     1254/65536        5016/262144   ( 1.9%) 
+LDR leaf ambient      4142/65536      115976/1835008  ( 6.3%) 
+HDR leaf ambient      1254/65536       35112/1835008  ( 1.9%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/461504   ( 0.0%) 
+dtl prp lght          [variable]           1/30464    ( 0.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/9026     ( 0.0%) 
+pakfile               [variable]     4111821/0        ( 0.0%) 
+physics               [variable]      275138/4194304  ( 6.6%) 
+physics terrain       [variable]      127189/1048576  (12.1%) 
+
+Level flags = 0
+
+Total triangle count: 7889
+Writing d:\alyxstory\content\maps\chp1_facility_a6.bsp
+7 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading d:\alyxstory\content\maps\chp1_facility_a6.bsp
+Error! Unable to load file "models/props_foliage/bush01.dx80.vtx"
+Error! Unable to load file "models/props_foliage/mall_big_plant01.dx80.vtx"
+2704 faces
+175959 square feet [25338228.00 square inches]
+365 Displacements
+249488 Square Feet [35926300.00 Square Inches]
+2704 patches before subdivision
+40496 patches after subdivision
+88 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 1863350, max 461
+transfer lists:  14.2 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(12642, 5490, 2361)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(1189, 472, 175)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(124, 46, 15)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(15, 5, 2)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(2, 1, 0)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0075 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+4 of 4 (100% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                  86/1024         4128/49152    ( 8.4%) 
+brushes                671/8192         8052/98304    ( 8.2%) 
+brushsides            5298/65536       42384/524288   ( 8.1%) 
+planes                6432/65536      128640/1310720  ( 9.8%) 
+vertexes              5759/65536       69108/786432   ( 8.8%) 
+nodes                 1167/65536       37344/2097152  ( 1.8%) 
+texinfos              1205/12288       86760/884736   ( 9.8%) 
+texdata                123/2048         3936/65536    ( 6.0%) 
+dispinfos              365/0           64240/0        ( 0.0%) 
+disp_verts           29229/0          584580/0        ( 0.0%) 
+disp_tris            46144/0           92288/0        ( 0.0%) 
+disp_lmsamples     1610880/0         1610880/0        ( 0.0%) 
+faces                 2704/65536      151424/3670016  ( 4.1%) 
+hdr faces             2704/65536      151424/3670016  ( 4.1%) 
+origfaces             2195/65536      122920/3670016  ( 3.3%) 
+leaves                1254/65536       40128/2097152  ( 1.9%) 
+leaffaces             3003/65536        6006/131072   ( 4.6%) 
+leafbrushes           1468/65536        2936/131072   ( 2.2%) 
+areas                    9/256            72/2048     ( 3.5%) 
+surfedges            22084/512000      88336/2048000  ( 4.3%) 
+edges                13989/256000      55956/1024000  ( 5.5%) 
+LDR worldlights         88/8192         7744/720896   ( 1.1%) 
+HDR worldlights         88/8192         7744/720896   ( 1.1%) 
+leafwaterdata            4/32768          48/393216   ( 0.0%) 
+waterstrips            240/32768        2400/327680   ( 0.7%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices          6819/65536       13638/131072   (10.4%) 
+cubemapsamples          46/1024          736/16384    ( 4.5%) 
+overlays                14/512          4928/180224   ( 2.7%) 
+LDR lightdata         [variable]     5247556/0        ( 0.0%) 
+HDR lightdata         [variable]     5247556/0        ( 0.0%) 
+visdata               [variable]        5991/16777216 ( 0.0%) 
+entdata               [variable]      386090/393216   (98.2%) VERY FULL!
+LDR ambient table     1254/65536        5016/262144   ( 1.9%) 
+HDR ambient table     1254/65536        5016/262144   ( 1.9%) 
+LDR leaf ambient      4142/65536      115976/1835008  ( 6.3%) 
+HDR leaf ambient      4109/65536      115052/1835008  ( 6.3%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/461504   ( 0.0%) 
+dtl prp lght          [variable]           1/30464    ( 0.0%) 
+HDR dtl prp lght      [variable]           1/30464    ( 0.0%) 
+static props          [variable]           1/9026     ( 0.0%) 
+pakfile               [variable]     4111821/0        ( 0.0%) 
+physics               [variable]      275138/4194304  ( 6.6%) 
+physics terrain       [variable]      127189/1048576  (12.1%) 
+
+Level flags = 0
+
+Total triangle count: 7889
+Writing d:\alyxstory\content\maps\chp1_facility_a6.bsp
+7 seconds elapsed
